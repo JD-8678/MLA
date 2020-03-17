@@ -1,0 +1,27 @@
+2 Blöcke
+
+1. 
+- URL Eingabe (können mehr als einer sein)
+- Vergleich mit eigenener Datenbank --> x1
+2 Fälle:
+- URL ist in der Datenbank:
+  --> Gebe bereits berechnete Labels aus + x-ähnliche Artikel --> x2
+- URL ist nicht in der Datenbank;
+  --> Ergänze URL der Datenbank; berechne Labels und gebe x-ähnliche Artikel aus
+
+2. 
+- Indexing der Einträge
+- Verschiedene Labels, wir hatten:
+  - factuality, readability, emotion, opinion, controversy, (credibility, technicality, topicality)
+  - bestehende Algorithmen dürfen wir verwenden (source angeben)
+- Ranken anhand der Labels (Learning to Rank Algorithmus)
+
+x1: Datenbank zunächst leer; Folgende Struktur:
+URL; Text; Veröffentlichungsdatum; Labelwerte
+
+x2: Was heißt ähnlich? 2 Möglichkteiten:
+1. Ähnlich heißt lediglich die bestmögliche Textübereinstimmung
+2. Größte Textübereinstimmung und aus diesen Artikeln die x-Artikel mit den "besten" Labels
+
+
+Bitte falls notwendig ergänzen / verbessern
