@@ -31,9 +31,9 @@ Alpha \\
 \vspace{2mm}
 \end{center}
 \begin{tabular}{ l c r }
-  Alexander Peikert & alexpeikert@uni-koblenz.de & xxxxxxxxx \\
+  Alexander Peikert & alexpeikert@uni-koblenz.de & 218200812 \\
   Clemens Steinmann & csteinmann@uni-koblenz.de & 218200209 \\
-  Erwin Letkemann & erwinletkemann@uni-koblenz.de & xxxxxxxxx \\
+  Erwin Letkemann & erwinletkemann@uni-koblenz.de & 218200352 \\
   Julian Dillmann & juliandillmann@uni-koblenz.de & 218100919 \\
 \end{tabular}
 \vfill
@@ -58,7 +58,7 @@ The aim of the application is to extract content of published news articles and 
 The web application can be used by different kind of users:
 \begin{enumerate}
 \item Ordinary web users can find similar articles for a given news article. The received labels can help answering the question whether the article was trustworthy or not. If latter, the user can continue reading on the topic with articles from different sources suggested by the application.
-\item Other researchers can use our application, especially the labels, as a basis on further research on automation of fact-checking.
+\item Other researchers and fake-checkers can use our application, especially the labels, as a basis on further research on automation of fact-checking.
 \end{enumerate}
 The labels we are focusing on will be at least 3 of the following: factuality / opinion, readability, emotion, controversy, credibility.
 
@@ -79,7 +79,7 @@ The labels we are focusing on will be at least 3 of the following: factuality / 
 Given an input URL to an English news article, the applications' database will check whether the url has already been checked or not.
 \begin{enumerate}
 \item If the news article is present in our database we will output the already calculated labels and the x-best matching articles in our database.
-\item Otherwise first the news article content extractor will crawl the html to extract the plaintext of the news article and second each of the labels will evaluated with corresponding natural language processing methods. The result will be stored added to the database witch leads us to 1.
+\item Otherwise first the news article content extractor will crawl the html to extract the plaintext of the news article and second each of the labels will evaluated with corresponding natural language processing methods. The result will be added to the database witch leads us to 1.
 \end{enumerate}
 
 \subsection{Qualities of the components}
