@@ -79,26 +79,26 @@ Germany \\
 % What is the problem (and why)
 %--------------------------
 With news media consumption rapidly growing on the web, it is fairly difficult to quickly find news sources that are genuine, due to the nature of the Internet.
-Easy access and possibilities to publish news articles quickly overshadow proper journalism and in the worst case even distribute miss information.
-At the same time developing measures to fact check, in order to detect and prevent the spread of fake news is more difficult.
+Easy access and possibilities to publish more news articles quickly overshadow efforts of proper fact checked journalism and in the worst case even distribute miss information.
+At the same time developing measures to fact check, in order to detect and prevent the spread of fake news is difficult.
 
 Most methods in fact checking are still overall done manually. 
 Hence fact checking is time and cost intensive, even though most organisations already focus on specific topics, like political statements.
+A verification on general topics in media outlets is generally disregarded due to even more intensive labour.
 
-Due to the bigger complexity of full news articles, on diverse topics, and no uniformity between different news providers, for example regarding the structure articles
-a general system to identify miss information in media is still unavailable.
+An automated detection system would be a good solution in latter case, but the bigger complexity of full news articles, on diverse topics, and no uniformity between different news providers, for example regarding the structure articles. Such a system seems impossible with today's technologies and the sheer amount of available and published data make manual verification for a bigger spectrum of topics impossible.
 
 %--------------------------
 % What is the solution (and kinda why) [isn't that the same anyway???]
 %--------------------------
 \subsection{Our solution}
-In the course of the project we are going to develop a web-based application to help to optimise the preparations for future fact checking of news on a wider variety of topics .\\
+In the course of the project we are going to develop a web-based application to help to optimise the preparations for future fact checking of news on a wider variety of topics.\\
 We are evaluating English news article, by providing \grqq{}Information nutritional labels\grqq{} \ref{[1]} and a ranking system to suggested news articles based on similar topics.\\
 The the service is aimed at two different user groups with different benefits:
 \begin{enumerate}
 \item Mainly, our web service can be used by fact checkers as quick reference to find articles that are worth for further examination. \\
 At the same time our database can be used, by researcher, on the topic of computational detecting of fake news, by creating a tool to label news articles in order to filter down the mass of available data.\\
-The uniform structure of our solution provides an automated way to speed up the preparation phase of further work on news checking processing.
+The uniform structure of our solution provides an automated way to speed up the preparation phase of further work on news checking.
 \item On the other side, ordinary web users can find similar articles for a given news article.\\
 The user can save time by using the provided labels as help to self judge the genuineness of an article before reading.
 Furthermore the suggested articles provide a guideline to find \textbf{likely} reliable sources to facts.\\
@@ -109,16 +109,17 @@ We hope to bring more awareness for people to reflect on the kind of news they m
 % Related Parents
 %--------------------------
 \section{Related work}
-Related work on automated tools to help fact checking focus on identification of "check worthy" statements or articles.
-ClaimPortal \ref{[6]} is such an instance where tweets from several twitter users on the topic on of US politics are analysed and assigned with a check worthiness  score, in the regard if the factual claim in the post, if present, is of importance for the public.
+Related work on automated tools for fact checking focus on identification of "check worthy" statements or articles.
+ClaimPortal \ref{[6]} is such an instance where tweets from several US politicians are analysed and assigned with a check worthiness  score, in the regard if the factual claim in the post, if present, is of importance for the public. 
 
 Research on determining the check worthiness of political claims was also done with the help of nutritional labels and word embeddings \ref{[5]}.\\
 The authors used existing methods in natural language processing to determine the nutritional labels and also used Word2Vec model and spaCy to determine key phrases in sentences.
-They hypothesized a correlation between the different implications of the labels and the veracity of claims, for example high emotions in political statements indicate an attempt to deceive others. Hence the statement should be claim worthy. \\
+They hypothesized a correlation between the different implications of the labels and the veracity of claims, for example high emotions in political statements indicate an attempt to deceive the audience.
+ Hence the statement should be check worthy. \\
 All three of these were used in different combinations in several different ML algorithms to evaluate the performance on the Checkthat! 2018 \ref{[7]} dataset.
 The paper concluded that the nutritional labels with word-embedding with stochastic gradient descend logless archived the best results, and outperformed the winning team from the Checkthat! 2018 challenge.
 
-These results showcase that nutritional labelling could be of use in further research in computational detection of misinformation in a bigger range of topics or automated tools for fact checking.
+These results showcase that nutritional labelling could be of use in further research in computational detection of misinformation in a bigger range of topics or automated help tools for manual fact checking.
 Therefore we develop a solution to assist researchers and fact checkers to combat misinformation.
 
 %--------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.21)  25 MAR 2020 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.21)  25 MAR 2020 17:31
 entering extended mode
 **./new.tex
 (new.tex
@@ -481,34 +481,31 @@ Underfull \hbox (badness 2753) in paragraph at lines 95--99
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-30.
+31.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \item E
-             motion: We think that emotional language is used to influence t...
-[1
+l.150 \end{itemize}
+                    [1
 
 
 ]
-Underfull \hbox (badness 1137) in paragraph at lines 172--173
+Underfull \hbox (badness 1137) in paragraph at lines 173--174
 \OT1/ptm/m/n/10 put-ing Ma-chin-ery, New York, NY, USA, 941{944.
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
-[2
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (new.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `new.out' has not changed.
 (rerunfilecheck)             Checksum: 223B958E936187970C8265BFBF52B01A;614.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
  ) 
 Here is how much of TeX's memory you used:
  8244 strings out of 481556
@@ -517,11 +514,11 @@ Here is how much of TeX's memory you used:
  23330 multiletter control sequences out of 15000+200000
  540896 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,42p,437b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,6n,42p,437b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmr8a.pfb>
-Output written on new.pdf (3 pages, 50392 bytes).
+Output written on new.pdf (3 pages, 50653 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)
