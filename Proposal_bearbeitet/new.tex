@@ -1,0 +1,180 @@
+
+
+% These are the instructions for authors for IJCAI-19.
+
+\documentclass[10pt]{article}
+\pdfpagewidth=8.5in
+\pdfpageheight=11in
+% The file ijcai19.sty is NOT the same than previous years'
+\usepackage{ijcai19}
+
+% Use the postscript times font!
+\usepackage{times}
+\usepackage{soul}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\urlstyle{same}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+
+
+
+%----------------------------
+%Titlepage
+%----------------------------
+\begin{document}
+\begin{titlepage}
+\begin{center}
+
+A proposal for the Machine Learning Application\\
+Research Paper\\
+\vspace{4mm}
+\today
+\vspace{4mm}
+\end{center}
+\begin{center}
+\textbf{\Large Optimising online documents for fact-checking}\\
+\vspace{15mm}
+\textbf{Group:}\\
+\vspace{2mm}
+Alpha \\
+\vspace{15mm}
+\textbf {Members:}\\
+\vspace{2mm}
+
+\begin{tabular}{ l c r }
+  Alexander Peikert & alexpeikert@uni-koblenz.de & 218200812 \\
+  Clemens Steinmann & csteinmann@uni-koblenz.de & 218200209 \\
+  Erwin Letkemann & erwinletkemann@uni-koblenz.de & 218200352 \\
+  Julian Dillmann & juliandillmann@uni-koblenz.de & 218100919 \\
+\end{tabular}
+\end{center}
+\vfill
+\begin{center}
+\vspace{8mm}
+WeST \\
+Universität Koblenz-Landau \\
+Germany \\
+\vspace{2mm}
+\end{center}
+\clearpage
+\end{titlepage}
+
+%-------------------------
+%Intro
+%-------------------------
+
+\section{Introduction}
+\subsection{Problem}
+%--------------------------
+% What is the problem (and why)
+%--------------------------
+With news media consumption rapidly growing on the web, it is fairly difficult to quickly find news sources that are genuine, due to the nature of the Internet.
+Easy access and possibilities to publish news articles quickly overshadow proper journalism and in the worst case even distribute miss information.
+At the same time developing measures to fact check, in order to detect and prevent the spread of fake news is more difficult.
+
+Most methods in fact checking are still overall done manually. 
+Hence fact checking is time and cost intensive, even though most organisations already focus on specific topics, like political statements.
+
+Due to the bigger complexity of full news articles, on diverse topics, and no uniformity between different news providers, for example regarding the structure articles
+a general system to identify miss information in media is still unavailable.
+
+%--------------------------
+% What is the solution (and kinda why) [isn't that the same anyway???]
+%--------------------------
+\subsection{Our solution}
+In the course of the project we are going to develop a web-based application to help to optimise the preparations for future fact checking of news on a wider variety of topics .\\
+We are evaluating English news article, by providing \grqq{}Information nutritional labels\grqq{} \ref{[1]} and a ranking system to suggested news articles based on similar topics.\\
+The the service is aimed at two different user groups with different benefits:
+\begin{enumerate}
+\item Mainly, our web service can be used by fact checkers as quick reference to find articles that are worth for further examination. \\
+At the same time our database can be used, by researcher, on the topic of computational detecting of fake news, by creating a tool to label news articles in order to filter down the mass of available data.\\
+The uniform structure of our solution provides an automated way to speed up the preparation phase of further work on news checking processing.
+\item On the other side, ordinary web users can find similar articles for a given news article.\\
+The user can save time by using the provided labels as help to self judge the genuineness of an article before reading.
+Furthermore the suggested articles provide a guideline to find \textbf{likely} reliable sources to facts.\\
+We hope to bring more awareness for people to reflect on the kind of news they make use of.
+\end{enumerate}
+
+%--------------------------
+% Related Parents
+%--------------------------
+\section{Related work}
+Related work on automated tools to help fact checking focus on identification of "check worthy" statements or articles.
+ClaimPortal \ref{[6]} is such an instance where tweets from several twitter users on the topic on of US politics are analysed and assigned with a check worthiness  score, in the regard if the factual claim in the post, if present, is of importance for the public.
+
+Research on determining the check worthiness of political claims was also done with the help of nutritional labels and word embeddings \ref{[5]}.\\
+The authors used existing methods in natural language processing to determine the nutritional labels and also used Word2Vec model and spaCy to determine key phrases in sentences.
+They hypothesized a correlation between the different implications of the labels and the veracity of claims, for example high emotions in political statements indicate an attempt to deceive others. Hence the statement should be claim worthy. \\
+All three of these were used in different combinations in several different ML algorithms to evaluate the performance on the Checkthat! 2018 \ref{[7]} dataset.
+The paper concluded that the nutritional labels with word-embedding with stochastic gradient descend logless archived the best results, and outperformed the winning team from the Checkthat! 2018 challenge.
+
+These results showcase that nutritional labelling could be of use in further research in computational detection of misinformation in a bigger range of topics or automated tools for fact checking.
+Therefore we develop a solution to assist researchers and fact checkers to combat misinformation.
+
+%--------------------------
+%Application
+%--------------------------
+\section{Our Application}
+\subsection{Needed Components:}
+\begin{itemize}
+\item Database
+\item Content extractor
+\item Content NLP (Natural language processing)
+\item Learning to rank algorithm for similar articles
+\item Web-application
+\end{itemize}
+
+\subsection{General procedure}
+Given an input URL to an English news article, the applications' database will check whether the url has already been checked by our system.
+\begin{enumerate}
+\item If the news article is present in our database we will output the already calculated labels and if needed find the x-best matching articles in our database.
+\item Otherwise the news article content extractor will crawl the html to extract the plaintext of the news article and each of the labels will be evaluated with corresponding natural language processing methods. The result will be added to the database which leads us to 1.
+\end{enumerate}
+
+\subsection{Qualities of the components}
+\begin{itemize}
+\item The database should hold: URL, metadata, labels, topic, published date, and should be indexed for 
+\item Similarity between two news articles describes the general topic in our use case. Consequently the ranking of different articles on the same topic is done by comparing labels.
+\item We hypothesise certain combinations of label scores indicate check worthiness of articles or provide data for research on specific topic, for example high technicality and bad readability, emotional language and controversial topic.
+\end{itemize}
+
+\subsection{Basic ideas \& implementation ideas for labels.}
+\begin{itemize}
+\item Factuality/ Opinion: We think the ratio between factual and opinion sentences in an article helps as the quick reference for check worthiness;\\
+\ref{[1]} NLP to calculate the ratio of factual to opinion sentences over the article content.
+\item Emotion: We think that emotional language is used to influence the reader into believing certain stances; \ref{[3]}, \ref{[4]} NLP of sentences and sum over the text will tell the ratio of positive and negative emotions.
+\item Controversy: We think that controversial topics are more likely to be used as clickbait and may not showcase factual statements; checking for the number of included topics for example from Wikipedia:List of controversial issues".
+\item Credibility: As we are likely dealing with text from a big spectrum of topics, the reliability of the publisher of the article has to be considered too; checking the metadata with available resources like  "Wikipedia:Reliable sources/Perennial sources".
+\item Technicality: We think an overall technical text could be used to distract from non factual statements; - .
+\item Virality: We think viral topics are more likely to have contradicting statements between sources; Use google trends for detection.
+\end{itemize}
+
+
+%----------------------------
+%References
+%----------------------------
+\section{References}
+\begin{enumerate}[label={[\arabic*]}]
+\item Fuhr, Norbert et al. \grqq{}An Information Nutritional Label for Online Documents.\grqq{} SIGIR Forum 51 (2018): 46-66.\label{[1]}
+\item Sahu, Ishan \& Majumdar, Debapriyo. (2017).Detecting Factual and Non-Factual Content in News Articles. 1-12. 10.1145/3041823.3041837.\label{[2]}
+\item AFFIN Database Informatics and Mathematical Modelling, Technical University of Denmark (2011) \label{[3]}
+\item Cambria, Erik et al. “The Hourglass of Emotions.” COST 2102 Training School (2011). \label{[4]}
+\item Cédric Lespagnol, Josiane Mothe, and Md Zia Ullah. 2019. Information Nutritional Label and Word Embedding to Estimate Information Check-Worthiness. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’19). Association for Computing Machinery, New York, NY, USA, 941–944. DOI:https://doi.org/10.1145/3331184.3331298 \label{[5]}
+\item Majithia, Sarthak \& Arslan, Fatma \& Lubal, Sumeet \& Jimenez, Damian \& Arora, Priyank \& Caraballo, Josue \& Li, Chengkai. (2019). ClaimPortal: Integrated Monitoring, Searching, Checking, and Analytics of Factual Claims on Twitter. 153-158. 10.18653/v1/P19-3026. \label{[6]}
+\item Agez, Romain et al. “IRIT at CheckThat! 2018.” CLEF (2018). \label{[7]}
+
+
+
+\end{enumerate}
+
+\end{document}
