@@ -101,7 +101,7 @@ At the same time our database can be used, by researcher, on the topic of comput
 The uniform structure of our solution provides an automated way to speed up the preparation phase of further work on news checking.
 \item On the other side, ordinary web users can find similar articles for a given news article.\\
 The user can save time by using the provided labels as help to self judge the genuineness of an article before reading.
-Furthermore the suggested articles provide a guideline to find \textbf{likely} reliable sources to facts.\\
+Furthermore the suggested articles provide an opportunity to find other sources on the same topic.\\
 We hope to bring more awareness for people to reflect on the kind of news they make use of.
 \end{enumerate}
 
@@ -139,19 +139,19 @@ Therefore we develop a solution to assist researchers and fact checkers to comba
 Given an input URL to an English news article, the applications' database will check whether the url has already been checked by our system.
 \begin{enumerate}
 \item If the news article is present in our database we will output the already calculated labels and if needed find the x-best matching articles in our database.
-\item Otherwise the news article content extractor will crawl the html to extract the plaintext of the news article and each of the labels will be evaluated with corresponding natural language processing methods. The result will be added to the database which leads us to 1.
+\item Otherwise the news article content extractor will crawl the html to extract the plain text of the news article and each of the labels will be evaluated with corresponding natural language processing methods. The result will be added to the database which leads us to 1.
 \end{enumerate}
 
 \subsection{Qualities of the components}
 \begin{itemize}
-\item The database should hold: URL, metadata, labels, topic, published date, and should be indexed for 
+\item The database should hold: URL, metadata, labels, topic, published date
 \item Similarity between two news articles describes the general topic in our use case. Consequently the ranking of different articles on the same topic is done by comparing labels.
 \item We hypothesise certain combinations of label scores indicate check worthiness of articles or provide data for research on specific topic, for example high technicality and bad readability, emotional language and controversial topic.
 \end{itemize}
 
 \subsection{Basic ideas \& implementation ideas for labels.}
 \begin{itemize}
-\item Factuality/ Opinion: We think the ratio between factual and opinion sentences in an article helps as the quick reference for check worthiness;\\
+\item Factuality/ Opinion: We think the ratio between factual and opinion sentences in an article helps as the quick reference for check worthiness;
 \ref{[1]} NLP to calculate the ratio of factual to opinion sentences over the article content.
 \item Emotion: We think that emotional language is used to influence the reader into believing certain stances; \ref{[3]}, \ref{[4]} NLP of sentences and sum over the text will tell the ratio of positive and negative emotions.
 \item Controversy: We think that controversial topics are more likely to be used as clickbait and may not showcase factual statements; checking for the number of included topics for example from Wikipedia:List of controversial issues".
