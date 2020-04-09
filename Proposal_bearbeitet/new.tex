@@ -78,49 +78,50 @@ Germany \\
 %--------------------------
 % What is the problem (and why)
 %--------------------------
-With news media consumption rapidly growing on the web, it is fairly difficult to quickly find news sources that are genuine, due to the nature of the Internet.
-Easy access and possibilities to publish more news articles quickly overshadow efforts of proper fact checked journalism and in the worst case even distribute miss information.
-At the same time developing measures to fact check, in order to detect and prevent the spread of fake news is difficult.
 
-Most methods in fact checking are still overall done manually. 
-Hence fact checking is time and cost intensive, even though most organisations already focus on specific topics, like political statements.
-A verification on general topics in media outlets is generally disregarded due to even more intensive labour.
-
-An automated detection system would be a good solution in latter case, but the bigger complexity of full news articles, on diverse topics, and no uniformity between different news providers, for example regarding the structure articles. Such a system seems impossible with today's technologies and the sheer amount of available and published data make manual verification for a bigger spectrum of topics impossible.
+With media consumption rapidly growing on the web, it is fairly difficult to distinguish between news sources that are genuine and ones that are not, due to the nature of the internet.
+Easy access and possibilities to publish more news articles quickly overshadow efforts of proper fact checked journalism and in the worst case scenario even distribute miss information.
+Even though growing efforts to counteract the spread of fake news in the past years and measures to fact check in order to detect miss information are overwhelmed by the consistent stream of data.\\
+A fully automated system to detect and fact check claims on the web sounds like a good idea, but in practice the task of fact checking is to complex for such a system.
+The amounts of relevant contexts with the needed sensitivity to judge claims are out of reach, for non human instances, to detect at this moment.
+Therefore the focus right now should be on improving the manual progress of fact checking by developing and providing tools.
+Such as checking claims against an authoritative source or checking against previous fact checked claims\ref{[8]}.
+These automated progresses decrease the time needed for manual fact checking to verify claims.
 
 %--------------------------
 % What is the solution (and kinda why) [isn't that the same anyway???]
 %--------------------------
 \subsection{Our solution}
-In the course of the project we are going to develop a web-based application to help to optimise the preparations for future fact checking of news on a wider variety of topics.\\
-We are evaluating English news article, by providing \grqq{}Information nutritional labels\grqq{} \ref{[1]} and a ranking system to suggested news articles based on similar topics.\\
-The the service is aimed at two different user groups with different benefits:
+In the course of the project we are going to develop a web-based application to help the optimisation of future fact checking by developing an automated tool to match already verified claims, by trusted fact checking Organisations such as PolitiFact or Snopes, to claims, from to be examined articles.
+Furthermore we are evaluating a check worthiness score for the English news articles.
+The score will be computed given the accordance of the already verified claims and the help of "Information nutritional labels" \ref{[1]} extracted from the article content.
+At the same time the web application can be used to suggest similar non verified news articles, on the same topic ranked, corresponding to score.\\
+The service is aimed at two different user groups with different benefits:
 \begin{enumerate}
-\item Mainly, our web service can be used by fact checkers as quick reference to find articles that are worth for further examination. \\
-At the same time our database can be used, by researcher, on the topic of computational detecting of fake news, by creating a tool to label news articles in order to filter down the mass of available data.\\
-The uniform structure of our solution provides an automated way to speed up the preparation phase of further work on news checking.
-\item On the other side, ordinary web users can find similar articles for a given news article.\\
-The user can save time by using the provided labels as help to self judge the genuineness of an article before reading.
-Furthermore the suggested articles provide an opportunity to find other sources on the same topic.\\
-We hope to bring more awareness for people to reflect on the kind of news they make use of.
+\item Mainly, our web service can be used, by fact checkers, to quickly determine if a claim was already verified before.
+This saves time in the progress of verifying among individuals or between entities.
+The ranked verified claims provide help to quickly identify if a claim was checked before.
+The check worthiness score also gives guidance on which articles the fact checker should focus on.\\
+A smaller subcategory includes researchers that want to further research the possibilities of nutrition labels in article/claim verification.
+They could use part of the application or the database to create new collections for research.\\
+\item On the other side, ordinary web users can use the labels and matched verified claims as guidance to self judge a news article before reading. The suggested articles of unverified news articles gives opportunity to discover different articles on the same topic.
 \end{enumerate}
 
 %--------------------------
 % Related Parents
 %--------------------------
 \section{Related work}
-Related work on automated tools for fact checking focus on identification of "check worthy" statements or articles.
-ClaimPortal \ref{[6]} is such an instance where tweets from several US politicians are analysed and assigned with a check worthiness  score, in the regard if the factual claim in the post, if present, is of importance for the public. 
-
-Research on determining the check worthiness of political claims was also done with the help of nutritional labels and word embeddings \ref{[5]}.\\
-The authors used existing methods in natural language processing to determine the nutritional labels and also used Word2Vec model and spaCy to determine key phrases in sentences.
+On the subject of "claim retrieval" is currently worked on for example in CLEF CheckThat 2020! \ref{[9]}. 
+Most work in the area of automatic fact checking is done on the topic of identification of "check worthy" statements or articles.
+ClaimPortal \ref{[6]} is such an instance where tweets from several US politicians are analysed and assigned with a check worthiness  score, in the regard if the factual claim in the post, if present, is of importance for the public.\\
+Research on determining the check worthiness of political claims was also done with the help of nutritional labels and word embeddings \ref{[5]}.
+The authors used models in natural language processing to determine the nutritional labels and also used Word2Vec model to determine key words in sentences.
 They hypothesized a correlation between the different implications of the labels and the veracity of claims, for example high emotions in political statements indicate an attempt to deceive the audience.
- Hence the statement should be check worthy. \\
+Hence the statement should be check worthy. 
 All three of these were used in different combinations in several different ML algorithms to evaluate the performance on the Checkthat! 2018 \ref{[7]} dataset.
-The paper concluded that the nutritional labels with word-embedding with stochastic gradient descend logless archived the best results, and outperformed the winning team from the Checkthat! 2018 challenge.
-
+The authors concluded that the nutritional labels with word-embedding with stochastic gradient descend logless without oversampling  archived the best MAP of all the combinations of possible inputs with different algorithms. At the same time their solution outperformed or matched the best participants' methods on MAP, MRR, MR-P and MP@5.\\
 These results showcase that nutritional labelling could be of use in further research in computational detection of misinformation in a bigger range of topics or automated help tools for manual fact checking.
-Therefore we develop a solution to assist researchers and fact checkers to combat misinformation.
+Therefore we develop a solution to assist verification of claims by providing a tool to retrieving already verified claims.
 
 %--------------------------
 %Application
@@ -128,36 +129,43 @@ Therefore we develop a solution to assist researchers and fact checkers to comba
 \section{Our Application}
 \subsection{Needed Components:}
 \begin{itemize}
-\item Database
+\item Databases
 \item Content extractor
-\item Content NLP (Natural language processing)
-\item Learning to rank algorithm for similar articles
+\item Content natural language processing algorithms
 \item Web-application
 \end{itemize}
 
 \subsection{General procedure}
-Given an input URL to an English news article, the applications' database will check whether the url has already been checked by our system.
+Given an input URL to an English news article, the applications' database will check whether the url has already been checked by our system before.
 \begin{enumerate}
-\item If the news article is present in our database we will output the already calculated labels and if needed find the x-best matching articles in our database.
-\item Otherwise the news article content extractor will crawl the html to extract the plain text of the news article and each of the labels will be evaluated with corresponding natural language processing methods. The result will be added to the database which leads us to 1.
+\item If the news article is present in our secondary database we will display the articles that help to verify the articles content and if requested find the similar articles.
+\item Otherwise first the news article content extractor will crawl the html to extract the plain text of the news article.
+Afterwards NLP algorithms assign the labels, extract the claims, check for the similarity to the verified claims, assign the check worthiness score.
+In the end these information will be stored in the secondary database.
 \end{enumerate}
 
 \subsection{Qualities of the components}
 \begin{itemize}
-\item The database should hold: URL, metadata, labels, topic, published date
-\item Similarity between two news articles describes the general topic in our use case. Consequently the ranking of different articles on the same topic is done by comparing labels.
+\item The main database will contain claims that have been verified before, such as from ClaimsKG a collection of claims from different fact check organisations.
+The additional database is used to store information about the already checked articles such as url, metadata, date of the check, topic, labels etc.
+The databases should take advantage of the use of full text search, such as Elasticsearch.
+\item The extracted main claims of the article and the verified claims are compared by using word embeddings of keywords, and ranked.
+The method will be trained with the CLEF CheckThat 2020 Task \ref{[9]} 2 dataset (and if available compared to the results)\footnote{the conference will take place on the 22th-25th of September; not sure if the results will be published before.}.
+\item Similarity for the suggested articles should be based on topic. Articles should be ranked with respect to the labels, the contained claims the check worthiness score. 
 \item We hypothesise certain combinations of label scores indicate check worthiness of articles or provide data for research on specific topic, for example high technicality and bad readability, emotional language and controversial topic.
 \end{itemize}
 
 \subsection{Basic ideas \& implementation ideas for labels.}
+The following labels should be considered for the estimation of the check worthiness and as guidance for web users:
 \begin{itemize}
-\item Factuality/ Opinion: We think the ratio between factual and opinion sentences in an article helps as the quick reference for check worthiness;
-\ref{[1]} NLP to calculate the ratio of factual to opinion sentences over the article content.
-\item Emotion: We think that emotional language is used to influence the reader into believing certain stances; \ref{[3]}, \ref{[4]} NLP of sentences and sum over the text will tell the ratio of positive and negative emotions.
-\item Controversy: We think that controversial topics are more likely to be used as clickbait and may not showcase factual statements; checking for the number of included topics for example from "Wikipedia:List of controversial issues".
-\item Credibility: As we are likely dealing with text from a big spectrum of topics, the origin of the article has to be considered too; checking the metadata with available resources like  "Wikipedia:Reliable sources/Perennial sources" to find reliable sources.
-\item Technicality: We think an overall technical text could be used to distract from non factual statements; - .
-\item Virality: We think viral topics are more likely to have contradicting statements between sources; Use google trends for detection.
+\item Factuality/ Opinion: The ratio over the article text therefore more factual statements should increase the check worthiness;
+\ref{[2]} NLP to calculate the ratio of factual to opinion sentences over the article content.
+\item Emotion: high usage emotional language can be used to deceive consumers therefore increasing check worthiness;
+\ref{[3]}, \ref{[4]} NLP of sentences and sum over the text will tell the ratio of positive and negative emotions.
+\item Controversy: Hence the nature of contradicting viewpoints, the interest to check for factual content increases;
+comparing keywords in the article context to known controversial topics to determine the number of controversial topics in the article.
+\item Credibility of the source: As we are likely dealing with text from a big spectrum of topics, the origin of the article has to be considered too; checking the metadata with available resources like "Wikipedia:Reliable sources/Perennial sources" to find out if we are have a reliable sources.
+\item Virality: viral topics should be considered as these topics circulate quicker, which leads bigger spread of miss information if not verified.
 \end{itemize}
 
 
@@ -173,7 +181,8 @@ Given an input URL to an English news article, the applications' database will c
 \item Cédric Lespagnol, Josiane Mothe, and Md Zia Ullah. 2019. Information Nutritional Label and Word Embedding to Estimate Information Check-Worthiness. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’19). Association for Computing Machinery, New York, NY, USA, 941–944. DOI:https://doi.org/10.1145/3331184.3331298 \label{[5]}
 \item Majithia, Sarthak \& Arslan, Fatma \& Lubal, Sumeet \& Jimenez, Damian \& Arora, Priyank \& Caraballo, Josue \& Li, Chengkai. (2019). ClaimPortal: Integrated Monitoring, Searching, Checking, and Analytics of Factual Claims on Twitter. 153-158. 10.18653/v1/P19-3026. \label{[6]}
 \item Agez, Romain et al. “IRIT at CheckThat! 2018.” CLEF (2018). \label{[7]}
-
+\item “Understanding the Promise and Limits of Automated Fact-Checking.” (2018). \label{[8]}
+\item Barron-Cedeno, Alberto \& Elsayed, Tamer \& Nakov, Preslav \& Martino, Giovanni \& Hasanain, Maram \& Suwaileh, Reem \& Haouari, Fatima. (2020). CheckThat! at CLEF 2020: Enabling the Automatic Identification and Verification of Claims in Social Media. \label{[9]}
 
 
 \end{enumerate}
