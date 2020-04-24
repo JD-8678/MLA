@@ -1,0 +1,11 @@
+2020-04-21 19:04
+-- NewYorkTimes added as RSS link and removed xml file
+ -> need to make import.csv or txt for custom and multiply RSS links
+
+-- Added secend Table in DB called state, that is used for evoid adding old news into DB
+ -> need to make automated adding new state entries for other Rss link (yet it is hard coded)
+ -> implement firstEntry. => should be oldesEntry, because of allowing removing entrys.
+
+-- sql.py extract news from rss-feed, extract Plain-Text with 'soup' and upload it to DB
+ -> extend plain-text extractor, for a stable work (not every website could be extractet with soup)
+ -> make more error handling (Try-Catch)
