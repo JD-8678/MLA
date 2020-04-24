@@ -133,3 +133,32 @@ for i in range (len(url_list)):
     file = open(output_path + "trafilatura_readability.txt", "w")
     file.write(extracted)
     file.close()
+
+    import requests
+    from bs4 import BeautifulSoup
+    from newspaper import Article
+
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+
+    paragraph_list = soup.find_all('p')
+    paragraph_text = ''
+    for paragraph in paragraph_list:
+        paragraph_text = paragraph_text + '\n' + paragraph.get_text()
+
+    file = open(output_path + "soup.txt", "w")
+    file.write(paragraph_text)
+    file.close()
+
+    ####
+    page = html
+    soup = BeautifulSoup(page.content, 'html.parser')
+
+    paragraph_list = soup.find_all('p')
+    paragraph_text = ''
+    for paragraph in paragraph_list:
+        paragraph_text = paragraph_text + '\n' + paragraph.get_text()
+
+    file = open(output_path + "soup_readability.txt", "w")
+    file.write(paragraph_text)
+    file.close()
