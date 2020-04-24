@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-8343e05d0b96d9b2788",applicationID:"421737851"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Michigan prosecutor reviewing cases of 90 convicted murderers</title>
+<meta name="description" content="A &quot;progressive&quot; prosecutor is considering less jail time for criminals - even those convicted of murder. This isn&#039;t criminal justice reform. It&#039;s insanity." />
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" />
+<meta property="og:description" content="A &quot;progressive&quot; prosecutor is considering less jail time for criminals - even those convicted of murder. This isn&#039;t criminal justice reform. It&#039;s insanity." />
+<meta property="og:url" content="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" />
+<meta property="og:site_name" content="Law Enforcement Today" />
+<meta property="article:publisher" content="https://business.facebook.com/law.enforcement.today/" />
+<meta property="article:tag" content="carol siemon" />
+<meta property="article:tag" content="criminal justice reform" />
+<meta property="article:tag" content="michigan" />
+<meta property="article:tag" content="murderer" />
+<meta property="article:section" content="Featured" />
+<meta property="article:published_time" content="2020-02-03T16:25:13+00:00" />
+<meta property="article:modified_time" content="2020-02-19T23:54:04+00:00" />
+<meta property="og:updated_time" content="2020-02-19T23:54:04+00:00" />
+<meta property="og:image" content="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56.png" />
+<meta property="og:image:secure_url" content="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56.png" />
+<meta property="og:image:width" content="1092" />
+<meta property="og:image:height" content="620" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="A &quot;progressive&quot; prosecutor is considering less jail time for criminals - even those convicted of murder. This isn&#039;t criminal justice reform. It&#039;s insanity." />
+<meta name="twitter:title" content="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" />
+<meta name="twitter:site" content="@LawEnforceToday" />
+<meta name="twitter:image" content="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56.png" />
+<meta name="twitter:creator" content="@LawEnforceToday" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.lawenforcementtoday.com/#organization","name":"Law Enforcement Today","url":"https://www.lawenforcementtoday.com/","sameAs":["https://business.facebook.com/law.enforcement.today/","https://www.instagram.com/lawenforcementtodaycom/","https://twitter.com/LawEnforceToday"],"logo":{"@type":"ImageObject","@id":"https://www.lawenforcementtoday.com/#logo","url":"https://www.lawenforcementtoday.com/wp-content/uploads/120d313.jpg","width":375,"height":375,"caption":"Law Enforcement Today"},"image":{"@id":"https://www.lawenforcementtoday.com/#logo"}},{"@type":"WebSite","@id":"https://www.lawenforcementtoday.com/#website","url":"https://www.lawenforcementtoday.com/","name":"Law Enforcement Today","description":"Your source for cutting-edge law enforcement articles and information.","publisher":{"@id":"https://www.lawenforcementtoday.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.lawenforcementtoday.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/#primaryimage","url":"https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56.png","width":1092,"height":620},{"@type":"WebPage","@id":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/#webpage","url":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/","inLanguage":"en-US","name":"Michigan prosecutor reviewing cases of 90 convicted murderers","isPartOf":{"@id":"https://www.lawenforcementtoday.com/#website"},"primaryImageOfPage":{"@id":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/#primaryimage"},"datePublished":"2020-02-03T16:25:13+00:00","dateModified":"2020-02-19T23:54:04+00:00","description":"A \"progressive\" prosecutor is considering less jail time for criminals - even those convicted of murder. This isn't criminal justice reform. It's insanity."},{"@type":"Article","@id":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/#article","isPartOf":{"@id":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/#webpage"},"author":{"@id":"https://www.lawenforcementtoday.com/#/schema/person/8d13175f80965acb57e615e3131cc02e"},"headline":"Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences","datePublished":"2020-02-03T16:25:13+00:00","dateModified":"2020-02-19T23:54:04+00:00","commentCount":0,"mainEntityOfPage":{"@id":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/#webpage"},"publisher":{"@id":"https://www.lawenforcementtoday.com/#organization"},"image":{"@id":"https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/#primaryimage"},"keywords":"carol siemon,criminal justice reform,michigan,murderer","articleSection":"Featured,Law and Legal,Must Reads,News,Politics and Policing"},{"@type":["Person"],"@id":"https://www.lawenforcementtoday.com/#/schema/person/8d13175f80965acb57e615e3131cc02e","name":"LET Staff","image":{"@type":"ImageObject","@id":"https://www.lawenforcementtoday.com/#authorlogo","url":"https://secure.gravatar.com/avatar/dddafcbee737d46eebd45ef8c5570684?s=96&d=mm&r=g","caption":"LET Staff"},"description":"The staff of Law Enforcement Today is comprised of mostly career cops, as well as their avid supporters. Cumulatively, we possess nearly a century of experience in the business of police work. Our backgrounds derive from the East Coast, West Coast, South and Upper Midwest. We are the voice of law enforcement, connecting with our readers throughout the entire country and uniting the Blue Family. We have our finger on the pulse of American Law Enforcement and endlessly support our brothers and sisters who hold the Thin Blue Line.","sameAs":[]}]}</script>
+<link rel='dns-prefetch' href='//scripts.mediavine.com' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//api.pushnami.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Law Enforcement Today &raquo; Feed" href="https://www.lawenforcementtoday.com/feed/" />
+<link rel='stylesheet' id='generate-fonts-css' href='//fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.lawenforcementtoday.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='https://www.lawenforcementtoday.com/wp-content/themes/generatepress/css/all.min.css?ver=2.4.2' type='text/css' media='all' />
+<style id='generate-style-inline-css' type='text/css'>
+.no-featured-image-padding .featured-image {margin-left:-40px;margin-right:-40px;}.post-image-above-header .no-featured-image-padding .inside-article .featured-image {margin-top:-40px;}@media (max-width:768px){.no-featured-image-padding .featured-image {margin-left:-30px;margin-right:-30px;}.post-image-above-header .no-featured-image-padding .inside-article .featured-image {margin-top:-30px;}}
+body{background-color:#efefef;color:#3a3a3a;}a, a:visited{color:#4583f3;}a:visited{color:#4583f3;}a:hover, a:focus, a:active{color:#4583f3;}body .grid-container{max-width:1400px;}.wp-block-group__inner-container{max-width:1400px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:100px;}body, button, input, select, textarea{font-family:"Merriweather", serif;font-size:18px;}body{line-height:1.9;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-navigation .main-nav ul ul li a{font-size:14px;}@media (max-width:768px){.main-title{font-size:30px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a,.top-bar a:visited{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a,.site-header a:visited{color:#3a3a3a;}.main-title a,.main-title a:hover,.main-title a:visited{color:#222222;}.site-description{color:#757575;}.main-navigation,.main-navigation ul ul{background-color:#222222;}.main-navigation .main-nav ul li a,.menu-toggle{color:#ffffff;}.main-navigation .main-nav ul li:hover > a,.main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a{color:#ffffff;background-color:#3f3f3f;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#3f3f3f;}.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:#3f3f3f;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a{color:#ffffff;background-color:#3f3f3f;}.main-navigation ul ul{background-color:#3f3f3f;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:hover > a,.main-navigation .main-nav ul ul li:focus > a,.main-navigation .main-nav ul ul li.sfHover > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:#4f4f4f;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-title a,.entry-title a:visited{color:#000000;}.entry-title a:hover{color:#353535;}.entry-meta{color:#595959;}.entry-meta a,.entry-meta a:visited{color:#595959;}.entry-meta a:hover{color:#1e73be;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{background-color:#ffffff;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#ffffff;background-color:#222222;}.site-info a,.site-info a:visited{color:#ffffff;}.site-info a:hover{color:#606060;}.footer-bar .widget_nav_menu .current-menu-item a{color:#606060;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.button:visited,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#666666;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f3f3f;}.generate-back-to-top,.generate-back-to-top:visited{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}.generate-back-to-top:hover,.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header, .wp-block-group__inner-container{padding:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.one-container .sidebar .widget{padding:0px;}/* End cached CSS */@media (max-width: 768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}@font-face {font-family: "GeneratePress";src:  url("https://www.lawenforcementtoday.com/wp-content/themes/generatepress/fonts/generatepress.eot");src:  url("https://www.lawenforcementtoday.com/wp-content/themes/generatepress/fonts/generatepress.eot#iefix") format("embedded-opentype"),  url("https://www.lawenforcementtoday.com/wp-content/themes/generatepress/fonts/generatepress.woff2") format("woff2"),  url("https://www.lawenforcementtoday.com/wp-content/themes/generatepress/fonts/generatepress.woff") format("woff"),  url("https://www.lawenforcementtoday.com/wp-content/themes/generatepress/fonts/generatepress.ttf") format("truetype"),  url("https://www.lawenforcementtoday.com/wp-content/themes/generatepress/fonts/generatepress.svg#GeneratePress") format("svg");font-weight: normal;font-style: normal;}.main-navigation .slideout-toggle a:before,.slide-opened .slideout-overlay .slideout-exit:before {font-family: GeneratePress;}.slideout-navigation .dropdown-menu-toggle:before {content: "\f107" !important;}.slideout-navigation .sfHover > a .dropdown-menu-toggle:before {content: "\f106" !important;}
+h2.entry-title{font-weight:500;font-size:22px;}.navigation-branding .main-title{font-weight:bold;text-transform:none;font-size:45px;}@media (max-width: 768px){.navigation-branding .main-title{font-size:30px;}}
+.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .mobile-bar-items a{transition: line-height 300ms ease}.main-navigation.toggled .main-nav > ul{background-color: #222222}
+</style>
+<link rel='stylesheet' id='generate-child-css' href='https://www.lawenforcementtoday.com/wp-content/themes/let_generatepress_child/style.css?ver=1586891923' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-css' href='https://use.fontawesome.com/releases/v5.12.1/css/all.css' type='text/css' media='all' integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous" />
+<link rel='stylesheet' id='generate-blog-css' href='https://www.lawenforcementtoday.com/wp-content/plugins/gp-premium/blog/functions/css/style-min.css?ver=1.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='generate-sticky-css' href='https://www.lawenforcementtoday.com/wp-content/plugins/gp-premium/menu-plus/functions/css/sticky.min.css?ver=1.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='generate-navigation-branding-css' href='https://www.lawenforcementtoday.com/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding.min.css?ver=1.9.1' type='text/css' media='all' />
+<style id='generate-navigation-branding-inline-css' type='text/css'>
+.main-navigation .sticky-navigation-logo, .main-navigation.navigation-stick .site-logo:not(.mobile-header-logo){display:none;}.main-navigation.navigation-stick .sticky-navigation-logo{display:block;}.navigation-branding img, .site-logo.mobile-header-logo img{height:60px;width:auto;}.navigation-branding .main-title{line-height:60px;}@media (max-width: 1410px){#site-navigation .navigation-branding, #sticky-navigation .navigation-branding{margin-left:10px;}}@media (max-width: 768px){.main-navigation:not(.slideout-navigation) .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;}.main-navigation:not(.slideout-navigation) .inside-navigation{-ms-flex-wrap:wrap;flex-wrap:wrap;display:-webkit-box;display:-ms-flexbox;display:flex;}.nav-aligned-center .navigation-branding, .nav-aligned-left .navigation-branding{margin-right:auto;}.nav-aligned-center  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-center  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav{margin-right:0px;}}
+</style>
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css' type='text/css' media='all' integrity="sha384-C8a18+Gvny8XkjAdfto/vjAUdpGuPtl1Ix/K2BgKhFaVO6w4onVVHiEaN9h9XsvX" crossorigin="anonymous" />
+<style id='font-awesome-official-v4shim-inline-css' type='text/css'>
+@font-face {
+    font-family: "FontAwesome";
+    src: url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.eot"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.woff2") format("woff2"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.woff") format("woff"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.ttf") format("truetype"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.eot"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.woff2") format("woff2"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.woff") format("woff"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.ttf") format("truetype"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.eot"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.woff2") format("woff2"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.woff") format("woff"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.ttf") format("truetype"),
+         url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+    unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' async="async" data-noptimize="1" data-cfasync="false" src='https://scripts.mediavine.com/tags/law-enforcement-today.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://api.pushnami.com/scripts/v1/push/5e83b36ea73cdb00121f0402?ver=5.3.2'></script>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-content/themes/let_generatepress_child/assets/simple-equal-heights.js?ver=5.3.2'></script>
+<link rel="alternate" type="application/json+oembed" href="https://www.lawenforcementtoday.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lawenforcementtoday.com%2Fmichigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.lawenforcementtoday.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lawenforcementtoday.com%2Fmichigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences%2F&#038;format=xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6490658-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6490658-1');
+</script>
+<link rel="manifest" href="/manifest.json">
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"7326d9de6c4eb35fcbea657c8","lid":"a746d6e4bc","uniqueMethods":true}) })</script>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="https://www.lawenforcementtoday.com/wp-content/uploads/2019/06/let-blue-logo-square-48x48.jpg" sizes="32x32" />
+<link rel="icon" href="https://www.lawenforcementtoday.com/wp-content/uploads/2019/06/let-blue-logo-square.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.lawenforcementtoday.com/wp-content/uploads/2019/06/let-blue-logo-square.jpg" />
+<meta name="msapplication-TileImage" content="https://www.lawenforcementtoday.com/wp-content/uploads/2019/06/let-blue-logo-square.jpg" />
+<style type="text/css" id="wp-custom-css">
+			.let-post-list .post-thumbnail img {
+	height: 100%;
+	width: auto;
+	max-width: none;
+}		</style>
+</head>
+<body class="post-template-default single single-post postid-95346 single-format-standard wp-custom-logo wp-embed-responsive post-image-above-header post-image-aligned-center sticky-menu-no-transition sticky-enabled both-sticky-menu right-sidebar nav-float-right fluid-header separate-containers active-footer-widgets-3 header-aligned-left dropdown-hover featured-image-active" itemtype="https://schema.org/Blog" itemscope>
+<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a> <div class="top-bar top-bar-align-right">
+<div class="inside-top-bar grid-container grid-parent">
+<aside id="nav_menu-11" class="widget inner-padding widget_nav_menu"><div class="menu-social-container"><ul id="menu-social" class="menu"><li id="menu-item-96628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96628"><a href="https://www.facebook.com/law.enforcement.today"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li id="menu-item-96629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96629"><a href="https://twitter.com/LawEnforceToday"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li id="menu-item-96630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96630"><a href="https://www.instagram.com/lawenforcement_today/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li id="menu-item-96631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96631"><a href="https://www.lawenforcementtoday.com/feed/"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+<li id="menu-item-96632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96632"><a href="https://www.youtube.com/channel/UC_ECSdck4XrH5DMGKkWqrTA/videos"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+</ul></div></aside><aside id="nav_menu-12" class="widget inner-padding widget_nav_menu"><div class="menu-quick-links-container"><ul id="menu-quick-links" class="menu"><li id="menu-item-96641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96641"><a href="https://www.lawenforcementtoday.com/contact/">Contact</a></li>
+<li id="menu-item-48445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48445"><a href="https://www.lawenforcementtoday.com/privacy-policy/">Privacy</a></li>
+<li id="menu-item-45761" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45761"><a href="https://www.lawenforcementtoday.com/submit-article-law-enforcement-today/">Write for Us</a></li>
+<li id="menu-item-96834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96834"><a href="https://www.lawenforcementtoday.com/let-news-feed/">Add News Feed to Your Site</a></li>
+</ul></div></aside><aside id="search-3" class="widget inner-padding widget_search"><form method="get" class="search-form" action="https://www.lawenforcementtoday.com/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</aside> <div id="posts-trending" class="posts-trending">
+<span class="posts-trending-heading">Trending: </span>
+<div id="posts-trending-holder" class="posts-trending-holder">
+<div class="post-trending">
+<a href="https://www.lawenforcementtoday.com/gun-control-advocate-pouts-when-america-ignores-fear-mongering/" title="Editorial: Anti-Gun, former ATF agent David Chipman says first-time gun owners fear zombies">Editorial: Anti-Gun, former ATF agent David Chipman says first-time gun owners fear zombies</a>
+</div>
+<div class="post-trending">
+<a href="https://www.lawenforcementtoday.com/lots-more-bad-guys-and-hefty-police-budget-cuts-coming-to-america/" title="Coronavirus and crime: Lots more bad guys and hefty police budget cuts coming to America">Coronavirus and crime: Lots more bad guys and hefty police budget cuts coming to America</a>
+</div>
+<div class="post-trending">
+<a href="https://www.lawenforcementtoday.com/doctors-ask-police-to-stop-arresting-people-for-low-level-crimes-because-of-covid-19/" title="Report: Doctors ask police to stop arresting people for low level crimes because of virus concerns">Report: Doctors ask police to stop arresting people for low level crimes because of virus concerns</a>
+</div>
+</div>
+</div>
+<script>
+        var trendingCurrent = 0;
+        var trendingContainer = document.getElementById("posts-trending-holder");
+        var trendingSlides = [];
+        for (var i = 0; i < trendingContainer.childNodes.length; i++) {
+            if (trendingContainer.childNodes[i].className == "post-trending") {
+                trendingSlides.push(trendingContainer.childNodes[i]);
+            }
+        }
+        setInterval(function() {
+            for (var i = 0; i < trendingSlides.length; i++) {
+                trendingSlides[i].style.opacity = 0;
+            }
+            trendingCurrent = (trendingCurrent != trendingSlides.length - 1) ? trendingCurrent + 1 : 0;
+            trendingSlides[trendingCurrent].style.opacity = 1;
+        }, 7000);
+        </script>
+<aside id="custom_html-11" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"></div></aside> </div>
+</div>
+<header id="masthead" class="site-header" itemtype="https://schema.org/WPHeader" itemscope>
+<div class="inside-header grid-container grid-parent">
+<div class="site-branding-container"><div class="site-logo">
+<a href="https://www.lawenforcementtoday.com/" title="Law Enforcement Today" rel="home">
+<img class="header-image" alt="Law Enforcement Today" src="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/let-logo@2x-1.png" title="Law Enforcement Today" />
+</a>
+</div><div class="site-branding">
+<p class="main-title" itemprop="headline">
+<a href="https://www.lawenforcementtoday.com/" rel="home">
+Law Enforcement Today
+</a>
+</p>
+</div></div> <nav id="site-navigation" class="has-sticky-branding main-navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+<div class="inside-navigation grid-container grid-parent">
+<div class="navigation-branding"><div class="sticky-navigation-logo">
+<a href="https://www.lawenforcementtoday.com/" title="Law Enforcement Today" rel="home">
+<img src="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/let-logo@2x-1.png" alt="Law Enforcement Today" />
+</a>
+</div></div> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span class="mobile-menu">Menu</span> </button>
+<div id="primary-menu" class="main-nav"><ul id="menu-main-menu" class=" menu sf-menu"><li id="menu-item-73097" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73097"><a href="#0">News<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+<li id="menu-item-73102" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-73102"><a href="https://www.lawenforcementtoday.com/category/news/">News</a></li>
+<li id="menu-item-73103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73103"><a href="https://www.lawenforcementtoday.com/category/police-editorials/">Editorial</a></li>
+<li id="menu-item-73098" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73098"><a href="https://www.lawenforcementtoday.com/category/police-investigations/">Investigations</a></li>
+<li id="menu-item-73100" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-73100"><a href="https://www.lawenforcementtoday.com/category/police-law-legal/">Law and Legal</a></li>
+<li id="menu-item-73099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73099"><a href="https://www.lawenforcementtoday.com/category/patrol/">Patrol</a></li>
+<li id="menu-item-73105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73105"><a href="https://www.lawenforcementtoday.com/category/line-of-duty-deaths/">Fallen</a></li>
+<li id="menu-item-73104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73104"><a href="https://www.lawenforcementtoday.com/category/faith-family/">Faith &#038; Family</a></li>
+<li id="menu-item-73101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73101"><a href="https://www.lawenforcementtoday.com/category/police-brutality/">Police Misconduct</a></li>
+</ul>
+</li>
+<li id="menu-item-73121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73121"><a href="#0">Be Heard<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+<li id="menu-item-73123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73123"><a href="https://www.lawenforcementtoday.com/download-our-app/">Download Our App</a></li>
+<li id="menu-item-73124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73124"><a href="https://www.lawenforcementtoday.com/let-radio-show-2/">LET Radio Show</a></li>
+</ul>
+</li>
+<li id="menu-item-101702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101702"><a href="/business_listing/">Business Partners</a></li>
+<li id="menu-item-78402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78402"><a href="https://www.letunity.com">Members</a></li>
+<li id="menu-item-100320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100320"><a href="https://www.lawenforcementtoday.com/submit-article-law-enforcement-today/">Write For Us</a></li>
+<li id="menu-item-100321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100321"><a href="https://www.lawenforcementtoday.com/contact/">Contact</a></li>
+</ul></div> </div>
+</nav>
+</div>
+</header>
+<div id="page" class="hfeed site grid-container container grid-parent">
+<div id="content" class="site-content">
+<div id="primary" class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75">
+<main id="main" class="site-main">
+<article id="post-95346" class="post-95346 post type-post status-publish format-standard has-post-thumbnail hentry category-police-news category-police-law-legal category-must-reads category-news category-politics-and-policing tag-carol-siemon tag-criminal-justice-reform tag-michigan tag-murderer no-featured-image-padding" itemtype="https://schema.org/CreativeWork" itemscope>
+<div class="inside-article">
+<div class="featured-image  page-header-image-single ">
+<img width="1092" height="620" src="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56.png" class="attachment-1536x1536 size-1536x1536" alt="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" itemprop="image" srcset="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56.png 1092w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56-300x170.png 300w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56-1024x581.png 1024w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56-150x85.png 150w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56-768x436.png 768w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56-1080x613.png 1080w" sizes="(max-width: 1092px) 100vw, 1092px" title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" />
+</div>
+<header class="entry-header">
+<h1 class="entry-title" itemprop="headline">Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences</h1> <div class="entry-meta">
+<span class="byline">Posted by: <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://www.lawenforcementtoday.com/author/let-staff/" title="View all posts by LET Staff" rel="author" itemprop="url"><span class="author-name" itemprop="name">LET Staff</span></a></span></span><span class="entry-meta-div">|</span><span class="posted-on"><a href="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" title="11:25 am" rel="bookmark"><time class="updated" datetime="2020-02-19T18:54:04-05:00" itemprop="dateModified">February 19, 2020</time><time class="entry-date published" datetime="2020-02-03T11:25:13-05:00" itemprop="datePublished">February 3, 2020</time></a></span> <span class="entry-meta-div">|</span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://www.lawenforcementtoday.com/category/police-news/" rel="category tag">Featured</a>, <a href="https://www.lawenforcementtoday.com/category/police-law-legal/" rel="category tag">Law and Legal</a>, <a href="https://www.lawenforcementtoday.com/category/must-reads/" rel="category tag">Must Reads</a>, <a href="https://www.lawenforcementtoday.com/category/news/" rel="category tag">News</a>, <a href="https://www.lawenforcementtoday.com/category/politics-and-policing/" rel="category tag">Politics and Policing</a></span> </div>
+<div class="post-share-buttons">
+<span class="post-share-social-title">Share:</span>
+<a href="https://www.facebook.com/sharer.php?u=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;t=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences" class="social-share-link share-facebook" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Facebook" data-network-name="facebook" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-facebook et-extra-icon-background-hover"></span>
+</a><a href="https://twitter.com/intent/tweet?text=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences%20https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" class="social-share-link share-twitter" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Twitter" data-network-name="twitter" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-twitter et-extra-icon-background-hover"></span>
+</a><a href="https://www.tumblr.com/share?v=3&#038;u=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;t=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences" class="social-share-link share-tumblr" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Tumblr" data-network-name="tumblr" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-tumblr et-extra-icon-background-hover"></span>
+</a><a href="https://www.pinterest.com/pin/create/button/?url=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;description=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences&#038;media=https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56-150x85.png" class="social-share-link share-pinterest" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Pinterest" data-network-name="pinterest" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-pinterest et-extra-icon-background-hover"></span>
+</a><a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;title=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences" class="social-share-link share-linkedin" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via LinkedIn" data-network-name="linkedin" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-linkedin et-extra-icon-background-hover"></span>
+</a><a href="/cdn-cgi/l/email-protection#a897dbddcac2cdcbdc95ebc0cdcbc388dcc0c1db88c7dddc898ec9c5d893cac7ccd195e5c1cbc0c1cfc9c688d8dac7dbcdcbdddcc7da88dacddec1cddfc1c6cf88cbc9dbcddb88c7ce88919888cbc7c6dec1cbdccdcc88c5dddacccddacddadb88dbcddadec1c6cf88c4c1cecd88dbcdc6dccdc6cbcddb888d98ec8d98e9c0dcdcd8db928787dfdfdf86c4c9dfcdc6cec7dacbcdc5cdc6dcdcc7ccc9d186cbc7c587c5c1cbc0c1cfc9c685d8dac7dbcdcbdddcc7da85dacddec1cddfc1c6cf85cbc9dbcddb85919885cbc7c6dec1cbdccdcc85c5dddacccddacddadb85dbcddadec1c6cf85c4c1cecd85dbcdc6dccdc6cbcddb87" class="social-share-link share-envelope" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Email" data-network-name="envelope" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/">
+<span class="fa fa-envelope et-extra-icon-background-hover"></span>
+</a> </div>
+</header>
+<div class="entry-content" itemprop="text">
+<p><strong>Editor correction:&nbsp;</strong>A previous version of the story incorrectly indicated that the Michigan prosecutor was considering releasing all 90 convicted murderers who are serving life sentences without parole.&nbsp;</p>
+<p>Upon further review, that county prosecutor is <em><strong>reviewing </strong></em>the cases of 90 convicted murderers.&nbsp; She&#8217;s since indicated to a local newspaper that only a few inmates are likely to be recommended for release.</p>
+<p>It&#8217;s also worth noting that in Michigan, the only way an inmate&#8217;s sentence can be commuted is by the governor upon the recommendation for release by the state parole board.</p>
+<p><strong>Michigan &#8211;</strong> Everywhere you turn, headlines scream about criminal justice &#8220;reform&#8221; and the need to change how we prosecute and punish people who break the law. But instead of moving toward positive change in the name of law and order, in some cases we&#8217;re essentially just redefining what constitutes an actual crime.</p>
+<p>And this story out of Michigan is no different.&nbsp;</p>
+<p><a href="https://www.lansingcitypulse.com/stories/ingham-county-murderers-may-get-second-chance,13789?fbclid=IwAR2ID-J4AH_2UU_snM6yeqmuswDzZ6GLiAd--BTKHgIoNJdpeX8C9OVMtpM#.XjOjj30IGsU.facebook" target="_blank" rel="noopener noreferrer">According to the Lansing City Pulse,</a> Ingham County Prosecutor <span class="s1">C</span><span class="s1">arol Siemon is reviewing some cases in a move that would reduce her community&#8217;s local prison.</span></p>
+<p>And it&#8217;s starting with reviewing cases of convicted murderers who are currently serving life in prison without the possibility of parole.&nbsp;</p>
+<figure id="attachment_95349" aria-describedby="caption-attachment-95349" style="width: 656px" class="wp-caption aligncenter"><img class="size-full wp-image-95349" src="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.50.38.png" alt="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" width="666" height="908" srcset="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.50.38.png 666w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.50.38-220x300.png 220w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.50.38-110x150.png 110w" sizes="(max-width: 666px) 100vw, 666px" /><figcaption id="caption-attachment-95349" class="wp-caption-text">Ingham County Prosecutor Carol Siemon</figcaption></figure>
+<p>&nbsp;</p>
+<p class="p2"><strong><span class="s1">“While I personally believe there are some people who should be in prison forever, like the Jeffrey Dahmer type of people, I just don’t believe in the death penalty,” Siemon says. </span></strong></p>
+<p class="p2"><strong><span class="s1">“I think life in prison without parole functions in a similar way, and I think everyone should have an opportunity to be able to get out some day.”</span></strong></p>
+<p>So now she&#8217;s reviewing them to consider recommendations to the parole board and governor to potentially commute the sentences of some of them.</p>
+<p>Reports said that with the help of former Assistant Attorney General Ron Emery, Siemon will begin a review of 90 inmates convicted of murder and sentenced to life behind bars.</p>
+<p>Critics are losing their minds. And for good reason. Because it&#8217;s not about guilt, Siemon says &#8211; it&#8217;s about progression and a potential change in character.</p>
+<p class="p2"><strong><span class="s1">“It’s not whether or not they’re innocent,” Siemon said in an interview. “We’re not saying that. But if they committed a homicide 40 years ago, who are they now? And do they deserve another chance? To my knowledge, nobody else is doing this type of thing in the state. It has just been something rolling around in my head.”</span></strong></p>
+<p>The City Pulse said that Michigan only sentences criminals to life in prison without parole if they have been convicted of first-degree murder or using explosives that caused bodily injury.&nbsp;</p>
+<p>So essentially, the most heinous of crimes are given punishment to match.&nbsp;</p>
+<p>Siemon has been on this mission since she first took office in 2017. Since then, she&#8217;s created policies that give defendants a chance to plead guilty to a lesser sentence &#8211; providing options for less jail time and less overall punishment for their crimes.&nbsp;</p>
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+<p lang="en" dir="ltr">Key issues facing Ingham County Prosecutor Carol Siemon these days, including the latest justice reform report, fraud with state DUI breathalyzers and Fed immigration issues. She&#39;s next to tackle all of these w/Dave on The Morning Wake Up <a href="https://twitter.com/1320WILS?ref_src=twsrc%5Etfw">@1320WILS</a> <a href="https://t.co/l0Ixdpl0id">pic.twitter.com/l0Ixdpl0id</a></p>
+<p>&mdash; Dave Akerly (@DaveAkerlyOnAir) <a href="https://twitter.com/DaveAkerlyOnAir/status/1217423721809563648?ref_src=twsrc%5Etfw">January 15, 2020</a></p></blockquote>
+<p><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>&nbsp;</p>
+<p>Siemon says that everyone deserves a second chance at freedom.</p>
+<p class="p2"><strong><span class="s1">“I just don’t like to exclude the possibility that someone can be rehabilitated,” Siemon said. </span></strong></p>
+<p class="p2"><strong><span class="s1">“Families don’t always like it, and it can be very unpleasant — especially with victims’ families — but these people deserve it. Some don’t like that we offer it. We take those views into account, but it doesn’t mean they drive the decision.”</span></strong></p>
+<p>According to other state officials within the justice system, it&#8217;s not that easy. And not everyone deserves second or third chances.</p>
+<p class="p2"><strong><span class="s1">“Can they be rehabilitated? Maybe they can. But look at some of these cases where they put a gun to someone’s face and pull the trigger: Why should we take the chance? </span></strong></p>
+<p class="p2"><strong><span class="s1">There’s not much you can do that is more personal than taking a human life,” said Calhoun County Prosecuting Attorney David Gilbert. “That’s why we have these charges. We like to let the jury decide.”</span></strong></p>
+<p><span class="s1"> Leelanau County Prosecutor Doug Donaldson said there&#8217;s no such thing as an absolute truth in the field of criminal justice.</span></p>
+<p class="p2"><strong><span class="s1">“One never says ‘never’ or ‘always’ in our profession,” said Donaldson. </span></strong></p>
+<p class="p2"><strong><span class="s1">“That automatically ties your hands. And there are some out there that probably do deserve life in prison without parole. If the crime is cold and calculated, the concept of rehabilitation can essentially be a non-starter.”</span></strong></p>
+<p>Why should every murderer be allowed to serve a shorter sentence just simply in the name of &#8220;progression&#8221;? How is this bettering our communities?</p>
+<p>Not to mention, the reduced sentences allow criminals to see that committing a crime would eventually allow them to be released back into the community &#8211; no matter how heinous.&nbsp;</p>
+<p>Well, Siemon: what about the rights and safety of the people on the outside? What protection are you providing for them if you&#8217;re about to release murderers back onto the streets? Not to mention the police officers you put in danger by not only allowing &#8211; but pushing for this to happen?</p>
+<p style="text-align: center;"><strong><a href="http://www.letunity.com/" target="_blank" rel="noopener noreferrer">Did you know that Law Enforcement Today has a private new home for those who support emergency responders and veterans? &nbsp;It’s called LET Unity, and it’s where we share the untold stories of those patriotic Americans. &nbsp;Every penny gets reinvested into giving these heroes a voice. &nbsp;Check it out today.</a></strong></p>
+<p><a href="http://www.letunity.com/" target="_blank" rel="noopener noreferrer"><img class="aligncenter wp-image-80424 size-full" src="https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/Screenshot-2019-07-09-16.48.18-e1562767431157.png" alt="Judge accused of using her chambers to 'pressure attorneys into group sex and had a threesome with her secretary and former church pastor'" width="800" height="283"></a></p>
+<p>&nbsp;</p>
+<p class="p2"><span class="s1">Siemon defended her stance. </span></p>
+<p class="p2"><strong><span class="s1">“When you’re a progressive prosecutor, you have people who will say things like ‘You hug thugs,’ or ‘You don’t care about victims.’ That’s not true. I care about the process being fair. We’ve learned that locking people up for a long time doesn’t always make the community more safe. It doesn’t serve a purpose other than vengeance.”</span></strong></p>
+<p>So, keeping bad people behind bars makes the community more dangerous? Get real.</p>
+<p>Siemon plans to dive back all the way to life sentences that were issued since 1975. She&#8217;ll take the prisoner&#8217;s behavior and commitment to rehabilitation into account before asking for a gubernatorial commutation of the sentences.&nbsp;</p>
+<p class="p2"><strong><span class="s1">“The main question is whether we can truly feel they’ve been rehabilitated,” Siemon said.</span></strong></p>
+<figure id="attachment_95348" aria-describedby="caption-attachment-95348" style="width: 1718px" class="wp-caption aligncenter"><img class="size-full wp-image-95348" src="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28.png" alt="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" width="1728" height="1408" srcset="https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28.png 1728w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28-300x244.png 300w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28-1024x834.png 1024w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28-150x122.png 150w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28-768x626.png 768w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28-1536x1252.png 1536w, https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-10.47.28-1080x880.png 1080w" sizes="(max-width: 1728px) 100vw, 1728px" /><figcaption id="caption-attachment-95348" class="wp-caption-text">Prosecutor wants to potentially release 90 convicted murderers from prison</figcaption></figure>
+<p>&nbsp;</p>
+<p>The prosecutor thinks all those years behind bars have changed the core of the inmate, in many cases.&nbsp;</p>
+<p class="p2"><strong><span class="s1">“The severity of the crime used to be the only thing we really looked at,” Siemon said. </span></strong></p>
+<p class="p2"><strong><span class="s1">“If someone committed a crime 20 years ago, however, that tells me who they were then. It’s not always who they still are now. I’ll make these decisions based on my own criteria, but it’s really all going to be about asking: Who are they now?”</span></strong></p>
+<p>Siemon is set to run for office again without a direct competitor to step in and lay down the law.&nbsp;</p>
+<p><strong>“My promise when I ran in 2016 was that I will always try to do the right thing, no matter the fallout. That certainly has not changed,” Siemon said. </strong></p>
+<p><strong>“I endeavor to do what research and justice require — not what might make me more popular. I admire my fellow Michigan prosecutors even when we don’t always agree.”</strong></p>
+<p>To the good, law-abiding residents of Ingham County &#8211; we sincerely wish you good luck.</p>
+<hr>
+<div data-slot-rendered-dynamic="true"><strong>Want to make sure you never miss a story from Law Enforcement Today?&nbsp; With so much “stuff” happening in the world on social media, it’s easy for things to get lost. &nbsp;</strong></div>
+<div data-slot-rendered-dynamic="true">&nbsp;</div>
+<div><strong><a href="https://www.facebook.com/law.enforcement.today/" target="_blank" rel="noopener noreferrer">Make sure you click “following”</a>&nbsp;and then click “see first” so you don’t miss a thing! &nbsp;(See image below.) &nbsp;Thanks for being a part of the LET family!</strong></div>
+<div>&nbsp;</div>
+<div><a href="https://www.facebook.com/law.enforcement.today/" target="_blank" rel="noopener noreferrer"><img class="aligncenter wp-image-83038 size-full" src="https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst.jpg" sizes="(max-width: 2088px) 100vw, 2088px" srcset="https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst.jpg 2088w, https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst-150x84.jpg 150w, https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst-300x168.jpg 300w, https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst-768x430.jpg 768w, https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst-1024x574.jpg 1024w, https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst-640x359.jpg 640w, https://www.lawenforcementtoday.com/wp-content/uploads/2019/07/FollowFirst-1080x605.jpg 1080w" alt="Facebook Follow First" width="2088" height="1170"></a></div>
+</div>
+<div class="post-share-social">
+<span class="post-share-social-title">Share:</span>
+<a href="https://www.facebook.com/sharer.php?u=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;t=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences" class="social-share-link share-facebook" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Facebook" data-network-name="facebook" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-facebook et-extra-icon-background-hover"></span>
+</a><a href="https://twitter.com/intent/tweet?text=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences%20https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" class="social-share-link share-twitter" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Twitter" data-network-name="twitter" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-twitter et-extra-icon-background-hover"></span>
+</a><a href="https://www.tumblr.com/share?v=3&#038;u=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;t=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences" class="social-share-link share-tumblr" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Tumblr" data-network-name="tumblr" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-tumblr et-extra-icon-background-hover"></span>
+</a><a href="https://www.pinterest.com/pin/create/button/?url=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;description=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences&#038;media=https://www.lawenforcementtoday.com/wp-content/uploads/2020/02/Screenshot-2020-02-03-11.23.56-150x85.png" class="social-share-link share-pinterest" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Pinterest" data-network-name="pinterest" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-pinterest et-extra-icon-background-hover"></span>
+</a><a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/&#038;title=Michigan%20prosecutor%20reviewing%20cases%20of%2090%20convicted%20murderers%20serving%20life%20sentences" class="social-share-link share-linkedin" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via LinkedIn" data-network-name="linkedin" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" onClick="window.open(this.href,'letShareWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); return false">
+<span class="fa fa-linkedin et-extra-icon-background-hover"></span>
+</a><a href="/cdn-cgi/l/email-protection#437c303621292620377e002b26202863372b2a30632c36376265222e3378212c273a7e0e2a202b2a24222d6333312c30262036372c31633126352a26342a2d24632022302630632c25637a7363202c2d352a20372627632e363127263126313063302631352a2d24632f2a25266330262d37262d202630636673076673022b37373330796c6c3434346d2f2234262d252c3120262e262d37372c27223a6d202c2e6c2e2a202b2a24222d6e33312c30262036372c316e3126352a26342a2d246e20223026306e7a736e202c2d352a203726276e2e36312726312631306e302631352a2d246e2f2a25266e30262d37262d2026306c" class="social-share-link share-envelope" title="Share &quot;Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences&quot; via Email" data-network-name="envelope" data-share-title="Michigan prosecutor reviewing cases of 90 convicted murderers serving life sentences" data-share-url="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/">
+<span class="fa fa-envelope et-extra-icon-background-hover"></span>
+</a> </div>
+</div>
+</article>
+<div class="let-fb-comments-area">
+<div id="lfc_comments" class="comments-area" align="center">
+</div>
+</div>
+<div class="post-navigation-buttons">
+<div class="nav-previous"><span class="post-prev" title="Previous"><a href="https://www.lawenforcementtoday.com/police-multiple-victims-shot-after-gunman-opens-fire-on-california-bus/" rel="prev"><span class="button-alt">Previous</span><p>Police: Multiple victims shot after gunman opens fire on California bus</p></a></span></div><div class="nav-next"><span class="post-next" title="Next"><a href="https://www.lawenforcementtoday.com/meet-the-group-thats-on-the-front-lines-of-the-fight-against-unconstitutional-gun-laws/" rel="next"><span class="button-alt">Next</span><p>Meet the group that&#8217;s on the front lines of the fight against unconstitutional gun laws</p></a></span></div> <div style="clear: both;"></div>
+</div>
+<div class="post-author-box">
+<div class="post-author-box-header">
+About The Author
+</div>
+<div class="post-author-box-content">
+<a class="url fn n" href="https://www.lawenforcementtoday.com/author/let-staff/" title="View all posts by LET Staff" rel="author" itemprop="url"><span class="author-name" itemprop="name">LET Staff</span></a>
+<p>The staff of Law Enforcement Today is comprised of mostly career cops, as well as their avid supporters. Cumulatively, we possess nearly a century of experience in the business of police work. Our backgrounds derive from the East Coast, West Coast, South and Upper Midwest. We are the voice of law enforcement, connecting with our readers throughout the entire country and uniting the Blue Family. We have our finger on the pulse of American Law Enforcement and endlessly support our brothers and sisters who hold the Thin Blue Line.</p>
+</div>
+</div>
+<div class="post-related-box">
+<div class="post-related-box-header">
+Related Posts
+</div>
+<div class="post-related-box-content">
+<div class="post-block grid-parent mobile-grid-100 grid-25 tablet-grid-50">
+<article id="post-102798">
+<a title="Editorial: Anti-Gun, former ATF agent David Chipman says first-time gun owners fear zombies" href="https://www.lawenforcementtoday.com/gun-control-advocate-pouts-when-america-ignores-fear-mongering/" class="post-image-header" style="background-image: url('https://www.lawenforcementtoday.com/wp-content/uploads/2020/04/David-Chipman-courtesy-Twitter-300x200.jpg')">
+<span class="post-image-header-overlay">&nbsp; </span>
+</a>
+<div class="post-content" data-match-height="post-related-row">
+<h3 class="entry-title"><a title="Editorial: Anti-Gun, former ATF agent David Chipman says first-time gun owners fear zombies" href="https://www.lawenforcementtoday.com/gun-control-advocate-pouts-when-america-ignores-fear-mongering/">Editorial: Anti-Gun, former ATF agent David Chipman says first-time gun owners fear zombies</a></h3>
+<div class="post-meta vcard">
+<span class="updated">April 23, 2020</span>
+</div>
+</div>
+</article>
+</div>
+<div class="post-block grid-parent mobile-grid-100 grid-25 tablet-grid-50">
+<article id="post-102916">
+<a title="Coronavirus and crime: Lots more bad guys and hefty police budget cuts coming to America" href="https://www.lawenforcementtoday.com/lots-more-bad-guys-and-hefty-police-budget-cuts-coming-to-america/" class="post-image-header" style="background-image: url('https://www.lawenforcementtoday.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-14-at-7.01.19-AM-300x152.png')">
+<span class="post-image-header-overlay">&nbsp; </span>
+</a>
+<div class="post-content" data-match-height="post-related-row">
+<h3 class="entry-title"><a title="Coronavirus and crime: Lots more bad guys and hefty police budget cuts coming to America" href="https://www.lawenforcementtoday.com/lots-more-bad-guys-and-hefty-police-budget-cuts-coming-to-america/">Coronavirus and crime: Lots more bad guys and hefty police budget cuts coming to America</a></h3>
+<div class="post-meta vcard">
+<span class="updated">April 23, 2020</span>
+</div>
+</div>
+</article>
+</div>
+<div class="post-block grid-parent mobile-grid-100 grid-25 tablet-grid-50">
+<article id="post-102910">
+<a title="Report: Doctors ask police to stop arresting people for low level crimes because of virus concerns" href="https://www.lawenforcementtoday.com/doctors-ask-police-to-stop-arresting-people-for-low-level-crimes-because-of-covid-19/" class="post-image-header" style="background-image: url('https://www.lawenforcementtoday.com/wp-content/uploads/2019/10/Screenshot-2019-10-22-09.27.47-300x185.png')">
+<span class="post-image-header-overlay">&nbsp; </span>
+</a>
+<div class="post-content" data-match-height="post-related-row">
+<h3 class="entry-title"><a title="Report: Doctors ask police to stop arresting people for low level crimes because of virus concerns" href="https://www.lawenforcementtoday.com/doctors-ask-police-to-stop-arresting-people-for-low-level-crimes-because-of-covid-19/">Report: Doctors ask police to stop arresting people for low level crimes because of virus concerns</a></h3>
+<div class="post-meta vcard">
+<span class="updated">April 23, 2020</span>
+</div>
+</div>
+</article>
+</div>
+<div class="post-block grid-parent mobile-grid-100 grid-25 tablet-grid-50">
+<article id="post-102882">
+<a title="Officers Down: Tragedy has taken the lives of two more from the law enforcement community" href="https://www.lawenforcementtoday.com/two-more-officers-died/" class="post-image-header" style="background-image: url('https://www.lawenforcementtoday.com/wp-content/uploads/2020/04/Two-officers-down-300x200.jpg')">
+<span class="post-image-header-overlay">&nbsp; </span>
+</a>
+<div class="post-content" data-match-height="post-related-row">
+<h3 class="entry-title"><a title="Officers Down: Tragedy has taken the lives of two more from the law enforcement community" href="https://www.lawenforcementtoday.com/two-more-officers-died/">Officers Down: Tragedy has taken the lives of two more from the law enforcement community</a></h3>
+<div class="post-meta vcard">
+<span class="updated">April 23, 2020</span>
+</div>
+</div>
+</article>
+</div>
+<div style="clear: both"></div>
+</div>
+</div>
+</main>
+</div>
+<div id="right-sidebar" class="widget-area grid-25 tablet-grid-25 grid-parent sidebar" itemtype="https://schema.org/WPSideBar" itemscope>
+<div class="inside-right-sidebar">
+<aside id="custom_html-3" class="widget_text widget inner-padding widget_custom_html"><h2 class="widget-title">Subscribe</h2><div class="textwidget custom-html-widget"><p>
+All the latest Law Enforcement Today news, updates and alerts delivered straight to your phone or inbox.
+</p>
+<p>
+<form id="mt_mc_form_5ea26fea35e05" class="newsletter-form mt_mc_form" method="post">
+<div class="newsletter_form__input-wrap your-email">
+<input type="email" name="email" value="" placeholder="Your Email" required="required">
+</div>
+<div class="newsletter_form_success" style="display: none; color: green; font-weight: bold; font-size: 15px;">Success! Thank you for subscribing!</div>
+<div class="newsletter_form_error" style="display: none; color: orange; font-weight: bold; font-size: 15px;"></div>
+<button style="margin-top: 15px;" class="button" type="submit">Subscribe Now</button>
+<p style="display: none;" class="newsletter-info text-center">Unsubscribe at anytime!</p>
+</form>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#mt_mc_form_5ea26fea35e05').on('submit', function(e) {
+                e.preventDefault();
+
+                var form_obj = $(this);
+
+                var nf_email = form_obj.find('[name=email]').val();
+                if ( !nf_email || nf_email.length <= 0 ) {
+                    return false;
+                }
+                var nf_button = form_obj.find('[type=submit]');
+                var nf_button_label = nf_button.html();
+                nf_button.html('<span style="display: inline-block; text-align: center; white-space: nowrap;">Please Wait...</span>');
+        		nf_button.attr('disabled', true);
+
+                var form_data = form_obj.serialize();
+
+                var form_success_div = form_obj.find('.newsletter_form_success');
+                var form_error_div = form_obj.find('.newsletter_form_error');
+                form_success_div.hide();
+                form_error_div.html('').hide();
+
+                $.post( 'https://www.lawenforcementtoday.com/wp-admin/admin-ajax.php?action=mt_mc_custom_subscribe',
+        		   form_data
+        	   	).done(function( data ) {
+                    if (data.success == true) {
+                        form_error_div.hide();
+                        form_success_div.show();
+                        form_obj.find('input,button').hide();
+                        form_obj.find('button').hide();
+                        form_obj.find('.newsletter-info').hide();
+                    } else {
+                        if ( data.error_message && data.error_message.length > 0 ) {
+                            form_error_div.html(data.error_message);
+                        } else {
+         				    form_error_div.html( 'Error: Subscribe failed. Error 101' );
+         			    }
+                        form_error_div.show();
+                    }
+        	   }).fail(function( data ) {
+        		   form_error_div.html( 'Error: Subscribe failed. Error 202' );
+                   form_error_div.show();
+        	   }).always(function( data ) {
+                   nf_button.attr('disabled', false);
+                   nf_button.html(nf_button_label);
+               });
+
+            });
+        });
+    </script>
+<style>
+    .newsletter-form input[type='text'], .newsletter-form input[type='tel'], .newsletter-form input[type='email'], .newsletter-form input[type='password'], .newsletter-form input[type='url'], .newsletter-form input[type='date'] {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 24px;
+        max-width: 100%;
+        width: 560px;
+    }
+    .newsletter-form input[type='text'], .newsletter-form input[type='tel'], .newsletter-form input[type='email'], .newsletter-form input[type='search'], .newsletter-form input[type='password'], .newsletter-form input[type='url'], .newsletter-form input[type='date'], .newsletter-form textarea {
+        -webkit-appearance: none;
+        box-sizing: border-box;
+        border: none;
+        transition: all .3s ease;
+        background: #F0F2F2;
+        font: 13px "Open sans", "Helvetica Neue", "Helvetica", sans-serif;
+        color: #2E385C;
+        letter-spacing: 2.17px;
+        /* text-transform: uppercase; */
+    }
+    </style>
+</p></div></aside> </div>
+</div>
+</div>
+</div>
+<div class="site-footer footer-bar-active footer-bar-align-right">
+<div id="footer-widgets" class="site footer-widgets">
+<div class="footer-widgets-container grid-container grid-parent">
+<div class="inside-footer-widgets">
+<div class="footer-widget-1 grid-parent grid-33 tablet-grid-50 mobile-grid-100">
+<aside id="custom_html-9" class="widget_text widget inner-padding widget_custom_html"><h2 class="widget-title">Subscribe</h2><div class="textwidget custom-html-widget"><p>
+All the latest Law Enforcement Today news, updates and alerts delivered straight to your phone or inbox.
+</p>
+<p>
+<form id="mt_mc_form_5ea26fea360fc" class="newsletter-form mt_mc_form" method="post">
+<div class="newsletter_form__input-wrap your-email">
+<input type="email" name="email" value="" placeholder="Your Email" required="required">
+</div>
+<div class="newsletter_form_success" style="display: none; color: green; font-weight: bold; font-size: 15px;">Success! Thank you for subscribing!</div>
+<div class="newsletter_form_error" style="display: none; color: orange; font-weight: bold; font-size: 15px;"></div>
+<button style="margin-top: 15px;" class="button" type="submit">Subscribe Now</button>
+<p style="display: none;" class="newsletter-info text-center">Unsubscribe at anytime!</p>
+</form>
+<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#mt_mc_form_5ea26fea360fc').on('submit', function(e) {
+                e.preventDefault();
+
+                var form_obj = $(this);
+
+                var nf_email = form_obj.find('[name=email]').val();
+                if ( !nf_email || nf_email.length <= 0 ) {
+                    return false;
+                }
+                var nf_button = form_obj.find('[type=submit]');
+                var nf_button_label = nf_button.html();
+                nf_button.html('<span style="display: inline-block; text-align: center; white-space: nowrap;">Please Wait...</span>');
+        		nf_button.attr('disabled', true);
+
+                var form_data = form_obj.serialize();
+
+                var form_success_div = form_obj.find('.newsletter_form_success');
+                var form_error_div = form_obj.find('.newsletter_form_error');
+                form_success_div.hide();
+                form_error_div.html('').hide();
+
+                $.post( 'https://www.lawenforcementtoday.com/wp-admin/admin-ajax.php?action=mt_mc_custom_subscribe',
+        		   form_data
+        	   	).done(function( data ) {
+                    if (data.success == true) {
+                        form_error_div.hide();
+                        form_success_div.show();
+                        form_obj.find('input,button').hide();
+                        form_obj.find('button').hide();
+                        form_obj.find('.newsletter-info').hide();
+                    } else {
+                        if ( data.error_message && data.error_message.length > 0 ) {
+                            form_error_div.html(data.error_message);
+                        } else {
+         				    form_error_div.html( 'Error: Subscribe failed. Error 101' );
+         			    }
+                        form_error_div.show();
+                    }
+        	   }).fail(function( data ) {
+        		   form_error_div.html( 'Error: Subscribe failed. Error 202' );
+                   form_error_div.show();
+        	   }).always(function( data ) {
+                   nf_button.attr('disabled', false);
+                   nf_button.html(nf_button_label);
+               });
+
+            });
+        });
+    </script>
+<style>
+    .newsletter-form input[type='text'], .newsletter-form input[type='tel'], .newsletter-form input[type='email'], .newsletter-form input[type='password'], .newsletter-form input[type='url'], .newsletter-form input[type='date'] {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 24px;
+        max-width: 100%;
+        width: 560px;
+    }
+    .newsletter-form input[type='text'], .newsletter-form input[type='tel'], .newsletter-form input[type='email'], .newsletter-form input[type='search'], .newsletter-form input[type='password'], .newsletter-form input[type='url'], .newsletter-form input[type='date'], .newsletter-form textarea {
+        -webkit-appearance: none;
+        box-sizing: border-box;
+        border: none;
+        transition: all .3s ease;
+        background: #F0F2F2;
+        font: 13px "Open sans", "Helvetica Neue", "Helvetica", sans-serif;
+        color: #2E385C;
+        letter-spacing: 2.17px;
+        /* text-transform: uppercase; */
+    }
+    </style>
+</p></div></aside> </div>
+<div class="footer-widget-2 grid-parent grid-33 tablet-grid-50 mobile-grid-100">
+<aside id="nav_menu-8" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">Quick Links</h2><div class="menu-quick-links-container"><ul id="menu-quick-links-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96641"><a href="https://www.lawenforcementtoday.com/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48445"><a href="https://www.lawenforcementtoday.com/privacy-policy/">Privacy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45761"><a href="https://www.lawenforcementtoday.com/submit-article-law-enforcement-today/">Write for Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96834"><a href="https://www.lawenforcementtoday.com/let-news-feed/">Add News Feed to Your Site</a></li>
+</ul></div></aside> </div>
+<div class="footer-widget-3 grid-parent grid-33 tablet-grid-50 mobile-grid-100">
+<aside id="recent-posts-3" class="widget inner-padding widget_recent_entries"> <h2 class="widget-title">Latest News</h2> <ul>
+<li>
+<a href="https://www.lawenforcementtoday.com/gun-control-advocate-pouts-when-america-ignores-fear-mongering/">Editorial: Anti-Gun, former ATF agent David Chipman says first-time gun owners fear zombies</a>
+</li>
+<li>
+<a href="https://www.lawenforcementtoday.com/lots-more-bad-guys-and-hefty-police-budget-cuts-coming-to-america/">Coronavirus and crime: Lots more bad guys and hefty police budget cuts coming to America</a>
+</li>
+<li>
+<a href="https://www.lawenforcementtoday.com/doctors-ask-police-to-stop-arresting-people-for-low-level-crimes-because-of-covid-19/">Report: Doctors ask police to stop arresting people for low level crimes because of virus concerns</a>
+</li>
+<li>
+<a href="https://www.lawenforcementtoday.com/two-more-officers-died/">Officers Down: Tragedy has taken the lives of two more from the law enforcement community</a>
+</li>
+</ul>
+</aside> </div>
+</div>
+</div>
+</div>
+<footer class="site-info" itemtype="https://schema.org/WPFooter" itemscope>
+<div class="inside-site-info grid-container grid-parent">
+<div class="footer-bar">
+<aside id="nav_menu-9" class="widget inner-padding widget_nav_menu"><div class="menu-social-container"><ul id="menu-social-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96628"><a href="https://www.facebook.com/law.enforcement.today"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96629"><a href="https://twitter.com/LawEnforceToday"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96630"><a href="https://www.instagram.com/lawenforcement_today/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96631"><a href="https://www.lawenforcementtoday.com/feed/"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96632"><a href="https://www.youtube.com/channel/UC_ECSdck4XrH5DMGKkWqrTA/videos"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+</ul></div></aside> </div>
+<div class="copyright-bar">
+© 2020 Copyright Law Enforcement Today - All Rights Reserved.
+</div>
+</div>
+</footer>
+</div>
+<a title="Scroll back to top" rel="nofollow" href="#" class="generate-back-to-top" style="opacity:0;visibility:hidden;" data-scroll-speed="400" data-start-scroll="300">
+<span class="screen-reader-text">Scroll back to top</span>
+</a><script>
+jQuery(document).ready(function(){
+	jQuery('#primary-menu .menu-item-has-children a').on('click touchstart', function(e){
+		if ( jQuery(this).attr('href') == '#' || jQuery(this).attr('href') == '#0') {
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			jQuery(this).closest('li').find('ul.sub-menu').toggleClass('toggled-on');
+			return false;
+		}
+	});
+});
+</script>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=1.9.1'></script>
+<!--[if lte IE 11]>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-content/themes/generatepress/js/classList.min.js?ver=2.4.2'></script>
+<![endif]-->
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-content/themes/generatepress/js/menu.min.js?ver=2.4.2'></script>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-content/themes/generatepress/js/a11y.min.js?ver=2.4.2'></script>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-content/themes/generatepress/js/back-to-top.min.js?ver=2.4.2'></script>
+<script type='text/javascript' src='https://www.lawenforcementtoday.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript'>function loadLFCComments() {(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1425982074283718';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                    }window.onscroll = function () {
+                        var rect = document.getElementById('lfc_comments').getBoundingClientRect();
+                        if (rect.top < window.innerHeight) {
+                            var lfc_div = document.getElementById('lfc_comments');
+                            lfc_div.innerHTML = '<div id="fb-root"></div><div class="fb-comments" data-width="100%" data-href="https://www.lawenforcementtoday.com/michigan-prosecutor-reviewing-cases-90-convicted-murderers-serving-life-sentences/" data-numposts="10" data-colorscheme="light" data-order-by="social"></div>';
+                            loadLFCComments();
+                            window.onscroll = null;
+                        }
+                    }</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-8343e05d0b96d9b2788","applicationID":"421737851","transactionName":"bgABZhNVCEZRAENYWVdKIlEVXQlbHxBeX1FVAA==","queueTime":0,"applicationTime":506,"atts":"QkcCEFtPG0g=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
