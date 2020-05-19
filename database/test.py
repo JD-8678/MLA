@@ -123,6 +123,7 @@ class ElasticsearchStorage():
                     version += 1
                     ancestor = old_version['_id']
                     self.es.indices.refresh(self.es,index=self.index_archive)
+                    
 
                 # save new version into old id of index_current
                 self.log.info("Saving to Elasticsearch: %s" % article.url)
@@ -131,8 +132,8 @@ class ElasticsearchStorage():
                 extracted_info['version'] = version
                 self.es.index(index=self.index_current, doc_type='_doc', id=ancestor,
                               body=extracted_info)
-                self.es.indices.refresh(self.es,index=self.index_current)
-
+                res = self.es.indices.refresh(self.es,index=self.index_current)
+                print(res)
              
 
             except ConnectionError as error:
