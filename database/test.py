@@ -67,6 +67,11 @@ class ElasticsearchStorage():
       }}
     }
 
+    es_log = logging.getLogger('elasticsearch')
+    es_level = es_log.getEffectiveLevel()
+    es_log.setLevel('ERROR')
+                      
+
     self.es = Elasticsearch(
        [self.database["host"]],
        http_auth=(str(self.database["username"]), str(self.database["secret"])),
@@ -97,7 +102,8 @@ class ElasticsearchStorage():
       if not self.es.indices.exists(self.index_archive):
          self.es.indices.create(index=self.index_archive)
          self.es.indices.put_mapping(index=self.index_archive, body=self.mapping)
-         self.running = True
+      
+      self.running = True
 
       # restore previous logging level
       es_log.setLevel(es_level)
@@ -108,11 +114,12 @@ class ElasticsearchStorage():
                            "Please check if the database is running and the config is correct: %s" % error)
 
   def process_Article(self, article):
-        if self.running:
+      print(self.running)  
+      if self.running:
             try:
                 version = 1
                 ancestor = None
-
+                print("secend")
                 # search for previous version
                 request = self.es.search(index=self.index_current, body={'query': {'match': {'url.keyword': article.url}}})
                 if request['hits']['total']['value'] > 0:
