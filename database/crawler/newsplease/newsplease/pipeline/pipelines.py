@@ -122,7 +122,6 @@ class RSSCrawlCompare(object):
         # Close DB connection - garbage collection
         self.conn.close()
 
-
 class MySQLStorage(object):
     """
     Handles remote storage of the meta data in the DB
