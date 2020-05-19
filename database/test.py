@@ -66,12 +66,7 @@ class ElasticsearchStorage():
         "language": {"type": "keyword"}
       }}
     }
-
-    es_log = logging.getLogger('elasticsearch')
-    es_level = es_log.getEffectiveLevel()
-    es_log.setLevel('ERROR')
                       
-
     self.es = Elasticsearch(
        [self.database["host"]],
        http_auth=(str(self.database["username"]), str(self.database["secret"])),
