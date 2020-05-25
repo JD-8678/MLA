@@ -45,7 +45,7 @@ class ElasticsearchStorage():
       'client_key_path': '/path/to/client_key.pem',
       'username': 'root',
       'secret': 'password',
-      'mapping' : {"properties": {
+      'mapping': { "properties": {
         "url": {"type": "text","fields":{"keyword":{"type":"keyword"}}},
         "source_domain": {"type": "text","fields":{"keyword":{"type":"keyword"}}},
         "title_page": {"type": "text","fields":{"keyword":{"type":"keyword"}}},
@@ -63,19 +63,17 @@ class ElasticsearchStorage():
         "text": {"type": "text"},
         "authors": {"type": "text","fields":{"keyword":{"type":"keyword"}}},
         "image_url":  {"type": "text","fields":{"keyword":{"type":"keyword"}}},
-        "language": {"type": "keyword"}
-      }}
-    }
-                      
+        "language": {"type": "keyword"}}}
+     }     
     self.es = Elasticsearch(
        [self.database["host"]],
-       http_auth=(str(self.database["username"]), str(self.database["secret"])),
-       port=self.database["port"],
-       use_ssl=self.database["use_ca_certificates"],
-       verify_certs=self.database["use_ca_certificates"],
-       ca_certs=self.database["ca_cert_path"],
-       client_cert=self.database["client_cert_path"],
-       client_key=self.database["client_key_path"]
+       #http_auth=(str(self.database["username"]), str(self.database["secret"])),
+       port=self.database["port"]
+       #use_ssl=self.database["use_ca_certificates"],
+       #verify_certs=self.database["use_ca_certificates"],
+       #ca_certs=self.database["ca_cert_path"],
+       #client_cert=self.database["client_cert_path"],
+       #client_key=self.database["client_key_path"]
     )
     self.index_current = self.database["index_current"]
     self.index_archive = self.database["index_archive"]
@@ -109,12 +107,10 @@ class ElasticsearchStorage():
                            "Please check if the database is running and the config is correct: %s" % error)
 
   def process_Article(self, article):
-      print(self.running)  
       if self.running:
             try:
                 version = 1
                 ancestor = None
-                print("secend")
                 # search for previous version
                 request = self.es.search(index=self.index_current, body={'query': {'match': {'url.keyword': article.url}}})
                 if request['hits']['total']['value'] > 0:
@@ -124,18 +120,26 @@ class ElasticsearchStorage():
                     self.es.index(index=self.index_archive, doc_type='_doc', body=old_version['_source'])
                     version += 1
                     ancestor = old_version['_id']
-                    self.es.indices.refresh(self.es,index=self.index_archive)
                     
 
                 # save new version into old id of index_current
-                self.log.info("Saving to Elasticsearch: %s" % article.url)
-                extracted_info = article.get_dict()
+                #self.log.info("Saving to Elasticsearch: %s" % article.url)
+                extracted_info = article.get_serializable_dict()
+                for key in extracted_info:
+                    value = extracted_info[key]
+                    if isinstance(value, str) and not value:
+                        extracted_info[key] = None
+                        #print(key)
+                    if value == "None":
+                        extracted_info[key] = None
+                        #print(key)
+
+                
                 extracted_info['ancestor'] = ancestor
                 extracted_info['version'] = version
-                self.es.index(index=self.index_current, doc_type='_doc', id=ancestor,
-                              body=extracted_info)
-                res = self.es.indices.refresh(self.es,index=self.index_current)
-                print(res)
+                res = self.es.index(index=self.index_current, doc_type='_doc', id=ancestor, body=extracted_info)
+                if res["failed"] == 1:
+                    print(res)
              
 
             except ConnectionError as error:
