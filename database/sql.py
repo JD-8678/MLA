@@ -4,7 +4,7 @@ from datetime import datetime, tzinfo,  timezone
 
 #parse temp Rss link
 import requests
-rss = requests.get("https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml");
+rss = requests.get("https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml")
 
 root = ET.fromstring(rss.content)
 ch = root.find('channel')
@@ -41,7 +41,7 @@ for item in ch.findall('item'):
         continue
     pubDate_str = pubDate.strftime("%Y-%m-%d %H:%M:%S")
     categorys   = list()
-    categorys_str= "";
+    categorys_str= ""
     for category in item.findall('categroy'):
         categorys.append(category.text)
     for c in categorys:
@@ -51,7 +51,7 @@ for item in ch.findall('item'):
     import trafilatura as traf
     #page = traf.fetch_url(link)
     #content_str = traf.extract(page)
-    content_str = "tmp";
+    content_str = "tmp"
 
     #upload to Databank
     format_str = """INSERT INTO items (id, link, pubDate, description, category, content ) VALUES (0,'{l}','{date}','{d}','{c}','{content}');"""
@@ -73,11 +73,11 @@ cursor.execute("SELECT items_count FROM state;")
 state = cursor.fetchone()
 
 for x in state:
-    count = count + int(x);
+    count = count + int(x)
 #update state
 cursor.execute("UPDATE state SET lastUpdate='" + lastUpdate.strftime("%Y-%m-%d %H:%M:%S") + "', items_count=" + str(count) + ";")
 
-connection.commit();
+connection.commit()
 
 cursor.close()
 connection.close()
