@@ -1,0 +1,30 @@
+#wrapper{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header{
+	height:150px;
+	background: rgb(163, 162, 162);
+}
+
+section{
+	width: 650px;
+	height: 550px;
+	float: left;
+	background: rgb(163, 162, 162);
+}
+
+aside{
+	width: 310px;
+	height: 550px;
+	float: right;
+	background: rgb(145, 130, 130);
+}
+
+footer{
+	height: 50px;
+	clear: both;
+	background: rgb(117, 117, 117);
+}

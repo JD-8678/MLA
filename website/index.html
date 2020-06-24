@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<title>Check your news</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Das ist die Kopfzeile</h1>
+			</header>
+			<section>Das ist der MainContent</section>
+			<aside>
+				<input type="text" id="search_claims" name="search_claims" value="search"> 
+				<button type="button" onclick="table_claims()">submit</button>
+				<table id="claims">
+					<tr>
+						<th>link</th>
+						<th>text</th>
+					</tr>
+				</table>
+					
+			</aside>
+			<footer>Das ist die Fusszeile</footer>
+		</div>
+
+		
+
+	</body>
+</html>
+<!-- scripts -->
+<script>
+
+	function table_claims() {
+		var table = document.getElementById("claims");
+		var row = table.insertRow();
+		var link = row.insertCell(0);
+		var text = row.insertCell(1);
+		link.innerHTML = "url";
+		text.innerHTML = "abcd"
+	}
+
+	function httpGetAsync()
+	{
+		fetch("https://ubuntu-server:9200")
+		.then(function (response) {
+			return response.json();
+		})
+		.then(function (myJson) {
+			console.log(myJson.ip);
+		})
+		.catch(function (error) {
+			console.log("Error: " + error);
+		});
+	}
+</script>
