@@ -60,7 +60,6 @@ class ElasticsearchStorage():
             try:
                 version = 1
                 ancestor = None
-                print("secend")
                 # search for previous version
                 request = self.es.search(index=self.index_current, body={'query': {'match': {'url.keyword': article.url}}})
                 if request['hits']['total']['value'] > 0:
@@ -74,14 +73,14 @@ class ElasticsearchStorage():
                     
 
                 # save new version into old id of index_current
-                self.log.info("Saving to Elasticsearch: %s" % article.url)
-                extracted_info = article.get_dict()
+                #self.log.info("Saving to Elasticsearch: %s" % article.url)
+                extracted_info = article.get_dict(article)
                 extracted_info['ancestor'] = ancestor
                 extracted_info['version'] = version
                 self.es.index(index=self.index_current, doc_type='_doc', id=ancestor,
                               body=extracted_info)
-                res = self.es.indices.refresh(self.es,index=self.index_current)
-                print(res)
+                res = self.es.indices.refresh(self.index_current)
+                #print(res)
              
 
             except ConnectionError as error:
