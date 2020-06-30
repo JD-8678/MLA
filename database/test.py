@@ -58,9 +58,9 @@ def main(argv):
 
     print(url)
 
-    #article = NewsPlease.from_url(url)
+    article = NewsPlease.from_url(url)
     es = ElasticsearchStorage(ES_config)
-    #es.process_Article(article)
+    es.process_Article(article)
     #es.get_Article_From_ES(url)
     list = []
     list.append({'category': 'language', 'keyword': 'de'})
