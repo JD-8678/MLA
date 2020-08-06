@@ -11,7 +11,7 @@ from newsplease.NewsArticle import NewsArticle
 from ES_Database import ElasticsearchStorage
 
 def main(argv):
-    url = ""
+    url = "https://www.foxnews.com/world/russian-ship-storing-ammonium-nitrate-was-left-in-beirut-port-without-safety-precautions-repo"
     ES_config = {
       'host': 'letkemann.ddns.net',
       'port': 9200,
@@ -59,12 +59,13 @@ def main(argv):
     print(url)
 
     article = NewsPlease.from_url(url)
-    es = ElasticsearchStorage(ES_config)
-    es.process_Article(article)
+    print(article)
+    #es = ElasticsearchStorage(ES_config)
+    #es.process_Article(article)
     #es.get_Article_From_ES(url)
-    list = []
-    list.append({'category': 'language', 'keyword': 'de'})
-    es.search_Article_From_ES(list)
+    #list = []
+    #list.append({'category': 'language', 'keyword': 'de'})
+    #es.search_Article_From_ES(list)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

@@ -18,7 +18,7 @@ def main():
         with open('vclaims.tsv','w') as querie:
             writer = csv.writer(querie, delimiter='\t')
             line = 0
-            writer.writerow(["","vclaim","title"])
+            writer.writerow(["","vclaim","title","rating"])
             for row in reader:
                 if row['claimReview_claimReviewed'] != None:
                     if row['extra_title'] == None:
