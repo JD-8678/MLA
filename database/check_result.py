@@ -3,7 +3,7 @@ import csv
 def main():
     with open('result.csv','w') as res:
         with open('news-querie.tsv') as news_file:
-            with open('/home/erwin/Programming/Python/clef2020-factchecking-task2/data/v3.0/verified_claims.docs.tsv') as vclaims_file:
+            with open('vclaims.tsv') as vclaims_file:
                 with open('/home/erwin/Programming/Python/clef2020-factchecking-task2/result.tsv') as result_file:
                     writer = csv.writer(res,delimiter=',')
                     reader_news = csv.reader(news_file, delimiter='\t')

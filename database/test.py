@@ -2,7 +2,7 @@ from newsplease import NewsPlease
 import newsplease as test
 import sys, getopt
 
-import json
+import json,csv
 
 from SPARQLWrapper import SPARQLWrapper
 from newsplease.NewsArticle import NewsArticle
@@ -11,11 +11,11 @@ from newsplease.NewsArticle import NewsArticle
 from ES_Database import ElasticsearchStorage
 
 def main(argv):
-    url = "https://www.foxnews.com/world/russian-ship-storing-ammonium-nitrate-was-left-in-beirut-port-without-safety-precautions-repo"
+    url = "https://www.foxnews.com/politics/biden-obama-tensions-2020-primary"
     ES_config = {
-      'host': 'letkemann.ddns.net',
+      'host': 'ubuntu-server',
       'port': 9200,
-      'index_current': 'news-please',
+      'index_current': 'test',
       'index_archive': 'news-please-archive',
       'use_ca_certificates': False,
       'ca_cert_path': '/path/to/cacert.pem',
@@ -59,7 +59,7 @@ def main(argv):
     print(url)
 
     article = NewsPlease.from_url(url)
-    print(article)
+    
     #es = ElasticsearchStorage(ES_config)
     #es.process_Article(article)
     #es.get_Article_From_ES(url)
@@ -67,6 +67,13 @@ def main(argv):
     #list.append({'category': 'language', 'keyword': 'de'})
     #es.search_Article_From_ES(list)
 
+    with open('news.tsv','w') as querie:
+            writer = csv.writer(querie, delimiter='\t')
+            writer.writerow(["","tweet_content","link"])
+            writer.writerow([0,article.maintext.replace('\t','\b'),article.url])
+
 if __name__ == "__main__":
     main(sys.argv[1:])
+
+
 

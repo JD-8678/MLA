@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch
-import logging,json 
+import logging,json, datetime
 
 class ElasticsearchStorage():
   log = None
@@ -74,9 +74,13 @@ class ElasticsearchStorage():
 
                 # save new version into old id of index_current
                 #self.log.info("Saving to Elasticsearch: %s" % article.url)
-                extracted_info = article.get_dict(article)
+                extracted_info = article.get_serializable_dict()
                 extracted_info['ancestor'] = ancestor
                 extracted_info['version'] = version
+                for i in extracted_info:
+                  if extracted_info[i] == 'None':
+                    extracted_info[i] = None
+
                 self.es.index(index=self.index_current, doc_type='_doc', id=ancestor,
                               body=extracted_info)
                 res = self.es.indices.refresh(self.index_current)
