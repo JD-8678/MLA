@@ -1,3 +1,7 @@
+# Applciation
+The Application compares the etxt body of a news article to already veriefied claims of ClaimsKG.
+For each sentence the top 5 vclaims are returned, as a list ['elastic_id', score, vclaim] for each sentence in the text body.
+
 # Setup
 
 install and run elasticsearch https://www.elastic.co/downloads/elasticsearch 
