@@ -51,7 +51,6 @@ def get_keywords(sentence):
     rake = Rake(max_length=1)
     rake.extract_keywords_from_text(sentence)
     keywords = rake.get_ranked_phrases()
-    print(keywords)
     keywords_lemma = []
     for w in range(len(keywords)):
         pos = get_wordnet_pos(keywords[w][0])
