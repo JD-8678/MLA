@@ -4,7 +4,7 @@ bert-extractive-summarizer
 neuralcoref
 spacy
 pandas
-multi_rake
+rake-nltk
 trafilatura
 argparse
 tqdm
