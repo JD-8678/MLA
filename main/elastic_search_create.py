@@ -54,8 +54,6 @@ def parse_args():
                         help="Maximum results extracted for a query")
     parser.add_argument("--conn", "-c", default="127.0.0.1:9200",
                         help="HTTP/S URI to a instance of ElasticSearch")
-    parser.add_argument("--url", "-u", required=True,
-                        help="HTTP/S URI to website wich should used for searching Claims")
     return parser.parse_args()
 
 def main(args):

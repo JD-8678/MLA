@@ -108,7 +108,6 @@ def main(args):
 
     print(formatted_scores)
 
-
 if __name__=='__main__':
     args = parse_args()
     MAX_OUTPUT_CLAIMS = args.output_size
