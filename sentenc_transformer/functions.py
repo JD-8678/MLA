@@ -1,10 +1,10 @@
 import nltk
 import trafilatura
-from multi_rake import Rake
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import RegexpTokenizer
+from rake_nltk import Rake
 from sentence_transformers import SentenceTransformer
 from summarizer import Summarizer  # bert-extractive-summarizer
 
@@ -48,8 +48,10 @@ def get_wordnet_pos(word):
 
 
 def get_keywords(sentence):
-    rake = Rake(max_words=1, stopwords=None)
-    keywords = rake.apply(sentence)
+    rake = Rake(max_length=1)
+    rake.extract_keywords_from_text(sentence)
+    keywords = rake.get_ranked_phrases()
+    print(keywords)
     keywords_lemma = []
     for w in range(len(keywords)):
         pos = get_wordnet_pos(keywords[w][0])
