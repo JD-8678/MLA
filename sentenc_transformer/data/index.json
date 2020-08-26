@@ -1,0 +1,39 @@
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "dynamic": "true",
+    "_source": {
+      "enabled": "true"
+    },
+    "properties": {
+      "title": {
+        "type": "text"
+      },
+      "vclaim": {
+        "type": "text"
+      },
+      "truthRating": {
+        "type": "text"
+      },
+      "author": {
+        "type": "text"
+      },
+      "named_entities_article": {
+        "type": "text"
+      },
+      "link": {
+        "type": "text"
+      },
+      "keywords": {
+        "type": "text"
+      },
+      "vector": {
+        "type": "dense_vector",
+        "dims": 768
+      }
+    }
+  }
+}
