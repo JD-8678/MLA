@@ -48,7 +48,7 @@ def parse_args():
                         help="TSV file with vclaims. Format: vclaim_id vclaim title")
     parser.add_argument("--predict-file", "-p", required=True,
                         help="File in TREC Run format containing the model predictions")
-    parser.add_argument("--keys", "-k",nargs='+', default=['vclaim', 'title', 'named_entities_claim', 'named_entities_article'],
+    parser.add_argument("--keys", "-k",nargs='+', default=['vclaim', 'title', 'named_entities_claim', 'named_entities_article','author','date','keywords','language','link','source','sourceURL','truthRating']
                         help="Keys to search in the document")
     parser.add_argument("--size", "-s", default=10000,
                         help="Maximum results extracted for a query")

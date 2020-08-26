@@ -11,7 +11,7 @@ from lib.logger import logger
 
 #config
 PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id', 'score', 'ratingName', 'link']
-PREDICT_VCLAIMS_COLUMNS = ['_id', '_score', 'ratingName', 'link']
+PREDICT_VCLAIMS_COLUMNS = ['_id','vclaim', '_score', 'ratingName', 'link']
 PREDICT_NEWS_COLUMNS = ['tweet_content','link']
 INDEX_NAME = 'vclaim'
 
