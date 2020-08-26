@@ -31,7 +31,7 @@ python run.py --url
 ```
 Parameters:
   * --url; URL to article
-  * --text : default="data/input.txt"; Path to input file. Containing a text body.
+  * --text : default="input.txt"; Path to input file. Containing a text body.
   * --summarize : default:False; Boolean if the text schould be summarized
   * --elastic : default="127.0.0.1:9200"; HTTP/S URL to elasticsearch instance
   * --index_name : default="verified_claims";   Name of the index in elasticsearch
