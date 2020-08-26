@@ -1,11 +1,10 @@
 import argparse
-
 import numpy as np
 import pandas as pd
 from elasticsearch import Elasticsearch, helpers
 from tqdm import tqdm
 
-from Transformer import embedd
+from functions import embedd
 
 
 def create_connection(connection):
@@ -30,7 +29,6 @@ def create_index(INDEX_NAME, INDEX_FILE, DATA_FILE, keys, client):
     vectors = []
 
     vclaims = pd.read_csv(DATA_FILE, sep='\t', index_col=0, encoding="utf-8")
-
     vclaims = vclaims.drop(['claimskg_id', 'truthRating', 'date', 'source', 'sourceURL', 'language'], axis=1)
     vclaims = vclaims.reset_index()
 
@@ -41,13 +39,13 @@ def create_index(INDEX_NAME, INDEX_FILE, DATA_FILE, keys, client):
         vectors.append(vector)
     vclaims["vector"] = vectors
 
+
     docs = []
-    count = 0
 
     for i in range(len(vclaims)):
         line = vclaims.loc[i, keys].replace(np.nan, "").to_dict()
         docs.append(line)
-        count = count + 1
+    print('Done')
 
     actions = [
         {
@@ -57,7 +55,7 @@ def create_index(INDEX_NAME, INDEX_FILE, DATA_FILE, keys, client):
         }
         for i in range(0, len(vclaims))
     ]
-    print(actions)
+
     print(f"Builing index of {len(vclaims)} vclaims with fieldnames: {keys}")
     print('Please wait...')
     helpers.bulk(client, actions)

@@ -1,9 +1,3 @@
-import argparse
-import json
-
-from create_index import create_connection
-
-
 def es_search(INDEX_NAME, CLIENT, SIZE, query_keywords, query_sentence):
     client = CLIENT
 
@@ -31,8 +25,8 @@ def es_search(INDEX_NAME, CLIENT, SIZE, query_keywords, query_sentence):
     }
 
     res = client.search(index=INDEX_NAME, body=query)
-    with open('data/request.json', "w") as json_file:
-        json.dump(res, json_file, indent=4)
+    # with open('data/request.json', "w") as json_file:
+    #     json.dump(res, json_file, indent=4)
 
     hit = res['hits']['hits']
     result = []

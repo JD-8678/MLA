@@ -1,0 +1,4 @@
+paste example article body here
+for best results avoid blank lines like below 
+
+to ensure best performance

@@ -1,0 +1,11 @@
+elasticsearch
+sentence-transformers
+bert-extractive-summarizer
+neuralcoref
+spacy
+pandas
+multi_rake
+trafilatura
+argparse
+tqdm
+nltk
