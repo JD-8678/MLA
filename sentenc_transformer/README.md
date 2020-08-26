@@ -34,4 +34,5 @@ Parameters:
   * --size : default=10000; Int value of max number of retieved documents from index per request. Max value: 10000
   
 # Notes 
-  * Try to run the applciation by copying the text body of an article into data/input.txt, inorder to minimize 
+  * Try to run the applciation by copying the text body of an article into data/input.txt, in order to minimize possible errors from bad url parsing.
+  * For long text use --summarize=True to decrease calculation time.
