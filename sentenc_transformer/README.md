@@ -1,6 +1,7 @@
 # Applciation
 The Application compares the etxt body of a news article to already veriefied claims of ClaimsKG.
 For each sentence the top 5 vclaims are returned, as a list ['elastic_id', score, vclaim] for each sentence in the text body.
+The scores are calculated by first using elasticsearches BM25 silimarity to retrieve relevant vclaims per sentence. Afterwards the retrieveed vclaims are reranked using cosine similarity between the sentence and the vclaims, by embedding the text with distilbert-base-nli-stsb-mean-tokens sentence-transformer.
 
 # Setup
 
