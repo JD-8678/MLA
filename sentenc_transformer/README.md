@@ -15,6 +15,7 @@ python create_index.py
   * --elastic : default="127.0.0.1:9200"; HTTP/S URL to elasticsearch instance
   * --index_name : default="verified_claims";   Name of the index in elasticsearch
   
+ # Usage
 To run the application use:
 ```
 python run.py --file
