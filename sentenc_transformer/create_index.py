@@ -65,7 +65,7 @@ def create_index(INDEX_NAME, INDEX_FILE, DATA_FILE, keys, client):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--elastic", "-e", default="127.0.0.1:9200",
+    parser.add_argument("--elastic", "-e", default="localhost:9200",
                         help="HTTP/S URL to ElasticSearch instance")
     parser.add_argument("--index_name", "-n", default="verified_claims",
                         help="ElasticSearch index name")

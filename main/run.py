@@ -1,4 +1,4 @@
-import os
+import os,hashlib
 import json
 import numpy as np
 import pandas as pd
@@ -10,10 +10,11 @@ from newsplease import NewsPlease
 from lib.logger import logger
 
 #config
-PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id', 'score', 'ratingName', 'link']
+PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id','vclaim', 'score', 'ratingName', 'link']
 PREDICT_VCLAIMS_COLUMNS = ['_id','vclaim', '_score', 'ratingName', 'link']
 PREDICT_NEWS_COLUMNS = ['tweet_content','link']
 INDEX_NAME = 'vclaim'
+PATH = './tmp/'
 
 RATING_FILTER = ['TRUE', 'FALSE','MIXTURE', 'OTHER']
 #RATING_FILTER = ['TRUE', 'FALSE']
@@ -83,7 +84,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--predict-file", "-p", default="result.csv",
                         help="File in TREC Run format containing the model predictions")
-    parser.add_argument("--keys", "-k",nargs='+', default=['vclaim', 'title', 'named_entities_claim', 'named_entities_article'],
+    parser.add_argument("--keys", "-k",nargs='+', default=['vclaim', 'title', 'named_entities_claim', 'named_entities_article','keywords'],
                         help="Keys to search in the document")
     parser.add_argument("--size", "-s", default=10000,
                         help="Maximum results extracted for a query")
@@ -91,22 +92,62 @@ def parse_args():
                         help="Maximum results extracted for news")
     parser.add_argument("--conn", "-c", default="127.0.0.1:9200",
                         help="HTTP/S URI to a instance of ElasticSearch")
-    parser.add_argument("--url", "-u", required=True,
-                        help="HTTP/S URI to website wich should used for searching Claims")
+    parser.add_argument("--mode", "-m", default="url", choices=["url","string"], type=str.lower,
+                        help="choice between url or string mode")
+    parser.add_argument("--input", "-i", nargs='+', required=True,
+                        help="input should be a String or url")
     return parser.parse_args()
 
+def save_result(scores,news,news_articles):
+    if args.mode == "url":
+        for elem in news_articles:
+            dir = PATH + hashlib.md5(elem.url.encode()).hexdigest() + '/'
+
+            if not os.path.exists(dir):
+                os.makedirs(dir)
+
+            scores.to_csv(path_or_buf=(dir + str(args.predict_file)), sep=',', index=False, header=False)
+
+            data = elem.get_serializable_dict()
+            with open(dir + 'news_article.json', 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
+
+    elif args.mode == "string":
+        for elem in news.values:
+            dir = PATH + hashlib.md5(elem[0].encode()).hexdigest() + '/'
+
+            if not os.path.exists(dir):
+                os.makedirs(dir)
+
+            scores.to_csv(path_or_buf=(dir + str(args.predict_file)), sep=',', index=False, header=False)
+
+            with open(dir + 'string.txt', 'w', encoding='utf-8') as f:
+                f.write(str(elem[0]))
+                f.close()
+
 def main(args):
-    article = NewsPlease.from_url(args.url)
-    news = pd.DataFrame([(article.maintext.replace('\t','\b'),article.url)], columns=PREDICT_NEWS_COLUMNS)
+    news = []
+    news_articles = []
+    if args.mode == "url":
+        for i in range(len(args.input)):
+            article = NewsPlease.from_url(args.input[i])
+            news_articles.append(article)
+            news.append([article.maintext.replace('\t','\b'),article.url])
+    elif args.mode == "string":
+        for i in range(len(args.input)):
+            news.append([args.input[i],None])
+
+    news = pd.DataFrame(news,columns=PREDICT_NEWS_COLUMNS)
+    print(news)
 
     es = create_connection(args.conn)
 
     scores = get_scores(es, news, search_keys=args.keys, size=args.size)
     formatted_scores = format_scores(scores)
-    formatted_scores.to_csv(args.predict_file, sep=',', index=False, header=False)
+    save_result(formatted_scores, news, news_articles)
     logger.info(f"Saved scores from the model in file: {args.predict_file}")
 
-    print(formatted_scores)
+    #print(formatted_scores)
 
 if __name__=='__main__':
     args = parse_args()
