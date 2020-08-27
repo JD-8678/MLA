@@ -4,15 +4,24 @@ import numpy as np
 import pandas as pd
 import argparse
 from tqdm import tqdm
-from elasticsearch import Elasticsearch
+from elasticsearch import Elasticsearch,helpers
 from newsplease import NewsPlease
 
 from lib.logger import logger
+from sentence_transformers import SentenceTransformer
+from collections import deque
 
 PREDICT_FILE_COLUMNS = ['qid', 'Q0', 'docno', 'rank', 'score', 'tag']
-INDEX_NAME = 'vclaim'
+INDEX_NAME = 'vclaimpapa'
 
 #modified by Erwin Letkemann for special uses
+
+model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
+
+
+def embedd(sentence):
+    sentence_embeddings = model.encode(sentence)
+    return sentence_embeddings
 
 def create_connection(conn_string):
     logger.debug("Starting ElasticSearch client")
@@ -32,15 +41,41 @@ def clear_index(es):
         cleared = False
     return cleared
 
-def build_index(es, vclaims, fieldnames):
+def build_index_old(es, vclaims, fieldnames):
     vclaims_count = vclaims.shape[0]
     clear_index(es)
     logger.info(f"Builing index of {vclaims_count} vclaims with fieldnames: {fieldnames}")
+
+    for i, vclaim in tqdm(vclaims.iterrows(), total=vclaims_count):
+        if not es.exists(index=INDEX_NAME, id=i):
+
+            body = vclaim.loc[fieldnames].replace(np.nan, "").to_dict()
+           #print(body)
+            es.create(index=INDEX_NAME, id=i, body=body)
+
+def build_index(es, vclaims, fieldnames):
+    vclaims_count = vclaims.shape[0]
+    clear_index(es)
+    
+    with open('index.json') as index_file:
+        source = index_file.read()
+        es.indices.create(index=INDEX_NAME, body=source)
+
+    logger.info(f"Builing index of {vclaims_count} vclaims with fieldnames: {fieldnames}")
+    actions = []
     for i, vclaim in tqdm(vclaims.iterrows(), total=vclaims_count):
         if not es.exists(index=INDEX_NAME, id=i):
             body = vclaim.loc[fieldnames].replace(np.nan, "").to_dict()
-            #print(body)
-            es.create(index=INDEX_NAME, id=i, body=body)
+            body["vector"] = embedd(vclaim["vclaim"])
+            actions.append(
+                {
+                    '_op_type': 'create',
+                    '_index': INDEX_NAME,
+                    '_id': i + 1,
+                    '_source': body
+                })
+    logger.info('Wait...')
+    deque(helpers.parallel_bulk(client=es, actions=actions), maxlen=0)
 
 def parse_args():
     parser = argparse.ArgumentParser()
