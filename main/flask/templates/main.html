@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title Claims></title>
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <h1 style="text-align: center">Look for Claims</h1>
+
+    <table >
+        <tr>
+            <th>claim</th>
+            <th>rating</th>
+            <th>link</th>
+        </tr>
+        {% for elem in claims %}
+        <tr>
+            <th>{{ elem[2] }}</th>
+            <th>{{ elem[4] }}</th>
+            <th>{{ elem[5] }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
+</div>
+
+{% endblock %}
+
+

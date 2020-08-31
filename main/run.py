@@ -41,14 +41,18 @@ def get_score(es, tweet, search_keys, size=10000):
         logger.error(f"No elasticsearch results for {tweet}")
         raise
 
-    results = response['hits']['hits']
-    for result in results:
-        info = result.pop('_source')
-        result.update(info)
-    df = pd.DataFrame(results)
-    df['id'] = df._id.astype('int32').values
-    df = df[PREDICT_VCLAIMS_COLUMNS]
-    return df
+    try:
+        results = response['hits']['hits']
+        for result in results:
+            info = result.pop('_source')
+            result.update(info)
+        df = pd.DataFrame(results)
+        df['_id'] = df._id.astype('int32').values
+        df = df[PREDICT_VCLAIMS_COLUMNS]
+        return df
+    except:
+        logger.info(f"NO results for Text: {tweet}")
+        return pd.DataFrame()
     #df = df.set_index('id')
     #return df._score
 
@@ -60,7 +64,10 @@ def get_scores(es, tweets, search_keys, size):
     logger.info(f"Geting RM5 scores for {tweets_count} tweets and {vclaims_count} vclaims")
     for i, tweet in tqdm(tweets.iterrows(), total=tweets_count):
         score = get_score(es, tweet.tweet_content, search_keys=search_keys, size=size)
-        scores[i] = score
+        if score.empty:
+            pass
+        else:
+            scores[i] = score
     return scores
 
 def format_scores(scores):
@@ -99,6 +106,7 @@ def parse_args():
     return parser.parse_args()
 
 def save_result(scores,news,news_articles):
+    count = 0
     if args.mode == "url":
         for elem in news_articles:
             dir = PATH + hashlib.md5(elem.url.encode()).hexdigest() + '/'
@@ -106,24 +114,30 @@ def save_result(scores,news,news_articles):
             if not os.path.exists(dir):
                 os.makedirs(dir)
 
-            scores.to_csv(path_or_buf=(dir + str(args.predict_file)), sep=',', index=False, header=False)
+            filter = scores[(scores.tweet_id == count)]
+            count += 1
+            filter.to_csv(path_or_buf=(dir + str(args.predict_file)), sep=',', index=False, header=False)
 
             data = elem.get_serializable_dict()
             with open(dir + 'news_article.json', 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=4)
+            logger.info(f"Saved scores from the model in file: {dir}{args.predict_file}")
 
     elif args.mode == "string":
         for elem in news.values:
-            dir = PATH + hashlib.md5(elem[0].encode()).hexdigest() + '/'
+            dir = PATH + hashlib.md5(str(elem[1]).encode()).hexdigest() + '/' + hashlib.md5(str(elem[0]).encode()).hexdigest() + '/'
 
             if not os.path.exists(dir):
                 os.makedirs(dir)
 
-            scores.to_csv(path_or_buf=(dir + str(args.predict_file)), sep=',', index=False, header=False)
+            filter = scores[(scores.tweet_id == count)]
+            count += 1
+            filter.to_csv(path_or_buf=(dir + str(args.predict_file)), sep=',', index=False, header=False)
 
             with open(dir + 'string.txt', 'w', encoding='utf-8') as f:
                 f.write(str(elem[0]))
                 f.close()
+            logger.info(f"Saved scores from the model in file: {dir}{args.predict_file}")
 
 def main(args):
     news = []
@@ -131,11 +145,15 @@ def main(args):
     if args.mode == "url":
         for i in range(len(args.input)):
             article = NewsPlease.from_url(args.input[i])
+            logger.info("loading url...")
             news_articles.append(article)
-            news.append([article.maintext.replace('\t','\b'),article.url])
+            for sentence in article.maintext.split('.'):
+                news.append([sentence.replace('\t','\b'),article.url]) 
+            #news.append([article.maintext.replace('\t','\b'),article.url])
     elif args.mode == "string":
         for i in range(len(args.input)):
-            news.append([args.input[i],None])
+            for sentence in args.input[i].split('.'):
+                news.append([sentence.replace('\t','\b'),i]) 
 
     news = pd.DataFrame(news,columns=PREDICT_NEWS_COLUMNS)
     print(news)
@@ -145,7 +163,7 @@ def main(args):
     scores = get_scores(es, news, search_keys=args.keys, size=args.size)
     formatted_scores = format_scores(scores)
     save_result(formatted_scores, news, news_articles)
-    logger.info(f"Saved scores from the model in file: {args.predict_file}")
+    
 
     #print(formatted_scores)
 
