@@ -12,6 +12,7 @@ from lib.logger import logger
 #config
 PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id','vclaim', 'score', 'ratingName', 'link']
 PREDICT_VCLAIMS_COLUMNS = ['_id','vclaim', '_score', 'ratingName', 'link']
+TEST = ['vclaim','_score']
 PREDICT_NEWS_COLUMNS = ['tweet_content','link']
 INDEX_NAME = 'vclaim'
 PATH = './tmp/'
@@ -60,14 +61,41 @@ def get_scores(es, tweets, search_keys, size):
     vclaims_count = es.cat.count(INDEX_NAME, params={"format": "json"})[0]['count']
     tweets_count  = len(tweets)
     scores = {}
+    temp = pd.DataFrame()
+    count = None
 
     logger.info(f"Geting RM5 scores for {tweets_count} tweets and {vclaims_count} vclaims")
     for i, tweet in tqdm(tweets.iterrows(), total=tweets_count):
         score = get_score(es, tweet.tweet_content, search_keys=search_keys, size=size)
+        scores = {}
         if score.empty:
             pass
         else:
-            scores[i] = score
+            #print(str(count)+ " | "+str(tweet.link))
+            #print(score)
+            if tweet.link == count:
+                #print("if")
+                try:
+                    calc = (score[['_id','_score']].set_index('_id').join(temp[['_id','_score']].set_index('_id'),how='outer', lsuffix='left' , rsuffix='right')).fillna(0)
+                    calc = calc.assign(_score=lambda x: x._scoreleft + x._scoreright).drop(['_scoreleft','_scoreright'], axis=1)
+                    
+                    dummy = score.append(temp, ignore_index = True)
+                    dummy = dummy.drop_duplicates('_id').drop('_score',axis=1)
+
+                    #print("calc: " + str(calc))
+                    #print("dummy: " + str(dummy))
+
+                    temp = dummy.join(calc, on='_id').sort_values('_score',ascending=False)
+                    #print(temp)
+                except:
+                    logger.error(r"Error at Score Merge")
+            else:
+                #print("else")
+                if temp.empty:
+                    scores[i] = temp
+                temp = score
+                count = tweet.link
+    scores[i] = temp
     return scores
 
 def format_scores(scores):
@@ -156,11 +184,12 @@ def main(args):
                 news.append([sentence.replace('\t','\b'),i]) 
 
     news = pd.DataFrame(news,columns=PREDICT_NEWS_COLUMNS)
-    print(news)
+    #print(news)
 
     es = create_connection(args.conn)
 
     scores = get_scores(es, news, search_keys=args.keys, size=args.size)
+    print(scores)
     formatted_scores = format_scores(scores)
     save_result(formatted_scores, news, news_articles)
     
