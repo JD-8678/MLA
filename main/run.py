@@ -10,9 +10,8 @@ from newsplease import NewsPlease
 from lib.logger import logger
 
 #config
-PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id','vclaim', 'score', 'ratingName', 'link']
+#PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id','vclaim', 'score', 'ratingName', 'link']
 PREDICT_VCLAIMS_COLUMNS = ['_id','vclaim', '_score', 'ratingName', 'link']
-TEST = ['vclaim','_score']
 PREDICT_NEWS_COLUMNS = ['tweet_content','link']
 INDEX_NAME = 'vclaim'
 PATH = './tmp/'
@@ -22,7 +21,6 @@ RATING_FILTER = ['TRUE', 'FALSE','MIXTURE', 'OTHER']
 MAX_OUTPUT_CLAIMS  = None
 
 #modified by Erwin Letkemann for special uses
-#right now only work for one url
 
 def create_connection(conn_string):
     logger.debug("Starting ElasticSearch client")
@@ -63,6 +61,7 @@ def get_scores(es, tweets, search_keys, size):
     scores = {}
     temp = pd.DataFrame()
     count = None
+    count_tweet = 0
 
     logger.info(f"Geting RM5 scores for {tweets_count} tweets and {vclaims_count} vclaims")
     for i, tweet in tqdm(tweets.iterrows(), total=tweets_count):
@@ -85,35 +84,35 @@ def get_scores(es, tweets, search_keys, size):
                     #print("calc: " + str(calc))
                     #print("dummy: " + str(dummy))
 
-                    temp = dummy.join(calc, on='_id').sort_values('_score',ascending=False)
+                    temp = dummy.join(calc, on='_id')
                     #print(temp)
                 except:
                     logger.error(r"Error at Score Merge")
             else:
-                #print("else")
+                #print("else" + str(i))
                 if temp.empty:
-                    scores[i] = temp
+                    pass
+                else:
+                    scores[count_tweet] = temp
+                    count_tweet += 1
                 temp = score
                 count = tweet.link
-    scores[i] = temp
+    
+    scores[count_tweet] = temp
+    #print(scores)
     return scores
 
 def format_scores(scores):
-    formatted_scores = None
+    formatted_scores = pd.DataFrame()
     for tweet_id, s in scores.items():   
-        x,y = s.shape
-        v = pd.DataFrame(data=np.transpose(np.random.randint(tweet_id,tweet_id+1,x)),columns=['tweet_id'])
+        s = s.assign(tweet_id=tweet_id).sort_values('_score',ascending=False)
         try:
-            formatted_scores = np.append(formatted_scores,v.join(s).values,axis=0)
+            formatted_scores = formatted_scores.append(s,ignore_index=True)
         except ValueError:
-            formatted_scores = v.join(s).values
+            formatted_scores = s
 
-        #formatted_scores.append(row)
-        formatted_scores_df = pd.DataFrame(formatted_scores, columns=PREDICT_FILE_COLUMNS)
-        
-        formatted_scores_df = formatted_scores_df[formatted_scores_df['ratingName'].isin(RATING_FILTER)] 
-
-    return formatted_scores_df[:MAX_OUTPUT_CLAIMS]
+    formatted_scores = formatted_scores[formatted_scores['ratingName'].isin(RATING_FILTER)]
+    return formatted_scores[:MAX_OUTPUT_CLAIMS]
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -152,8 +151,8 @@ def save_result(scores,news,news_articles):
             logger.info(f"Saved scores from the model in file: {dir}{args.predict_file}")
 
     elif args.mode == "string":
-        for elem in news.values:
-            dir = PATH + hashlib.md5(str(elem[1]).encode()).hexdigest() + '/' + hashlib.md5(str(elem[0]).encode()).hexdigest() + '/'
+        for elem in news:
+            dir = PATH + 'String/' + str(elem[1]) + '/'
 
             if not os.path.exists(dir):
                 os.makedirs(dir)
@@ -170,16 +169,18 @@ def save_result(scores,news,news_articles):
 def main(args):
     news = []
     news_articles = []
+    news_string   = []
     if args.mode == "url":
-        for i in range(len(args.input)):
+        for i in tqdm(range(len(args.input)), desc="loading article: "):
             article = NewsPlease.from_url(args.input[i])
-            logger.info("loading url...")
+            #print("pass")
             news_articles.append(article)
             for sentence in article.maintext.split('.'):
                 news.append([sentence.replace('\t','\b'),article.url]) 
             #news.append([article.maintext.replace('\t','\b'),article.url])
     elif args.mode == "string":
         for i in range(len(args.input)):
+            news_string.append([args.input[i],i])
             for sentence in args.input[i].split('.'):
                 news.append([sentence.replace('\t','\b'),i]) 
 
@@ -189,12 +190,15 @@ def main(args):
     es = create_connection(args.conn)
 
     scores = get_scores(es, news, search_keys=args.keys, size=args.size)
-    print(scores)
+    #print(scores)
     formatted_scores = format_scores(scores)
-    save_result(formatted_scores, news, news_articles)
-    
-
+    print(formatted_scores)
+    save_result(formatted_scores, news_string, news_articles)
     #print(formatted_scores)
+    if args.mode == "url":
+        return (formatted_scores,news_articles)
+    else:
+        return (formatted_scores,news_string) 
 
 if __name__=='__main__':
     args = parse_args()
