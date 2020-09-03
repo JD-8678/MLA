@@ -132,7 +132,7 @@ def parse_args():
                         help="input should be a String or url")
     return parser.parse_args()
 
-def save_result(scores,news,news_articles):
+def save_result(scores,news,news_articles,args):
     count = 0
     if args.mode == "url":
         for elem in news_articles:
@@ -165,6 +165,8 @@ def save_result(scores,news,news_articles):
                 f.write(str(elem[0]))
                 f.close()
             logger.info(f"Saved scores from the model in file: {dir}{args.predict_file}")
+    else:
+        logger.error(r"mode not found")
 
 def main(args):
     news = []
@@ -192,8 +194,8 @@ def main(args):
     scores = get_scores(es, news, search_keys=args.keys, size=args.size)
     #print(scores)
     formatted_scores = format_scores(scores)
-    print(formatted_scores)
-    save_result(formatted_scores, news_string, news_articles)
+    #print(formatted_scores)
+    save_result(formatted_scores, news_string, news_articles,args)
     #print(formatted_scores)
     if args.mode == "url":
         return (formatted_scores,news_articles)
