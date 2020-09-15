@@ -16,7 +16,7 @@ def index():
         result,maintext = run.main(args)
         #print(result.values)
         reader=result.values
-        return flask.render_template('main.html', claims=reader)
+        return flask.render_template('main.html', claims=reader, text=maintext)
     else:
         return flask.render_template('main.html', claims=[[]])
 
