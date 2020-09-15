@@ -5,7 +5,8 @@ import pandas as pd
 import argparse
 from tqdm import tqdm
 from elasticsearch import Elasticsearch
-from newsplease import NewsPlease
+#from newsplease import NewsPlease
+import trafilatura
 
 from lib.logger import logger
 
@@ -172,10 +173,22 @@ def main(args):
     news = []
     news_articles = []
     news_string   = []
+    class articleClass:
+        def __init__(self,maintext,url):
+            self.maintext = maintext
+            self.url = url 
+        def get_serializable_dict(self):
+            return {
+                'maintext': self.maintext,
+                'url': self.url
+            }
+
     if args.mode == "url":
         for i in tqdm(range(len(args.input)), desc="loading article: "):
-            article = NewsPlease.from_url(args.input[i])
-            #print("pass")
+            #article = NewsPlease.from_url(args.input[i])
+            website = trafilatura.fetch_url(args.input[i])
+            maintext = trafilatura.extract(website)
+            article = articleClass(maintext,args.input[i])
             news_articles.append(article)
             for sentence in article.maintext.split('.'):
                 news.append([sentence.replace('\t','\b'),article.url]) 
