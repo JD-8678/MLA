@@ -7,8 +7,7 @@ from tqdm import tqdm
 from elasticsearch import Elasticsearch
 #from newsplease import NewsPlease
 import trafilatura
-
-from lib.logger import logger
+from lib import logger
 
 #config
 #PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id','vclaim', 'score', 'ratingName', 'link']
