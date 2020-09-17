@@ -1,0 +1,908 @@
+{
+    "mode": "url",
+    "url": "https://www.bbc.com/news/world-us-canada-54171941",
+    "index_name": "vclaims",
+    "fulltext": "John Bolton: Criminal inquiry opened into explosive memoir\nPresident Donald Trump's former National Security Adviser John Bolton is being investigated for possibly disclosing classified information when he published his memoir in June.\nThe US Department of Justice launched a criminal case after failing to stop the publication of The Room Where It Happened book.\nMr Bolton denies all the accusations.\nIn the book, Mr Trump is depicted as a president ignorant of geopolitical facts.\nMr Bolton, who served as MrTrump's national security adviser in 2018-19, also alleges the president's decisions are driven by a desire for re-election\nAt the time of publication, President Trump made it clear that he wanted his former aide prosecuted, describing him as \"grossly incompetent\" and \"a liar\".\nThe case would focus on Mr Bolton's claim that his manuscript had passed through a pre-publication national security review, and claims by critics that it did not complete that review.\nA grand jury convened by the Department of Justice has now formally issued subpoenas to the Simon & Schuster publishing company and the Javelin Agency, which represents Mr Bolton.\nIn a statement, Mr Bolton's lawyer Charles J. Cooper said: \"Ambassador Bolton emphatically rejects any claim that he acted improperly, let alone criminally, in connection with the publication of his book, and he will cooperate fully, as he has throughout, with any official inquiry into his conduct.\"\nWhat does the book say about President Trump?\nMany of Mr Bolton's allegations are based on private conversations and are impossible to verify.\nAmong them are the following claims:\n- President Trump sought help from Chinese President Xi Jinping to win the 2020 vote, stressing the \"importance of farmers and increased Chinese purchases of soybeans and wheat in the electoral outcome\"\n- He also said China's construction of internment camps in the Xinjiang region was the \"right thing to do\"\n- President Trump was willing to intervene in criminal investigations \"to, in effect, give personal favours to dictators he liked\". Mr Bolton said Mr Trump was willing to assist Turkish President Recep Tayyip Erdogan over a case involving a Turkish company\n- The US leader said invading Venezuela would be \"cool\" and that the South American nation was \"really part of the United States\"\n- Mr Trump was unaware the UK was a nuclear power and once asked a senior aide if Finland was part of Russia\nJust days before the book's publication, President Trump said the book was \"made up of lies and fake stories\".\n\"Many of the ridiculous statements he attributes to me were never made, pure fiction. Just trying to get even for firing him like the sick puppy he is!\" Mr Trump said in a tweet.",
+    "split": [
+        {
+            "sentence": "John Bolton: Criminal inquiry opened into explosive memoir",
+            "retrieved": {
+                "1": {
+                    "_id": "6415",
+                    "combined_score": 1.0,
+                    "_score": 16.733406,
+                    "cosine": 1.679291769285,
+                    "vclaim": "Says John Bolton 'fundamentally was a man of the left.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2019/sep/13/tucker-carlson/tucker-carlson-falsely-claims-john-bolton-was-man-/"
+                },
+                "2": {
+                    "_id": "4642",
+                    "combined_score": 0.774191658928,
+                    "_score": 12.494736,
+                    "cosine": 1.582796470095,
+                    "vclaim": "Says John Bolton supported the Iraq War and said last year that 'I still think the decision to overthrow Saddam was correct.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/nov/17/rand-paul/rand-paul-says-john-bolton-still-thinks-iraq-war-w/"
+                },
+                "3": {
+                    "_id": "26006",
+                    "combined_score": 0.649661271827,
+                    "_score": 15.171744,
+                    "cosine": 1.424580558367,
+                    "vclaim": "The FBI announced an inquiry into Russian ties between the Trump campaign and the Russian government.",
+                    "link": "https://www.snopes.com/fact-check/manafort-ties-to-russia/"
+                },
+                "4": {
+                    "_id": "4510",
+                    "combined_score": 0.632137455716,
+                    "_score": 7.4315767,
+                    "cosine": 1.572275295008,
+                    "vclaim": "Says his conviction is 'a political witch hunt by holdovers in the Obama justice department.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2017/aug/29/joe-arpaio/arpaio-falsely-ties-conviction-obama-administratio/"
+                },
+                "5": {
+                    "_id": "26181",
+                    "combined_score": 0.615316437949,
+                    "_score": 8.431206,
+                    "cosine": 1.537544493883,
+                    "vclaim": "A half dozen Trump-related entities were under criminal investigation in December 2018.",
+                    "link": "https://www.snopes.com/fact-check/trump-entities-criminal-probe/"
+                }
+            }
+        },
+        {
+            "sentence": "President Donald Trump's former National Security Adviser John Bolton is being investigated for possibly disclosing classified information when he published his memoir in June.",
+            "retrieved": {
+                "1": {
+                    "_id": "6163",
+                    "combined_score": 0.819450030703,
+                    "_score": 24.131187,
+                    "cosine": 1.618312459957,
+                    "vclaim": "'The FBI said (former national security adviser Michael Flynn) wasn't lying.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/mar/28/donald-trump/no-fbi-did-not-say-michael-flynn-did-not-lie-donal/"
+                },
+                "2": {
+                    "_id": "6415",
+                    "combined_score": 0.814228342704,
+                    "_score": 16.733406,
+                    "cosine": 1.699669421781,
+                    "vclaim": "Says John Bolton 'fundamentally was a man of the left.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2019/sep/13/tucker-carlson/tucker-carlson-falsely-claims-john-bolton-was-man-/"
+                },
+                "3": {
+                    "_id": "7671",
+                    "combined_score": 0.813793825566,
+                    "_score": 20.471539,
+                    "cosine": 1.656479962997,
+                    "vclaim": "Says former FBI Director James Comey admitted to leaking classified information.",
+                    "link": "http://www.politifact.com/north-carolina/statements/2017/jun/09/north-carolina-republican-party/james-comey-hearings-did-former-fbi-director-admit/"
+                },
+                "4": {
+                    "_id": "32282",
+                    "combined_score": 0.793714415409,
+                    "_score": 21.117102,
+                    "cosine": 1.635485181892,
+                    "vclaim": "President Trump's son Barron won a national academic award in June 2017.",
+                    "link": "https://www.snopes.com/fact-check/barron-trump-wins-national-academic-award/"
+                },
+                "5": {
+                    "_id": "26990",
+                    "combined_score": 0.787428642377,
+                    "_score": 24.692327,
+                    "cosine": 1.590205812217,
+                    "vclaim": "Republican presidential candidate Donald Trump leaked classified information about a U.S. military base in Saudi Arabia after receiving his first national security intelligence briefing.",
+                    "link": "https://www.snopes.com/fact-check/trump-leaks-classified-info/"
+                }
+            }
+        },
+        {
+            "sentence": "The US Department of Justice launched a criminal case after failing to stop the publication of The Room Where It Happened book.",
+            "retrieved": {
+                "1": {
+                    "_id": "22722",
+                    "combined_score": 0.841295184595,
+                    "_score": 23.283888,
+                    "cosine": 1.625403417794,
+                    "vclaim": "The United States Department of Justice is attempting to seize the information of every person who ever visited the anti-trump website disruptj20.org.",
+                    "link": "https://www.snopes.com/fact-check/department-of-justice-request-disruptj20/"
+                },
+                "2": {
+                    "_id": "23827",
+                    "combined_score": 0.767388134083,
+                    "_score": 27.79116,
+                    "cosine": 1.53007100175,
+                    "vclaim": "NBC aired The Book of Daniel, a series about an Episcopal priest who dealt with an addiction to painkillers, a gay son, and a daughter arrested for selling marijuana.",
+                    "link": "https://www.snopes.com/fact-check/the-book-of-daniel/"
+                },
+                "3": {
+                    "_id": "32865",
+                    "combined_score": 0.745240402149,
+                    "_score": 27.79116,
+                    "cosine": 1.517624576052,
+                    "vclaim": "Pope Francis has hired Harry Potter author JK Rowling to rewrite the Bible.",
+                    "link": "https://www.snopes.com/fact-check/the-book-of-potter/"
+                },
+                "4": {
+                    "_id": "230",
+                    "combined_score": 0.707831004108,
+                    "_score": 27.208801,
+                    "cosine": 1.50355252564,
+                    "vclaim": "Daryl Kramp: 'You have to commit a criminal offence' to fall within the scope of C-51 powers - FactsCanada",
+                    "link": "http://factscan.ca/daryl-kramp-you-have-to-commit-a-criminal-offence-to-fall-within-the-scope-of-c-51-powers/"
+                },
+                "5": {
+                    "_id": "4076",
+                    "combined_score": 0.705681098504,
+                    "_score": 30.756077,
+                    "cosine": 1.460004163819,
+                    "vclaim": "A photograph of a deer covered in fibroid tumors shows the results of Monsanto's Roundup.",
+                    "link": "https://www.truthorfiction.com/the-case-of-the-monsanto-deer/"
+                }
+            }
+        },
+        {
+            "sentence": "Mr Bolton denies all the accusations.",
+            "retrieved": {
+                "1": {
+                    "_id": "6415",
+                    "combined_score": 0.979513072206,
+                    "_score": 12.230228,
+                    "cosine": 1.722430102305,
+                    "vclaim": "Says John Bolton 'fundamentally was a man of the left.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2019/sep/13/tucker-carlson/tucker-carlson-falsely-claims-john-bolton-was-man-/"
+                },
+                "2": {
+                    "_id": "4642",
+                    "combined_score": 0.687184010699,
+                    "_score": 9.325743,
+                    "cosine": 1.558911691372,
+                    "vclaim": "Says John Bolton supported the Iraq War and said last year that 'I still think the decision to overthrow Saddam was correct.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/nov/17/rand-paul/rand-paul-says-john-bolton-still-thinks-iraq-war-w/"
+                },
+                "3": {
+                    "_id": "27620",
+                    "combined_score": 0.532585896136,
+                    "_score": 10.64341,
+                    "cosine": 1.370987013508,
+                    "vclaim": "'A-Team' actor Mr. T passed away in May 2016.",
+                    "link": "https://www.snopes.com/fact-check/mr-t-death-hoax/"
+                },
+                "4": {
+                    "_id": "3367",
+                    "combined_score": 0.524876015079,
+                    "_score": 12.460987,
+                    "cosine": 1.299337023909,
+                    "vclaim": "Juanita Broaddrick Bill Clinton Rape Accusations",
+                    "link": "https://www.truthorfiction.com/juanita-broaddrick-bill-clinton-rape-accusations/"
+                },
+                "5": {
+                    "_id": "19077",
+                    "combined_score": 0.493440412032,
+                    "_score": 12.756136,
+                    "cosine": 1.260157296276,
+                    "vclaim": "'Perdue mismanaged Pillowtex, and nearly 8,000 people got laid off.'",
+                    "link": "http://www.politifact.com/georgia/statements/2014/jul/16/jack-kingston/pillowtex-accusations-overstate-point/"
+                }
+            }
+        },
+        {
+            "sentence": "In the book, Mr Trump is depicted as a president ignorant of geopolitical facts.",
+            "retrieved": {
+                "1": {
+                    "_id": "26764",
+                    "combined_score": 0.847312718479,
+                    "_score": 15.409208,
+                    "cosine": 1.636533907664,
+                    "vclaim": "Donald Trump said, 'Laziness is a trait in blacks ... I believe that. No black person will be president again any time soon.'",
+                    "link": "https://www.snopes.com/fact-check/trump-laziness-is-a-trait-in-blacks/"
+                },
+                "2": {
+                    "_id": "2243",
+                    "combined_score": 0.803917814666,
+                    "_score": 14.335803,
+                    "cosine": 1.627372021047,
+                    "vclaim": "Claims Made in the 'Who is Donald Trump' Viral Video",
+                    "link": "https://www.truthorfiction.com/claims-made-in-the-who-is-donald-trump-viral-video/"
+                },
+                "3": {
+                    "_id": "33527",
+                    "combined_score": 0.780881643274,
+                    "_score": 16.801558,
+                    "cosine": 1.561303934384,
+                    "vclaim": "A video documents that The Simpsons anticipated in 2000 how Donald Trump would announce his presidential candidacy in 2015.",
+                    "link": "https://www.snopes.com/fact-check/simpsons-predict-trump/"
+                },
+                "4": {
+                    "_id": "29921",
+                    "combined_score": 0.755531342161,
+                    "_score": 15.986605,
+                    "cosine": 1.559740182941,
+                    "vclaim": "Strange circular clouds formed over Israel shortly after Donald Trump won the 2016 presidential election.",
+                    "link": "https://www.snopes.com/fact-check/trumpets-and-a-circle-in-the-sky-above-israel/"
+                },
+                "5": {
+                    "_id": "29008",
+                    "combined_score": 0.749662259046,
+                    "_score": 12.527467,
+                    "cosine": 1.625318578588,
+                    "vclaim": "A video shows U.S. President Donald Trump removing his hat and revealing that he's bald.",
+                    "link": "https://www.snopes.com/fact-check/trump-toupee-video-fake/"
+                }
+            }
+        },
+        {
+            "sentence": "Mr Bolton, who served as MrTrump's national security adviser in 2018-19, also alleges the president's decisions are driven by a desire for re-election",
+            "retrieved": {
+                "1": {
+                    "_id": "6415",
+                    "combined_score": 0.77028763911,
+                    "_score": 13.342348,
+                    "cosine": 1.691870724397,
+                    "vclaim": "Says John Bolton 'fundamentally was a man of the left.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2019/sep/13/tucker-carlson/tucker-carlson-falsely-claims-john-bolton-was-man-/"
+                },
+                "2": {
+                    "_id": "672",
+                    "combined_score": 0.725127912772,
+                    "_score": 18.202053,
+                    "cosine": 1.575724568113,
+                    "vclaim": "United States President Donald Trump's re-election campaign used a logo that has also been used by white nationalist groups.",
+                    "link": "https://www.truthorfiction.com/did-trump-share-a-logo-identical-to-one-used-by-a-white-nationalist-group/"
+                },
+                "3": {
+                    "_id": "29661",
+                    "combined_score": 0.718636247456,
+                    "_score": 18.529213,
+                    "cosine": 1.565570372846,
+                    "vclaim": "Speaking of Donald Trump's presidency, former Secretary of State Henry Kissinger referred to him as the 'one true leader.'",
+                    "link": "https://www.snopes.com/fact-check/henry-kissinger-trump-one-true-leader/"
+                },
+                "4": {
+                    "_id": "22272",
+                    "combined_score": 0.703659919353,
+                    "_score": 17.208632,
+                    "cosine": 1.578697095383,
+                    "vclaim": "The Republican National Committee has barred any intraparty challenges to President Donald Trump's bid for re-election.",
+                    "link": "https://www.snopes.com/fact-check/rnc-block-trump-challenge/"
+                },
+                "5": {
+                    "_id": "6163",
+                    "combined_score": 0.694817659601,
+                    "_score": 19.492771,
+                    "cosine": 1.532484744443,
+                    "vclaim": "'The FBI said (former national security adviser Michael Flynn) wasn't lying.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/mar/28/donald-trump/no-fbi-did-not-say-michael-flynn-did-not-lie-donal/"
+                }
+            }
+        },
+        {
+            "sentence": "At the time of publication, President Trump made it clear that he wanted his former aide prosecuted, describing him as \"grossly incompetent\" and \"a liar\".",
+            "retrieved": {
+                "1": {
+                    "_id": "32894",
+                    "combined_score": 0.865005107298,
+                    "_score": 21.30293,
+                    "cosine": 1.576616946458,
+                    "vclaim": "An image shows a real Time Magazine cover featuring a picture of President Trump and the words 'Liar in Chief.'",
+                    "link": "https://www.snopes.com/fact-check/liar-chief-time-magazine-cover-real/"
+                },
+                "2": {
+                    "_id": "26539",
+                    "combined_score": 0.852066641433,
+                    "_score": 23.034943,
+                    "cosine": 1.531990117334,
+                    "vclaim": "During the RNC, Donald Trump sent a tweet about his running mate describing him as 'boring Mike Pence.'",
+                    "link": "https://www.snopes.com/fact-check/boring-mike-pence/"
+                },
+                "3": {
+                    "_id": "9245",
+                    "combined_score": 0.838270425883,
+                    "_score": 19.598114,
+                    "cosine": 1.591736279942,
+                    "vclaim": "'Marco Rubio made it clear: Not only does he think Donald Trump is a con man, he went on to say he doesn't trust Donald Trump with the nuclear codes.'",
+                    "link": "http://www.politifact.com/florida/statements/2016/oct/18/patrick-murphy/patrick-murphy-right-about-marco-rubio-attacks-don/"
+                },
+                "4": {
+                    "_id": "20735",
+                    "combined_score": 0.816136738713,
+                    "_score": 18.473963,
+                    "cosine": 1.598418065781,
+                    "vclaim": "'What Trump is alleged to have done is actually no different than what Barack Obama did in April last year when he made it known that he didn’t want Hillary prosecuted.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2017/may/18/rush-limbaugh/rush-limbaugh-says-donald-trump-barack-obama-also-/"
+                },
+                "5": {
+                    "_id": "30023",
+                    "combined_score": 0.80840174124,
+                    "_score": 20.093203,
+                    "cosine": 1.559879784428,
+                    "vclaim": "Marco Rubio said the Orlando shooting was a clear signal that God wanted him to serve in the Senate.",
+                    "link": "https://www.snopes.com/fact-check/rubio-god-needs-me/"
+                }
+            }
+        },
+        {
+            "sentence": "The case would focus on Mr Bolton's claim that his manuscript had passed through a pre-publication national security review, and claims by critics that it did not complete that review.",
+            "retrieved": {
+                "1": {
+                    "_id": "26700",
+                    "combined_score": 0.787738913545,
+                    "_score": 22.494015,
+                    "cosine": 1.524806916427,
+                    "vclaim": "The United States Department of Homeland Security is planning to compile a database of journalists and bloggers.",
+                    "link": "https://www.snopes.com/fact-check/dhs-compile-database-journalists-bloggers/"
+                },
+                "2": {
+                    "_id": "4519",
+                    "combined_score": 0.73140362805,
+                    "_score": 26.929022,
+                    "cosine": 1.444080741798,
+                    "vclaim": "'The facts show that approximately 40 persons on death row have had all of their appellate review completed and await only the governor's signature on a death warrant to end the case.'",
+                    "link": "http://www.politifact.com/florida/statements/2011/apr/20/geraldine-thompson/some-40-death-row-inmates-awaiting-death-warrant-g/"
+                },
+                "3": {
+                    "_id": "578",
+                    "combined_score": 0.718842923851,
+                    "_score": 23.703897,
+                    "cosine": 1.471949041254,
+                    "vclaim": "University of Findlay research students discovered a chemical compound that kills glioblastoma cells.",
+                    "link": "https://www.truthorfiction.com/did-university-of-findlay-students-discover-a-chemical-compound-that-kills-glioblastoma/"
+                },
+                "4": {
+                    "_id": "24722",
+                    "combined_score": 0.716246460358,
+                    "_score": 20.850666,
+                    "cosine": 1.501509517761,
+                    "vclaim": "Patients can circumvent insurance company claim denials by requesting a specific form of documentation, as the insurance company will opt to simply cover the cost rather than provide the paperwork.",
+                    "link": "https://www.snopes.com/fact-check/hipaa-medical-hack-insurance-claim-denials/"
+                },
+                "5": {
+                    "_id": "1594",
+                    "combined_score": 0.709676379762,
+                    "_score": 26.72995,
+                    "cosine": 1.433731170269,
+                    "vclaim": "The FBI once identified the film 'It's a Wonderful Life' as 'communist propaganda.'",
+                    "link": "https://www.truthorfiction.com/did-the-fbi-declare-that-its-a-wonderful-life-was-communist-propaganda/"
+                }
+            }
+        },
+        {
+            "sentence": "A grand jury convened by the Department of Justice has now formally issued subpoenas to the Simon & Schuster publishing company and the Javelin Agency, which represents Mr Bolton.",
+            "retrieved": {
+                "1": {
+                    "_id": "11489",
+                    "combined_score": 0.968348715063,
+                    "_score": 27.47132,
+                    "cosine": 1.670157923676,
+                    "vclaim": "Under Rosemary Lehmberg, the 'Travis County D.A.’s office' convened the grand jury that indicted Rick Perry.",
+                    "link": "http://www.politifact.com/texas/statements/2014/aug/21/sarah-palin/palin-incorrect-rosemary-lehmberg-convened-grand-j/"
+                },
+                "2": {
+                    "_id": "3883",
+                    "combined_score": 0.963897976661,
+                    "_score": 26.924519,
+                    "cosine": 1.674768643676,
+                    "vclaim": "Is A Grand Jury A ‘Normal Step’ In The Russia Investigation?",
+                    "link": "https://checkyourfact.com/2017/08/08/fact-check-is-a-grand-jury-a-normal-step-in-the-russia-investigation/"
+                },
+                "3": {
+                    "_id": "1556",
+                    "combined_score": 0.857226999689,
+                    "_score": 21.40356,
+                    "cosine": 1.678171931648,
+                    "vclaim": "As a juror, you have the right to refuse to enforce any bad law in the case brought before you.",
+                    "link": "https://www.truthorfiction.com/do-you-have-the-right-as-a-juror-to-refuse-to-enforce-bad-law/"
+                },
+                "4": {
+                    "_id": "22544",
+                    "combined_score": 0.715452684628,
+                    "_score": 20.263311,
+                    "cosine": 1.595175512273,
+                    "vclaim": "In August 2017, Richard Robert Rawling was indicted for 'skewing vote tallies' in favor of Donald Trump and other Republican candidates during the March 2016 primaries.",
+                    "link": "https://www.snopes.com/fact-check/north-carolina-elections-worker-trump/"
+                },
+                "5": {
+                    "_id": "4510",
+                    "combined_score": 0.710934972073,
+                    "_score": 16.801626,
+                    "cosine": 1.64090240483,
+                    "vclaim": "Says his conviction is 'a political witch hunt by holdovers in the Obama justice department.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2017/aug/29/joe-arpaio/arpaio-falsely-ties-conviction-obama-administratio/"
+                }
+            }
+        },
+        {
+            "sentence": "In a statement, Mr Bolton's lawyer Charles J. Cooper said: \"Ambassador Bolton emphatically rejects any claim that he acted improperly, let alone criminally, in connection with the publication of his book, and he will cooperate fully, as he has throughout, with any official inquiry into his conduct.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "7011",
+                    "combined_score": 0.801791891483,
+                    "_score": 29.685123,
+                    "cosine": 1.524881833353,
+                    "vclaim": "'I'm glad for the wording of it (an ethics report on corporate-sponsored Congressional trips) because clearly the wording exonerates me.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2010/feb/26/charles-rangel/rangel-sais-ethics-report-exonerates-him/"
+                },
+                "2": {
+                    "_id": "10646",
+                    "combined_score": 0.791483155154,
+                    "_score": 35.89084,
+                    "cosine": 1.458104785044,
+                    "vclaim": "Says James Clapper said 'that the FBI was spying on (Trump's) campaign.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/may/23/donald-trump/did-ex-intelligence-chief-clapper-say-fbi-spied-tr/"
+                },
+                "3": {
+                    "_id": "23507",
+                    "combined_score": 0.775162772158,
+                    "_score": 28.87711,
+                    "cosine": 1.515271829197,
+                    "vclaim": "Charles Ramsey said that the captive women he helped rescue, and not he, should receive a reward.",
+                    "link": "https://www.snopes.com/fact-check/final-reward/"
+                },
+                "4": {
+                    "_id": "31064",
+                    "combined_score": 0.771531866245,
+                    "_score": 23.425587,
+                    "cosine": 1.565630977753,
+                    "vclaim": "Actor Kurt Russell said that he has never seen a man as dedicated and determined as President Trump.",
+                    "link": "https://www.snopes.com/fact-check/kurt-russell-trump-relentless/"
+                },
+                "5": {
+                    "_id": "2836",
+                    "combined_score": 0.754042088889,
+                    "_score": 28.100956,
+                    "cosine": 1.508958401908,
+                    "vclaim": "Police in Florida shot mental health therapist Charles Kinsey as he lay on the ground with his hands up while trying to care for a patient.",
+                    "link": "https://www.truthorfiction.com/charles-kinsey-shooting/"
+                }
+            }
+        },
+        {
+            "sentence": "What does the book say about President Trump?",
+            "retrieved": {
+                "1": {
+                    "_id": "22588",
+                    "combined_score": 1.0,
+                    "_score": 17.857536,
+                    "cosine": 1.628793834366,
+                    "vclaim": "An image accurately depicts what President Trump and President Obama wrote in the Yad Yashem guest book.",
+                    "link": "https://www.snopes.com/fact-check/obama-trump-holocaust-memorial/"
+                },
+                "2": {
+                    "_id": "644",
+                    "combined_score": 0.888716467472,
+                    "_score": 15.827621,
+                    "cosine": 1.598862843993,
+                    "vclaim": "U.S. President Donald Trump said 'what you're seeing and what you're reading is not what's happening'; George Orwell wrote 'he party told you to reject the evidence of your eyes and ears ... it was their final, most essential command.'",
+                    "link": "https://www.truthorfiction.com/did-u-s-president-donald-trump-say-what-youre-seeing-is-not-whats-happening/"
+                },
+                "3": {
+                    "_id": "8651",
+                    "combined_score": 0.82287304521,
+                    "_score": 12.922691,
+                    "cosine": 1.614316496968,
+                    "vclaim": "Quotes President Donald Trump as saying, 'You tell people a lie three times, they will believe anything. You tell people what they want to hear, play to their fantasies, and then you close the deal.'",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/jan/15/blog-posting/recycled-meme-falsely-says-trump-bragged-about-lyi/"
+                },
+                "4": {
+                    "_id": "10501",
+                    "combined_score": 0.821682097046,
+                    "_score": 13.546724,
+                    "cosine": 1.601427698903,
+                    "vclaim": "Says Donald Trump 'doesn't make a thing in America.'",
+                    "link": "http://www.politifact.com/pennsylvania/statements/2016/aug/01/hillary-clinton/hillary-clinton-went-overboard-calling-out-donald-/"
+                },
+                "5": {
+                    "_id": "923",
+                    "combined_score": 0.736712387393,
+                    "_score": 9.862818,
+                    "cosine": 1.620108123784,
+                    "vclaim": "The media ignores good deeds done by Donald Trump, such as those listed in a 2016 column.",
+                    "link": "https://www.truthorfiction.com/trump-unthinkable-liz-conklin/"
+                }
+            }
+        },
+        {
+            "sentence": "Many of Mr Bolton's allegations are based on private conversations and are impossible to verify.",
+            "retrieved": {
+                "1": {
+                    "_id": "33375",
+                    "combined_score": 0.81532131259,
+                    "_score": 17.968195,
+                    "cosine": 1.452807755905,
+                    "vclaim": "About 99% of rape allegations are fabricated.",
+                    "link": "https://www.snopes.com/fact-check/rape-allegations-fabricated/"
+                },
+                "2": {
+                    "_id": "5719",
+                    "combined_score": 0.779477935078,
+                    "_score": 22.743477,
+                    "cosine": 1.368423677902,
+                    "vclaim": "'Private prison systems are calculating how many new beds (they will need) based on the ... number of third graders.'",
+                    "link": "http://www.politifact.com/florida/statements/2013/jul/16/kathleen-ford/kathleen-ford-says-private-prisons-use-third-grade/"
+                },
+                "3": {
+                    "_id": "15668",
+                    "combined_score": 0.775902158131,
+                    "_score": 13.083597,
+                    "cosine": 1.495336825876,
+                    "vclaim": "In a lawsuit between private citizens, a Florida judge 'announced the decision was going to be based on Islamic Law.'",
+                    "link": "http://www.politifact.com/florida/statements/2011/may/04/adam-hasner/adam-hasner-says-florida-judge-using-islamic-law-c/"
+                },
+                "4": {
+                    "_id": "27291",
+                    "combined_score": 0.767740892811,
+                    "_score": 16.009693,
+                    "cosine": 1.451573006224,
+                    "vclaim": "The Talking Angela app unsafely prompts children to provide personal information about themselves.",
+                    "link": "https://www.snopes.com/fact-check/talking-angela-warning/"
+                },
+                "5": {
+                    "_id": "18721",
+                    "combined_score": 0.681773920369,
+                    "_score": 15.106859,
+                    "cosine": 1.414151884234,
+                    "vclaim": "'Only 12% of legal immigrants are selected based on skill or based on merit. In countries like Canada, Australia and New Zealand, and others, that number is closer to 60, and even 70 and 75% in some cases.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/may/24/donald-trump/donald-trumps-international-comparison-merit-based/"
+                }
+            }
+        },
+        {
+            "sentence": "Among them are the following claims:",
+            "retrieved": {
+                "1": {
+                    "_id": "1344",
+                    "combined_score": 0.8347560257,
+                    "_score": 11.869834,
+                    "cosine": 1.46952245819,
+                    "vclaim": "Ralph Goodale: The national security watchdog committee can go 'wherever the evidence takes them.” - FactsCanada",
+                    "link": "http://factscan.ca/ralph-goodale-wherever-the-evidence-takes-them/"
+                },
+                "2": {
+                    "_id": "1426",
+                    "combined_score": 0.766346025802,
+                    "_score": 7.878889,
+                    "cosine": 1.548309663037,
+                    "vclaim": "Seven claims about the government's achievements",
+                    "link": "https://africacheck.org/reports/state-of-the-nation-2019-did-kenyatta-get-his-facts-right/"
+                },
+                "3": {
+                    "_id": "3249",
+                    "combined_score": 0.766346025802,
+                    "_score": 7.878889,
+                    "cosine": 1.548309663037,
+                    "vclaim": "Seven claims about the government's achievements",
+                    "link": "https://africacheck.org/reports/state-of-the-nation-2019-did-kenyatta-get-his-facts-right/"
+                },
+                "4": {
+                    "_id": "797",
+                    "combined_score": 0.766346025802,
+                    "_score": 7.878889,
+                    "cosine": 1.548309663037,
+                    "vclaim": "Seven claims about the government's achievements",
+                    "link": "https://africacheck.org/reports/state-of-the-nation-2019-did-kenyatta-get-his-facts-right/"
+                },
+                "5": {
+                    "_id": "859",
+                    "combined_score": 0.680252526753,
+                    "_score": 11.844507,
+                    "cosine": 1.353687957267,
+                    "vclaim": "Have Jobless Claims Dropped To A 45-Year Low?",
+                    "link": "https://checkyourfact.com/2018/01/19/fact-check-have-jobless-claims-dropped-to-a-45-year-low/"
+                }
+            }
+        },
+        {
+            "sentence": "- President Trump sought help from Chinese President Xi Jinping to win the 2020 vote, stressing the \"importance of farmers and increased Chinese purchases of soybeans and wheat in the electoral outcome\"",
+            "retrieved": {
+                "1": {
+                    "_id": "15848",
+                    "combined_score": 0.861225084792,
+                    "_score": 32.1218,
+                    "cosine": 1.661642566017,
+                    "vclaim": "Chinese workers made '90,000 banners' for Trump’s 2020 re-election campaign and the president chose to hire 'Chinese workers instead of American workers'",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/feb/15/viral-image/yes-trump-re-election-banners-are-being-made-china/"
+                },
+                "2": {
+                    "_id": "21667",
+                    "combined_score": 0.834771262074,
+                    "_score": 25.691359,
+                    "cosine": 1.732798558938,
+                    "vclaim": "The Trump re-election campaign is responsible for a surge in orders of 'Trump 2020' flags and banners produced in Chinese factories, just before the imposition of U.S. tariffs.",
+                    "link": "https://www.snopes.com/fact-check/trump-2020-flags-china/"
+                },
+                "3": {
+                    "_id": "31466",
+                    "combined_score": 0.730169169701,
+                    "_score": 23.278017,
+                    "cosine": 1.675880805142,
+                    "vclaim": "President Trump filed for re-election early, which means non-profits can't criticize him without losing their tax-exempt status.",
+                    "link": "https://www.snopes.com/fact-check/trump-filed-reelection-stop-political-speech-nonprofits/"
+                },
+                "4": {
+                    "_id": "24053",
+                    "combined_score": 0.718259660196,
+                    "_score": 23.42625,
+                    "cosine": 1.663182612883,
+                    "vclaim": "In October 2018, Donald Trump became the first sitting U.S. president in 27 years to speak at the national Future Farmers of America national convention.",
+                    "link": "https://www.snopes.com/fact-check/donald-tump-ffa-farmers-president/"
+                },
+                "5": {
+                    "_id": "66",
+                    "combined_score": 0.713548065568,
+                    "_score": 29.33609,
+                    "cosine": 1.572151557765,
+                    "vclaim": "Did Trump Promise To Win 100 Percent Of The Black Vote In 2020?",
+                    "link": "https://checkyourfact.com/2019/03/17/fact-check-trump-promise-100-percent-black-vote-2020/"
+                }
+            }
+        },
+        {
+            "sentence": "- He also said China's construction of internment camps in the Xinjiang region was the \"right thing to do\"",
+            "retrieved": {
+                "1": {
+                    "_id": "30225",
+                    "combined_score": 0.925499452566,
+                    "_score": 18.726229,
+                    "cosine": 1.77794441766,
+                    "vclaim": "Photographs depict signs marking the sites of 'future internment camps' authorized by President Trump's executive order.",
+                    "link": "https://www.snopes.com/fact-check/lot-reserved-for-future-internment-camp/"
+                },
+                "2": {
+                    "_id": "26220",
+                    "combined_score": 0.907257315133,
+                    "_score": 19.911045,
+                    "cosine": 1.729587489513,
+                    "vclaim": "President Trump has ordered the construction of concentration camps in the U.S.",
+                    "link": "https://www.snopes.com/fact-check/trump-building-concentration-camps/"
+                },
+                "3": {
+                    "_id": "19625",
+                    "combined_score": 0.895281398872,
+                    "_score": 19.10449,
+                    "cosine": 1.741655843608,
+                    "vclaim": "Says 'Donald Trump has defended' World War II internment camps.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/jul/29/joaquin-castro/joaquin-castro-says-donald-trump-defended-world-wa/"
+                },
+                "4": {
+                    "_id": "2152",
+                    "combined_score": 0.790630537001,
+                    "_score": 20.725012,
+                    "cosine": 1.60739415509,
+                    "vclaim": "Do 400,000 whites live in squatter camps in South Africa? No | Africa Check",
+                    "link": "https://africacheck.org/reports/do-400-000-whites-live-in-squatter-camps-in-south-africa-the-answer-is-no/"
+                },
+                "5": {
+                    "_id": "23276",
+                    "combined_score": 0.606699252689,
+                    "_score": 13.30192,
+                    "cosine": 1.655461607435,
+                    "vclaim": "Information shared with other agencies by the U.S. Census Bureau helped the government target Japanese Americans for relocation and internment during World War II.",
+                    "link": "https://www.snopes.com/fact-check/census-bureau-japanese-americans/"
+                }
+            }
+        },
+        {
+            "sentence": "- President Trump was willing to intervene in criminal investigations \"to, in effect, give personal favours to dictators he liked\". Mr Bolton said Mr Trump was willing to assist Turkish President Recep Tayyip Erdogan over a case involving a Turkish company",
+            "retrieved": {
+                "1": {
+                    "_id": "244",
+                    "combined_score": 0.786501493363,
+                    "_score": 42.29349,
+                    "cosine": 1.590053035458,
+                    "vclaim": "‘Betrayed and murdered the Kurdish people’ banner on Trump hotel",
+                    "link": "https://factcheck.afp.com//video-trump-hotel-las-vegas-has-been-doctored-include-banner"
+                },
+                "2": {
+                    "_id": "32278",
+                    "combined_score": 0.7734662155,
+                    "_score": 27.640564,
+                    "cosine": 1.700301901194,
+                    "vclaim": "As part of a federal lawsuit, U.S. President Donald Trump admitted criminal wrongdoing and said or argued to the effect that 'My crimes can't be investigated while I'm president.'",
+                    "link": "https://www.snopes.com/fact-check/trump-my-crimes-investigated/"
+                },
+                "3": {
+                    "_id": "3601",
+                    "combined_score": 0.767864826117,
+                    "_score": 25.56972,
+                    "cosine": 1.712975445729,
+                    "vclaim": "United States President Donald Trump sent his Turkish counterpart a letter on official White House stationary, telling him not to be a 'tough guy' and 'a fool' regarding carrying out an attack against Kurdish fighters.",
+                    "link": "https://www.truthorfiction.com/trump-letter-erdogan-dont-be-a-fool/"
+                },
+                "4": {
+                    "_id": "26181",
+                    "combined_score": 0.72915162058,
+                    "_score": 27.820158,
+                    "cosine": 1.664551966281,
+                    "vclaim": "A half dozen Trump-related entities were under criminal investigation in December 2018.",
+                    "link": "https://www.snopes.com/fact-check/trump-entities-criminal-probe/"
+                },
+                "5": {
+                    "_id": "4308",
+                    "combined_score": 0.672134406915,
+                    "_score": 32.04423,
+                    "cosine": 1.585763624337,
+                    "vclaim": "Turkish leader Erdogan declares support for Indonesian presidential candidate Prabowo Subianto",
+                    "link": "https://factcheck.afp.com//no-image-does-not-show-turkish-leader-erdogan-declaring-support-opposition-candidates-indonesias"
+                }
+            }
+        },
+        {
+            "sentence": "- The US leader said invading Venezuela would be \"cool\" and that the South American nation was \"really part of the United States\"",
+            "retrieved": {
+                "1": {
+                    "_id": "13473",
+                    "combined_score": 0.778391188776,
+                    "_score": 18.945156,
+                    "cosine": 1.707982521166,
+                    "vclaim": "'Venezuela is a country whose defense budget is probably 1/600th of the United States.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/apr/21/barack-obama/obama-says-venezuela-defense-budget-1600th-uss/"
+                },
+                "2": {
+                    "_id": "27577",
+                    "combined_score": 0.767100803196,
+                    "_score": 21.715088,
+                    "cosine": 1.65764800237,
+                    "vclaim": "Cuban leader Fidel Castro once said he wouldn't die until the United States was destroyed.",
+                    "link": "https://www.snopes.com/fact-check/fidel-castro-said-he-wont-die-until-america-is-destroyed/"
+                },
+                "3": {
+                    "_id": "3742",
+                    "combined_score": 0.716158282816,
+                    "_score": 28.239527,
+                    "cosine": 1.521616300931,
+                    "vclaim": "Both United States President Donald Trump and France's President Emmanuel Macron agreed that they want to invite Russia to rejoin the G7 economic forum.",
+                    "link": "https://www.truthorfiction.com/did-the-presidents-of-the-united-states-and-france-agree-on-inviting-russia-back-into-the-group-of-seven/"
+                },
+                "4": {
+                    "_id": "2660",
+                    "combined_score": 0.688510689941,
+                    "_score": 21.986782,
+                    "cosine": 1.597113491578,
+                    "vclaim": "Signs near the US-Mexico border placed by the federal government plainly state that the territory on American soil is essentially lawless and uncontrolled.",
+                    "link": "https://www.truthorfiction.com/do-border-signs-admit-the-united-states-has-lost-control-of-border-territory/"
+                },
+                "5": {
+                    "_id": "25852",
+                    "combined_score": 0.57452135833,
+                    "_score": 25.502884,
+                    "cosine": 1.46171093898,
+                    "vclaim": "Rabbi Steven Pruzansky penned an opinion piece about the 2012 U.S. presidential elections entitled “The Decline and Fall of the American Empire.”",
+                    "link": "https://www.snopes.com/fact-check/the-decline-and-fall-of-the-american-empire/"
+                }
+            }
+        },
+        {
+            "sentence": "- Mr Trump was unaware the UK was a nuclear power and once asked a senior aide if Finland was part of Russia",
+            "retrieved": {
+                "1": {
+                    "_id": "31279",
+                    "combined_score": 0.761564562167,
+                    "_score": 18.238684,
+                    "cosine": 1.725915710897,
+                    "vclaim": "A video report from the BBC stated that a nuclear war had started between NATO and Russia.",
+                    "link": "https://www.snopes.com/fact-check/bbc-nato-russia-nuclear-incident/"
+                },
+                "2": {
+                    "_id": "24595",
+                    "combined_score": 0.670226706448,
+                    "_score": 19.906544,
+                    "cosine": 1.644756611768,
+                    "vclaim": "American intelligence has confirmed that President-elect Donald Trump was blackmailed by Russian operatives.",
+                    "link": "https://www.snopes.com/fact-check/u-s-trump-intelligence-russia/"
+                },
+                "3": {
+                    "_id": "5688",
+                    "combined_score": 0.599552844602,
+                    "_score": 20.28525,
+                    "cosine": 1.591157426056,
+                    "vclaim": "The Russia investigation 'was a coup. This was an attempted overthrow of the United States government.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/apr/29/donald-trump/was-donald-trump-target-coup-no/"
+                },
+                "4": {
+                    "_id": "24643",
+                    "combined_score": 0.585295528559,
+                    "_score": 19.945436,
+                    "cosine": 1.584543517412,
+                    "vclaim": "A computer infected by malware proved a Vermont power company has been targeted for disruption by Russian hackers.",
+                    "link": "https://www.snopes.com/fact-check/report-vermont-power-grid-infiltrated-by-russian-hackers/"
+                },
+                "5": {
+                    "_id": "31097",
+                    "combined_score": 0.584596040195,
+                    "_score": 19.894344,
+                    "cosine": 1.584566268098,
+                    "vclaim": "A photograph of the Andromeda Galaxy next to the moon was taken without a telescope in Finland.",
+                    "link": "https://www.snopes.com/fact-check/andromeda-galaxy-moon-photo/"
+                }
+            }
+        },
+        {
+            "sentence": "Just days before the book's publication, President Trump said the book was \"made up of lies and fake stories\".",
+            "retrieved": {
+                "1": {
+                    "_id": "32577",
+                    "combined_score": 0.774142542506,
+                    "_score": 16.390102,
+                    "cosine": 1.624833309755,
+                    "vclaim": "Leaked DNC e-mails from May 2016 reveal a plot to contrive fake stories about Donald Trump groping women.",
+                    "link": "https://www.snopes.com/fact-check/fake-trump-groping-plot/"
+                },
+                "2": {
+                    "_id": "11658",
+                    "combined_score": 0.772941923022,
+                    "_score": 14.303621,
+                    "cosine": 1.658450286048,
+                    "vclaim": "'Someone can write an article or book, totally make up stories and form a picture of a person that is literally the exact opposite of the fact, and get away with it without retribution or cost. Don’t know why Washington politicians don’t change libel laws?'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/sep/05/donald-trump/donald-trump-inaccurately-describes-libel-law/"
+                },
+                "3": {
+                    "_id": "240",
+                    "combined_score": 0.706509851062,
+                    "_score": 14.605384,
+                    "cosine": 1.611755325754,
+                    "vclaim": "Did The CIA Director Call The Trump Dossier The ‘Foundation’ Of The Russia Investigation?",
+                    "link": "https://checkyourfact.com/2017/10/27/fact-check-did-the-cia-director-call-the-trump-dossier-the-foundation-of-the-russia-investigation/"
+                },
+                "4": {
+                    "_id": "30547",
+                    "combined_score": 0.689301987014,
+                    "_score": 20.8694,
+                    "cosine": 1.497759114267,
+                    "vclaim": "News stories about a mass shooting at a Florida high school were timestamped days earlier than 14 February 2018, which prove that the mass shooting was actually a 'false flag' hoax.",
+                    "link": "https://www.snopes.com/fact-check/were-stories-florida-shooting-before/"
+                },
+                "5": {
+                    "_id": "27567",
+                    "combined_score": 0.687859181703,
+                    "_score": 15.606938,
+                    "cosine": 1.583542596742,
+                    "vclaim": "Trump's 1987 book The Art of the Deal says that being an atheist gives Trump 'an edge in every deal.'",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-wrote-that-being-an-atheist-gave-him-a-business-edge/"
+                }
+            }
+        },
+        {
+            "sentence": "\"Many of the ridiculous statements he attributes to me were never made, pure fiction. Just trying to get even for firing him like the sick puppy he is!\" Mr Trump said in a tweet.",
+            "retrieved": {
+                "1": {
+                    "_id": "6640",
+                    "combined_score": 0.752039684942,
+                    "_score": 18.843132,
+                    "cosine": 1.661771248627,
+                    "vclaim": "'Donald Trump has been in public eye for over 30 years and he was never once accused of being racist by anyone until he decided to run against the Democrats.'",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/may/22/viral-image/donald-trump-has-faced-allegations-racism-decades/"
+                },
+                "2": {
+                    "_id": "17201",
+                    "combined_score": 0.744397401314,
+                    "_score": 19.064587,
+                    "cosine": 1.654794502486,
+                    "vclaim": "'Luke Messer? He plotted with the Never-Trumpers to steal the nomination from President Trump.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/apr/13/todd-rokita/luke-messer-plot-never-trump-steal-nomination/"
+                },
+                "3": {
+                    "_id": "3143",
+                    "combined_score": 0.717428311684,
+                    "_score": 27.81793,
+                    "cosine": 1.556562392235,
+                    "vclaim": "In late September 2019 President Trump started trying to get Vice President Mike Pence impeached.",
+                    "link": "https://www.truthorfiction.com/trump-is-now-trying-to-get-mike-pence-impeached-claim/"
+                },
+                "4": {
+                    "_id": "2243",
+                    "combined_score": 0.692699947777,
+                    "_score": 23.63554,
+                    "cosine": 1.579224296867,
+                    "vclaim": "Claims Made in the 'Who is Donald Trump' Viral Video",
+                    "link": "https://www.truthorfiction.com/claims-made-in-the-who-is-donald-trump-viral-video/"
+                },
+                "5": {
+                    "_id": "28349",
+                    "combined_score": 0.673199630325,
+                    "_score": 19.39436,
+                    "cosine": 1.605802912099,
+                    "vclaim": "Donald Trump was never accused of racism before he ran for president in 2016.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-racist-meme/"
+                }
+            }
+        }
+    ]
+}
