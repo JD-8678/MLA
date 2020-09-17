@@ -7,7 +7,7 @@ from tqdm import tqdm
 from elasticsearch import Elasticsearch
 #from newsplease import NewsPlease
 import trafilatura
-from lib import logger
+from lib.logger import logger
 
 #config
 #PREDICT_FILE_COLUMNS = ['tweet_id', 'vclaim_id','vclaim', 'score', 'ratingName', 'link']
@@ -189,13 +189,14 @@ def main(args):
             maintext = trafilatura.extract(website)
             article = articleClass(maintext,args.input[i])
             news_articles.append(article)
-            for sentence in article.maintext.split('.'):
+            print(maintext)
+            for sentence in article.maintext.split('\n'):
                 news.append([sentence.replace('\t','\b'),article.url]) 
             #news.append([article.maintext.replace('\t','\b'),article.url])
     elif args.mode == "string":
         for i in range(len(args.input)):
             news_string.append([args.input[i],i])
-            for sentence in args.input[i].split('.'):
+            for sentence in args.input[i].split('\n'):
                 news.append([sentence.replace('\t','\b'),i]) 
 
     news = pd.DataFrame(news,columns=PREDICT_NEWS_COLUMNS)
