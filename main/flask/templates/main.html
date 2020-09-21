@@ -15,9 +15,12 @@
         <input type="radio" name="mode" id="url" value="url" checked=true> <label for="url">url</label>
     </form>
 
-    <label style="text-align: center">{{ text }}</label>     
+    {% for i in range(textClaims['split']| length) %}
+        <label onclick="myFunction(this)" id={{i}} > {{ textClaims['split'][i]['sentence'] }} </label>
+    {% endfor %}   
 
-    <table >
+    <p id="demo">test</p>  
+    <table id="table" >
         <tr>
             <th>claim</th>
             <th>rating</th>
@@ -33,6 +36,27 @@
     </table>
     
 </div>
+
+<script>
+    var textClaims = {{textClaims|tojson}};
+    var last = null;
+
+    function myFunction(elem) {
+        if (last != null) {
+            last.style.color = "black"
+        }
+        document.getElementById("demo").textContent = elem.textContent;
+        elem.style.color = "red"
+        last = elem
+
+        table = document.getElementById("table")
+        for(i=1;i<5;i++){
+            table.rows[i].cells[0].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['vclaim']
+            table.rows[i].cells[1].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['combined_score']
+            table.rows[i].cells[2].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['link']
+        }
+    }
+</script>
 
 {% endblock %}
 
