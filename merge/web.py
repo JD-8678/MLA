@@ -1,27 +1,18 @@
 import flask,csv,json
 import os
-import run,argparse
+from bin import *
 
 app = flask.Flask(__name__)
 
 @app.route('/', methods=['POST','GET'])
 def index():
-    if flask.request.method == 'POST':
-        task_content = flask.request.form['content']
-        #reader = csv.reader(open('result.csv'),delimiter=',')
-        #exec("python ./../run.py -i 'TestString'")
-        print(task_content)
-        #result = os.system('python ./../run.py -m ' + flask.request.form['mode'] + ' -i ' + task_content )
-        args = parse_args(flask.request.form['mode'],task_content)
-        #result,maintext = run.main(args)
-        #print(result.values)
-        #reader=result.values
-        reader=[["elem_0","elem_1","elem_2","elem_3","elem_4"],
+    reader=[["elem_0","elem_1","elem_2","elem_3","elem_4"],
                 ["elem_0","elem_1","elem_2","elem_3","elem_4"],
                 ["elem_0","elem_1","elem_2","elem_3","elem_4"],
                 ["elem_0","elem_1","elem_2","elem_3","elem_4"],
                 ["elem_0","elem_1","elem_2","elem_3","elem_4"]]
-        test={
+                
+    test={
                 "mode": "url",
                 "url": "https://www.bbc.com/news/world-us-canada-54171941",
                 "index_name": "vclaims",
@@ -120,10 +111,19 @@ def index():
                 ]
             }
         
-        maintext = ["This is the maintext.","and this is the secend sentence"]
-        return flask.render_template('main.html', claims=reader, text=maintext, textClaims=test)
+    maintext = ["This is the maintext.","and this is the secend sentence"]
+    if flask.request.method == 'POST':
+        task_content = flask.request.form['content']
+        print(task_content)
+
+        result = run_url.run(task_content)
+        #print(result.values)
+
+        #reader=result.values
+
+        return flask.render_template('main.html', claims=[[]], text=maintext, textClaims=test)
     else:
-        return flask.render_template('main.html', claims=[[]])
+        return flask.render_template('main.html', claims=[[]], text=maintext, textClaims=test)
 
 def parse_args(mode,input):
     parser = argparse.ArgumentParser()

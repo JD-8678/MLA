@@ -1,12 +1,15 @@
 import numpy as np
 import pandas as pd
-import argparse
+import argparse,os
 from tqdm import tqdm
 from elasticsearch import Elasticsearch,helpers
-from lib.logger import logger
+from logger import logger
 from sentence_transformers import SentenceTransformer
+#distilbert_model
 
-model = SentenceTransformer('data/distilbert_model')
+dir = os.path.dirname(__file__)
+
+model = SentenceTransformer(os.path.join(dir, 'data','distilbert_model'))
 # model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
 def embedd(sentence):
     sentence_embeddings = model.encode(sentence)
@@ -84,7 +87,7 @@ def build_index_Linux(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--vclaims", "-v", "-source", default='data/vclaims.tsv',
+    parser.add_argument("--vclaims", "-v", "-source", default=os.path.join(dir,'data','vclaims.tsv'),
                         help="Path to file containing vclaims (cLaimsKG format).")
     parser.add_argument("--connection", "-c", "-es", "-conn", default="127.0.0.1:9200",
                         help="HTTP/S URL to a instance of ElasticSearch")
@@ -93,9 +96,10 @@ def parse_args():
     return parser.parse_args()
 
 def main(args):
+    print(args.vclaims)
     CLIENT = create_connection(args.connection)
     VCLAIMS = pd.read_csv(args.vclaims, sep='\t', index_col=0)
-    INDEX_FILE = "data/index.json"
+    INDEX_FILE = os.path.join(dir, 'data','index.json')
     INDEX_NAME = args.index_name
     KEYS = ['title',
             'vclaim',
@@ -115,7 +119,6 @@ def main(args):
         except:
             logger.error(r"Something went wrong will building_index!")
     
-
 if __name__=='__main__':
     args = parse_args()
     main(args)
