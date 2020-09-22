@@ -6,9 +6,6 @@ from elasticsearch import Elasticsearch,helpers
 from lib.logger import logger
 from sentence_transformers import SentenceTransformer
 
-
-
-
 model = SentenceTransformer('data/distilbert_model')
 # model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
 def embedd(sentence):
@@ -24,7 +21,6 @@ def create_connection(conn_string):
                                 Check if you've started it or if it listens on the port listed above.")
     logger.debug("Elasticsearch connected")
     return es
-
 
 def clear_index(CLIENT, INDEX_NAME):
     cleared = True
@@ -61,6 +57,31 @@ def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
     for entry in tqdm(helpers.parallel_bulk(client=CLIENT, actions=actions), total=vclaims_count):
         pass
 
+#not tested
+def build_index_Linux(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
+    vclaims_count = VCLAIMS.shape[0]
+    clear_index(CLIENT, INDEX_NAME)
+    
+    with open(INDEX_FILE) as index_file:
+        source = index_file.read()
+        CLIENT.indices.create(index=INDEX_NAME, body=source)
+
+    logger.info(f"Builing index of {vclaims_count} vclaims with fieldnames: {fieldnames}")
+    actions = []
+    for i, vclaim in tqdm(VCLAIMS.iterrows(), total=vclaims_count):
+        if not CLIENT.exists(index=INDEX_NAME, id=i):
+            body = vclaim.loc[fieldnames].replace(np.nan, "").to_dict()
+            body["vector"] = embedd(vclaim["vclaim"])
+            actions.append(
+                {
+                    '_op_type': 'create',
+                    '_index': INDEX_NAME,
+                    '_id': i + 1,
+                    '_source': body
+                })
+    logger.info('Wait...')
+    deque(helpers.parallel_bulk(client=CLIENT, actions=actions), maxlen=0)
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--vclaims", "-v", "-source", default='data/vclaims.tsv',
@@ -86,8 +107,14 @@ def main(args):
             'keywords',
             'date',
             'vector']
-
-    build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS)
+    try:
+        build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS)
+    except:
+        try:
+            build_index_Linux(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS)
+        except:
+            logger.error(r"Something went wrong will building_index!")
+    
 
 if __name__=='__main__':
     args = parse_args()

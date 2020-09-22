@@ -12,7 +12,7 @@ from sentence_transformers import SentenceTransformer
 from collections import deque
 
 PREDICT_FILE_COLUMNS = ['qid', 'Q0', 'docno', 'rank', 'score', 'tag']
-INDEX_NAME = 'vclaimpapa'
+INDEX_NAME = 'vclaim'
 
 #modified by Erwin Letkemann for special uses
 

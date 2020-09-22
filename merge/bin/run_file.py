@@ -15,7 +15,6 @@ pd.set_option('display.max_columns', None)
 def cosine(A, B):
     return 2 - spatial.distance.cosine(A, B)
 
-
 def create_connection(conn_string):
     logger.debug("Starting ElasticSearch client")
     try:
@@ -25,7 +24,6 @@ def create_connection(conn_string):
                                 Check if you've started it or if it listens on the port listed above.")
     logger.debug("Elasticsearch connected")
     return es
-
 
 def get_score(CLIENT, INDEX_NAME, sentence):
     query_embedded = embedd(sentence).tolist()
@@ -71,7 +69,6 @@ def get_score(CLIENT, INDEX_NAME, sentence):
     df = df.set_index('id')
     return df
 
-
 def get_scores(CLIENT, INDEX_NAME, sentences):
     count_sentences = len(sentences)
     scores = []
@@ -80,7 +77,6 @@ def get_scores(CLIENT, INDEX_NAME, sentences):
         score = get_score(CLIENT, INDEX_NAME, sentence)
         scores.append(score[:5])
     return scores
-
 
 def format_scores(sentences, scores_sentences):
     formatted_scores = []
@@ -91,7 +87,6 @@ def format_scores(sentences, scores_sentences):
         dict['retrieved'] = formatted_df[['_id', 'combined_score', 'vclaim', 'link']].to_dict(orient='index')
         formatted_scores.append(dict)
     return formatted_scores
-
 
 def save_result(fulltext, INDEX_NAME, format_scores_sentences, OUTPUT_PATH):
     dict = {}
@@ -108,7 +103,6 @@ def save_result(fulltext, INDEX_NAME, format_scores_sentences, OUTPUT_PATH):
     with open(OUTPUT_PATH + '/result.json', 'a', encoding='utf-8') as file_output:
         json.dump(dict, file_output, ensure_ascii=False, indent=4)
 
-
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output_path", "-p", "-output", "-out", "-result", default="./output",
@@ -120,7 +114,6 @@ def parse_args():
     parser.add_argument("--index_name", "-id", "-name", default="vclaims",
                         help="Elasticsearch index name to assign.")
     return parser.parse_args()
-
 
 def main(args):
     CLIENT = create_connection(args.connection)
@@ -136,7 +129,6 @@ def main(args):
     scores_sentences = get_scores(CLIENT, INDEX_NAME, sentences)
     format_scores_sentences = format_scores(sentences, scores_sentences)
     save_result(fulltext, INDEX_NAME, format_scores_sentences, OUTPUT_PATH)
-
 
 if __name__ == '__main__':
     args = parse_args()

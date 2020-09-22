@@ -18,7 +18,6 @@ pd.set_option('display.max_columns', None)
 def cosine(A, B):
     return 2 - spatial.distance.cosine(A, B)
 
-
 def create_connection(conn_string):
     logger.debug("Starting ElasticSearch client")
     try:
@@ -28,7 +27,6 @@ def create_connection(conn_string):
                                 Check if you've started it or if it listens on the port listed above.")
     logger.debug("Elasticsearch connected")
     return es
-
 
 def get_score(CLIENT, INDEX_NAME, sentence):
     query_embedded = embedd(sentence).tolist()
@@ -74,16 +72,17 @@ def get_score(CLIENT, INDEX_NAME, sentence):
     df = df.set_index('id')
     return df
 
-
 def get_scores(CLIENT, INDEX_NAME, sentences):
     count_sentences = len(sentences)
     scores = []
+
     logger.info(f"Geting elastic scores for {count_sentences} sentences.")
     for sentence in tqdm(sentences, total=count_sentences):
         score = get_score(CLIENT, INDEX_NAME, sentence)
         scores.append(score[:5])
-    return scores
+    
 
+    return scores
 
 def format_scores(sentences, scores_sentences):
     formatted_scores = []
@@ -95,7 +94,6 @@ def format_scores(sentences, scores_sentences):
             orient='index')
         formatted_scores.append(dict)
     return formatted_scores
-
 
 def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PATH):
     dict = {}
@@ -112,7 +110,7 @@ def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PAT
     with open(OUTPUT_PATH + '/result.json', 'a', encoding='utf-8') as file_output:
         json.dump(dict, file_output, ensure_ascii=False, indent=4)
     file_output.close()
-
+    return dict
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -126,6 +124,24 @@ def parse_args():
                         help="Elasticsearch index name to assign.")
     return parser.parse_args()
 
+#for library use
+def run(input, client="127.0.0.1:9200",output_path="./output", index_name="vclaims", ):
+    CLIENT = create_connection(client)
+    OUTPUT_PATH = output_path
+    INDEX_NAME = index_name
+    INPUT = str(input)
+
+    try:
+        website = trafilatura.fetch_url(INPUT)
+        fulltext = trafilatura.extract(website)
+    except:
+        website = NewsPlease.from_url(INPUT)
+        fulltext = website.maintext
+
+    sentences = list(fulltext.split("\n"))
+    scores_sentences = get_scores(CLIENT, INDEX_NAME, sentences)
+    format_scores_sentences = format_scores(sentences, scores_sentences)
+    return save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PATH)
 
 def main(args):
     CLIENT = create_connection(args.connection)
@@ -144,7 +160,6 @@ def main(args):
     scores_sentences = get_scores(CLIENT, INDEX_NAME, sentences)
     format_scores_sentences = format_scores(sentences, scores_sentences)
     save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PATH)
-
 
 if __name__ == '__main__':
     args = parse_args()

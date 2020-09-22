@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title Claims></title>
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <h1 style="text-align: center">Look for Claims</h1>
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="submit">
+        <input type="radio" name="mode" id="string" value="string"> <label for="string">string</label>
+        <input type="radio" name="mode" id="url" value="url" checked=true> <label for="url">url</label>
+    </form>
+
+    {% for i in range(textClaims['split']| length) %}
+        <label onclick="myFunction(this)" id={{i}} > {{ textClaims['split'][i]['sentence'] }} </label>
+    {% endfor %}   
+
+    <p id="demo">test</p>  
+    <table id="table" >
+        <tr>
+            <th>claim</th>
+            <th>rating</th>
+            <th>link</th>
+        </tr>
+        {% for elem in claims %}
+        <tr>
+            <th>{{ elem[1] }}</th>
+            <th>{{ elem[3] }}</th>
+            <th>{{ elem[4] }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</div>
+
+<script>
+    var textClaims = {{textClaims|tojson}};
+    var last = null;
+
+    function myFunction(elem) {
+        if (last != null) {
+            last.style.color = "black"
+        }
+        document.getElementById("demo").textContent = elem.textContent;
+        elem.style.color = "red"
+        last = elem
+
+        table = document.getElementById("table")
+        for(i=1;i<5;i++){
+            table.rows[i].cells[0].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['vclaim']
+            table.rows[i].cells[1].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['combined_score']
+            table.rows[i].cells[2].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['link']
+        }
+    }
+</script>
+
+{% endblock %}
+
+
