@@ -1,0 +1,413 @@
+{
+    "mode": "url",
+    "url": "https://www.floridadems.org/news/ahead-of-trumps-relaunch-fdp-highlights-how-trump-abandoned-workers",
+    "index_name": "vclaims",
+    "fulltext": "Ahead of Trump’s campaign relaunch, the Florida Democratic Party is previewing his track record of broken promises. Today’s focus is on how Trump abandoned workers.\nOn June 18, Donald Trump shall descend on Orlando, Florida to hold a campaign kick-off rally. As Trump’s visit nears, the Florida Democratic Party reminds members of the media of Trump’s continued assault on workers for the enrichment of corporate titans.\nThe Trump administration has given corporations a $1 trillion tax cut — with almost nothing going into the pockets of workers — while at the same time, gutting workers rights, consumer protections, and denying 4.2 million American workers overtime. Trump’s economic record deserves media scrutiny ahead of his campaign kick-off.\nFlorida Agriculture Commissioner Nikki Fried stated: “Donald Trump should launch his anti-worker, anti-woman, anti-farmer, and anti-minority campaign elsewhere. We are a diverse, growing, and strong state that is increasingly rejecting his reckless, self-serving campaign rhetoric. He’s here because he knows he can’t win without Florida in 2020 — but we know Florida can only win without a second Trump term.”\nSee for Yourself\nWith Trump’s reelection kicking-off, news outlets can’t ignore the fact that Trump’s economic record is a disaster — unless you happen to make $1 million or more a year.\nNew York Times Editorial Board: “Trump’s War on Worker Rights.” “President Trump ran for office as a champion of American workers and a friend of labor unions, but his administration has systematically favored employers at the expense of workers.” [The New York Times, 6/3/19]\nVox: “Congress’s official think tank finds the Republican tax cuts helped corporations, not workers.” Vox reported on analysis of Trump’s trillion dollar corporate tax giveaway did not increase GDP growth compared to pre-tax projections, or increase wage growth, in fact, wage growth didn’t keep up with GDP. Vox found that it didn’t help workers or boost economic growth instead, it found that it was “a plan that primarily put more money in corporate coffers.” [Vox, 5/29/19]\nCenter For American Progress: “President Trump’s Policies Are Hurting American Workers.” The Center for American Progress (CAP) outlined 53 things the Trump administration has done to harm working families, from weakening consumer protections in payday loans, reversing a ban on toxic chlorpyrifos, to denying overtime to 4.2 million Americans. [Center For American Progress Action Fund, updated 4/1/19]",
+    "split": [
+        {
+            "sentence": "Ahead of Trump’s campaign relaunch, the Florida Democratic Party is previewing his track record of broken promises. Today’s focus is on how Trump abandoned workers.",
+            "retrieved": {
+                "1": {
+                    "_id": "12533",
+                    "combined_score": 0.815483314491,
+                    "_score": 19.583849,
+                    "cosine": 1.616710037006,
+                    "vclaim": "Says Alex Sink supported 'a $5.2 billion increase in Florida's debt.'",
+                    "link": "http://www.politifact.com/florida/statements/2013/nov/07/republican-party-florida/florida-gop-says-alex-sink-supported-52b-debt-incr/"
+                },
+                "2": {
+                    "_id": "32737",
+                    "combined_score": 0.794045668282,
+                    "_score": 17.446146,
+                    "cosine": 1.638701538394,
+                    "vclaim": "Donald Trump announced that his 2016 Presidential campaign was an April Fool's Day joke.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-campaign-joke/"
+                },
+                "3": {
+                    "_id": "510",
+                    "combined_score": 0.773279728265,
+                    "_score": 20.994526,
+                    "cosine": 1.564591059894,
+                    "vclaim": "Four promises from a 2018 national address.",
+                    "link": "https://africacheck.org/reports/has-sas-president-ramaphosa-kept-his-2018-state-of-the-nation-promises/"
+                },
+                "4": {
+                    "_id": "4465",
+                    "combined_score": 0.767504267572,
+                    "_score": 20.098324,
+                    "cosine": 1.575954272156,
+                    "vclaim": "On an early date for Florida's presidential primary",
+                    "link": "http://www.politifact.com/florida/statements/2013/may/09/marco-rubio/did-marco-rubio-flip-flop-setting-floridas-preside/"
+                },
+                "5": {
+                    "_id": "2219",
+                    "combined_score": 0.741608940906,
+                    "_score": 23.670765,
+                    "cosine": 1.498012020523,
+                    "vclaim": "The Trump administration is editing or rewriting the Statue of Liberty's poem, 'The New Colossus.'",
+                    "link": "https://www.truthorfiction.com/is-the-trump-administration-rewriting-the-statue-of-libertys-poem/"
+                }
+            }
+        },
+        {
+            "sentence": "On June 18, Donald Trump shall descend on Orlando, Florida to hold a campaign kick-off rally. As Trump’s visit nears, the Florida Democratic Party reminds members of the media of Trump’s continued assault on workers for the enrichment of corporate titans.",
+            "retrieved": {
+                "1": {
+                    "_id": "21801",
+                    "combined_score": 0.900823074401,
+                    "_score": 32.177948,
+                    "cosine": 1.876125506915,
+                    "vclaim": "A photograph of a large crowd shows a Trump rally in Orlando, Florida.",
+                    "link": "https://www.snopes.com/fact-check/photograph-trump-rally/"
+                },
+                "2": {
+                    "_id": "4406",
+                    "combined_score": 0.771298472758,
+                    "_score": 25.915613,
+                    "cosine": 1.872255512763,
+                    "vclaim": "Says a photo shows thousands of Donald Trump supporters outside his Orlando rally.",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/jun/28/viral-image/photo-shows-toronto-celebration-after-raptors-win-/"
+                },
+                "3": {
+                    "_id": "22358",
+                    "combined_score": 0.685710884077,
+                    "_score": 25.861982,
+                    "cosine": 1.792008521661,
+                    "vclaim": "Donald Trump tweeted that he appreciated 'the congrats for being right on radical Islamic terrorism' after a mass shooting in Orlando.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-terrorism-tweet/"
+                },
+                "4": {
+                    "_id": "6257",
+                    "combined_score": 0.681255380275,
+                    "_score": 29.683876,
+                    "cosine": 1.715081501367,
+                    "vclaim": "The 'establishment media ignored' President Donald Trump’s Fourth of July event.",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/jul/11/breitbart/no-establishment-media-didnt-ignore-president-trum/"
+                },
+                "5": {
+                    "_id": "20936",
+                    "combined_score": 0.674667244325,
+                    "_score": 24.93192,
+                    "cosine": 1.799213121641,
+                    "vclaim": "A video shows piles of garbage left behind after U.S. President Donald Trump's June 2019 rally in Orlando, Fla.",
+                    "link": "https://www.snopes.com/fact-check/trump-supporters-leave-trash/"
+                }
+            }
+        },
+        {
+            "sentence": "The Trump administration has given corporations a $1 trillion tax cut — with almost nothing going into the pockets of workers — while at the same time, gutting workers rights, consumer protections, and denying 4.2 million American workers overtime. Trump’s economic record deserves media scrutiny ahead of his campaign kick-off.",
+            "retrieved": {
+                "1": {
+                    "_id": "14256",
+                    "combined_score": 0.875147591075,
+                    "_score": 62.634247,
+                    "cosine": 1.74830702311,
+                    "vclaim": "The Trump administration has denied '4.2 million American workers overtime.'",
+                    "link": "http://www.politifact.com/florida/statements/2019/jun/25/florida-democratic-party/fact-checking-florida-democrats-attack-trump-about/"
+                },
+                "2": {
+                    "_id": "19565",
+                    "combined_score": 0.769400273409,
+                    "_score": 25.613688,
+                    "cosine": 1.858464871766,
+                    "vclaim": "'The average tax refund is down about $170 compared to last year. Let’s call the President’s tax cut what it is: a middle-class tax hike to line the pockets of already wealthy corporations and the 1%.'",
+                    "link": "http://www.politifact.com/california/statements/2019/feb/13/kamala-harris/checking-kamala-harris-tax-refunds-and-gop-tax-law/"
+                },
+                "3": {
+                    "_id": "13826",
+                    "combined_score": 0.765386956615,
+                    "_score": 24.819891,
+                    "cosine": 1.85927515731,
+                    "vclaim": "'Because of #TaxReform, 4 million American workers have received raises and bonuses, and 90% of Americans are seeing bigger paychecks this month.'",
+                    "link": "http://www.politifact.com/new-york/statements/2018/mar/09/chris-collins/are-americans-already-benefiting-new-tax-law/"
+                },
+                "4": {
+                    "_id": "19256",
+                    "combined_score": 0.760499073266,
+                    "_score": 29.013544,
+                    "cosine": 1.831805431278,
+                    "vclaim": "'Since we passed tax cuts, over 3 million workers have gotten tax cut bonuses — many of them thousands and thousands of dollars.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/jan/31/donald-trump/trump-says-tax-bill-led-bonuses-three-million-work/"
+                },
+                "5": {
+                    "_id": "18233",
+                    "combined_score": 0.753966235555,
+                    "_score": 24.985123,
+                    "cosine": 1.848213330989,
+                    "vclaim": "'The bottom line is clear: Under the policies of this unified Republican government, American workers, families, and business owners are achieving economic growth that is unmatched in recent memory. … More than 1 million new jobs have been created just since we passed tax reform last December.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/jun/05/mitch-mcconnell/how-strong-have-job-gains-been-tax-bill-passed/"
+                }
+            }
+        },
+        {
+            "sentence": "Florida Agriculture Commissioner Nikki Fried stated: “Donald Trump should launch his anti-worker, anti-woman, anti-farmer, and anti-minority campaign elsewhere. We are a diverse, growing, and strong state that is increasingly rejecting his reckless, self-serving campaign rhetoric. He’s here because he knows he can’t win without Florida in 2020 — but we know Florida can only win without a second Trump term.”",
+            "retrieved": {
+                "1": {
+                    "_id": "25399",
+                    "combined_score": 0.861042305238,
+                    "_score": 38.21497,
+                    "cosine": 1.615652361834,
+                    "vclaim": "Florida governor Rick Scott adopted a rescue dog during his campaign and returned it once he was elected.",
+                    "link": "https://www.snopes.com/fact-check/rick-scott-shelter-dog/"
+                },
+                "2": {
+                    "_id": "26523",
+                    "combined_score": 0.843920363063,
+                    "_score": 43.986275,
+                    "cosine": 1.525783093555,
+                    "vclaim": "Democratic Florida State Representative Kimberly Daniels once said, 'I thank God for slavery.'",
+                    "link": "https://www.snopes.com/fact-check/kimberly-daniels-thank-god-slavery/"
+                },
+                "3": {
+                    "_id": "23955",
+                    "combined_score": 0.843256527714,
+                    "_score": 41.269638,
+                    "cosine": 1.561284778576,
+                    "vclaim": "Donald Trump violated Palm Beach ordinances by putting up an outsized U.S. flag and pole, then donating the money he was fined to veterans' organizations.",
+                    "link": "https://www.snopes.com/fact-check/trump-maralago-flagpole/"
+                },
+                "4": {
+                    "_id": "6818",
+                    "combined_score": 0.832356881711,
+                    "_score": 39.65425,
+                    "cosine": 1.574205037031,
+                    "vclaim": "'Mr. Trump is self-financing his campaign, so we don’t have any donors.'",
+                    "link": "http://www.politifact.com/virginia/statements/2016/feb/22/corey-lewandowski/trumps-campaign-manager-we-dont-have-any-donors/"
+                },
+                "5": {
+                    "_id": "32737",
+                    "combined_score": 0.812617387431,
+                    "_score": 34.97254,
+                    "cosine": 1.620889036238,
+                    "vclaim": "Donald Trump announced that his 2016 Presidential campaign was an April Fool's Day joke.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-campaign-joke/"
+                }
+            }
+        },
+        {
+            "sentence": "See for Yourself",
+            "retrieved": {
+                "1": {
+                    "_id": "4197",
+                    "combined_score": 0.979502928112,
+                    "_score": 10.981929,
+                    "cosine": 1.492329976934,
+                    "vclaim": "Did CS Lewis Say, ‘Humility Isn’t Thinking Less Of Yourself – It’s Thinking Of Yourself Less’?",
+                    "link": "https://checkyourfact.com/2019/06/30/fact-check-cs-lewis-mere-christianity-humility-thinking-less-yourself/"
+                },
+                "2": {
+                    "_id": "2989",
+                    "combined_score": 0.728134683712,
+                    "_score": 10.844419,
+                    "cosine": 1.338193812754,
+                    "vclaim": "Pinch Yourself by Melanie Phillips",
+                    "link": "https://www.truthorfiction.com/obama-melanie-phillips/"
+                },
+                "3": {
+                    "_id": "29965",
+                    "combined_score": 0.613048629832,
+                    "_score": 8.602186,
+                    "cosine": 1.323895147411,
+                    "vclaim": "Your Facebook private inbox messages are now visible for all to see.",
+                    "link": "https://www.snopes.com/fact-check/facebook-private-messages/"
+                },
+                "4": {
+                    "_id": "21895",
+                    "combined_score": 0.595131916851,
+                    "_score": 11.337898,
+                    "cosine": 1.242017269992,
+                    "vclaim": "A web site allows criminals to look up the personal information of police officers.",
+                    "link": "https://www.snopes.com/fact-check/sensitive-personal-information-police-officers/"
+                },
+                "5": {
+                    "_id": "31424",
+                    "combined_score": 0.59255755667,
+                    "_score": 10.522454,
+                    "cosine": 1.261457814725,
+                    "vclaim": "Listing yourself as your friend on Facebook creates an open door for hackers.",
+                    "link": "https://www.snopes.com/fact-check/false-facebook-hacker-door/"
+                }
+            }
+        },
+        {
+            "sentence": "With Trump’s reelection kicking-off, news outlets can’t ignore the fact that Trump’s economic record is a disaster — unless you happen to make $1 million or more a year.",
+            "retrieved": {
+                "1": {
+                    "_id": "20807",
+                    "combined_score": 0.800205345571,
+                    "_score": 18.95119,
+                    "cosine": 1.795707533991,
+                    "vclaim": "A lack of media attention regarding a $12 billion reduction to the national debt during President Trump’s first month in office is attributable to biased news coverage.",
+                    "link": "https://www.snopes.com/fact-check/media-silence-national-debt-trump/"
+                },
+                "2": {
+                    "_id": "12932",
+                    "combined_score": 0.739312544917,
+                    "_score": 16.353022,
+                    "cosine": 1.786402684643,
+                    "vclaim": "'President Trump’s Republican Party will create more debt in one year than was generated in the first 200 years of America’s existence.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2018/sep/12/joe-scarborough/will-trump-gop-create-more-debt-one-year-first-200/"
+                },
+                "3": {
+                    "_id": "15267",
+                    "combined_score": 0.70906243637,
+                    "_score": 20.22843,
+                    "cosine": 1.696522440554,
+                    "vclaim": "'In Trump’s first year as president, job growth slowed to a six-year low.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/jan/16/democratic-national-committee/dnc-strains-find-problems-current-job-market/"
+                },
+                "4": {
+                    "_id": "13119",
+                    "combined_score": 0.700506600124,
+                    "_score": 23.117289,
+                    "cosine": 1.641514753907,
+                    "vclaim": "Says '80 percent of the tax breaks in' President Donald Trump’s tax-cut 'proposal go to the top 1 percent, that is, people making more than $730,000 a year.'",
+                    "link": "http://www.politifact.com/texas/statements/2017/oct/20/lloyd-doggett/lloyd-doggett-says-80-percent-republican-sought-ta/"
+                },
+                "5": {
+                    "_id": "15381",
+                    "combined_score": 0.654943619039,
+                    "_score": 21.109259,
+                    "cosine": 1.635607846408,
+                    "vclaim": "Says Donald Trump’s 'only economic agenda is imposing massive taxes on the American people with a 40 percent tax hike of a giant tariff.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/may/01/ted-cruz/donald-trumps-economic-agenda-imposing-massive-tax/"
+                }
+            }
+        },
+        {
+            "sentence": "New York Times Editorial Board: “Trump’s War on Worker Rights.” “President Trump ran for office as a champion of American workers and a friend of labor unions, but his administration has systematically favored employers at the expense of workers.” [The New York Times, 6/3/19]",
+            "retrieved": {
+                "1": {
+                    "_id": "17718",
+                    "combined_score": 0.865939847577,
+                    "_score": 37.40538,
+                    "cosine": 1.651436271187,
+                    "vclaim": "'One-half of undocumented workers pay federal income taxes, which means they are paying more federal income taxes than Donald Trump pays.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/oct/27/hillary-clinton/clinton-undocumented-workers-pay-more-trump-federa/"
+                },
+                "2": {
+                    "_id": "23299",
+                    "combined_score": 0.84314435211,
+                    "_score": 38.507206,
+                    "cosine": 1.609960753418,
+                    "vclaim": "New York Times columnist hailed the election of Donald Trump as a 'complete repudiation of Barack Obama.'",
+                    "link": "https://www.snopes.com/fact-check/maureen-dowd-election-therapy/"
+                },
+                "3": {
+                    "_id": "15848",
+                    "combined_score": 0.819366135391,
+                    "_score": 32.524296,
+                    "cosine": 1.706872777418,
+                    "vclaim": "Chinese workers made '90,000 banners' for Trump’s 2020 re-election campaign and the president chose to hire 'Chinese workers instead of American workers'",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/feb/15/viral-image/yes-trump-re-election-banners-are-being-made-china/"
+                },
+                "4": {
+                    "_id": "13786",
+                    "combined_score": 0.791960591924,
+                    "_score": 29.647633,
+                    "cosine": 1.739581311026,
+                    "vclaim": "Says Donald Trump 'brings in hundreds of foreign workers to replace Americans.'",
+                    "link": "http://www.politifact.com/florida/statements/2016/may/06/ted-cruz/donald-trump-attacked-bringing-hundreds-foreign-wo/"
+                },
+                "5": {
+                    "_id": "14256",
+                    "combined_score": 0.78838794086,
+                    "_score": 30.596678,
+                    "cosine": 1.71782258433,
+                    "vclaim": "The Trump administration has denied '4.2 million American workers overtime.'",
+                    "link": "http://www.politifact.com/florida/statements/2019/jun/25/florida-democratic-party/fact-checking-florida-democrats-attack-trump-about/"
+                }
+            }
+        },
+        {
+            "sentence": "Vox: “Congress’s official think tank finds the Republican tax cuts helped corporations, not workers.” Vox reported on analysis of Trump’s trillion dollar corporate tax giveaway did not increase GDP growth compared to pre-tax projections, or increase wage growth, in fact, wage growth didn’t keep up with GDP. Vox found that it didn’t help workers or boost economic growth instead, it found that it was “a plan that primarily put more money in corporate coffers.” [Vox, 5/29/19]",
+            "retrieved": {
+                "1": {
+                    "_id": "17728",
+                    "combined_score": 0.898542470182,
+                    "_score": 50.51234,
+                    "cosine": 1.861445689976,
+                    "vclaim": "'U.S. government reports record tax haul after Trump tax cuts spur economic growth.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2018/aug/17/patriot-news-alerts/did-us-have-record-tax-haul-after-trump-tax-cuts-s/"
+                },
+                "2": {
+                    "_id": "9058",
+                    "combined_score": 0.887901188498,
+                    "_score": 57.155693,
+                    "cosine": 1.786932312962,
+                    "vclaim": "'Pat Toomey advocated for eliminating all corporate taxes.'",
+                    "link": "http://www.politifact.com/pennsylvania/statements/2016/apr/29/katie-mcginty/did-sen-pat-toomey-say-he-wanted-eliminate-all-cor/"
+                },
+                "3": {
+                    "_id": "958",
+                    "combined_score": 0.881814895044,
+                    "_score": 52.159435,
+                    "cosine": 1.83036672138,
+                    "vclaim": "Is There ‘No Evidence’ Tax Cuts Lead To Economic Growth?",
+                    "link": "https://checkyourfact.com/2017/12/22/fact-check-is-there-no-evidence-tax-cuts-lead-to-economic-growth/"
+                },
+                "4": {
+                    "_id": "19346",
+                    "combined_score": 0.877920262601,
+                    "_score": 54.705883,
+                    "cosine": 1.801970012947,
+                    "vclaim": "Says that when President Bill Clinton raised the top tax rates to levels now proposed by Obama, the country experienced significant job growth.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2011/jul/07/barack-obama/obama-claims-job-rate-soared-after-clinton-raised-/"
+                },
+                "5": {
+                    "_id": "2994",
+                    "combined_score": 0.855572899102,
+                    "_score": 44.085968,
+                    "cosine": 1.885874079279,
+                    "vclaim": "The tax cuts that I’ve prioritised are corporation tax cuts … I’m doing that because I want to boost the growth rate of our economy … if we grew at 3-3.5% we’d have an extra £20 billion to spend",
+                    "link": "https://fullfact.org/economy/would-corporation-tax-cut-pay-itself/"
+                }
+            }
+        },
+        {
+            "sentence": "Center For American Progress: “President Trump’s Policies Are Hurting American Workers.” The Center for American Progress (CAP) outlined 53 things the Trump administration has done to harm working families, from weakening consumer protections in payday loans, reversing a ban on toxic chlorpyrifos, to denying overtime to 4.2 million Americans. [Center For American Progress Action Fund, updated 4/1/19]",
+            "retrieved": {
+                "1": {
+                    "_id": "14256",
+                    "combined_score": 0.977248319784,
+                    "_score": 63.647366,
+                    "cosine": 1.800368710462,
+                    "vclaim": "The Trump administration has denied '4.2 million American workers overtime.'",
+                    "link": "http://www.politifact.com/florida/statements/2019/jun/25/florida-democratic-party/fact-checking-florida-democrats-attack-trump-about/"
+                },
+                "2": {
+                    "_id": "18901",
+                    "combined_score": 0.776109372951,
+                    "_score": 59.67689,
+                    "cosine": 1.668599620646,
+                    "vclaim": "Undocumented immigrants 'pay $12 billion a year into Social Security.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/aug/10/hillary-clinton/undocumented-immigrants-social-security-contributi/"
+                },
+                "3": {
+                    "_id": "12081",
+                    "combined_score": 0.732213464724,
+                    "_score": 42.385994,
+                    "cosine": 1.7328174907,
+                    "vclaim": "'Job losses are so certain under this new cap-and-tax plan that it includes a provision accommodating newly unemployed workers from the resulting dried-up energy sector, to the tune of $4.2 billion over eight years. So much for creating jobs.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/jul/16/sarah-palin/palin-claims-cap-and-trade-bill-includes-42-billio/"
+                },
+                "4": {
+                    "_id": "17552",
+                    "combined_score": 0.711376108649,
+                    "_score": 47.80718,
+                    "cosine": 1.686150100203,
+                    "vclaim": "'The CBO just said if we cut this (unemployment benefits) extension, we will kill jobs, because those people who are looking for work won't have any money to spend.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2013/dec/10/david-madland/david-madland-cbo-says-jobless-aid-will-boost-econ/"
+                },
+                "5": {
+                    "_id": "13253",
+                    "combined_score": 0.697393402068,
+                    "_score": 42.12324,
+                    "cosine": 1.707602831216,
+                    "vclaim": "'Ending (Temporary Protected Status) and deporting legal workers would cost the United States ~$164 billion in GDP over a decade.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2017/nov/13/joaquin-castro/rep-joaquin-castro-claims-tps-end-will-lead-164b-g/"
+                }
+            }
+        }
+    ]
+}
