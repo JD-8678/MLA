@@ -121,9 +121,9 @@ def index():
 
         #reader=result.values
 
-        return flask.render_template('main.html', claims=[[]], text=maintext, textClaims=test)
+        return flask.render_template('/main.html', claims=[[]], text=maintext, textClaims=test)
     else:
-        return flask.render_template('main.html', claims=[[]], text=maintext, textClaims=test)
+        return flask.render_template('/main.html', claims=[[]], text=maintext, textClaims=test)
 
 #def parse_args(mode,input):
 #    parser = argparse.ArgumentParser()

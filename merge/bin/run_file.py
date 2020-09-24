@@ -5,29 +5,26 @@ import numpy as np
 import pandas as pd
 from elasticsearch import Elasticsearch
 from scipy import spatial
-
 #
-from lib import *
-import elastic_search_create
+from . import lib
 
 pd.set_option('display.max_columns', None)
-
 
 def cosine(A, B):
     return 2 - spatial.distance.cosine(A, B)
 
 def create_connection(conn_string):
-    logger.debug("Starting ElasticSearch client")
+    lib.logger.debug("Starting ElasticSearch client")
     try:
         es = Elasticsearch([conn_string], sniff_on_start=True, timeout=60)
     except:
         raise ConnectionError(f"Couldn't connect to Elastic Search instance at: {conn_string} \
                                 Check if you've started it or if it listens on the port listed above.")
-    logger.debug("Elasticsearch connected")
+    lib.logger.debug("Elasticsearch connected")
     return es
 
 def get_score(CLIENT, INDEX_NAME, sentence):
-    query_embedded = elastic_search_create.embedd(sentence).tolist()
+    query_embedded = lib.embedd(sentence).tolist()
     query = {
         "query": {
             "multi_match": {
@@ -38,7 +35,7 @@ def get_score(CLIENT, INDEX_NAME, sentence):
     try:
         response = CLIENT.search(index=INDEX_NAME, body=query, size=10000)
     except:
-        logger.error(f"Error in elastic scoring for {sentence}")
+        lib.logger.error(f"Error in elastic scoring for {sentence}")
         raise
 
     results = response['hits']['hits']
@@ -73,7 +70,7 @@ def get_score(CLIENT, INDEX_NAME, sentence):
 def get_scores(CLIENT, INDEX_NAME, sentences):
     count_sentences = len(sentences)
     scores = []
-    logger.info(f"Geting elastic scores for {count_sentences}.")
+    lib.logger.info(f"Geting elastic scores for {count_sentences}.")
     for sentence in sentences:
         score = get_score(CLIENT, INDEX_NAME, sentence)
         scores.append(score[:5])
@@ -100,7 +97,7 @@ def save_result(fulltext, INDEX_NAME, format_scores_sentences, OUTPUT_PATH):
     if not os.path.exists(OUTPUT_PATH):
         os.makedirs(OUTPUT_PATH)
 
-    open(OUTPUT_PATH + '/result.json', 'w').close()t
+    open(OUTPUT_PATH + '/result.json', 'w').close()
     with open(OUTPUT_PATH + '/result.json', 'a', encoding='utf-8') as file_output:
         json.dump(dict, file_output, ensure_ascii=False, indent=4)
 

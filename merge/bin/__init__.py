@@ -1,4 +1,3 @@
-#print("import .bin*")
-import bin.run_url
-import bin.run_file
-
+print("bin")
+from . import run_file
+from . import run_url

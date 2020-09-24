@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 from nltk import tokenize
+from nltk import download as nltk_download
 import numpy as np
 import pandas as pd
 import trafilatura
@@ -15,8 +16,7 @@ import justext
 from newspaper import Article
 from newsfetch.news import newspaper
 #
-import elastic_search_create
-from lib import *
+from . import lib
 
 pd.set_option('display.max_columns', None)
 
@@ -24,17 +24,17 @@ def cosine(A, B):
     return 2 - spatial.distance.cosine(A, B)
 
 def create_connection(conn_string):
-    logger.debug("Starting ElasticSearch client")
+    lib.logger.debug("Starting ElasticSearch client")
     try:
         es = Elasticsearch([conn_string], sniff_on_start=True, timeout=60)
     except:
         raise ConnectionError(f"Couldn't connect to Elastic Search instance at: {conn_string} \
                                 Check if you've started it or if it listens on the port listed above.")
-    logger.debug("Elasticsearch connected")
+    lib.logger.debug("Elasticsearch connected")
     return es
 
 def get_score(CLIENT, INDEX_NAME, sentence):
-    query_embedded = elastic_search_create.embedd(sentence).tolist()
+    query_embedded = lib.embedd(sentence).tolist()
     query = {
         "query": {
             "multi_match": {
@@ -45,7 +45,7 @@ def get_score(CLIENT, INDEX_NAME, sentence):
     try:
         response = CLIENT.search(index=INDEX_NAME, body=query, size=150)
     except:
-        logger.error(f"Error in elastic scoring for {sentence}")
+        lib.logger.error(f"Error in elastic scoring for {sentence}")
         raise
 
     results = response['hits']['hits']
@@ -76,7 +76,7 @@ def get_scores(CLIENT, INDEX_NAME, sentences):
     count_sentences = len(sentences)
     scores = []
 
-    logger.info(f"Getting elastic scores for {count_sentences} sentences.")
+    lib.logger.info(f"Getting elastic scores for {count_sentences} sentences.")
     for sentence in tqdm(sentences, total=count_sentences):
         score = get_score(CLIENT, INDEX_NAME, sentence)
         scores.append(score[:5])
@@ -189,7 +189,11 @@ def main(args):
     #     sentences = tokenize.sent_tokenize(fulltext)
     website = newspaper(INPUT)
     fulltext = website.article
-    sentences = tokenize.sent_tokenize(fulltext)
+    try:
+        sentences = tokenize.sent_tokenize(fulltext)
+    except:
+        nltk_download('punkt')
+        sentences = tokenize.sent_tokenize(fulltext)
 
     scores_sentences = get_scores(CLIENT, INDEX_NAME, sentences)
     format_scores_sentences = format_scores(sentences, scores_sentences)

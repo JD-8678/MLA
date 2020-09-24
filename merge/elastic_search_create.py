@@ -3,24 +3,25 @@ import pandas as pd
 import argparse,os
 from tqdm import tqdm
 from elasticsearch import Elasticsearch,helpers
-from sentence_transformers import SentenceTransformer
+#from sentence_transformers import SentenceTransformer
 #
-from lib import *
+from bin import lib
 
-model = SentenceTransformer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data','distilbert_model'))
+# ausgelagert nach /bin/lib/functions !!!
+#model = SentenceTransformer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data','distilbert_model'))
 # model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
-def embedd(sentence):
-    sentence_embeddings = model.encode(sentence)
-    return sentence_embeddings
+#def embedd(sentence):
+#    sentence_embeddings = model.encode(sentence)
+#    return sentence_embeddings
 
 def create_connection(conn_string):
-    logger.debug("Starting ElasticSearch client")
+    lib.logger.debug("Starting ElasticSearch client")
     try:
         es = Elasticsearch([conn_string], sniff_on_start=True, timeout=60)
     except:
         raise ConnectionError(f"Couldn't connect to Elastic Search instance at: {conn_string} \
                                 Check if you've started it or if it listens on the port listed above.")
-    logger.debug("Elasticsearch connected")
+    lib.logger.debug("Elasticsearch connected")
     return es
 
 def clear_index(CLIENT, INDEX_NAME):
@@ -40,12 +41,12 @@ def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
         source = index_file.read()
         CLIENT.indices.create(index=INDEX_NAME, body=source)
 
-    logger.info(f"Embedding vclaims.")
+    lib.logger.info(f"Embedding vclaims.")
     actions = []
     for i, vclaim in tqdm(VCLAIMS.iterrows(), total=vclaims_count):
         if not CLIENT.exists(index=INDEX_NAME, id=i):
             body = vclaim.loc[KEYS[:-1]].replace(np.nan, "").to_dict()
-            body["vector"] = embedd(vclaim['vclaim'])
+            body["vector"] = lib.embedd(vclaim['vclaim'])
             actions.append(
                 {
                     '_op_type': 'create',
@@ -53,7 +54,7 @@ def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
                     '_id': i + 1,
                     '_source': body
                 })
-    logger.info(f"Adding {vclaims_count} entries to '{INDEX_NAME}' with fieldnames: {KEYS}")
+    lib.logger.info(f"Adding {vclaims_count} entries to '{INDEX_NAME}' with fieldnames: {KEYS}")
 
     for entry in tqdm(helpers.parallel_bulk(client=CLIENT, actions=actions), total=vclaims_count):
         pass
@@ -67,7 +68,7 @@ def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
 #         source = index_file.read()
 #         CLIENT.indices.create(index=INDEX_NAME, body=source)
 
-#     logger.info(f"Builing index of {vclaims_count} vclaims with fieldnames: {fieldnames}")
+#     lib.logger.info(f"Builing index of {vclaims_count} vclaims with fieldnames: {fieldnames}")
 #     actions = []
 #     for i, vclaim in tqdm(VCLAIMS.iterrows(), total=vclaims_count):
 #         if not CLIENT.exists(index=INDEX_NAME, id=i):
@@ -80,12 +81,12 @@ def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
 #                     '_id': i + 1,
 #                     '_source': body
 #                 })
-#     logger.info('Wait...')
+#     lib.logger.info('Wait...')
 #     deque(helpers.parallel_bulk(client=CLIENT, actions=actions), maxlen=0)
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--vclaims", "-v", "-source", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),'data','vclaims.tsv'),
+    parser.add_argument("--vclaims", "-v", "-source", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin' ,'data','vclaims.tsv'),
                         help="Path to file containing vclaims (cLaimsKG format).")
     parser.add_argument("--connection", "-c", "-es", "-conn", default="127.0.0.1:9200",
                         help="HTTP/S URL to a instance of ElasticSearch")
@@ -96,7 +97,7 @@ def parse_args():
 def main(args):
     CLIENT = create_connection(args.connection)
     VCLAIMS = pd.read_csv(args.vclaims, sep='\t', index_col=0)
-    INDEX_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data','index.json')
+    INDEX_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin', 'data','index.json')
     INDEX_NAME = args.index_name
     KEYS = ['title',
             'vclaim',
@@ -115,7 +116,7 @@ def main(args):
     #     try:
     #         build_index_Linux(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS)
     #     except:
-    #         logger.error(r"Something went wrong will building_index!")
+    #         lib.logger.error(r"Something went wrong will building_index!")
     
     
 
