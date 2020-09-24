@@ -1,13 +1,14 @@
 import argparse
 import json
 import os
-
 import numpy as np
 import pandas as pd
-from elastic_search_create import embedd
 from elasticsearch import Elasticsearch
-from lib.logger import logger
 from scipy import spatial
+
+#
+from lib import *
+import elastic_search_create
 
 pd.set_option('display.max_columns', None)
 
@@ -26,7 +27,7 @@ def create_connection(conn_string):
     return es
 
 def get_score(CLIENT, INDEX_NAME, sentence):
-    query_embedded = embedd(sentence).tolist()
+    query_embedded = elastic_search_create.embedd(sentence).tolist()
     query = {
         "query": {
             "multi_match": {

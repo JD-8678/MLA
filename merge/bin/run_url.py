@@ -6,9 +6,7 @@ import numpy as np
 import pandas as pd
 import trafilatura
 from goose3 import Goose
-from elastic_search_create import embedd
 from elasticsearch import Elasticsearch
-from lib.logger import logger
 from newsplease import NewsPlease
 from scipy import spatial
 from tqdm import tqdm
@@ -16,10 +14,11 @@ import requests
 import justext
 from newspaper import Article
 from newsfetch.news import newspaper
-
+#
+import elastic_search_create
+from lib import *
 
 pd.set_option('display.max_columns', None)
-
 
 def cosine(A, B):
     return 2 - spatial.distance.cosine(A, B)
@@ -35,7 +34,7 @@ def create_connection(conn_string):
     return es
 
 def get_score(CLIENT, INDEX_NAME, sentence):
-    query_embedded = embedd(sentence).tolist()
+    query_embedded = elastic_search_create.embedd(sentence).tolist()
     query = {
         "query": {
             "multi_match": {
@@ -195,7 +194,6 @@ def main(args):
     scores_sentences = get_scores(CLIENT, INDEX_NAME, sentences)
     format_scores_sentences = format_scores(sentences, scores_sentences)
     save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PATH)
-
 
 if __name__ == '__main__':
     args = parse_args()

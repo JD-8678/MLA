@@ -3,8 +3,9 @@ import pandas as pd
 import argparse,os
 from tqdm import tqdm
 from elasticsearch import Elasticsearch,helpers
-from lib.logger import logger
 from sentence_transformers import SentenceTransformer
+#
+from lib import *
 
 model = SentenceTransformer(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data','distilbert_model'))
 # model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')

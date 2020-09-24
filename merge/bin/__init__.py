@@ -1,3 +1,4 @@
-import bin.elastic_search_create
+#print("import .bin*")
 import bin.run_url
-from bin.lib import *
+import bin.run_file
+

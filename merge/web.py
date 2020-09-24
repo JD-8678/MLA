@@ -1,6 +1,6 @@
 import flask,csv,json
 import os
-from bin import *
+import bin
 
 app = flask.Flask(__name__)
 
@@ -116,7 +116,7 @@ def index():
         task_content = flask.request.form['content']
         print(task_content)
 
-        result = run_url.run(task_content)
+        result = bin.run_url.run(task_content)
         #print(result.values)
 
         #reader=result.values
@@ -125,23 +125,23 @@ def index():
     else:
         return flask.render_template('main.html', claims=[[]], text=maintext, textClaims=test)
 
-def parse_args(mode,input):
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--predict-file", "-p", default="result.csv",
-                        help="File in TREC Run format containing the model predictions")
-    parser.add_argument("--keys", "-k",nargs='+', default=['vclaim', 'title', 'named_entities_claim', 'named_entities_article','keywords'],
-                        help="Keys to search in the document")
-    parser.add_argument("--size", "-s", default=10000,
-                        help="Maximum results extracted for a query")
-    parser.add_argument("--output_size", "-x", default=10000,
-                        help="Maximum results extracted for news")
-    parser.add_argument("--conn", "-c", default="127.0.0.1:9200",
-                        help="HTTP/S URI to a instance of ElasticSearch")
-    parser.add_argument("--mode", "-m", default="url", choices=["url","string"], type=str.lower,
-                        help="choice between url or string mode")
-    parser.add_argument("--input", "-i", nargs='+', required=True,
-                        help="input should be a String or url")
-    return parser.parse_args(['--mode',mode,'--input',input])
+#def parse_args(mode,input):
+#    parser = argparse.ArgumentParser()
+#    parser.add_argument("--predict-file", "-p", default="result.csv",
+#                        help="File in TREC Run format containing the model predictions")
+#    parser.add_argument("--keys", "-k",nargs='+', default=['vclaim', 'title', 'named_entities_claim', 'named_entities_article','keywords'],
+#                        help="Keys to search in the document")
+#    parser.add_argument("--size", "-s", default=10000,
+#                        help="Maximum results extracted for a query")
+#    parser.add_argument("--output_size", "-x", default=10000,
+#                        help="Maximum results extracted for news")
+#    parser.add_argument("--conn", "-c", default="127.0.0.1:9200",
+#                        help="HTTP/S URI to a instance of ElasticSearch")
+#    parser.add_argument("--mode", "-m", default="url", choices=["url","string"], type=str.lower,
+#                        help="choice between url or string mode")
+#    parser.add_argument("--input", "-i", nargs='+', required=True,
+#                        help="input should be a String or url")
+#    return parser.parse_args(['--mode',mode,'--input',input])
 
 if __name__ == "__main__":
         app.run(debug=True)
