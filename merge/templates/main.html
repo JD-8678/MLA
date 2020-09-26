@@ -15,8 +15,8 @@
         <input type="radio" name="mode" id="url" value="url" checked=true> <label for="url">url</label>
     </form>
 
-    {% for i in range(textClaims['split']| length) %}
-        <label onclick="myFunction(this)" id={{i}} > {{ textClaims['split'][i]['sentence'] }} </label>
+    {% for i in range(result['split']| length) %}
+        <label onclick="myFunction(this)" id={{i}} > {{ result['split'][i]['sentence'] }} </label>
     {% endfor %}   
 
     <p id="demo">test</p>  
@@ -26,11 +26,11 @@
             <th>rating</th>
             <th>link</th>
         </tr>
-        {% for elem in claims %}
+        {% for i in range(1,6) %}
         <tr>
-            <th>{{ elem[1] }}</th>
-            <th>{{ elem[3] }}</th>
-            <th>{{ elem[4] }}</th>
+            <th>{{ result['overall'][i]['vclaim'] }}</th>
+            <th>{{ result['overall'][i]['sum_combined_score'] }}</th>
+            <th>{{ result['overall'][i]['combined_score'] }}</th>
         </tr>
         {% endfor %}
     </table>
@@ -38,7 +38,7 @@
 </div>
 
 <script>
-    var textClaims = {{textClaims|tojson}};
+    var result = {{result|tojson}};
     var last = null;
 
     function myFunction(elem) {
@@ -51,9 +51,9 @@
 
         table = document.getElementById("table")
         for(i=1;i<5;i++){
-            table.rows[i].cells[0].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['vclaim']
-            table.rows[i].cells[1].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['combined_score']
-            table.rows[i].cells[2].innerHTML = textClaims['split'][elem.id]['retrieved'][i]['link']
+            table.rows[i].cells[0].innerHTML = result['split'][elem.id]['retrieved'][i]['vclaim']
+            table.rows[i].cells[1].innerHTML = result['split'][elem.id]['retrieved'][i]['combined_score']
+            table.rows[i].cells[2].innerHTML = result['split'][elem.id]['retrieved'][i]['link']
         }
     }
 </script>
