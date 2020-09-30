@@ -18,7 +18,7 @@ def title():
 def index():
     url = flask.request.args['url']
     #try:
-    res = bin.run_url.run(url)
+        res = bin.run_url.run(url)
     return flask.render_template('/main.html', result=res) 
     #except:
     #    return flask.redirect(flask.url_for('title'))
