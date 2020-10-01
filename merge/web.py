@@ -3,6 +3,8 @@ import os
 import bin
 
 app = flask.Flask(__name__)
+app.static_folder = 'static'
+
 @app.route('/', methods=['POST','GET'])
 def title():
     if flask.request.method == 'POST':
@@ -18,7 +20,7 @@ def title():
 def index():
     url = flask.request.args['url']
     #try:
-        res = bin.run_url.run(url)
+    res = bin.run_url.run(url)
     return flask.render_template('/main.html', result=res) 
     #except:
     #    return flask.redirect(flask.url_for('title'))

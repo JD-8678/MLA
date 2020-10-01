@@ -2,11 +2,25 @@
 
 {% block head %}
 <title Claims></title>
+<style>
+    aside {
+        width: 45%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+    }
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+</style>
 {% endblock %}
 
 {% block body %}
 
-<div class="content">
+<div class="content"> 
     <h1 style="text-align: center">Look for Claims</h1>
     <form action="/" method="POST">
         <input type="text" name="content" id="content">
@@ -14,50 +28,47 @@
         <input type="radio" name="mode" id="string" value="string"> <label for="string">string</label>
         <input type="radio" name="mode" id="url" value="url" checked=true> <label for="url">url</label>
     </form>
-
+    <aside>
+        <p id="demo">test</p>  
+            <table id="table" >
+                <tr>
+                    <th>claim</th>
+                    <th>rating</th>
+                    <th>link</th>
+                </tr>
+                {% for i in range(1,6) %}
+                <tr>
+                    <th>{{ result['overall'][i]['vclaim'] }}</th>
+                    <th>{{ result['overall'][i]['sum_combined_score'] }}</th>
+                    <th>{{ result['overall'][i]['combined_score'] }}</th>
+                </tr>
+                {% endfor %}
+            </table>
+    </aside>
     {% for i in range(result['split']| length) %}
         <label onclick="myFunction(this)" id={{i}} > {{ result['split'][i]['sentence'] }} </label>
     {% endfor %}   
-
-    <p id="demo">test</p>  
-    <table id="table" >
-        <tr>
-            <th>claim</th>
-            <th>rating</th>
-            <th>link</th>
-        </tr>
-        {% for i in range(1,6) %}
-        <tr>
-            <th>{{ result['overall'][i]['vclaim'] }}</th>
-            <th>{{ result['overall'][i]['sum_combined_score'] }}</th>
-            <th>{{ result['overall'][i]['combined_score'] }}</th>
-        </tr>
-        {% endfor %}
-    </table>
     
 </div>
+{% endblock %}
 
-<script>
-    var result = {{result|tojson}};
-    var last = null;
-
-    function myFunction(elem) {
-        if (last != null) {
-            last.style.color = "black"
-        }
-        document.getElementById("demo").textContent = elem.textContent;
-        elem.style.color = "red"
-        last = elem
-
-        table = document.getElementById("table")
-        for(i=1;i<5;i++){
-            table.rows[i].cells[0].innerHTML = result['split'][elem.id]['retrieved'][i]['vclaim']
-            table.rows[i].cells[1].innerHTML = result['split'][elem.id]['retrieved'][i]['combined_score']
-            table.rows[i].cells[2].innerHTML = result['split'][elem.id]['retrieved'][i]['link']
-        }
+{% block script%}
+var result = {{result|tojson}};
+var last = null;
+function myFunction(elem) {
+    if (last != null) {
+        last.style.color = "black"
     }
-</script>
-
+    document.getElementById("demo").textContent = elem.textContent;
+    elem.style.color = "red"
+    last = elem
+    table = document.getElementById("table")
+    for(i=1;i<=5;i++){
+        table.rows[i].cells[0].innerHTML = result['split'][elem.id]['retrieved'][i]['vclaim']
+        table.rows[i].cells[1].innerHTML = result['split'][elem.id]['retrieved'][i]['combined_score']
+        table.rows[i].cells[2].innerHTML = result['split'][elem.id]['retrieved'][i]['link']
+    }
+}
 {% endblock %}
 
 
