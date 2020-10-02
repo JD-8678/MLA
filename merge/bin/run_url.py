@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import hashlib
 from nltk import tokenize
 from nltk import download as nltk_download
 import numpy as np
@@ -132,7 +133,7 @@ def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PAT
     dict['overall'] = overall_dict
     dict['split'] = format_scores_sentences
 
-    file = OUTPUT_PATH + '\\result.json'
+    file = OUTPUT_PATH + '\\' + hashlib.md5(INPUT.encode()).hexdigest() + '.json'
     if not os.path.exists(OUTPUT_PATH):
         os.makedirs(OUTPUT_PATH)
     
@@ -140,7 +141,7 @@ def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PAT
     with open(file, 'a', encoding='utf-8') as file_output:
         json.dump(dict, file_output, ensure_ascii=False, indent=4)
     file_output.close()
-    return dict
+    return json.dumps(dict)
 
 def parse_args():
     parser = argparse.ArgumentParser()

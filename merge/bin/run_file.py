@@ -100,6 +100,7 @@ def save_result(fulltext, INDEX_NAME, format_scores_sentences, OUTPUT_PATH):
     open(OUTPUT_PATH + '/result.json', 'w').close()
     with open(OUTPUT_PATH + '/result.json', 'a', encoding='utf-8') as file_output:
         json.dump(dict, file_output, ensure_ascii=False, indent=4)
+    json.dumps(dict)
 
 def parse_args():
     parser = argparse.ArgumentParser()

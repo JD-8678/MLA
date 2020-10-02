@@ -38,9 +38,9 @@
                 </tr>
                 {% for i in range(1,6) %}
                 <tr>
-                    <th>{{ result['overall'][i]['vclaim'] }}</th>
-                    <th>{{ result['overall'][i]['sum_combined_score'] }}</th>
-                    <th>{{ result['overall'][i]['combined_score'] }}</th>
+                    <th>{{ result['overall'][i|string]['vclaim'] }}</th>
+                    <th>{{ result['overall'][i|string]['sum_combined_score'] }}</th>
+                    <th>{{ result['overall'][i|string]['combined_score'] }}</th>
                 </tr>
                 {% endfor %}
             </table>
