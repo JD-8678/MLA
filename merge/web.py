@@ -34,17 +34,6 @@ def vclaims():
         except:
             return flask.redirect(flask.url_for("home"))
 
-        # file = 'output\\' + hashlib.md5(url.encode()).hexdigest() + '.json'
-        #if mode == 'url':
-        #    print('url')
-        #    res = bin.run_url.run(input)
-        
-        #if mode == 'path':
-        #    print('path')
-
-        #if mode == 'string':
-        #    print('string')
-
         json_file = 'output\\' + hashlib.md5(input.encode()).hexdigest() + '.json'
         file = os.path.join(os.path.dirname(os.path.abspath(__file__)), json_file)
         try:
@@ -58,11 +47,11 @@ def vclaims():
                 if mode == "url":
                     data = bin.run_url.run(input)
                     res = json.loads(data)
-                    #print("run_url")
+                    print("run_url")
                 else:
                     data = bin.run_file.run(input)
                     res = json.loads(data)
-                    #print("run_String")
+                    print("run_String")
             
             return flask.render_template('/vclaims.html', result=res) 
         except:

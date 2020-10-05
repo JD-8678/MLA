@@ -1,0 +1,180 @@
+{
+    "mode": "url",
+    "url": "https://twitter.com/realDonaldTrump/status/1181542327711600642",
+    "index_name": "vclaims",
+    "fulltext": "We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes",
+    "overall": {
+        "1": {
+            "sentence": "We've detected that JavaScript is disabled in your browser.",
+            "vclaim": "A browser extension can eliminate all mention of Donald Trump from a user's online experience.",
+            "combined_score": 0.877422775077,
+            "sum_combined_score": 0.877422775077,
+            "link": "https://www.snopes.com/fact-check/donald-trump-browser-filter/"
+        },
+        "2": {
+            "sentence": "Yes",
+            "vclaim": "'I've got the most international experience here.'",
+            "combined_score": 0.811631951647,
+            "sum_combined_score": 0.811631951647,
+            "link": "http://www.politifact.com/truth-o-meter/statements/2007/nov/04/bill-richardson/yes-hes-got-experience-but-the-most-/"
+        },
+        "3": {
+            "sentence": "We've detected that JavaScript is disabled in your browser.",
+            "vclaim": "Invitations sent from the RockMelt browser harbor viruses.",
+            "combined_score": 0.805087121363,
+            "sum_combined_score": 0.805087121363,
+            "link": "https://www.snopes.com/fact-check/rockmelt-virus-warning/"
+        },
+        "4": {
+            "sentence": "Would you like to proceed to legacy Twitter?",
+            "vclaim": "Twitter is shutting down in 2017 due to cyberbullying.",
+            "combined_score": 0.761444853651,
+            "sum_combined_score": 0.761444853651,
+            "link": "https://www.snopes.com/fact-check/twitter-shutting-down-in-2017/"
+        },
+        "5": {
+            "sentence": "We've detected that JavaScript is disabled in your browser.",
+            "vclaim": "Hackers seize control of Facebook accounts to post insulting messages on the walls of friends of those whose accounts they've taken over.",
+            "combined_score": 0.754000089984,
+            "sum_combined_score": 0.754000089984,
+            "link": "https://www.snopes.com/fact-check/new-hackers-on-facebook/"
+        }
+    },
+    "split": [
+        {
+            "sentence": "We've detected that JavaScript is disabled in your browser.",
+            "retrieved": {
+                "1": {
+                    "_id": "25153",
+                    "combined_score": 0.877422775077,
+                    "_score": 12.756136,
+                    "cosine": 1.683459008877,
+                    "vclaim": "A browser extension can eliminate all mention of Donald Trump from a user's online experience.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-browser-filter/"
+                },
+                "2": {
+                    "_id": "27989",
+                    "combined_score": 0.805087121363,
+                    "_score": 13.514109,
+                    "cosine": 1.615012485149,
+                    "vclaim": "Invitations sent from the RockMelt browser harbor viruses.",
+                    "link": "https://www.snopes.com/fact-check/rockmelt-virus-warning/"
+                },
+                "3": {
+                    "_id": "29576",
+                    "combined_score": 0.754000089984,
+                    "_score": 13.081472,
+                    "cosine": 1.587451792239,
+                    "vclaim": "Hackers seize control of Facebook accounts to post insulting messages on the walls of friends of those whose accounts they've taken over.",
+                    "link": "https://www.snopes.com/fact-check/new-hackers-on-facebook/"
+                },
+                "4": {
+                    "_id": "25300",
+                    "combined_score": 0.74679944037,
+                    "_score": 9.35392,
+                    "cosine": 1.66227953372,
+                    "vclaim": "A form of malware can be activated by prompting Internet Explorer users to press the F1 key.",
+                    "link": "https://www.snopes.com/fact-check/f1-key-virus/"
+                },
+                "5": {
+                    "_id": "22864",
+                    "combined_score": 0.668694489505,
+                    "_score": 12.38748,
+                    "cosine": 1.540820383058,
+                    "vclaim": "New Graphic Site (aka JS.Yamanner@m)",
+                    "link": "https://www.snopes.com/fact-check/new-graphic-site/"
+                }
+            }
+        },
+        {
+            "sentence": "Would you like to proceed to legacy Twitter?",
+            "retrieved": {
+                "1": {
+                    "_id": "29549",
+                    "combined_score": 0.761444853651,
+                    "_score": 10.372488,
+                    "cosine": 1.739427495779,
+                    "vclaim": "Twitter is shutting down in 2017 due to cyberbullying.",
+                    "link": "https://www.snopes.com/fact-check/twitter-shutting-down-in-2017/"
+                },
+                "2": {
+                    "_id": "22114",
+                    "combined_score": 0.634574845881,
+                    "_score": 14.8390875,
+                    "cosine": 1.574118506311,
+                    "vclaim": "President Trump issued an executive order forcing users of social platforms to follow and/or like the president’s official accounts.",
+                    "link": "https://www.snopes.com/fact-check/trump-social-media-order/"
+                },
+                "3": {
+                    "_id": "1475",
+                    "combined_score": 0.575460727205,
+                    "_score": 12.340946,
+                    "cosine": 1.560969806812,
+                    "vclaim": "New Way of American Life Email",
+                    "link": "https://www.truthorfiction.com/email-explains-how-to-get-75k-in-benefits-for-you-and-your-girlfriend/"
+                },
+                "4": {
+                    "_id": "21705",
+                    "combined_score": 0.563751657204,
+                    "_score": 13.983072,
+                    "cosine": 1.52855763466,
+                    "vclaim": "The Cicret bracelet and app can project your smartphone onto your arm.",
+                    "link": "https://www.snopes.com/fact-check/do-you-want-to-know-a-cicret/"
+                },
+                "5": {
+                    "_id": "28257",
+                    "combined_score": 0.540266828659,
+                    "_score": 24.257784,
+                    "cosine": 1.366170988653,
+                    "vclaim": "Donald Trump supporters chanted 'we hate muslims, we hate blacks, we want our great country back' during a rally on election night.",
+                    "link": "https://www.snopes.com/fact-check/trump-rally-chant/"
+                }
+            }
+        },
+        {
+            "sentence": "Yes",
+            "retrieved": {
+                "1": {
+                    "_id": "16489",
+                    "combined_score": 0.811631951647,
+                    "_score": 6.5211086,
+                    "cosine": 1.275756454714,
+                    "vclaim": "'I've got the most international experience here.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2007/nov/04/bill-richardson/yes-hes-got-experience-but-the-most-/"
+                },
+                "2": {
+                    "_id": "9293",
+                    "combined_score": 0.620920219548,
+                    "_score": 8.637615,
+                    "cosine": 1.130507579487,
+                    "vclaim": "Graduation rates in Buffalo’s school district, which were 'around 48 percent are now up to 64 percent' since Say Yes Buffalo launched.",
+                    "link": "http://www.politifact.com/new-york/statements/2017/feb/10/byron-brown/buffalo-schools-graduation-rates/"
+                },
+                "3": {
+                    "_id": "10972",
+                    "combined_score": 0.565514820566,
+                    "_score": 5.984676,
+                    "cosine": 1.16421007712,
+                    "vclaim": "'We are making the largest investment in education in our nation’s history.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/feb/27/barack-obama/federal-government-yes-big-school-spending/"
+                },
+                "4": {
+                    "_id": "10147",
+                    "combined_score": 0.557395942674,
+                    "_score": 10.218534,
+                    "cosine": 1.061781761691,
+                    "vclaim": "'Two years ago, the longest serving leader of the California republic, Jerry Brown, boldly declared in China that California is a separate nation.'",
+                    "link": "http://www.politifact.com/california/statements/2016/nov/11/louis-marinelli/calexit-group-distorts-jerry-browns-separate-natio/"
+                },
+                "5": {
+                    "_id": "12621",
+                    "combined_score": 0.553681217933,
+                    "_score": 5.984676,
+                    "cosine": 1.158247730691,
+                    "vclaim": "Says 'Donald Trump himself contributed $100,000' to the Clinton Foundation.",
+                    "link": "http://www.politifact.com/punditfact/statements/2016/aug/28/david-plouffe/yes-donald-trump-donated-100000-clinton-foundation/"
+                }
+            }
+        }
+    ]
+}

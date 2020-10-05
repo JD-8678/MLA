@@ -1,0 +1,1440 @@
+{
+    "mode": "url",
+    "url": "https://www.bbc.com/news/election-us-2016-37673797",
+    "index_name": "vclaims",
+    "fulltext": "Image copyright AP US Republican presidential nominee Donald Trump has said the election is \"absolutely rigged\" by the \"dishonest media\" and \"at many polling places\". His comments appear to contradict his running mate Mike Pence, who told NBC Mr Trump would \"absolutely\" accept the election result, despite media \"bias\". Mr Trump's adviser Rudy Giuliani has also accused Democrats of \"cheating\". Polls suggest Mr Trump is losing ground in some key battleground states against Democratic rival Hillary Clinton. Mr Trump has questioned the legitimacy of the election process in a series of tweets, the latest of which said on Monday: \"Of course there is large scale voter fraud happening on and before election day. \"Why do Republican leaders deny what is going on? So naive!\" An earlier tweet said: \"The election is absolutely being rigged by the dishonest and distorted media pushing Crooked Hillary - but also at many polling places - SAD.\" The White House candidate also tweeted: \"Election is being rigged by the media, in a coordinated effort with the Clinton campaign, by putting stories that never happened into news!\" Image copyright Twitter Image copyright Twitter Image copyright Twitter Speaking on NBC's Meet The Press on Sunday, Republican vice-presidential candidate Mr Pence said Americans were \"tired of the obvious bias in the national media\". But he added: \"We will absolutely accept the results of the election.\" \"Elections always get pretty rough,\" he added, but said the US has a tradition of \"the peaceful transfer of power\". Image caption Mike Pence contradicted Mr Trump earlier Former New York Mayor Rudy Giuliani, who is Mr Trump's campaign adviser, told CNN's State of the Union he'd have to be a \"moron\" to think that some elections, such as those in Philadelphia and Chicago, were going to be fair. \"I've found very few situations where Republicans cheat... they don't control the inner cities the way Democrats do. Maybe if Republicans controlled the inner cities, they'd do as much cheating as Democrats,\" he said. \"I'm sorry. Dead people generally vote for Democrats rather than Republicans,\" he added. Analysis by Laura Bicker, BBC News, Washington Donald Trump has claimed for months that the election was rigged - but that message is now at the centre of his campaign just as his poll numbers begin to slump. And in doing so he hits at the very heart of American democracy - the idea that elections are free and fair. Mr Trump's tactics allow him once more to paint himself as the anti-establishment figure being victimised by the Washington political elite. It also gives him an excuse if he loses. But where would it leave his supporters? The fear is that the Republican candidate's rhetoric could further divide this country and stoke anger and suspicion among the millions who follow him. If Hillary Clinton is elected, would they accept her presidency as legitimate and if not, what form would those protests take? 'Swinging at every phantom' Mrs Clinton's running mate Tim Kaine blasted Mr Trump's election-rigging claims as \"scare tactics\". He told ABC's This Week Mr Trump was \"swinging at every phantom of his own imagination\" because \"he knows he's losing\". Multiple women have come forward to accuse Mr Trump of groping or kissing them in the past week, following the emergence of a 2005 video tape in which the Republican nominee made obscene remarks about women. He has repeatedly denied the claims, calling the women \"horrible liars\" and accusing the media of being an agent of the \"Clinton machine\". Mr Kaine denied that the Clinton campaign had anything to do with the women making accusations against Mr Trump. Who is ahead in the polls? See full poll tracker More on the US election",
+    "overall": {
+        "1": {
+            "sentence": "Image copyright AP US Republican presidential nominee Donald Trump has said the election is \"absolutely rigged\" by the \"dishonest media\" and \"at many polling places\".",
+            "vclaim": "Says the U.S. election system is 'rigged.'",
+            "combined_score": 0.848996894424,
+            "sum_combined_score": 2.462683705296,
+            "link": "http://www.politifact.com/truth-o-meter/statements/2016/aug/15/donald-trump/donald-trumps-baseless-claims-about-election-being/"
+        },
+        "2": {
+            "sentence": "But he added: \"We will absolutely accept the results of the election.\"",
+            "vclaim": "Says Donald Trump is 'the first person running for president, Republican or Democrat, who refused to say that he would respect the results of this election.'",
+            "combined_score": 0.938742527431,
+            "sum_combined_score": 1.687072710757,
+            "link": "http://www.politifact.com/truth-o-meter/statements/2016/oct/25/hillary-clinton/trump-first-ever-candidate-not-say-hell-accept-ele/"
+        },
+        "3": {
+            "sentence": "An earlier tweet said: \"The election is absolutely being rigged by the dishonest and distorted media pushing Crooked Hillary - but also at many polling places - SAD.\"",
+            "vclaim": "In recent polling in battleground states, a 'majority of the people' said Hillary Clinton 'is untrustworthy.'",
+            "combined_score": 0.850075683418,
+            "sum_combined_score": 1.676122067096,
+            "link": "http://www.politifact.com/wisconsin/statements/2015/apr/21/reince-priebus/polls-show-majority-swing-states-see-hillary-clint/"
+        },
+        "4": {
+            "sentence": "Mr Trump's adviser Rudy Giuliani has also accused Democrats of \"cheating\".",
+            "vclaim": "Former New York City mayor Rudy Giuliani was suspended from Twitter after sending messages about Pizzagate.",
+            "combined_score": 0.84834115354,
+            "sum_combined_score": 1.663691723715,
+            "link": "https://www.snopes.com/fact-check/rudy-giuliani-banned-from-twitter-for-pizzagate-tweets/"
+        },
+        "5": {
+            "sentence": "\"I've found very few situations where Republicans cheat... they don't control the inner cities the way Democrats do.",
+            "vclaim": "'During the last election, Democrats won over a million votes more than Republicans, but because of the way districts are designed, the Republicans got 33 more members of the House of Representatives than the Democrats did.'",
+            "combined_score": 0.863480832983,
+            "sum_combined_score": 1.662084427865,
+            "link": "http://www.politifact.com/texas/statements/2013/nov/26/lloyd-doggett/democrats-outpolled-republicans-who-landed-33-seat/"
+        }
+    },
+    "split": [
+        {
+            "sentence": "Image copyright AP US Republican presidential nominee Donald Trump has said the election is \"absolutely rigged\" by the \"dishonest media\" and \"at many polling places\".",
+            "retrieved": {
+                "1": {
+                    "_id": "10418",
+                    "combined_score": 0.848996894424,
+                    "_score": 20.188095,
+                    "cosine": 1.784594497203,
+                    "vclaim": "Says the U.S. election system is 'rigged.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/aug/15/donald-trump/donald-trumps-baseless-claims-about-election-being/"
+                },
+                "2": {
+                    "_id": "33170",
+                    "combined_score": 0.771692379101,
+                    "_score": 16.277311,
+                    "cosine": 1.794306932376,
+                    "vclaim": "An electoral map based on Facebook analytics shows Donald Trump winning the 2016 presidential election in a 'clean sweep.'",
+                    "link": "https://www.snopes.com/fact-check/facebook-analytics-electoral-map-shows-trump-sweep/"
+                },
+                "3": {
+                    "_id": "13181",
+                    "combined_score": 0.748330183326,
+                    "_score": 15.7402935,
+                    "cosine": 1.785781769383,
+                    "vclaim": "Says Donald Trump is 'the first person running for president, Republican or Democrat, who refused to say that he would respect the results of this election.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/oct/25/hillary-clinton/trump-first-ever-candidate-not-say-hell-accept-ele/"
+                },
+                "4": {
+                    "_id": "8569",
+                    "combined_score": 0.730427134479,
+                    "_score": 15.610424,
+                    "cosine": 1.774243088165,
+                    "vclaim": "'Final election 2016 numbers: Trump won' the popular vote.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/nov/14/blog-posting/no-donald-trump-not-beating-hillary-clinton-popula/"
+                },
+                "5": {
+                    "_id": "13975",
+                    "combined_score": 0.70228794518,
+                    "_score": 20.153841,
+                    "cosine": 1.67173459077,
+                    "vclaim": "Says Donald Trump said at the Republican convention, 'I alone can fix it.'",
+                    "link": "http://www.politifact.com/florida/statements/2016/jul/29/hillary-clinton/hillary-clinton-says-donald-trump-said-i-alone-can/"
+                }
+            }
+        },
+        {
+            "sentence": "His comments appear to contradict his running mate Mike Pence, who told NBC Mr Trump would \"absolutely\" accept the election result, despite media \"bias\".",
+            "retrieved": {
+                "1": {
+                    "_id": "26539",
+                    "combined_score": 0.867421873913,
+                    "_score": 34.097,
+                    "cosine": 1.731521904736,
+                    "vclaim": "During the RNC, Donald Trump sent a tweet about his running mate describing him as 'boring Mike Pence.'",
+                    "link": "https://www.snopes.com/fact-check/boring-mike-pence/"
+                },
+                "2": {
+                    "_id": "31661",
+                    "combined_score": 0.858534452229,
+                    "_score": 22.664408,
+                    "cosine": 1.853389057635,
+                    "vclaim": "Republican VP candidate Mike Pence  proclaimedthat 'the things Donald Trump says wouldn't hurt our campaign half as much if the press didn't report it.'",
+                    "link": "https://www.snopes.com/fact-check/mike-pence-blames-media-for-trump-controversies/"
+                },
+                "3": {
+                    "_id": "19239",
+                    "combined_score": 0.697862432714,
+                    "_score": 17.572433,
+                    "cosine": 1.76361484399,
+                    "vclaim": "Says Rep. Mike Coffman is 'the one who said' he would support Trump.",
+                    "link": "http://www.politifact.com/colorado/statements/2016/aug/09/democratic-congressional-campaign-committee/dccc-ads-says-rep-coffman-said-youd-support-trump-/"
+                },
+                "4": {
+                    "_id": "23622",
+                    "combined_score": 0.694450442075,
+                    "_score": 24.243328,
+                    "cosine": 1.684602429703,
+                    "vclaim": "Chris Christie was so angry at Donald Trump for picking Mike Pence over him as a running mate that he refused to retrieve Trump's dry cleaning.",
+                    "link": "https://www.snopes.com/fact-check/furious-christie-refuses-to-pick-up-trumps-dry-cleaning/"
+                },
+                "5": {
+                    "_id": "3143",
+                    "combined_score": 0.632928105272,
+                    "_score": 22.18105,
+                    "cosine": 1.651507233687,
+                    "vclaim": "In late September 2019 President Trump started trying to get Vice President Mike Pence impeached.",
+                    "link": "https://www.truthorfiction.com/trump-is-now-trying-to-get-mike-pence-impeached-claim/"
+                }
+            }
+        },
+        {
+            "sentence": "Mr Trump's adviser Rudy Giuliani has also accused Democrats of \"cheating\".",
+            "retrieved": {
+                "1": {
+                    "_id": "32018",
+                    "combined_score": 0.981024455796,
+                    "_score": 21.77629,
+                    "cosine": 1.796493141586,
+                    "vclaim": "Democrats have filed treason charges against President-elect Donald Trump, the Federal Bureau of Investigation, and Rudy Giuliani.",
+                    "link": "https://www.snopes.com/fact-check/democrats-file-treason-charges-against-trump/"
+                },
+                "2": {
+                    "_id": "11010",
+                    "combined_score": 0.942063995453,
+                    "_score": 18.947226,
+                    "cosine": 1.812602820509,
+                    "vclaim": "'Official: Rudy Giuliani officially resigns, Trump’s legal team on it's last leg.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2018/may/15/political-voice/no-rudy-giuliani-didnt-quit-trump-legal-team/"
+                },
+                "3": {
+                    "_id": "10978",
+                    "combined_score": 0.920886106164,
+                    "_score": 21.282759,
+                    "cosine": 1.754017956579,
+                    "vclaim": "Says Rudy Giuliani filed for Nancy Pelosi’s impeachment.",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/jun/28/viral-image/no-rudy-giuliani-didnt-file-nancy-pelosis-impeachm/"
+                },
+                "4": {
+                    "_id": "33238",
+                    "combined_score": 0.84834115354,
+                    "_score": 18.516474,
+                    "cosine": 1.740523916814,
+                    "vclaim": "Former New York City mayor Rudy Giuliani was suspended from Twitter after sending messages about Pizzagate.",
+                    "link": "https://www.snopes.com/fact-check/rudy-giuliani-banned-from-twitter-for-pizzagate-tweets/"
+                },
+                "5": {
+                    "_id": "9944",
+                    "combined_score": 0.719928777618,
+                    "_score": 15.937733,
+                    "cosine": 1.676339447324,
+                    "vclaim": "'Democrats Filing TREASON Charges Against Trump, McConnell, Giuliani, & Comey.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2016/dec/15/realtime-politics/websites-offer-false-headlines-about-treason-c/"
+                }
+            }
+        },
+        {
+            "sentence": "Polls suggest Mr Trump is losing ground in some key battleground states against Democratic rival Hillary Clinton.",
+            "retrieved": {
+                "1": {
+                    "_id": "23298",
+                    "combined_score": 0.909819862632,
+                    "_score": 20.076279,
+                    "cosine": 1.835794711103,
+                    "vclaim": "Donald Trump said on Meet the Press that he would drop out of the presidential race if polls showed him losing to Hillary Clinton.",
+                    "link": "https://www.snopes.com/fact-check/trump-polls-drop-out/"
+                },
+                "2": {
+                    "_id": "9178",
+                    "combined_score": 0.8739848063,
+                    "_score": 23.969444,
+                    "cosine": 1.74242189432,
+                    "vclaim": "'Almost all of the polls that have come out suggest that I am a much stronger candidate against the Republicans than is Hillary Clinton.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/jan/26/bernie-sanders/bernie-sanders-says-he-polls-better-against-gop-ca/"
+                },
+                "3": {
+                    "_id": "12207",
+                    "combined_score": 0.864621014974,
+                    "_score": 20.546389,
+                    "cosine": 1.790796727277,
+                    "vclaim": "Says according to recent polls, no Republican candidate 'is doing better against Hillary Clinton than myself.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2015/mar/25/rand-paul/rand-paul-says-he-has-best-shot-beating-hillary-cl/"
+                },
+                "4": {
+                    "_id": "19152",
+                    "combined_score": 0.826046383678,
+                    "_score": 24.61631,
+                    "cosine": 1.692266629333,
+                    "vclaim": "In recent polling in battleground states, a 'majority of the people' said Hillary Clinton 'is untrustworthy.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2015/apr/21/reince-priebus/polls-show-majority-swing-states-see-hillary-clint/"
+                },
+                "5": {
+                    "_id": "20349",
+                    "combined_score": 0.823867810337,
+                    "_score": 19.608086,
+                    "cosine": 1.772549458867,
+                    "vclaim": "'Right now, in every major poll, national poll and statewide poll done in the last month, six weeks, we are defeating Trump, often by big numbers and always at a larger margin than Secretary Clinton is.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/may/29/bernie-sanders/bernie-sanders-says-he-polls-better-against-donald/"
+                }
+            }
+        },
+        {
+            "sentence": "Mr Trump has questioned the legitimacy of the election process in a series of tweets, the latest of which said on Monday: \"Of course there is large scale voter fraud happening on and before election day.",
+            "retrieved": {
+                "1": {
+                    "_id": "6904",
+                    "combined_score": 1.0,
+                    "_score": 77.38515,
+                    "cosine": 1.829825560685,
+                    "vclaim": "'Of course, there is large scale voter fraud happening on and before election day.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/oct/17/donald-trump/donald-trumps-pants-fire-claim-large-scale-voter-f/"
+                },
+                "2": {
+                    "_id": "2088",
+                    "combined_score": 0.713407645793,
+                    "_score": 32.946537,
+                    "cosine": 1.775437891355,
+                    "vclaim": "There Was Widespread Voter Fraud in the 2012 Presidential\r\nElection",
+                    "link": "https://www.truthorfiction.com/2012-voter-fraud/"
+                },
+                "3": {
+                    "_id": "25340",
+                    "combined_score": 0.683651289497,
+                    "_score": 37.059746,
+                    "cosine": 1.729737227988,
+                    "vclaim": "A Trump staffer was convicted on ten counts of felony election fraud in November 2016.",
+                    "link": "https://www.snopes.com/fact-check/trump-staffer-convicted-of-felony-election-fraud/"
+                },
+                "4": {
+                    "_id": "5904",
+                    "combined_score": 0.668180280439,
+                    "_score": 28.320072,
+                    "cosine": 1.755902349783,
+                    "vclaim": "There is 'substantial evidence of voter fraud.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/jan/04/donald-trump/donald-trump-says-theres-substantial-evidence-vote/"
+                },
+                "5": {
+                    "_id": "21177",
+                    "combined_score": 0.643435291573,
+                    "_score": 28.913647,
+                    "cosine": 1.730872497542,
+                    "vclaim": "U.S. Federal Election Commission Chair Ellen Weintraub wrote an open letter to President Donald Trump in August 2019, asking him to share any evidence he had of voter fraud.",
+                    "link": "https://www.snopes.com/fact-check/ellen-weintraub-trump-voter-fraud/"
+                }
+            }
+        },
+        {
+            "sentence": "\"Why do Republican leaders deny what is going on?",
+            "retrieved": {
+                "1": {
+                    "_id": "14353",
+                    "combined_score": 0.892508837305,
+                    "_score": 13.155575,
+                    "cosine": 1.545028202203,
+                    "vclaim": "Says 'over 40 Republican leaders denounced' Steve Watkins’ campaign",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/oct/25/democratic-congressional-campaign-committee/democrats-fail-mention-things-have-changed-kansas/"
+                },
+                "2": {
+                    "_id": "822",
+                    "combined_score": 0.836735364558,
+                    "_score": 15.702936,
+                    "cosine": 1.450716963285,
+                    "vclaim": "A news article stated regional leaders in Indonesia must do whatever President Joko Widodo wants",
+                    "link": "https://factcheck.afp.com//no-not-genuine-news-report-stating-regional-leaders-must-do-what-indonesias-president-wants"
+                },
+                "3": {
+                    "_id": "10264",
+                    "combined_score": 0.807008896457,
+                    "_score": 14.496489,
+                    "cosine": 1.461418404359,
+                    "vclaim": "Says Republican state leaders are using 'Soviet-style' budget management.",
+                    "link": "http://www.politifact.com/texas/statements/2010/apr/15/bill-white/bill-white-objects-what-he-calls-soviet-style-budg/"
+                },
+                "4": {
+                    "_id": "10583",
+                    "combined_score": 0.771138549304,
+                    "_score": 14.146572,
+                    "cosine": 1.448037097826,
+                    "vclaim": "Nevada Democratic Party leaders 'hijacked the process on the floor' of the state convention 'ignoring the regular procedure and ramming through what they wanted to do.'",
+                    "link": "http://www.politifact.com/nevada/statements/2016/may/18/jeff-weaver/allegations-fraud-and-misconduct-nevada-democratic/"
+                },
+                "5": {
+                    "_id": "19602",
+                    "combined_score": 0.760351938315,
+                    "_score": 12.620952,
+                    "cosine": 1.477786001546,
+                    "vclaim": "Says the U.S. Attorney’s Office said 'that neither I nor my campaign had any idea what was going on' regarding my father's illegal campaign contributions. 'And that’s why they closed this case.'",
+                    "link": "http://www.politifact.com/california/statements/2016/oct/19/ami-bera/ami-beras-mostly-true-claim-feds-cleared-me-electi/"
+                }
+            }
+        },
+        {
+            "sentence": "So naive!\"",
+            "retrieved": {
+                "1": {
+                    "_id": "27741",
+                    "combined_score": 0.906225169434,
+                    "_score": 11.759631,
+                    "cosine": 1.279550090819,
+                    "vclaim": "Naive hunters mistake one type of animal for another.",
+                    "link": "https://www.snopes.com/fact-check/painted-ladies/"
+                },
+                "2": {
+                    "_id": "5561",
+                    "combined_score": 0.764671290283,
+                    "_score": 5.596303,
+                    "cosine": 1.323611646395,
+                    "vclaim": "Says there’s 'never (been) so many apprehensions ever in our history.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/jan/11/donald-trump/donald-trump-falsely-says-theres-never-been-so-man/"
+                },
+                "3": {
+                    "_id": "21328",
+                    "combined_score": 0.720772119824,
+                    "_score": 6.041581,
+                    "cosine": 1.294996456968,
+                    "vclaim": "Facebook 'censored' an image of Santa Claus kneeling before baby Jesus.",
+                    "link": "https://www.snopes.com/fact-check/facebook-santa-jesus-image/"
+                },
+                "4": {
+                    "_id": "27787",
+                    "combined_score": 0.713267340576,
+                    "_score": 5.5507846,
+                    "cosine": 1.300275325277,
+                    "vclaim": "KellyAnne Conway said that being labelled racist is a small price to pay for making the country 'great again.'",
+                    "link": "https://www.snopes.com/fact-check/conway-racist-small-price-to-pay/"
+                },
+                "5": {
+                    "_id": "30270",
+                    "combined_score": 0.700822350889,
+                    "_score": 5.2120576,
+                    "cosine": 1.300504766795,
+                    "vclaim": "Sarah Palin said that America was not to blame for slavery, and that 'the negroes' liked it.",
+                    "link": "https://www.snopes.com/fact-check/sarah-palin-slavery-quote/"
+                }
+            }
+        },
+        {
+            "sentence": "An earlier tweet said: \"The election is absolutely being rigged by the dishonest and distorted media pushing Crooked Hillary - but also at many polling places - SAD.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "22252",
+                    "combined_score": 0.909926614392,
+                    "_score": 25.191595,
+                    "cosine": 1.736888903199,
+                    "vclaim": "Sen. Bernie Sanders said the election was 'rigged' and 'unendorsed' Hillary Clinton",
+                    "link": "https://www.snopes.com/fact-check/bernie-sanders-rigged-unendorse/"
+                },
+                "2": {
+                    "_id": "19152",
+                    "combined_score": 0.850075683418,
+                    "_score": 18.062984,
+                    "cosine": 1.823910536668,
+                    "vclaim": "In recent polling in battleground states, a 'majority of the people' said Hillary Clinton 'is untrustworthy.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2015/apr/21/reince-priebus/polls-show-majority-swing-states-see-hillary-clint/"
+                },
+                "3": {
+                    "_id": "10418",
+                    "combined_score": 0.830134968698,
+                    "_score": 22.00488,
+                    "cosine": 1.724550859158,
+                    "vclaim": "Says the U.S. election system is 'rigged.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/aug/15/donald-trump/donald-trumps-baseless-claims-about-election-being/"
+                },
+                "4": {
+                    "_id": "21472",
+                    "combined_score": 0.828529831646,
+                    "_score": 22.495846,
+                    "cosine": 1.713024268808,
+                    "vclaim": "Bill Clinton potentially violated Massachusetts election laws by entering polling places on Super Tuesday.",
+                    "link": "https://www.snopes.com/fact-check/clinton-campaign-laws-massachusetts/"
+                },
+                "5": {
+                    "_id": "7135",
+                    "combined_score": 0.729839363547,
+                    "_score": 24.33192,
+                    "cosine": 1.580370698395,
+                    "vclaim": "'I never said Russia did not meddle in the election.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/feb/19/donald-trump/donald-trump-falsely-denies-he-denied-russian-medd/"
+                }
+            }
+        },
+        {
+            "sentence": "The White House candidate also tweeted: \"Election is being rigged by the media, in a coordinated effort with the Clinton campaign, by putting stories that never happened into news!\"",
+            "retrieved": {
+                "1": {
+                    "_id": "2816",
+                    "combined_score": 0.79121166865,
+                    "_score": 20.73402,
+                    "cosine": 1.783764154889,
+                    "vclaim": "Rigged Election Results Released Early, Clinton Wins",
+                    "link": "https://www.truthorfiction.com/rigged-election-results-released-early-clinton-wins/"
+                },
+                "2": {
+                    "_id": "10418",
+                    "combined_score": 0.783551842174,
+                    "_score": 23.683445,
+                    "cosine": 1.728953063547,
+                    "vclaim": "Says the U.S. election system is 'rigged.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/aug/15/donald-trump/donald-trumps-baseless-claims-about-election-being/"
+                },
+                "3": {
+                    "_id": "672",
+                    "combined_score": 0.739797712871,
+                    "_score": 24.666029,
+                    "cosine": 1.674309274595,
+                    "vclaim": "United States President Donald Trump's re-election campaign used a logo that has also been used by white nationalist groups.",
+                    "link": "https://www.truthorfiction.com/did-trump-share-a-logo-identical-to-one-used-by-a-white-nationalist-group/"
+                },
+                "4": {
+                    "_id": "2422",
+                    "combined_score": 0.68691620872,
+                    "_score": 19.413755,
+                    "cosine": 1.713173339924,
+                    "vclaim": "The Media Is Lying: Trump is Actually Beating Clinton in Polls",
+                    "link": "https://www.truthorfiction.com/media-lying-trump-actually-beating-clinton-polls/"
+                },
+                "5": {
+                    "_id": "21778",
+                    "combined_score": 0.665306947415,
+                    "_score": 32.05185,
+                    "cosine": 1.488212676747,
+                    "vclaim": "The White House was built using slave labor.",
+                    "link": "https://www.snopes.com/fact-check/was-the-white-house-built-by-slaves/"
+                }
+            }
+        },
+        {
+            "sentence": "Image copyright Twitter Image copyright Twitter Image copyright Twitter Speaking on NBC's Meet The Press on Sunday, Republican vice-presidential candidate Mr Pence said Americans were \"tired of the obvious bias in the national media\".",
+            "retrieved": {
+                "1": {
+                    "_id": "32127",
+                    "combined_score": 0.773126628316,
+                    "_score": 25.805302,
+                    "cosine": 1.625724605851,
+                    "vclaim": "A viral screenshot shows a Fox News contributor debating the 'War on Christmas' while other news networks reported on Michael Cohen's guilty pleas.",
+                    "link": "https://www.snopes.com/fact-check/fox-news-festivus-michael-cohen/"
+                },
+                "2": {
+                    "_id": "1404",
+                    "combined_score": 0.770805618292,
+                    "_score": 25.482073,
+                    "cosine": 1.626472477152,
+                    "vclaim": "Twitter has algorithms at its disposal to track down and eliminate white supremacist content, but refuses to do so because it potentially will also ban Republican lawmakers.",
+                    "link": "https://www.truthorfiction.com/is-twitter-withholding-a-nazi-hunting-algorithm-for-fear-of-inadvertently-banning-republican-lawmakers/"
+                },
+                "3": {
+                    "_id": "23651",
+                    "combined_score": 0.760730439021,
+                    "_score": 38.929714,
+                    "cosine": 1.533627500248,
+                    "vclaim": "You can effectively establish U.S. copyright protection of your work by mailing a copy of it to yourself, then retaining the sealed, postmarked envelope as proof of the date of your authorship.",
+                    "link": "https://www.snopes.com/fact-check/poor-mans-copyright/"
+                },
+                "4": {
+                    "_id": "22637",
+                    "combined_score": 0.722267343939,
+                    "_score": 25.521116,
+                    "cosine": 1.598122234438,
+                    "vclaim": "Donald Trump boasted in a tweet that Jeb Bush failed to renew his domain registration, enabling Trump's campaign to redirect it to Trump's web site.",
+                    "link": "https://www.snopes.com/fact-check/trump-taunts-bush-twitter/"
+                },
+                "5": {
+                    "_id": "23692",
+                    "combined_score": 0.71191793228,
+                    "_score": 35.300797,
+                    "cosine": 1.528851975892,
+                    "vclaim": "E-mail notification from Crosby & Higgins law firm about a copyright infringement case.",
+                    "link": "https://www.snopes.com/fact-check/copyright-infringement-notice/"
+                }
+            }
+        },
+        {
+            "sentence": "But he added: \"We will absolutely accept the results of the election.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "13181",
+                    "combined_score": 0.938742527431,
+                    "_score": 20.503263,
+                    "cosine": 1.619380192441,
+                    "vclaim": "Says Donald Trump is 'the first person running for president, Republican or Democrat, who refused to say that he would respect the results of this election.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/oct/25/hillary-clinton/trump-first-ever-candidate-not-say-hell-accept-ele/"
+                },
+                "2": {
+                    "_id": "25763",
+                    "combined_score": 0.87290559024,
+                    "_score": 16.023834,
+                    "cosine": 1.661627554412,
+                    "vclaim": "Two television stations aired 2012 election “results” early.",
+                    "link": "https://www.snopes.com/fact-check/early-returns/"
+                },
+                "3": {
+                    "_id": "27924",
+                    "combined_score": 0.826812730833,
+                    "_score": 14.93626,
+                    "cosine": 1.651120295416,
+                    "vclaim": "A map shows the results of the 2012 election if 'only taxpayers voted.'",
+                    "link": "https://www.snopes.com/fact-check/what-if-taxpayers-only-voted-map/"
+                },
+                "4": {
+                    "_id": "32930",
+                    "combined_score": 0.78208086694,
+                    "_score": 14.837444,
+                    "cosine": 1.62220375065,
+                    "vclaim": "Prediction foretells calamitous results springing from the outcome of a presidential election.",
+                    "link": "https://www.snopes.com/fact-check/marching-orders/"
+                },
+                "5": {
+                    "_id": "3145",
+                    "combined_score": 0.764333148803,
+                    "_score": 13.89446,
+                    "cosine": 1.628415925353,
+                    "vclaim": "Nigeria Supreme Court has nullified election results and called new vote",
+                    "link": "https://factcheck.afp.com//no-nigerias-supreme-court-has-not-nullified-results-presidential-election-or-called-new-vote"
+                }
+            }
+        },
+        {
+            "sentence": "\"Elections always get pretty rough,\" he added, but said the US has a tradition of \"the peaceful transfer of power\".",
+            "retrieved": {
+                "1": {
+                    "_id": "429",
+                    "combined_score": 0.893660390102,
+                    "_score": 20.492447,
+                    "cosine": 1.737429584956,
+                    "vclaim": "Has The US Interfered In Foreign Elections?",
+                    "link": "https://checkyourfact.com/2018/07/20/fact-check-us-interfered-foreign-elections/"
+                },
+                "2": {
+                    "_id": "24733",
+                    "combined_score": 0.77056812088,
+                    "_score": 17.15701,
+                    "cosine": 1.724694432331,
+                    "vclaim": "Law professor’s analysis demonstrates that the results of the last presidential election correspond to a prediction about the downfall of democracy.",
+                    "link": "https://www.snopes.com/fact-check/the-fall-of-the-athenian-republic/"
+                },
+                "3": {
+                    "_id": "13597",
+                    "combined_score": 0.748222797157,
+                    "_score": 19.282223,
+                    "cosine": 1.655801551037,
+                    "vclaim": "'The president's party always gets shellacked in midterms. It's only twice, 1934 and 2002, that the president's party actually gained in both the House and the Senate.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2010/sep/07/mary-jordan/do-presidents-always-get-shellacked-midterm-electi/"
+                },
+                "4": {
+                    "_id": "27747",
+                    "combined_score": 0.742699580752,
+                    "_score": 21.1283,
+                    "cosine": 1.60656927763,
+                    "vclaim": "Election Day is being split across two separate days this year.",
+                    "link": "https://www.snopes.com/fact-check/get-out-of-the-vote/"
+                },
+                "5": {
+                    "_id": "22618",
+                    "combined_score": 0.687040645737,
+                    "_score": 23.825161,
+                    "cosine": 1.498281672737,
+                    "vclaim": "E-mail reproduces an editorial from a Canadian newspaper about U.S. presidential candidates.",
+                    "link": "https://www.snopes.com/fact-check/a-canadians-view-of-us-elections/"
+                }
+            }
+        },
+        {
+            "sentence": "Image caption Mike Pence contradicted Mr Trump earlier Former New York Mayor Rudy Giuliani, who is Mr Trump's campaign adviser, told CNN's State of the Union he'd have to be a \"moron\" to think that some elections, such as those in Philadelphia and Chicago, were going to be fair.",
+            "retrieved": {
+                "1": {
+                    "_id": "4684",
+                    "combined_score": 0.857527617599,
+                    "_score": 31.928047,
+                    "cosine": 1.829636649242,
+                    "vclaim": "'While introducing Donald Trump, former New York City Mayor Rudy Giuliani omitted the September 11, 2001, strikes as a ‘successful’ terrorist attack during the eight years before President Obama’s 2008 election.'",
+                    "link": "http://www.politifact.com/california/statements/2016/aug/18/john-burton/top-california-democrat-seizes-911-omission-donald/"
+                },
+                "2": {
+                    "_id": "33238",
+                    "combined_score": 0.815350570175,
+                    "_score": 35.78065,
+                    "cosine": 1.750038718337,
+                    "vclaim": "Former New York City mayor Rudy Giuliani was suspended from Twitter after sending messages about Pizzagate.",
+                    "link": "https://www.snopes.com/fact-check/rudy-giuliani-banned-from-twitter-for-pizzagate-tweets/"
+                },
+                "3": {
+                    "_id": "20791",
+                    "combined_score": 0.615157450846,
+                    "_score": 35.780117,
+                    "cosine": 1.566519528771,
+                    "vclaim": "'When I was mayor of New York City, I encouraged adoptions. Adoptions went up 65-70 percent. Abortions went down 16 percent.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2007/sep/28/rudy-giuliani/thats-one-way-to-slice-the-numbers-there-are-other/"
+                },
+                "4": {
+                    "_id": "10054",
+                    "combined_score": 0.601169492471,
+                    "_score": 22.795223,
+                    "cosine": 1.691656261015,
+                    "vclaim": "'Mr. Caprio is a career politician who has never worked in the private sector.'",
+                    "link": "http://www.politifact.com/rhode-island/statements/2010/aug/20/john-robitaille/robitaille-says-caprio-never-worked-private-sector/"
+                },
+                "5": {
+                    "_id": "32018",
+                    "combined_score": 0.600305180346,
+                    "_score": 24.907616,
+                    "cosine": 1.668420462042,
+                    "vclaim": "Democrats have filed treason charges against President-elect Donald Trump, the Federal Bureau of Investigation, and Rudy Giuliani.",
+                    "link": "https://www.snopes.com/fact-check/democrats-file-treason-charges-against-trump/"
+                }
+            }
+        },
+        {
+            "sentence": "\"I've found very few situations where Republicans cheat... they don't control the inner cities the way Democrats do.",
+            "retrieved": {
+                "1": {
+                    "_id": "31876",
+                    "combined_score": 0.904075572722,
+                    "_score": 15.837018,
+                    "cosine": 1.765488099764,
+                    "vclaim": "Maps shows that areas with high democratic populations also have high crime rates.",
+                    "link": "https://www.snopes.com/fact-check/crime-rates-democrats-vote/"
+                },
+                "2": {
+                    "_id": "14237",
+                    "combined_score": 0.863480832983,
+                    "_score": 15.456968,
+                    "cosine": 1.741826483928,
+                    "vclaim": "'During the last election, Democrats won over a million votes more than Republicans, but because of the way districts are designed, the Republicans got 33 more members of the House of Representatives than the Democrats did.'",
+                    "link": "http://www.politifact.com/texas/statements/2013/nov/26/lloyd-doggett/democrats-outpolled-republicans-who-landed-33-seat/"
+                },
+                "3": {
+                    "_id": "16123",
+                    "combined_score": 0.824492844762,
+                    "_score": 16.017311,
+                    "cosine": 1.693285741882,
+                    "vclaim": "A recent study found 'that cities where Uber operates have 3.6%-5.6% fewer drunk driving deaths than cities without access to ridesharing.'",
+                    "link": "http://www.politifact.com/new-york/statements/2016/dec/09/uber/uber-cherry-picks-data-study-about-drunken-driving/"
+                },
+                "4": {
+                    "_id": "16193",
+                    "combined_score": 0.786789363045,
+                    "_score": 12.2649975,
+                    "cosine": 1.76614476751,
+                    "vclaim": "Income inequality 'seems to be worst in cities run by Democrats.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2015/nov/11/rand-paul/debate-rand-paul-says-income-inequality-worse-citi/"
+                },
+                "5": {
+                    "_id": "4585",
+                    "combined_score": 0.771374326005,
+                    "_score": 15.687558,
+                    "cosine": 1.657650122378,
+                    "vclaim": "Virginia House 'Republicans have had more African-Americans on key committees than when the Democrats were in control.'",
+                    "link": "http://www.politifact.com/virginia/statements/2019/mar/05/chris-jones/gop-has-put-more-blacks-key-va-house-committees-di/"
+                }
+            }
+        },
+        {
+            "sentence": "Maybe if Republicans controlled the inner cities, they'd do as much cheating as Democrats,\" he said.",
+            "retrieved": {
+                "1": {
+                    "_id": "6903",
+                    "combined_score": 0.865296223101,
+                    "_score": 28.180521,
+                    "cosine": 1.579269073193,
+                    "vclaim": "'Donald Trump is appealing as much to Democrats as he is to Republicans.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2016/jan/21/mike-rogers/mike-rogers-says-trump-appeals-democrats-much-repu/"
+                },
+                "2": {
+                    "_id": "6450",
+                    "combined_score": 0.816393656072,
+                    "_score": 19.946045,
+                    "cosine": 1.641039076846,
+                    "vclaim": "'Republicans Looking To Cut Social Security As Much As 50 percent Immediately.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2016/dec/14/new-century-times/website-makes-dubious-claim-gop-will-cut-social-se/"
+                },
+                "3": {
+                    "_id": "8962",
+                    "combined_score": 0.766431626251,
+                    "_score": 14.2802925,
+                    "cosine": 1.672275697778,
+                    "vclaim": "'The big Wall Street banks, the big corporations' give 'many times more' political donations to Democrats than Republicans.",
+                    "link": "http://www.politifact.com/wisconsin/statements/2014/apr/16/jim-demint/not-many-times-more-democrats-sometimes-do-raise-m/"
+                },
+                "4": {
+                    "_id": "11481",
+                    "combined_score": 0.756081771441,
+                    "_score": 18.147406,
+                    "cosine": 1.620264046174,
+                    "vclaim": "'So many of these people that commit the mass murders end up being Democrats.'",
+                    "link": "http://www.politifact.com/new-york/statements/2018/feb/23/claudia-tenney/do-many-mass-shooters-end-being-democrats-rep-tenn/"
+                },
+                "5": {
+                    "_id": "14894",
+                    "combined_score": 0.746938644022,
+                    "_score": 18.788582,
+                    "cosine": 1.606512336586,
+                    "vclaim": "'Going to public financing really disadvantages Democrats because you're not able to raise funds between the day you win the primaries and the time you're officially nominated.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2007/oct/26/bill-richardson/its-not-as-risky-as-he-says/"
+                }
+            }
+        },
+        {
+            "sentence": "\"I'm sorry.",
+            "retrieved": {
+                "1": {
+                    "_id": "6325",
+                    "combined_score": 0.84057702331,
+                    "_score": 7.484439,
+                    "cosine": 1.30384686857,
+                    "vclaim": "'We now have driven (health care) costs down to the lowest they've been in 50 years.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/jan/18/hillary-clinton/hillary-clinton-we-now-have-driven-costs-down-tgo-/"
+                },
+                "2": {
+                    "_id": "2592",
+                    "combined_score": 0.785413208902,
+                    "_score": 7.8395176,
+                    "cosine": 1.269073129806,
+                    "vclaim": "Jason Kenney: 'I'm the only Canadian minister who's been in Syria in four decades.' - FactsCanada",
+                    "link": "http://factscan.ca/jason-kenney-only-canadian-minister-in-syria-in-four-decades/"
+                },
+                "3": {
+                    "_id": "13642",
+                    "combined_score": 0.765209171915,
+                    "_score": 10.844419,
+                    "cosine": 1.218007452242,
+                    "vclaim": "Roy Barnes is like Barack Obama because they're both doing a lot of apologizing.",
+                    "link": "http://www.politifact.com/georgia/statements/2010/sep/15/republican-governors-association/barnes-and-obama-sorry-gop-says/"
+                },
+                "4": {
+                    "_id": "6685",
+                    "combined_score": 0.757833027113,
+                    "_score": 5.72927,
+                    "cosine": 1.282189635092,
+                    "vclaim": "'In writing his book, Gov. Perry pointed out that … by any measure Social Security has been a failure.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2011/sep/13/mitt-romney/mitt-romney-says-rick-perry-believes-social-securi/"
+                },
+                "5": {
+                    "_id": "13784",
+                    "combined_score": 0.735153669026,
+                    "_score": 9.513702,
+                    "cosine": 1.219382748498,
+                    "vclaim": "'I'm not a politician.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2018/sep/06/dan-kohl/why-dan-kohl-democrat-running-against-us-rep-glenn/"
+                }
+            }
+        },
+        {
+            "sentence": "Dead people generally vote for Democrats rather than Republicans,\" he added.",
+            "retrieved": {
+                "1": {
+                    "_id": "11032",
+                    "combined_score": 0.865194466068,
+                    "_score": 13.571851,
+                    "cosine": 1.686108799325,
+                    "vclaim": "Says Rep. Justin Amash 'votes more with the Democrats than with the Republicans.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2014/may/13/mike-rogers/does-justin-amash-vote-more-often-democrats-or-rep/"
+                },
+                "2": {
+                    "_id": "13388",
+                    "combined_score": 0.827716293905,
+                    "_score": 14.337532,
+                    "cosine": 1.644656917891,
+                    "vclaim": "Says '6 percent more Republicans across the state voted than Democrats.'",
+                    "link": "http://www.politifact.com/oregon/statements/2010/nov/06/bob-tiernan/party-chair-bob-tiernan-says-oregons-republicans-o/"
+                },
+                "3": {
+                    "_id": "20249",
+                    "combined_score": 0.811765974761,
+                    "_score": 17.791172,
+                    "cosine": 1.563722464297,
+                    "vclaim": "'When you were casting your vote for Republicans, Brian Kemp was voting for Democrats.'",
+                    "link": "http://www.politifact.com/georgia/statements/2010/jul/07/doug-macginnitie/secretary-state-hopeful-doug-macginnitie-said-repu/"
+                },
+                "4": {
+                    "_id": "17833",
+                    "combined_score": 0.810474473995,
+                    "_score": 13.60051,
+                    "cosine": 1.6476292942,
+                    "vclaim": "Says he 'never' donates to Democrats while Paul Workman 'contributes to Democrat Kirk Watson and other Democrats running against Republicans.'",
+                    "link": "http://www.politifact.com/texas/statements/2010/feb/26/david-sewell/sewell-says-he-doesnt-donate-democrats-workman-con/"
+                },
+                "5": {
+                    "_id": "14237",
+                    "combined_score": 0.798603594882,
+                    "_score": 12.825672,
+                    "cosine": 1.65508686975,
+                    "vclaim": "'During the last election, Democrats won over a million votes more than Republicans, but because of the way districts are designed, the Republicans got 33 more members of the House of Representatives than the Democrats did.'",
+                    "link": "http://www.politifact.com/texas/statements/2013/nov/26/lloyd-doggett/democrats-outpolled-republicans-who-landed-33-seat/"
+                }
+            }
+        },
+        {
+            "sentence": "Analysis by Laura Bicker, BBC News, Washington Donald Trump has claimed for months that the election was rigged - but that message is now at the centre of his campaign just as his poll numbers begin to slump.",
+            "retrieved": {
+                "1": {
+                    "_id": "20349",
+                    "combined_score": 0.802108396148,
+                    "_score": 22.251814,
+                    "cosine": 1.784950335666,
+                    "vclaim": "'Right now, in every major poll, national poll and statewide poll done in the last month, six weeks, we are defeating Trump, often by big numbers and always at a larger margin than Secretary Clinton is.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/may/29/bernie-sanders/bernie-sanders-says-he-polls-better-against-donald/"
+                },
+                "2": {
+                    "_id": "32737",
+                    "combined_score": 0.753778621639,
+                    "_score": 24.900928,
+                    "cosine": 1.697664653402,
+                    "vclaim": "Donald Trump announced that his 2016 Presidential campaign was an April Fool's Day joke.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-campaign-joke/"
+                },
+                "3": {
+                    "_id": "18984",
+                    "combined_score": 0.753742984997,
+                    "_score": 23.11184,
+                    "cosine": 1.729514414536,
+                    "vclaim": "'In 2016, when Hillary Clinton appeared to have a firm lead in the polls — oh, just before the election, it was President Obama who laughed off any notion that American elections could possibly be tampered with.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2018/jul/17/sean-hannity/sean-hannity-cites-misleading-obama-quote-coverage/"
+                },
+                "4": {
+                    "_id": "26439",
+                    "combined_score": 0.730000793075,
+                    "_score": 25.166746,
+                    "cosine": 1.673208223251,
+                    "vclaim": "Donald Trump lamented that the news media are biased for accurately reporting his words and actions.",
+                    "link": "https://www.snopes.com/fact-check/trump-blasts-media-for-reporting-things-he-says/"
+                },
+                "5": {
+                    "_id": "32205",
+                    "combined_score": 0.707225188454,
+                    "_score": 25.614294,
+                    "cosine": 1.646344774827,
+                    "vclaim": "Billionaire George Soros predicted Donald Trump will win the popular vote by a landslide but lose to Hillary Clinton because the election is rigged.",
+                    "link": "https://www.snopes.com/fact-check/george-soros-trump-will-win-popular-vote-by-a-landslide-but-clinton-victory-a-done-deal/"
+                }
+            }
+        },
+        {
+            "sentence": "And in doing so he hits at the very heart of American democracy - the idea that elections are free and fair.",
+            "retrieved": {
+                "1": {
+                    "_id": "7216",
+                    "combined_score": 0.770016866464,
+                    "_score": 15.576392,
+                    "cosine": 1.714327331931,
+                    "vclaim": "The United States is 'the oldest democracy' in the world.",
+                    "link": "http://www.politifact.com/wisconsin/statements/2016/jul/11/paul-ryan/paul-ryan-claims-us-oldest-democracy-world-he-righ/"
+                },
+                "2": {
+                    "_id": "14667",
+                    "combined_score": 0.761282398183,
+                    "_score": 25.531418,
+                    "cosine": 1.520333972298,
+                    "vclaim": "'The Libyan people have voted twice in free and fair elections for the kind of leadership they want.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2015/nov/23/hillary-clinton/hillary-clinton-says-libyan-people-have-voted-twic/"
+                },
+                "3": {
+                    "_id": "7336",
+                    "combined_score": 0.696910405987,
+                    "_score": 17.591702,
+                    "cosine": 1.617082159867,
+                    "vclaim": "'The Democrats are very sly. … (in New Hampshire) we have same day voter registration, and to be honest, when Massachusetts elections are not very close, they’re busing them in all over the place.'",
+                    "link": "http://www.politifact.com/new-hampshire/statements/2016/nov/05/chris-sununu/republican-candidate-governor-chris-sununu-says-ma/"
+                },
+                "4": {
+                    "_id": "25852",
+                    "combined_score": 0.694124470689,
+                    "_score": 24.626402,
+                    "cosine": 1.482748961981,
+                    "vclaim": "Rabbi Steven Pruzansky penned an opinion piece about the 2012 U.S. presidential elections entitled “The Decline and Fall of the American Empire.”",
+                    "link": "https://www.snopes.com/fact-check/the-decline-and-fall-of-the-american-empire/"
+                },
+                "5": {
+                    "_id": "4863",
+                    "combined_score": 0.635128445795,
+                    "_score": 15.394094,
+                    "cosine": 1.608132995428,
+                    "vclaim": "In the 2014 elections, 'the American people overwhelmingly said we don't want Obamacare … and we don't want amnesty.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2014/nov/21/ted-cruz/ted-cruz-says-2014-elections-voters-made-clear-the/"
+                }
+            }
+        },
+        {
+            "sentence": "Mr Trump's tactics allow him once more to paint himself as the anti-establishment figure being victimised by the Washington political elite.",
+            "retrieved": {
+                "1": {
+                    "_id": "16719",
+                    "combined_score": 0.843094390188,
+                    "_score": 16.959354,
+                    "cosine": 1.559163385617,
+                    "vclaim": "'In 2016, counties hosting a Trump rally saw a 226% spike in hate crimes.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/aug/12/bernie-sanders/did-counties-hosting-trump-rally-2016-see-226-spik/"
+                },
+                "2": {
+                    "_id": "6257",
+                    "combined_score": 0.840812147425,
+                    "_score": 16.511719,
+                    "cosine": 1.56804848219,
+                    "vclaim": "The 'establishment media ignored' President Donald Trump’s Fourth of July event.",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/jul/11/breitbart/no-establishment-media-didnt-ignore-president-trum/"
+                },
+                "3": {
+                    "_id": "3709",
+                    "combined_score": 0.833330784039,
+                    "_score": 17.345455,
+                    "cosine": 1.544661247828,
+                    "vclaim": "George Washington said: 'When government takes away citizens’ right to bear arms it becomes citizens’ duty to take away government’s right to govern.'",
+                    "link": "https://www.truthorfiction.com/did-george-washington-say-citizens-gain-the-right-to-unseat-the-government-if-the-government-restricts-guns/"
+                },
+                "4": {
+                    "_id": "30402",
+                    "combined_score": 0.828897023697,
+                    "_score": 13.95802,
+                    "cosine": 1.61938074393,
+                    "vclaim": "Film producer Harvey Weinstein cut a deal with the FBI to turn over 'names of elite pedophiles in Hollywood and Washington, D.C.'",
+                    "link": "https://www.snopes.com/fact-check/weinstein-fbi-names/"
+                },
+                "5": {
+                    "_id": "9028",
+                    "combined_score": 0.809943223199,
+                    "_score": 13.549398,
+                    "cosine": 1.617658003222,
+                    "vclaim": "White House Political Director Patrick Gaspard once served as the 'right-hand man' for Bertha Lewis, who heads up ACORN.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/sep/30/steve-doocy/beck-and-others-repeat-claim-white-house-political/"
+                }
+            }
+        },
+        {
+            "sentence": "It also gives him an excuse if he loses.",
+            "retrieved": {
+                "1": {
+                    "_id": "27567",
+                    "combined_score": 0.879997575193,
+                    "_score": 14.813444,
+                    "cosine": 1.424900093581,
+                    "vclaim": "Trump's 1987 book The Art of the Deal says that being an atheist gives Trump 'an edge in every deal.'",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-wrote-that-being-an-atheist-gave-him-a-business-edge/"
+                },
+                "2": {
+                    "_id": "7448",
+                    "combined_score": 0.807877822183,
+                    "_score": 9.947853,
+                    "cosine": 1.470189740637,
+                    "vclaim": "Insurers delayed an Illinois man's treatment, 'and he died because of it.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/sep/17/barack-obama/obama-says-decision-revoke-insurance-led-illinois-/"
+                },
+                "3": {
+                    "_id": "19234",
+                    "combined_score": 0.803269402382,
+                    "_score": 10.5674515,
+                    "cosine": 1.457166488586,
+                    "vclaim": "'To be clear, all my investments are in a trust that I don’t control.'",
+                    "link": "http://www.politifact.com/illinois/statements/2017/oct/27/bruce-rauner/rauners-blind-trust-procedures-dont-excuse-lawsuit/"
+                },
+                "4": {
+                    "_id": "33271",
+                    "combined_score": 0.77871415835,
+                    "_score": 10.230338,
+                    "cosine": 1.450015027439,
+                    "vclaim": "Forger steals money by manipulating ABA symbols on checks.",
+                    "link": "https://www.snopes.com/fact-check/check-and-double-check/"
+                },
+                "5": {
+                    "_id": "24514",
+                    "combined_score": 0.743629977863,
+                    "_score": 12.991804,
+                    "cosine": 1.384320237153,
+                    "vclaim": "Producer Phil Spector deliberately recorded an unreleasable song called “The Screw” in order to cheat his former partner out of royalties.",
+                    "link": "https://www.snopes.com/fact-check/the-screw/"
+                }
+            }
+        },
+        {
+            "sentence": "But where would it leave his supporters?",
+            "retrieved": {
+                "1": {
+                    "_id": "3404",
+                    "combined_score": 0.942607644967,
+                    "_score": 18.30367,
+                    "cosine": 1.467522525459,
+                    "vclaim": "Donald Trump said that he did not anticipate the intensity of criticism, but would 'gladly' endure it for his supporters.",
+                    "link": "https://www.truthorfiction.com/did-donald-trump-say-he-would-gladly-take-slings-and-arrows-of-criticism-for-his-supporters/"
+                },
+                "2": {
+                    "_id": "26885",
+                    "combined_score": 0.823734503686,
+                    "_score": 11.158385,
+                    "cosine": 1.498885924934,
+                    "vclaim": "A group of Trump supporters misspelled the candidate's name on their shirts.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-shirts-trmup/"
+                },
+                "3": {
+                    "_id": "28257",
+                    "combined_score": 0.798447179751,
+                    "_score": 14.958954,
+                    "cosine": 1.433832224593,
+                    "vclaim": "Donald Trump supporters chanted 'we hate muslims, we hate blacks, we want our great country back' during a rally on election night.",
+                    "link": "https://www.snopes.com/fact-check/trump-rally-chant/"
+                },
+                "4": {
+                    "_id": "20936",
+                    "combined_score": 0.72224469436,
+                    "_score": 16.069468,
+                    "cosine": 1.377218930411,
+                    "vclaim": "A video shows piles of garbage left behind after U.S. President Donald Trump's June 2019 rally in Orlando, Fla.",
+                    "link": "https://www.snopes.com/fact-check/trump-supporters-leave-trash/"
+                },
+                "5": {
+                    "_id": "22657",
+                    "combined_score": 0.716163784026,
+                    "_score": 8.49939,
+                    "cosine": 1.475946856762,
+                    "vclaim": "Donald Trump retweeted a purported photograph of black supporters of his campaign, even though the depicted people aren't Trump fans.",
+                    "link": "https://www.snopes.com/fact-check/trump-retweets-photo-of-black-supporters/"
+                }
+            }
+        },
+        {
+            "sentence": "The fear is that the Republican candidate's rhetoric could further divide this country and stoke anger and suspicion among the millions who follow him.",
+            "retrieved": {
+                "1": {
+                    "_id": "3577",
+                    "combined_score": 0.826972939922,
+                    "_score": 22.664047,
+                    "cosine": 1.519771909798,
+                    "vclaim": "The United States was ranked the 118th safest country in the world in 2019, down from 65 in 2018.",
+                    "link": "https://www.truthorfiction.com/is-the-united-states-the-118th-safest-country-in-the-world-down-from-65th-in-2018/"
+                },
+                "2": {
+                    "_id": "16150",
+                    "combined_score": 0.799129017513,
+                    "_score": 18.555328,
+                    "cosine": 1.555596946999,
+                    "vclaim": "Says the recall elections that aimed to remove him and other Republican officials from office 'cost tens of millions of dollars to run.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2015/may/04/scott-walker/historic-recall-elections-wisconsin-cost-tens-mill/"
+                },
+                "3": {
+                    "_id": "39",
+                    "combined_score": 0.773226861122,
+                    "_score": 18.443218,
+                    "cosine": 1.540433977755,
+                    "vclaim": "In a C-SPAN clip, House Speaker Nancy Pelosi brags about her party's use of a 'wrap up smear' against Republicans.",
+                    "link": "https://www.truthorfiction.com/nancy-pelosi-and-the-wrap-up-smear/"
+                },
+                "4": {
+                    "_id": "23963",
+                    "combined_score": 0.768644423844,
+                    "_score": 19.124763,
+                    "cosine": 1.528584624391,
+                    "vclaim": "Actor James Earl Jones said that citizens of the United States need to carry guns because the world is a violent place.",
+                    "link": "https://www.snopes.com/fact-check/firearms-and-the-man/"
+                },
+                "5": {
+                    "_id": "19067",
+                    "combined_score": 0.760118346665,
+                    "_score": 20.393505,
+                    "cosine": 1.506529103312,
+                    "vclaim": "Says a poll found him the only Republican candidate who could beat Barack Obama in Texas -- and by eight points.",
+                    "link": "http://www.politifact.com/texas/statements/2011/aug/14/mitt-romney/mitt-romney-says-poll-showed-him-only-republican-b/"
+                }
+            }
+        },
+        {
+            "sentence": "If Hillary Clinton is elected, would they accept her presidency as legitimate and if not, what form would those protests take?",
+            "retrieved": {
+                "1": {
+                    "_id": "23991",
+                    "combined_score": 0.854010833166,
+                    "_score": 22.900307,
+                    "cosine": 1.720499968198,
+                    "vclaim": "Barack Obama said that Hillary Clinton would 'say anything and do nothing' and that she was not qualified for the presidency in 2008.",
+                    "link": "https://www.snopes.com/fact-check/obama-hillary-clinton-isnt-qualified/"
+                },
+                "2": {
+                    "_id": "29698",
+                    "combined_score": 0.825890231949,
+                    "_score": 28.563301,
+                    "cosine": 1.619246755201,
+                    "vclaim": "Hillary Clinton vowed that she would shut down the NRA and ban handguns if she were elected President.",
+                    "link": "https://www.snopes.com/fact-check/nra-hillary-clinton-quote/"
+                },
+                "3": {
+                    "_id": "27307",
+                    "combined_score": 0.807029871916,
+                    "_score": 23.89786,
+                    "cosine": 1.665950940893,
+                    "vclaim": "Delayed military absentee ballots would have 'swung' the presidential election for Hillary Clinton if they had been counted on time.",
+                    "link": "https://www.snopes.com/fact-check/military-absentee-ballots-clinton/"
+                },
+                "4": {
+                    "_id": "794",
+                    "combined_score": 0.773595316034,
+                    "_score": 20.210484,
+                    "cosine": 1.686678868077,
+                    "vclaim": "Donald Trump Will Skip Remaining Debates if Hillary Clinton is There",
+                    "link": "https://www.truthorfiction.com/donald-trump-will-skip-remaining-debates-hillary-clinton/"
+                },
+                "5": {
+                    "_id": "27452",
+                    "combined_score": 0.754449118021,
+                    "_score": 26.038155,
+                    "cosine": 1.591035162638,
+                    "vclaim": "Queen Elizabeth said that she would 'take America back' if Donald Trump gets elected president.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-queen-england/"
+                }
+            }
+        },
+        {
+            "sentence": "'Swinging at every phantom' Mrs Clinton's running mate Tim Kaine blasted Mr Trump's election-rigging claims as \"scare tactics\".",
+            "retrieved": {
+                "1": {
+                    "_id": "25563",
+                    "combined_score": 0.93618343057,
+                    "_score": 23.748173,
+                    "cosine": 1.778971280454,
+                    "vclaim": "Hillary Clinton's running mate Tim Kaine stepped aside as DNC chair in 2011 to allow Clinton supporter Debbie Wasserman Schultz to take the job spot in exchange for a slot on the 2016 ticket; in October 2016,",
+                    "link": "https://www.snopes.com/fact-check/tim-kaine-dnc-deal/"
+                },
+                "2": {
+                    "_id": "32357",
+                    "combined_score": 0.863959058527,
+                    "_score": 17.568493,
+                    "cosine": 1.817275676952,
+                    "vclaim": "An audio tape captures VP candidate Tim Kaine yelling at his mistress.",
+                    "link": "https://www.snopes.com/fact-check/kaine-yelling-at-his-mistress/"
+                },
+                "3": {
+                    "_id": "28006",
+                    "combined_score": 0.862146769892,
+                    "_score": 18.541899,
+                    "cosine": 1.798987749709,
+                    "vclaim": "An audio recording captures Democratic VP candidate Tim Kaine yelling at his young daughter.",
+                    "link": "https://www.snopes.com/fact-check/tim-kaine-yells-at-his-daughter/"
+                },
+                "4": {
+                    "_id": "16635",
+                    "combined_score": 0.799378676873,
+                    "_score": 23.421717,
+                    "cosine": 1.657428910293,
+                    "vclaim": "'Tim Kaine hiked tuition as governor, but now claims to champion affordability.'",
+                    "link": "http://www.politifact.com/virginia/statements/2016/sep/19/republican-national-committee-republican/gop-makes-tricky-claim-tim-kaine-hiked-tuition-gov/"
+                },
+                "5": {
+                    "_id": "18699",
+                    "combined_score": 0.75354435804,
+                    "_score": 16.62979,
+                    "cosine": 1.730696914358,
+                    "vclaim": "Tim Kaine: 'opposes everything President Trump does.'",
+                    "link": "http://www.politifact.com/virginia/statements/2018/sep/26/corey-stewart/stewart-close-describing-kaines-opposition-trump/"
+                }
+            }
+        },
+        {
+            "sentence": "He told ABC's This Week Mr Trump was \"swinging at every phantom of his own imagination\" because \"he knows he's losing\".",
+            "retrieved": {
+                "1": {
+                    "_id": "21226",
+                    "combined_score": 0.906358209893,
+                    "_score": 19.738396,
+                    "cosine": 1.653796771186,
+                    "vclaim": "A man committed suicide because he mistakenly believed his lotto numbers had come up the one week he didn’t play them.",
+                    "link": "https://www.snopes.com/fact-check/when-your-numbers-up/"
+                },
+                "2": {
+                    "_id": "30120",
+                    "combined_score": 0.770988799644,
+                    "_score": 19.707054,
+                    "cosine": 1.557527607477,
+                    "vclaim": "Donald Trump told Phil Donahue that he was an atheist in 1989.",
+                    "link": "https://www.snopes.com/fact-check/trump-donahue-atheist-1989/"
+                },
+                "3": {
+                    "_id": "13108",
+                    "combined_score": 0.7136513461,
+                    "_score": 16.660963,
+                    "cosine": 1.571879634383,
+                    "vclaim": "Donald Trump 'rooted for the housing crisis, because he knew he could make money off of it.'",
+                    "link": "http://www.politifact.com/california/statements/2016/jul/20/scott-peters/ca-congressman-repeats-mostly-true-critique-donald/"
+                },
+                "4": {
+                    "_id": "17927",
+                    "combined_score": 0.70702893931,
+                    "_score": 14.568853,
+                    "cosine": 1.605170861899,
+                    "vclaim": "'Donald Trump said he was excited for the 2008 housing crash that devastated millions of American families, because he thought it would help him scoop up more real estate on the cheap.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/jul/26/elizabeth-warren/elizabeth-warren-says-donald-trump-was-excited-200/"
+                },
+                "5": {
+                    "_id": "32471",
+                    "combined_score": 0.701355883999,
+                    "_score": 23.42369,
+                    "cosine": 1.440156483976,
+                    "vclaim": "A woman shockingly found out via a radio program call-in stunt that her long-time boyfriend was married.",
+                    "link": "https://www.snopes.com/fact-check/he-loves-me-not/"
+                }
+            }
+        },
+        {
+            "sentence": "Multiple women have come forward to accuse Mr Trump of groping or kissing them in the past week, following the emergence of a 2005 video tape in which the Republican nominee made obscene remarks about women.",
+            "retrieved": {
+                "1": {
+                    "_id": "426",
+                    "combined_score": 0.820986736546,
+                    "_score": 33.90373,
+                    "cosine": 1.587901027408,
+                    "vclaim": "In 1992, Donald Trump said 'women, you have to treat them like shit.'",
+                    "link": "https://www.truthorfiction.com/did-donald-trump-say-women-you-have-to-treat-them-like-s-in-a-1992-interview/"
+                },
+                "2": {
+                    "_id": "32577",
+                    "combined_score": 0.804955533409,
+                    "_score": 24.542747,
+                    "cosine": 1.743087004021,
+                    "vclaim": "Leaked DNC e-mails from May 2016 reveal a plot to contrive fake stories about Donald Trump groping women.",
+                    "link": "https://www.snopes.com/fact-check/fake-trump-groping-plot/"
+                },
+                "3": {
+                    "_id": "29185",
+                    "combined_score": 0.755246230784,
+                    "_score": 21.292654,
+                    "cosine": 1.755610900936,
+                    "vclaim": "Donald Trump was not accused of sexual assault until he ran for President in 2016.",
+                    "link": "https://www.snopes.com/fact-check/was-donald-trump-accused-of-sexual-assault-prior-to-the-2016-election/"
+                },
+                "4": {
+                    "_id": "7107",
+                    "combined_score": 0.731469520624,
+                    "_score": 27.22485,
+                    "cosine": 1.625474091348,
+                    "vclaim": "Says Donald Trump said of women, 'And you can tell them to go f--- themselves.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/may/18/priorities-usa-action/priorities-usa-donald-trump-women-ad/"
+                },
+                "5": {
+                    "_id": "2243",
+                    "combined_score": 0.691105330219,
+                    "_score": 30.911057,
+                    "cosine": 1.520634600222,
+                    "vclaim": "Claims Made in the 'Who is Donald Trump' Viral Video",
+                    "link": "https://www.truthorfiction.com/claims-made-in-the-who-is-donald-trump-viral-video/"
+                }
+            }
+        },
+        {
+            "sentence": "He has repeatedly denied the claims, calling the women \"horrible liars\" and accusing the media of being an agent of the \"Clinton machine\".",
+            "retrieved": {
+                "1": {
+                    "_id": "29324",
+                    "combined_score": 0.857228275369,
+                    "_score": 27.335552,
+                    "cosine": 1.544635395666,
+                    "vclaim": "The Communist Party of the USA endorsed Hillary Clinton.",
+                    "link": "https://www.snopes.com/fact-check/did-the-communist-party-of-the-usa-endorse-hillary-clinton/"
+                },
+                "2": {
+                    "_id": "240",
+                    "combined_score": 0.804767448054,
+                    "_score": 24.851826,
+                    "cosine": 1.558756509196,
+                    "vclaim": "Did The CIA Director Call The Trump Dossier The ‘Foundation’ Of The Russia Investigation?",
+                    "link": "https://checkyourfact.com/2017/10/27/fact-check-did-the-cia-director-call-the-trump-dossier-the-foundation-of-the-russia-investigation/"
+                },
+                "3": {
+                    "_id": "2894",
+                    "combined_score": 0.753856560076,
+                    "_score": 22.670645,
+                    "cosine": 1.568665586381,
+                    "vclaim": "ThinkProgress Founder Claims Clinton Couldn’t Have Blocked The Sale of Uranium One",
+                    "link": "https://checkyourfact.com/2017/10/31/fact-check-thinkprogress-founder-claims-clinton-couldnt-have-blocked-the-sale-of-uranium-one/"
+                },
+                "4": {
+                    "_id": "21536",
+                    "combined_score": 0.751303545633,
+                    "_score": 23.376083,
+                    "cosine": 1.555669566171,
+                    "vclaim": "A video shows Bill Clinton saying that his wife Hillary Clinton 'communed' with the spirit of Eleanor Roosevelt.",
+                    "link": "https://www.snopes.com/fact-check/hillary-clinton-communes-with-the-spirit-of-eleanor-roosevelt/"
+                },
+                "5": {
+                    "_id": "25852",
+                    "combined_score": 0.679531136525,
+                    "_score": 28.493011,
+                    "cosine": 1.433985936017,
+                    "vclaim": "Rabbi Steven Pruzansky penned an opinion piece about the 2012 U.S. presidential elections entitled “The Decline and Fall of the American Empire.”",
+                    "link": "https://www.snopes.com/fact-check/the-decline-and-fall-of-the-american-empire/"
+                }
+            }
+        },
+        {
+            "sentence": "Mr Kaine denied that the Clinton campaign had anything to do with the women making accusations against Mr Trump.",
+            "retrieved": {
+                "1": {
+                    "_id": "7475",
+                    "combined_score": 0.81978513595,
+                    "_score": 20.67808,
+                    "cosine": 1.598628734943,
+                    "vclaim": "'The DNC hack showed you that the Clinton campaign was working to schedule (primary) debates against (Bernie) Sanders,' and the Clinton campaign is continuing this 'ploy' against Donald Trump.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/jul/31/paul-manafort/trump-campaign-chief-dnc-leak-proves-clinton-campa/"
+                },
+                "2": {
+                    "_id": "27613",
+                    "combined_score": 0.783118661859,
+                    "_score": 15.094889,
+                    "cosine": 1.65705302971,
+                    "vclaim": "Melania Trump had copied her statement regarding her husband's offensive statements about women from Hillary Clinton.",
+                    "link": "https://www.snopes.com/fact-check/melania-trump-copied-statement-from-hillary-clinton/"
+                },
+                "3": {
+                    "_id": "6514",
+                    "combined_score": 0.723613405317,
+                    "_score": 20.303455,
+                    "cosine": 1.539523496425,
+                    "vclaim": "'Frankly, (Hillary Clinton) doesn’t do very well with women.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/may/02/donald-trump/donald-trump-wrong-hillary-clinton-doesnt-do-very-/"
+                },
+                "4": {
+                    "_id": "6818",
+                    "combined_score": 0.711373572293,
+                    "_score": 23.010988,
+                    "cosine": 1.491000443916,
+                    "vclaim": "'Mr. Trump is self-financing his campaign, so we don’t have any donors.'",
+                    "link": "http://www.politifact.com/virginia/statements/2016/feb/22/corey-lewandowski/trumps-campaign-manager-we-dont-have-any-donors/"
+                },
+                "5": {
+                    "_id": "16937",
+                    "combined_score": 0.710742081972,
+                    "_score": 14.984318,
+                    "cosine": 1.610021742735,
+                    "vclaim": "Says Hillary Clinton and millennials have the same positions on climate change, abortion rights, immigration reform, gay rights and college affordability. 'Donald Trump doesn't.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/sep/18/tim-kaine/tim-kaine-says-millennials-agree-clinton-not-trump/"
+                }
+            }
+        },
+        {
+            "sentence": "Who is ahead in the polls?",
+            "retrieved": {
+                "1": {
+                    "_id": "2422",
+                    "combined_score": 0.82007974006,
+                    "_score": 12.333751,
+                    "cosine": 1.548051949332,
+                    "vclaim": "The Media Is Lying: Trump is Actually Beating Clinton in Polls",
+                    "link": "https://www.truthorfiction.com/media-lying-trump-actually-beating-clinton-polls/"
+                },
+                "2": {
+                    "_id": "15922",
+                    "combined_score": 0.80421436626,
+                    "_score": 10.386275,
+                    "cosine": 1.578178059764,
+                    "vclaim": "In the New York 9th District, 'there is a large number of people who went to the polls tonight who didn't support the president to begin with and don't support Democrats -- and it's nothing more than that.'",
+                    "link": "http://www.politifact.com/florida/statements/2011/sep/14/debbie-wasserman-schultz/debbie-wasserman-schultz-downplays-meaning-new-yor/"
+                },
+                "3": {
+                    "_id": "7259",
+                    "combined_score": 0.753972360051,
+                    "_score": 9.95957,
+                    "cosine": 1.550152281129,
+                    "vclaim": "'There have been 30 published polls in this election cycle and Harry Reid's been trailing in every single one.'",
+                    "link": "http://www.politifact.com/texas/statements/2010/jul/17/john-cornyn/reid-only-clearly-trailing-two-thirds-polls/"
+                },
+                "4": {
+                    "_id": "10092",
+                    "combined_score": 0.740027008786,
+                    "_score": 9.604377,
+                    "cosine": 1.547463888361,
+                    "vclaim": "'I’m beating (Kelly Ayotte) in the polls by a lot.'",
+                    "link": "http://www.politifact.com/new-hampshire/statements/2016/aug/05/donald-trump/donald-trumps-pants-fire-claim-about-doing-better-/"
+                },
+                "5": {
+                    "_id": "4619",
+                    "combined_score": 0.707596246867,
+                    "_score": 12.240406,
+                    "cosine": 1.46677328722,
+                    "vclaim": "'In every poll,' John Cornyn 'always loses to any conservative the voters have heard about.'",
+                    "link": "http://www.politifact.com/texas/statements/2013/dec/13/steve-stockman/polls-showed-rick-perry-or-ron-paul-ahead-john-cor/"
+                }
+            }
+        },
+        {
+            "sentence": "See full poll tracker More on the US election",
+            "retrieved": {
+                "1": {
+                    "_id": "13924",
+                    "combined_score": 0.822195108126,
+                    "_score": 15.04996,
+                    "cosine": 1.602188331212,
+                    "vclaim": "'As the election tracker FiveThirtyEight has reported, whoever wins Pennsylvania will be our next President.'",
+                    "link": "http://www.politifact.com/pennsylvania/statements/2016/sep/02/rob-gleason/does-pennsylvania-really-have-power-decide-preside/"
+                },
+                "2": {
+                    "_id": "9646",
+                    "combined_score": 0.810030608285,
+                    "_score": 14.232787,
+                    "cosine": 1.619646620121,
+                    "vclaim": "'Every poll you see, the overwhelming majority of people want [E-Verify].'",
+                    "link": "http://www.politifact.com/rhode-island/statements/2012/mar/25/peter-palumbo/rhode-island-state-rep-peter-palumbo-says-all-poll/"
+                },
+                "3": {
+                    "_id": "20773",
+                    "combined_score": 0.78591455864,
+                    "_score": 10.699871,
+                    "cosine": 1.719654149998,
+                    "vclaim": "'Poll after poll after poll shows me beating Hillary.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/apr/11/ted-cruz/national-surveys-show-ted-cruz-isnt-beating-hillar/"
+                },
+                "4": {
+                    "_id": "29794",
+                    "combined_score": 0.775492663392,
+                    "_score": 11.147673,
+                    "cosine": 1.695367140767,
+                    "vclaim": "Three poll workers were arrested for voter fraud during Alabama's special election in December 2017.",
+                    "link": "https://www.snopes.com/fact-check/did-alabama-state-police-arrest-poll-workers/"
+                },
+                "5": {
+                    "_id": "24591",
+                    "combined_score": 0.757679665258,
+                    "_score": 8.944168,
+                    "cosine": 1.755354971936,
+                    "vclaim": "The 'Official 2020 Trump vs Democrat Poll' was published on the president's official campaign website and was authentic.",
+                    "link": "https://www.snopes.com/fact-check/trump-democrat-poll-survey/"
+                }
+            }
+        }
+    ]
+}

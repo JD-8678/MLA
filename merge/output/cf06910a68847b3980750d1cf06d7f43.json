@@ -1,0 +1,720 @@
+{
+    "mode": "url",
+    "url": "https://www.nytimes.com/2020/10/04/us/politics/trump-doctor-conley.html",
+    "index_name": "vclaims",
+    "fulltext": "Caring for any president presents a unique set of challenges. Like all doctors, Dr. Conley is bound by the Hippocratic oath to respect his patients wishes for privacy and to keep secret that which \"ought not to be spoken of outside.\" He is also a Navy officer caring for the commander in chief, whose orders he is obliged to follow. But all of that must be balanced against the publics right to have information about the health of the leader of the free world. And this particular leader, Mr. Trump, is well known for not wanting to look weak. \"I wouldnt want to be in that position,\" said Dr. Stephen Thomas, a retired Army doctor who is now the chief of infectious diseases at SUNY Upstate Medical University and a columnist for Forbes Magazine. \"I have sympathy for the guy. Think of it. He may have to tell one of the most powerful people in the world, 'No, youre not doing that, or 'Thats not a good idea.\" Dr. Conley is supervising a team of medical experts at Walter Reed National Military Medical Center, including Dr. Sean Dooley, a pulmonologist, as well as an outside expert, Dr. Brian Garibaldi, the director of the biocontainment unit at Johns Hopkins Hospital in Baltimore. To the surprise of many in medicine, one doctor not being consulted is Dr. Anthony S. Fauci, one of the worlds leading experts on infectious diseases. (Dr. Fauci is on the White House coronavirus task force, but he was sidelined when his statements of fact about the virus irritated the president.) \"I tried to put myself in his place, and I would have had a ground rule with all of the people who surround the president,\" said Dr. William Schaffner, an infectious disease expert at Vanderbilt University. \"I would have said: 'We have a statement that we are going to put out and then I am going to be asked questions, and Im going to answer the questions straight. If you are uncomfortable with that please have your press office do the briefing.\"",
+    "overall": {
+        "1": {
+            "sentence": "To the surprise of many in medicine, one doctor not being consulted is Dr. Anthony S. Fauci, one of the worlds leading experts on infectious diseases.",
+            "vclaim": "Thomas Edison said that “The doctor of the future will give no medicine but will interest his patients in the care of the human frame, in diet and in the cause and prevention of disease.”",
+            "combined_score": 0.906145083283,
+            "sum_combined_score": 2.548189970619,
+            "link": "https://www.snopes.com/fact-check/the-doctor-of-the-future/"
+        },
+        "2": {
+            "sentence": "\"I tried to put myself in his place, and I would have had a ground rule with all of the people who surround the president,\" said Dr. William Schaffner, an infectious disease expert at Vanderbilt University.",
+            "vclaim": "I am afraid I am not at all surprised at the Supreme Court decision. They are the Establishment writ large and are 100% Remain. Lord Kerr wrote Article 50 of Lisbon?! After we achieve Brexit, we must do some urgent reworking of our Constitution to put the people back in charge.",
+            "combined_score": 0.800814673749,
+            "sum_combined_score": 1.572664356951,
+            "link": "https://fullfact.org/law/to-kerr-is-human/"
+        },
+        "3": {
+            "sentence": "Dr. Conley is supervising a team of medical experts at Walter Reed National Military Medical Center, including Dr. Sean Dooley, a pulmonologist, as well as an outside expert, Dr. Brian Garibaldi, the director of the biocontainment unit at Johns Hopkins Hospital in Baltimore.",
+            "vclaim": "President Trump's visit to Walter Reed Hospital in December 2018 was ignored by the media.",
+            "combined_score": 0.912863093959,
+            "sum_combined_score": 0.912863093959,
+            "link": "https://www.snopes.com/fact-check/president-trump-walter-reed-media/"
+        },
+        "4": {
+            "sentence": "(Dr. Fauci is on the White House coronavirus task force, but he was sidelined when his statements of fact about the virus irritated the president.)",
+            "vclaim": "A virus is circulating with the name 'Black in the White House' (aka 'Black Muslim in the White House').",
+            "combined_score": 0.910890636639,
+            "sum_combined_score": 0.910890636639,
+            "link": "https://www.snopes.com/fact-check/black-muslim-in-the-white-house/"
+        },
+        "5": {
+            "sentence": "And this particular leader, Mr. Trump, is well known for not wanting to look weak.",
+            "vclaim": "Did Trump Say, ‘A Shutdown Means The President Is Weak’?",
+            "combined_score": 0.903934174577,
+            "sum_combined_score": 0.903934174577,
+            "link": "https://checkyourfact.com/2019/01/25/fact-check-trump-shutdown-president-weak-2013/"
+        }
+    },
+    "split": [
+        {
+            "sentence": "Caring for any president presents a unique set of challenges.",
+            "retrieved": {
+                "1": {
+                    "_id": "31763",
+                    "combined_score": 0.788141764807,
+                    "_score": 9.896246,
+                    "cosine": 1.529359364599,
+                    "vclaim": "Health officials announced in June 2017 that Donald Trump's health is 'deteriorating.'",
+                    "link": "https://www.snopes.com/fact-check/trump-health-deteriorating-pressures/"
+                },
+                "2": {
+                    "_id": "1983",
+                    "combined_score": 0.780032215258,
+                    "_score": 10.781457,
+                    "cosine": 1.510622004945,
+                    "vclaim": "Can A President Be Charged With Obstruction Of Justice?",
+                    "link": "https://checkyourfact.com/2017/12/07/fact-check-can-a-president-be-charged-with-obstruction-of-justice/"
+                },
+                "3": {
+                    "_id": "30467",
+                    "combined_score": 0.744569360667,
+                    "_score": 10.62629,
+                    "cosine": 1.494366782403,
+                    "vclaim": "A badly injured soldier tells his parents about his lifestyle-altering injuries under the guise of presenting them as a tragedy that befell a friend.",
+                    "link": "https://www.snopes.com/fact-check/arms-and-the-man/"
+                },
+                "4": {
+                    "_id": "19460",
+                    "combined_score": 0.70634560407,
+                    "_score": 11.320898,
+                    "cosine": 1.462785771857,
+                    "vclaim": "President Obama has 'the worst ratings of any president at the end of his first year.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/dec/17/karl-rove/rove-says-obamas-approval-ratings-after-year-are-w/"
+                },
+                "5": {
+                    "_id": "6246",
+                    "combined_score": 0.704289573203,
+                    "_score": 10.453653,
+                    "cosine": 1.475844772371,
+                    "vclaim": "'The incidents of threats against (President Barack Obama) are greater than for any other president in modern times.'",
+                    "link": "http://www.politifact.com/georgia/statements/2013/mar/18/julian-bond/no-concrete-evidence-support-claim/"
+                }
+            }
+        },
+        {
+            "sentence": "Like all doctors, Dr. Conley is bound by the Hippocratic oath to respect his patients wishes for privacy and to keep secret that which \"ought not to be spoken of outside.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "11835",
+                    "combined_score": 0.891951808091,
+                    "_score": 26.934544,
+                    "cosine": 1.625162477881,
+                    "vclaim": "'Hidden' in the healthcare.gov code is language that means users 'waive any reasonable right to privacy of your personal information.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2013/oct/29/joe-barton/healthcaregov-users-waive-any-reasonable-right-pri/"
+                },
+                "2": {
+                    "_id": "3685",
+                    "combined_score": 0.855956033454,
+                    "_score": 33.68342,
+                    "cosine": 1.539359310188,
+                    "vclaim": "Paul Calandra: “The judge is required to see that the person is actually reciting the oath of citizenship.” - FactsCanada",
+                    "link": "http://factscan.ca/paul-calandra-the-judge-is-required-to-see-that-the-person-is-actually-reciting-the-oath-of-citizenship/"
+                },
+                "3": {
+                    "_id": "5937",
+                    "combined_score": 0.803100674266,
+                    "_score": 28.306713,
+                    "cosine": 1.558703277157,
+                    "vclaim": "Says Sen. Rand Paul, R-Ky., has stated that supporting the 'right to health care ... means you believe in slavery.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2015/may/27/sarah-silverman/did-rand-paul-equate-right-health-care-slavery/"
+                },
+                "4": {
+                    "_id": "21696",
+                    "combined_score": 0.782189168549,
+                    "_score": 20.87826,
+                    "cosine": 1.616757222584,
+                    "vclaim": "A new division of the Department of Health and Human Services will allow doctors to refuse to treat LGBTQ patients for religious reasons.",
+                    "link": "https://www.snopes.com/fact-check/hhs-allow-doctors-to-refuse-lgbtq/"
+                },
+                "5": {
+                    "_id": "1191",
+                    "combined_score": 0.775069867863,
+                    "_score": 26.968872,
+                    "cosine": 1.55457170896,
+                    "vclaim": "Is It Illegal To Lie To Congress, Even When You’re Not Under Oath?",
+                    "link": "https://checkyourfact.com/2017/07/27/fact-check-is-it-illegal-to-lie-to-congress-even-when-youre-not-under-oath/"
+                }
+            }
+        },
+        {
+            "sentence": "He is also a Navy officer caring for the commander in chief, whose orders he is obliged to follow.",
+            "retrieved": {
+                "1": {
+                    "_id": "4451",
+                    "combined_score": 0.796940151636,
+                    "_score": 17.627434,
+                    "cosine": 1.713500984273,
+                    "vclaim": "Says he’s a 'retired U.S. Navy officer.'",
+                    "link": "http://www.politifact.com/texas/statements/2018/feb/16/george-p-bush/george-p-bush-falsely-describes-himself-retired-na/"
+                },
+                "2": {
+                    "_id": "26341",
+                    "combined_score": 0.765253864511,
+                    "_score": 20.355446,
+                    "cosine": 1.642438619026,
+                    "vclaim": "Retired Navy Admiral William McRaven wrote that he would 'consider it an honor' if President Donald Trump revoked his security clearance.",
+                    "link": "https://www.snopes.com/fact-check/william-mcraven-column/"
+                },
+                "3": {
+                    "_id": "9056",
+                    "combined_score": 0.69138432423,
+                    "_score": 20.46004,
+                    "cosine": 1.578562923509,
+                    "vclaim": "'And, you know, our first president and our first commander in chief prayed every day. He had a field manual of prayers.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2007/dec/18/duncan-hunter/hunter-perpetuates-common-myth/"
+                },
+                "4": {
+                    "_id": "6452",
+                    "combined_score": 0.625106074298,
+                    "_score": 18.381884,
+                    "cosine": 1.556596537198,
+                    "vclaim": "'You ... said that Barack Obama was not ready to be commander in chief.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2008/oct/02/sarah-palin/bidens-words-haunt-him/"
+                },
+                "5": {
+                    "_id": "8368",
+                    "combined_score": 0.60389078592,
+                    "_score": 16.351074,
+                    "cosine": 1.57178774407,
+                    "vclaim": "His biography says he was the top ROTC officer in the nation.",
+                    "link": "http://www.politifact.com/rhode-island/statements/2010/oct/17/john-robitaille/robitailles-bio-says-he-was-top-rotc-officer/"
+                }
+            }
+        },
+        {
+            "sentence": "But all of that must be balanced against the publics right to have information about the health of the leader of the free world.",
+            "retrieved": {
+                "1": {
+                    "_id": "26053",
+                    "combined_score": 0.875051075722,
+                    "_score": 31.168104,
+                    "cosine": 1.538742549323,
+                    "vclaim": "Thomas Edison said that “The doctor of the future will give no medicine but will interest his patients in the care of the human frame, in diet and in the cause and prevention of disease.”",
+                    "link": "https://www.snopes.com/fact-check/the-doctor-of-the-future/"
+                },
+                "2": {
+                    "_id": "3515",
+                    "combined_score": 0.791895617261,
+                    "_score": 29.399166,
+                    "cosine": 1.522941384815,
+                    "vclaim": "Did Thomas Jefferson Say, ‘Information Is The Currency Of Democracy’?",
+                    "link": "https://checkyourfact.com/2019/07/31/fact-check-thomas-jefferson-information-is-the-currency-of-democracy/"
+                },
+                "3": {
+                    "_id": "31305",
+                    "combined_score": 0.780877518941,
+                    "_score": 27.682129,
+                    "cosine": 1.547236425534,
+                    "vclaim": "Mistranslation at the United Nations results in humorous statement.",
+                    "link": "https://www.snopes.com/fact-check/hotel-of-the-gods/"
+                },
+                "4": {
+                    "_id": "28820",
+                    "combined_score": 0.765089287395,
+                    "_score": 27.682129,
+                    "cosine": 1.538258656712,
+                    "vclaim": "The U.S. is about to surrender its sovereignty to the United Nations, and other assorted political calamities.",
+                    "link": "https://www.snopes.com/fact-check/end-of-the-whirled/"
+                },
+                "5": {
+                    "_id": "3307",
+                    "combined_score": 0.76461121924,
+                    "_score": 29.503056,
+                    "cosine": 1.50557740795,
+                    "vclaim": "“You will also recall that Census 2011 outlined the successes in extending basic services. The report said the number of households with access to electricity is now at 12.1 million, which translates to 85%. Nine out of 10 households have access to water.”",
+                    "link": "https://africacheck.org/reports/the-state-of-the-nation-address-fact-checked/"
+                }
+            }
+        },
+        {
+            "sentence": "And this particular leader, Mr. Trump, is well known for not wanting to look weak.",
+            "retrieved": {
+                "1": {
+                    "_id": "1436",
+                    "combined_score": 0.903934174577,
+                    "_score": 15.361254,
+                    "cosine": 1.632632454261,
+                    "vclaim": "Did Trump Say, ‘A Shutdown Means The President Is Weak’?",
+                    "link": "https://checkyourfact.com/2019/01/25/fact-check-trump-shutdown-president-weak-2013/"
+                },
+                "2": {
+                    "_id": "29045",
+                    "combined_score": 0.823463778642,
+                    "_score": 13.939694,
+                    "cosine": 1.613389104543,
+                    "vclaim": "Actor Matthew McConaughey made a video endorsing Donald Trump.",
+                    "link": "https://www.snopes.com/fact-check/matthew-mcconaughey-endorsed-donald-trump/"
+                },
+                "3": {
+                    "_id": "3073",
+                    "combined_score": 0.806064576588,
+                    "_score": 14.743862,
+                    "cosine": 1.582742590943,
+                    "vclaim": "Was Trump The Only Leader To Not Wear A G20 Lapel Pin?",
+                    "link": "https://checkyourfact.com/2018/12/09/fact-check-trump-g20-lapel-pin/"
+                },
+                "4": {
+                    "_id": "6818",
+                    "combined_score": 0.760953687714,
+                    "_score": 12.889957,
+                    "cosine": 1.597141053403,
+                    "vclaim": "'Mr. Trump is self-financing his campaign, so we don’t have any donors.'",
+                    "link": "http://www.politifact.com/virginia/statements/2016/feb/22/corey-lewandowski/trumps-campaign-manager-we-dont-have-any-donors/"
+                },
+                "5": {
+                    "_id": "26375",
+                    "combined_score": 0.759931812773,
+                    "_score": 12.99343,
+                    "cosine": 1.594000980095,
+                    "vclaim": "Donald Trump said veterans suffering from PTSD are 'weak,' 'unfit,' and 'can't handle' military service.",
+                    "link": "https://www.snopes.com/fact-check/donald-trump-didnt-say-vets-with-ptsd-are-weak/"
+                }
+            }
+        },
+        {
+            "sentence": "\"I wouldnt want to be in that position,\" said Dr. Stephen Thomas, a retired Army doctor who is now the chief of infectious diseases at SUNY Upstate Medical University and a columnist for Forbes Magazine.",
+            "retrieved": {
+                "1": {
+                    "_id": "29072",
+                    "combined_score": 0.782859820763,
+                    "_score": 24.958841,
+                    "cosine": 1.586131224423,
+                    "vclaim": "The son of child care expert Dr. Benjamin Spock killed himself.",
+                    "link": "https://www.snopes.com/fact-check/doctored-spock/"
+                },
+                "2": {
+                    "_id": "26053",
+                    "combined_score": 0.766993811614,
+                    "_score": 18.686232,
+                    "cosine": 1.656355001494,
+                    "vclaim": "Thomas Edison said that “The doctor of the future will give no medicine but will interest his patients in the care of the human frame, in diet and in the cause and prevention of disease.”",
+                    "link": "https://www.snopes.com/fact-check/the-doctor-of-the-future/"
+                },
+                "3": {
+                    "_id": "30816",
+                    "combined_score": 0.754507769961,
+                    "_score": 20.211761,
+                    "cosine": 1.628330023793,
+                    "vclaim": "Dr. Bandy Lee, who has warned the United States that Donald Trump is dangerously impaired, lacks a medical license.",
+                    "link": "https://www.snopes.com/fact-check/does-psychiatrist-trump-lack-license/"
+                },
+                "4": {
+                    "_id": "19569",
+                    "combined_score": 0.708735860444,
+                    "_score": 19.2085,
+                    "cosine": 1.610607472899,
+                    "vclaim": "Under Obamacare, people who 'have a doctor they’ve been seeing for the last 15 or 20 years, they won’t be able to keep going to that doctor.'",
+                    "link": "http://www.politifact.com/florida/statements/2013/aug/05/marco-rubio/marco-rubio-says-patients-wont-keep-doctors-obamac/"
+                },
+                "5": {
+                    "_id": "7669",
+                    "combined_score": 0.691524483643,
+                    "_score": 26.309032,
+                    "cosine": 1.507560146106,
+                    "vclaim": "Says George Soros and Bill Gates are funding a bioweapons lab in Sierra Leone that caused the Ebola outbreak.",
+                    "link": "http://www.politifact.com/punditfact/statements/2014/aug/11/blog-posting/bloggers-bill-and-melinda-gates-george-soros-funde/"
+                }
+            }
+        },
+        {
+            "sentence": "\"I have sympathy for the guy.",
+            "retrieved": {
+                "1": {
+                    "_id": "13124",
+                    "combined_score": 0.786482391178,
+                    "_score": 9.988088,
+                    "cosine": 1.486510648092,
+                    "vclaim": "Says 'Donald Trump is a guy who has called for privatization' of the Veterans Administration.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/jul/25/tim-kaine/does-donald-trump-want-privatize-va/"
+                },
+                "2": {
+                    "_id": "4073",
+                    "combined_score": 0.786465153304,
+                    "_score": 11.559803,
+                    "cosine": 1.464349207295,
+                    "vclaim": "Did Vladimir Lenin Ever Say This Quote About Stopping ‘A Bad Guy With A State’?",
+                    "link": "https://checkyourfact.com/2019/04/24/fact-check-vladimir-lenin-good-guy-state-bad-guy/"
+                },
+                "3": {
+                    "_id": "25995",
+                    "combined_score": 0.767169674293,
+                    "_score": 10.964709,
+                    "cosine": 1.459724284611,
+                    "vclaim": "Paul Harvey essay provides a list of things he wished for his listeners.",
+                    "link": "https://www.snopes.com/fact-check/these-things-i-wish-for-you/"
+                },
+                "4": {
+                    "_id": "20832",
+                    "combined_score": 0.76100531628,
+                    "_score": 20.20471,
+                    "cosine": 1.325350294993,
+                    "vclaim": "False reports of loved ones lost in the attack on the World Trade Center have been filed by those looking for attention and sympathy.",
+                    "link": "https://www.snopes.com/fact-check/sympathy-for-the-deviled/"
+                },
+                "5": {
+                    "_id": "21321",
+                    "combined_score": 0.743824902167,
+                    "_score": 11.203373,
+                    "cosine": 1.440618858774,
+                    "vclaim": "A viral meme of a man nodding features Oscar-winning actor Robert Redford.",
+                    "link": "https://www.snopes.com/fact-check/robert-redford-nodding-meme/"
+                }
+            }
+        },
+        {
+            "sentence": "Think of it.",
+            "retrieved": {
+                "1": {
+                    "_id": "23530",
+                    "combined_score": 0.833867094293,
+                    "_score": 7.7698874,
+                    "cosine": 1.457916211975,
+                    "vclaim": "Glurge says, “Think before you judge.”",
+                    "link": "https://www.snopes.com/fact-check/two-tough-to-glurge/"
+                },
+                "2": {
+                    "_id": "3153",
+                    "combined_score": 0.618540494844,
+                    "_score": 8.788874,
+                    "cosine": 1.262073072161,
+                    "vclaim": "Think before you share! Old, misleading videos said to be of xenophobic violence in SA are going viral | Africa Check",
+                    "link": "https://africacheck.org/reports/think-before-you-share-old-misleading-videos-said-to-be-of-xenophobic-violence-in-sa-are-going-viral/"
+                },
+                "3": {
+                    "_id": "31746",
+                    "combined_score": 0.594923571817,
+                    "_score": 11.124453,
+                    "cosine": 1.1594435586,
+                    "vclaim": "President-elect Donald Trump said Africans are poor because 'when it rains they think of sex instead of farming.'",
+                    "link": "https://www.snopes.com/fact-check/trump-says-africans-are-poor-because-they-think-of-sex-instead-of-farming/"
+                },
+                "4": {
+                    "_id": "24898",
+                    "combined_score": 0.585233036996,
+                    "_score": 6.2844114,
+                    "cosine": 1.328921715844,
+                    "vclaim": "The exception proves the rule means “counter-examples verify the adage’s claim.”",
+                    "link": "https://www.snopes.com/fact-check/exceptional-proof/"
+                },
+                "5": {
+                    "_id": "24504",
+                    "combined_score": 0.583536077192,
+                    "_score": 8.712983,
+                    "cosine": 1.239050096803,
+                    "vclaim": "Winston Churchill once said: “When you’re 20 you care what everybody thinks, when you're 40 you stop caring what everyone thinks, when you're 60 you realize no one was ever thinking about you in the first place.”",
+                    "link": "https://www.snopes.com/fact-check/churchill-what-people-think/"
+                }
+            }
+        },
+        {
+            "sentence": "He may have to tell one of the most powerful people in the world, 'No, youre not doing that, or 'Thats not a good idea.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "10470",
+                    "combined_score": 0.852470205518,
+                    "_score": 21.27989,
+                    "cosine": 1.647110243113,
+                    "vclaim": "Says that 'all those who do not answer directly to the president, they've said (repealing Don't Ask, Don't Tell) is a terrible idea.'",
+                    "link": "http://www.politifact.com/texas/statements/2010/dec/23/louie-gohmert/louie-gohmert-says-those-who-dont-answer-directly-/"
+                },
+                "2": {
+                    "_id": "371",
+                    "combined_score": 0.666710914441,
+                    "_score": 18.346897,
+                    "cosine": 1.554358203011,
+                    "vclaim": "BBCr4today asserted “at least a third of the country voted for a no deal Brexit”… This is simply NOT true. FACT 1/3 of the 37% of people voted for no deal. That’s about 12% of the electorate or rather 88% of people did NOT vote for no deal",
+                    "link": "https://fullfact.org/europe/did-one-third-support-no-deal-brexit/"
+                },
+                "3": {
+                    "_id": "2163",
+                    "combined_score": 0.65971852813,
+                    "_score": 26.144438,
+                    "cosine": 1.418356952863,
+                    "vclaim": "“In the ANC’s last year in government, not one department received a clean audit. In the DA’s first year, seven departments received clean audits.”",
+                    "link": "https://africacheck.org/reports/is-the-das-western-cape-story-a-good-story-to-tell-we-examine-the-claims/"
+                },
+                "4": {
+                    "_id": "32032",
+                    "combined_score": 0.659543640633,
+                    "_score": 20.902887,
+                    "cosine": 1.506053656895,
+                    "vclaim": "Dennis Miller explains how to tell the good guys from the bad guys in the world of politics.",
+                    "link": "https://www.snopes.com/fact-check/miller-time/"
+                },
+                "5": {
+                    "_id": "283",
+                    "combined_score": 0.643917891613,
+                    "_score": 28.005375,
+                    "cosine": 1.375104192529,
+                    "vclaim": "“In 1994, 1.2-million families were without homes. In 2013, more than 3.3-million families have free homes.”",
+                    "link": "https://africacheck.org/reports/does-the-anc-have-a-good-story-to-tell-we-examine-key-election-claims/"
+                }
+            }
+        },
+        {
+            "sentence": "Dr. Conley is supervising a team of medical experts at Walter Reed National Military Medical Center, including Dr. Sean Dooley, a pulmonologist, as well as an outside expert, Dr. Brian Garibaldi, the director of the biocontainment unit at Johns Hopkins Hospital in Baltimore.",
+            "retrieved": {
+                "1": {
+                    "_id": "30513",
+                    "combined_score": 0.912863093959,
+                    "_score": 38.089336,
+                    "cosine": 1.778713888911,
+                    "vclaim": "President Trump's visit to Walter Reed Hospital in December 2018 was ignored by the media.",
+                    "link": "https://www.snopes.com/fact-check/president-trump-walter-reed-media/"
+                },
+                "2": {
+                    "_id": "25018",
+                    "combined_score": 0.897493802667,
+                    "_score": 45.74676,
+                    "cosine": 1.699642442046,
+                    "vclaim": "President Bush prayed with an injured Special Forces soldier at Walter Reed Medical Center.",
+                    "link": "https://www.snopes.com/fact-check/special-forces/"
+                },
+                "3": {
+                    "_id": "22345",
+                    "combined_score": 0.875521752752,
+                    "_score": 38.33484,
+                    "cosine": 1.747754444817,
+                    "vclaim": "An Army chaplain wrote an e-mail decrying the government’s handling of the Walter Reed Medical Center scandal.",
+                    "link": "https://www.snopes.com/fact-check/cant-be-quiet-any-longer/"
+                },
+                "4": {
+                    "_id": "26185",
+                    "combined_score": 0.837074466382,
+                    "_score": 41.492805,
+                    "cosine": 1.690376698701,
+                    "vclaim": "Walter Reed Hospital will accept Christmas cards addressed to 'A Recovering American Soldier.'",
+                    "link": "https://www.snopes.com/fact-check/cards-for-recovering-soldiers/"
+                },
+                "5": {
+                    "_id": "28534",
+                    "combined_score": 0.832301547236,
+                    "_score": 34.85939,
+                    "cosine": 1.74492218981,
+                    "vclaim": "The 'Wall Street Journal' (or another large news outlet) has published documents leaked from Walter Reed Medical Center which show President Donald Trump's 'true' weight and prove a conspiracy to mislead the public.",
+                    "link": "https://www.snopes.com/fact-check/trump-weight-girther-leaked-documents/"
+                }
+            }
+        },
+        {
+            "sentence": "To the surprise of many in medicine, one doctor not being consulted is Dr. Anthony S. Fauci, one of the worlds leading experts on infectious diseases.",
+            "retrieved": {
+                "1": {
+                    "_id": "26053",
+                    "combined_score": 0.906145083283,
+                    "_score": 25.747593,
+                    "cosine": 1.616403910806,
+                    "vclaim": "Thomas Edison said that “The doctor of the future will give no medicine but will interest his patients in the care of the human frame, in diet and in the cause and prevention of disease.”",
+                    "link": "https://www.snopes.com/fact-check/the-doctor-of-the-future/"
+                },
+                "2": {
+                    "_id": "16057",
+                    "combined_score": 0.801204365888,
+                    "_score": 26.80246,
+                    "cosine": 1.527317326109,
+                    "vclaim": "'People think AIDS is done -- it’s not done.'",
+                    "link": "http://www.politifact.com/global-news/statements/2016/feb/09/bono/bono-hivaids-and-public-opinion-correcting-record/"
+                },
+                "3": {
+                    "_id": "25535",
+                    "combined_score": 0.787177477903,
+                    "_score": 21.470873,
+                    "cosine": 1.590214943924,
+                    "vclaim": "Article by orthopedic surgeon Dr. Dave Janda criticizes the ObamaCare Plan as “fascist.”",
+                    "link": "https://www.snopes.com/fact-check/the-one-word-to-describe-obamacare/"
+                },
+                "4": {
+                    "_id": "14217",
+                    "combined_score": 0.775014609645,
+                    "_score": 25.970886,
+                    "cosine": 1.520049647089,
+                    "vclaim": "'Lyme disease is one of the fastest growing infectious diseases in the United States, and Rhode Island has the second-highest incidence of this disease in the country.'",
+                    "link": "http://www.politifact.com/rhode-island/statements/2011/feb/20/susan-sosnowski/sen-sosnowski-says-rhode-island-ranks-second-us-ly/"
+                },
+                "5": {
+                    "_id": "2536",
+                    "combined_score": 0.760828487837,
+                    "_score": 24.123573,
+                    "cosine": 1.535207048752,
+                    "vclaim": "Was HIV only SA's 9th leading cause of death in 2006? Why Mbeki’s claim is misleading | Africa Check",
+                    "link": "https://africacheck.org/reports/was-hiv-only-the-9th-leading-cause-of-death-in-south-africa-in-2006-why-mbekis-claim-is-misleading/"
+                }
+            }
+        },
+        {
+            "sentence": "(Dr. Fauci is on the White House coronavirus task force, but he was sidelined when his statements of fact about the virus irritated the president.)",
+            "retrieved": {
+                "1": {
+                    "_id": "30699",
+                    "combined_score": 0.910890636639,
+                    "_score": 22.377111,
+                    "cosine": 1.63705593407,
+                    "vclaim": "A virus is circulating with the name 'Black in the White House' (aka 'Black Muslim in the White House').",
+                    "link": "https://www.snopes.com/fact-check/black-muslim-in-the-white-house/"
+                },
+                "2": {
+                    "_id": "29270",
+                    "combined_score": 0.82229885713,
+                    "_score": 23.161247,
+                    "cosine": 1.564932584999,
+                    "vclaim": "A cell phone virus is circulating disguised as a video called the 'Dance of the Pope.'",
+                    "link": "https://www.snopes.com/fact-check/dance-of-the-pope-virus-hoax/"
+                },
+                "3": {
+                    "_id": "26669",
+                    "combined_score": 0.803146930432,
+                    "_score": 22.401539,
+                    "cosine": 1.567676193023,
+                    "vclaim": "Mychal Massie wrote an opinion piece entitled “Nero in the White House.”",
+                    "link": "https://www.snopes.com/fact-check/nero-in-the-white-house/"
+                },
+                "4": {
+                    "_id": "8315",
+                    "combined_score": 0.765978841227,
+                    "_score": 23.232265,
+                    "cosine": 1.527516898547,
+                    "vclaim": "White House spokesman Robert Gibbs 'lied' when he said President Obama's birth certificate is posted on the Internet.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/jul/28/worldnetdaily/birthers-claim-gibbs-lied-when-he-said-obamas-birt/"
+                },
+                "5": {
+                    "_id": "12210",
+                    "combined_score": 0.738143914166,
+                    "_score": 22.558277,
+                    "cosine": 1.523016660874,
+                    "vclaim": "'Bill Clinton invited him (the Rev. Wright) to the White House when he was having his personal crises.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2008/apr/25/barack-obama/photo-and-obama-dont-lie/"
+                }
+            }
+        },
+        {
+            "sentence": "\"I tried to put myself in his place, and I would have had a ground rule with all of the people who surround the president,\" said Dr. William Schaffner, an infectious disease expert at Vanderbilt University.",
+            "retrieved": {
+                "1": {
+                    "_id": "2720",
+                    "combined_score": 0.800814673749,
+                    "_score": 21.695522,
+                    "cosine": 1.633785666545,
+                    "vclaim": "I am afraid I am not at all surprised at the Supreme Court decision. They are the Establishment writ large and are 100% Remain. Lord Kerr wrote Article 50 of Lisbon?! After we achieve Brexit, we must do some urgent reworking of our Constitution to put the people back in charge.",
+                    "link": "https://fullfact.org/law/to-kerr-is-human/"
+                },
+                "2": {
+                    "_id": "10982",
+                    "combined_score": 0.747195105942,
+                    "_score": 19.020468,
+                    "cosine": 1.629756641711,
+                    "vclaim": "Says Robert De Niro said, 'I preferred the time in America when the president and the village idiot were two different people.'",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/jun/28/viral-image/no-evidence-robert-de-niro-made-statement-comparin/"
+                },
+                "3": {
+                    "_id": "11571",
+                    "combined_score": 0.73216774802,
+                    "_score": 22.516562,
+                    "cosine": 1.583460014971,
+                    "vclaim": "'When I became president, President Obama had a separation policy. I didn’t have it. He had it.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/jun/21/donald-trump/donald-trump-again-falsely-says-obama-had-family-s/"
+                },
+                "4": {
+                    "_id": "26499",
+                    "combined_score": 0.731650228949,
+                    "_score": 23.199593,
+                    "cosine": 1.575880280669,
+                    "vclaim": "Dick Van Dyke said of Donald Trump, 'There are millions of people who share his anger, paranoia, and his hatred ... I think we have to stop a man who wants to be the dictator.'",
+                    "link": "https://www.snopes.com/fact-check/dick-van-dyke-trump-dictator/"
+                },
+                "5": {
+                    "_id": "33231",
+                    "combined_score": 0.709618960518,
+                    "_score": 32.798355,
+                    "cosine": 1.460419101128,
+                    "vclaim": "The CDC and CIDRAP have admitted that Ebola is now airborne.",
+                    "link": "https://www.snopes.com/fact-check/ebola-in-the-air-tonight/"
+                }
+            }
+        },
+        {
+            "sentence": "\"I would have said: 'We have a statement that we are going to put out and then I am going to be asked questions, and Im going to answer the questions straight.",
+            "retrieved": {
+                "1": {
+                    "_id": "10153",
+                    "combined_score": 0.836332467578,
+                    "_score": 34.41156,
+                    "cosine": 1.515861096337,
+                    "vclaim": "'I have always said that I would be for drilling.'",
+                    "link": "http://www.politifact.com/florida/statements/2012/apr/25/connie-mack/connie-mack-says-i-have-always-said-i-would-be-dri/"
+                },
+                "2": {
+                    "_id": "11168",
+                    "combined_score": 0.809676857346,
+                    "_score": 33.303497,
+                    "cosine": 1.512728921633,
+                    "vclaim": "'If you are going to kill the families of terrorists, realize that there's something called the Geneva Convention we're going to have to pull out of.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2015/dec/17/rand-paul/rand-pauls-right-geneva-conventions-bar-donald-tru/"
+                },
+                "3": {
+                    "_id": "2501",
+                    "combined_score": 0.785538983258,
+                    "_score": 27.210497,
+                    "cosine": 1.563909272574,
+                    "vclaim": "So I don’t think that’s our boys making up that new change of law. I think that’s people telling us what we should do with our game. They should stop doing that. I hope we get out of Brexit because that’s what we all voted for. And sort that out because you cannot have someone telling us how to do our own game",
+                    "link": "https://fullfact.org/europe/Holloway-handball-var-eu/"
+                },
+                "4": {
+                    "_id": "2720",
+                    "combined_score": 0.771849683202,
+                    "_score": 29.079453,
+                    "cosine": 1.536425687931,
+                    "vclaim": "I am afraid I am not at all surprised at the Supreme Court decision. They are the Establishment writ large and are 100% Remain. Lord Kerr wrote Article 50 of Lisbon?! After we achieve Brexit, we must do some urgent reworking of our Constitution to put the people back in charge.",
+                    "link": "https://fullfact.org/law/to-kerr-is-human/"
+                },
+                "5": {
+                    "_id": "12483",
+                    "combined_score": 0.770637036765,
+                    "_score": 37.132515,
+                    "cosine": 1.45027982658,
+                    "vclaim": "'I am going to be on the ballot in all 50 states. There is no other third-party candidate that’s going to come close to achieving that.'",
+                    "link": "http://www.politifact.com/texas/statements/2012/sep/20/gary-johnson/libertarian-gary-johnson-says-hell-be-presidential/"
+                }
+            }
+        },
+        {
+            "sentence": "If you are uncomfortable with that please have your press office do the briefing.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "32137",
+                    "combined_score": 0.832222765927,
+                    "_score": 19.346848,
+                    "cosine": 1.48271900668,
+                    "vclaim": "An aide handed Sean Spicer a note that read “You just committed a felony' in the middle of a press briefing.",
+                    "link": "https://www.snopes.com/fact-check/sean-spicer-felony-note/"
+                },
+                "2": {
+                    "_id": "29686",
+                    "combined_score": 0.768798795417,
+                    "_score": 12.972995,
+                    "cosine": 1.563617428787,
+                    "vclaim": "Thomas Jefferson said 'When the speech condemns a free press, you are hearing the words of a tyrant.'",
+                    "link": "https://www.snopes.com/fact-check/thomas-jefferson-speech-condemns-free-press/"
+                },
+                "3": {
+                    "_id": "27291",
+                    "combined_score": 0.766850056285,
+                    "_score": 18.205498,
+                    "cosine": 1.463304499258,
+                    "vclaim": "The Talking Angela app unsafely prompts children to provide personal information about themselves.",
+                    "link": "https://www.snopes.com/fact-check/talking-angela-warning/"
+                },
+                "4": {
+                    "_id": "1556",
+                    "combined_score": 0.714978949276,
+                    "_score": 15.440104,
+                    "cosine": 1.483118888752,
+                    "vclaim": "As a juror, you have the right to refuse to enforce any bad law in the case brought before you.",
+                    "link": "https://www.truthorfiction.com/do-you-have-the-right-as-a-juror-to-refuse-to-enforce-bad-law/"
+                },
+                "5": {
+                    "_id": "22359",
+                    "combined_score": 0.691507719169,
+                    "_score": 16.26571,
+                    "cosine": 1.452753257125,
+                    "vclaim": "An intern for a U.S. senator sent an embarrassing breakup e-mail to his girlfriend that leaked to the public at large.",
+                    "link": "https://www.snopes.com/fact-check/blow-your-own-tripplehorn/"
+                }
+            }
+        }
+    ]
+}

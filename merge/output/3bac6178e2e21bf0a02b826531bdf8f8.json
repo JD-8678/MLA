@@ -1,0 +1,1485 @@
+{
+    "mode": "url",
+    "url": "https://abcnews.go.com/Business/2m-michigan-lottery-winner-leroy-fick-food-stamps/story?id=13632236",
+    "index_name": "vclaims",
+    "fulltext": "Recent $2M Jackpot Winner Leroy Fick Still Uses Equivalent of Food Stamps for Groceries; Some Aim to Disqualify Him Mich.'s Bridge Card program based on income, not assets like lottery winnings. May 18, 2011  -- Leroy Fick hit the jackpot. The Michigan man won $2 million in the state lottery's \"Make Me Rich\" contest last June. With the $850,000 he took home after taxes, Fick, 59, used his winnings to purchase a new home and a used Audi convertible. But to buy groceries, this lottery winner is still using his Bridge Card, Michigan's version of food stamps. How can a man who won millions in the lottery still use food stamps? His lawyer says it is perfectly legal. \"He's not trying to cheat the state,\" said Fick's attorney, John Wilson. \"Based on his income, he's eligible.\" In fact, Fick said he contacted Michigan's Department of Human Services after his lottery win to ask if he could still use his Bridge Card. \"They said I could go ahead and keep the Bridge Card if I wanted to,\" said Fick. So, he did. \"He specifically called the Department of Human Services and said, 'Can I still use the Bridge Card?' and they said, 'Yes,' because he is eligible,\" said attorney Wilson. \"He's done everything right in the eyes of the law.\" Michigan uses federal guidelines that base eligibility for food stamps solely on income. Fick's attorney said his client is unemployed and lives on Social Security disability benefits, so his income qualifies him for the Bridge Card. The $850,000 lump sum lottery payment is considered an asset -- not income. So, under state policy, Fick can legally get food stamps -- even if he has hundreds of thousands of dollars in the bank. \"This angers me. It really makes me angry,\" said Rep Charles Brunner, who represents Fick's hometown of Auburn in Michigan's 96th District. He is one of a number of lawmakers in a state battered by high unemployment and a whopping budget deficit now fuming over Michigan's lottery loophole. \"The thing that really bothers me is [that] in our state we have so many people out of work ... so many people in need of assistance, and for a lottery winner to get food stamps\" is unfair, Brunner said. \"If it's a glitch in the law, we've got to fix it now.\" Today, Brunner introduced legislation in the Michigan House of Representatives calling for the state to factor in the assets of food stamp applicants, not just their income. Lawmakers are now scrambling to close that loophole. \"We are actively seeking a change to the food assistance policy to see that only those who are truly [in] need qualify,\" said Gisgie Gendreau, a spokeswoman for Michigan's Department of Human Services. Fick's attorney said his client will stop using his Bridge Card if Michigan changes its policy, and doesn't feel bad about using the taxpayer funded program because Fick just paid more than $1 million of his lottery winnings in state taxes. \"He feels like he's paid into the system,\" Wilson said. Even though his client won more money than many people earn in a lifetime, Wilson said Fick is not living like a millionaire. \"He lives a simple life,\" Wilson said. \"He doesn't even have the Internet.\"",
+    "overall": {
+        "1": {
+            "sentence": "How can a man who won millions in the lottery still use food stamps?",
+            "vclaim": "Millionaires are eligible for food stamps, but 'Donald Trump came along and decided to put a stop to it.'",
+            "combined_score": 0.88251767203,
+            "sum_combined_score": 2.587663351217,
+            "link": "http://www.politifact.com/wisconsin/statements/2019/oct/11/glenn-grothman/wisconsin-lawmakers-claim-millionaires-are-eligibl/"
+        },
+        "2": {
+            "sentence": "Recent $2M Jackpot Winner Leroy Fick Still Uses Equivalent of Food Stamps for Groceries; Some Aim to Disqualify Him Mich.'s Bridge Card program based on income, not assets like lottery winnings.",
+            "vclaim": "People can use food stamps 'for anything,' including 'to go to Hawaii,' and even millionaires can qualify.",
+            "combined_score": 0.872130548011,
+            "sum_combined_score": 2.500565715576,
+            "link": "http://www.politifact.com/truth-o-meter/statements/2011/dec/01/newt-gingrich/Gingrich-says-use-food-stamps-Hawaii/"
+        },
+        "3": {
+            "sentence": "Michigan uses federal guidelines that base eligibility for food stamps solely on income.",
+            "vclaim": "'When is a farm bill not a farm bill? When 90 percent of it is for food stamps.'",
+            "combined_score": 0.867154140896,
+            "sum_combined_score": 2.4257342232149997,
+            "link": "http://www.politifact.com/punditfact/statements/2013/nov/06/brad-blakeman/brad-blakeman-says-90-farm-bill-goes-food-stamps/"
+        },
+        "4": {
+            "sentence": "But to buy groceries, this lottery winner is still using his Bridge Card, Michigan's version of food stamps.",
+            "vclaim": "'More than 43 percent of all food stamps are given to illegals.'",
+            "combined_score": 0.825583167756,
+            "sum_combined_score": 2.24124078491,
+            "link": "http://www.politifact.com/truth-o-meter/statements/2012/jun/19/facebook-posts/facebook-post-says-more-43-percent-all-food-stamps/"
+        },
+        "5": {
+            "sentence": "Michigan uses federal guidelines that base eligibility for food stamps solely on income.",
+            "vclaim": "A Wisconsin bill to limit use of food stamps for junk food would also 'prevent -- or limit --  the extent to which' food stamps could be used for organic foods.",
+            "combined_score": 0.881118565416,
+            "sum_combined_score": 1.722537876428,
+            "link": "http://www.politifact.com/wisconsin/statements/2013/may/10/fred-clark/wisconsin-bill-limit-junk-food-also-would-restrict/"
+        }
+    },
+    "split": [
+        {
+            "sentence": "Recent $2M Jackpot Winner Leroy Fick Still Uses Equivalent of Food Stamps for Groceries; Some Aim to Disqualify Him Mich.'s Bridge Card program based on income, not assets like lottery winnings.",
+            "retrieved": {
+                "1": {
+                    "_id": "16402",
+                    "combined_score": 0.881976301475,
+                    "_score": 20.387167,
+                    "cosine": 1.7503817115,
+                    "vclaim": "State lawmakers are spending taxpayer money for parking that billionaire Arthur Blank could build while paying some state employees so little they are on food stamps.",
+                    "link": "http://www.politifact.com/georgia/statements/2015/mar/23/tyrone-brooks/brooks-lacks-data-back-food-stamp-claim/"
+                },
+                "2": {
+                    "_id": "5028",
+                    "combined_score": 0.87474154773,
+                    "_score": 19.132317,
+                    "cosine": 1.767774370464,
+                    "vclaim": "Millionaires are eligible for food stamps, but 'Donald Trump came along and decided to put a stop to it.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2019/oct/11/glenn-grothman/wisconsin-lawmakers-claim-millionaires-are-eligibl/"
+                },
+                "3": {
+                    "_id": "5837",
+                    "combined_score": 0.872130548011,
+                    "_score": 22.360989,
+                    "cosine": 1.708273374386,
+                    "vclaim": "People can use food stamps 'for anything,' including 'to go to Hawaii,' and even millionaires can qualify.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2011/dec/01/newt-gingrich/Gingrich-says-use-food-stamps-Hawaii/"
+                },
+                "4": {
+                    "_id": "15910",
+                    "combined_score": 0.810912268782,
+                    "_score": 18.027912,
+                    "cosine": 1.743149522711,
+                    "vclaim": "Says taking millionaires off food stamps and unemployment would save $20 million.",
+                    "link": "http://www.politifact.com/texas/statements/2012/jan/06/kay-bailey-hutchison/hutchison-says-getting-millionaires-food-stamps-un/"
+                },
+                "5": {
+                    "_id": "11253",
+                    "combined_score": 0.808871685899,
+                    "_score": 19.894339,
+                    "cosine": 1.708384092502,
+                    "vclaim": "Of every 'three dollars in food stamps for the needy, seven dollars in salaries and pensions (go to) the bureaucrats who are supposed to be taking care of the poor.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2013/mar/19/michele-bachmann/michele-bachmann-says-70-percent-food-stamp-fundin/"
+                }
+            }
+        },
+        {
+            "sentence": "May 18, 2011  -- Leroy Fick hit the jackpot.",
+            "retrieved": {
+                "1": {
+                    "_id": "28985",
+                    "combined_score": 0.876803296445,
+                    "_score": 15.017165,
+                    "cosine": 1.573597669788,
+                    "vclaim": "Terrorist attempting to light the fuse to a bomb hidden in his rectum is foiled by airline personnel.",
+                    "link": "https://www.snopes.com/fact-check/butt-bomb/"
+                },
+                "2": {
+                    "_id": "31888",
+                    "combined_score": 0.832530134895,
+                    "_score": 10.255464,
+                    "cosine": 1.660413309763,
+                    "vclaim": "One of the winners who shared the $1.5 billion Powerball jackpot succumbed within days to a cocaine overdose.",
+                    "link": "https://www.snopes.com/fact-check/powerball-winner-overdose/"
+                },
+                "3": {
+                    "_id": "33197",
+                    "combined_score": 0.781657523819,
+                    "_score": 10.400667,
+                    "cosine": 1.616370481354,
+                    "vclaim": "George Zimmerman has won a Florida state lottery jackpot.",
+                    "link": "https://www.snopes.com/fact-check/funny-money/"
+                },
+                "4": {
+                    "_id": "30384",
+                    "combined_score": 0.779673517569,
+                    "_score": 8.195598,
+                    "cosine": 1.671252309731,
+                    "vclaim": "If a $1.3 billion dollar Powerball jackpot were shared with every American, we'd all get $4 million each.",
+                    "link": "https://www.snopes.com/fact-check/powerball-wealth-sharing-meme/"
+                },
+                "5": {
+                    "_id": "31869",
+                    "combined_score": 0.772963397493,
+                    "_score": 9.321716,
+                    "cosine": 1.637102346051,
+                    "vclaim": "Soon after winning the largest-ever Megabucks slots jackpot, the new multi-millionaire died a violent death.",
+                    "link": "https://www.snopes.com/fact-check/megabucks-lore/"
+                }
+            }
+        },
+        {
+            "sentence": "The Michigan man won $2 million in the state lottery's \"Make Me Rich\" contest last June.",
+            "retrieved": {
+                "1": {
+                    "_id": "28541",
+                    "combined_score": 0.862146287793,
+                    "_score": 19.738686,
+                    "cosine": 1.453657739994,
+                    "vclaim": "A stuntman was killed during the filming of a fight scene in How the West Was Won.",
+                    "link": "https://www.snopes.com/fact-check/how-the-west-was-won/"
+                },
+                "2": {
+                    "_id": "13626",
+                    "combined_score": 0.852599298194,
+                    "_score": 17.712896,
+                    "cosine": 1.490058997899,
+                    "vclaim": "Says she 'oversaw an audit that won the city $2 million in franchise fees.'",
+                    "link": "http://www.politifact.com/oregon/statements/2012/oct/09/amanda-fritz/did-amanda-fritz-oversee-audit-won-city-2-million/"
+                },
+                "3": {
+                    "_id": "1153",
+                    "combined_score": 0.792304395765,
+                    "_score": 15.224742,
+                    "cosine": 1.503774053783,
+                    "vclaim": "“We have in the last 2 years added US$500 million to our sovereign wealth fund.”",
+                    "link": "https://africacheck.org/reports/nigerias-democracy-day-speech-fact-checking-government-savings-rice-imports-infrastructure-spend/"
+                },
+                "4": {
+                    "_id": "21560",
+                    "combined_score": 0.778373664047,
+                    "_score": 12.996265,
+                    "cosine": 1.54162944999,
+                    "vclaim": "Richard Harrison, known as the 'the Old Man' on 'Pawn Stars,' passed away in June 2018.",
+                    "link": "https://www.snopes.com/fact-check/richard-harrison-pawn-stars-death/"
+                },
+                "5": {
+                    "_id": "21166",
+                    "combined_score": 0.775888895727,
+                    "_score": 19.078943,
+                    "cosine": 1.412451362543,
+                    "vclaim": "Dutch politician Geert Wilders delivered a speech on the scenario of 'America as the Last Man Standing.'",
+                    "link": "https://www.snopes.com/fact-check/america-as-the-last-man-standing/"
+                }
+            }
+        },
+        {
+            "sentence": "With the $850,000 he took home after taxes, Fick, 59, used his winnings to purchase a new home and a used Audi convertible.",
+            "retrieved": {
+                "1": {
+                    "_id": "8791",
+                    "combined_score": 0.788749833312,
+                    "_score": 19.398409,
+                    "cosine": 1.589420830275,
+                    "vclaim": "'Did Obama know that Tony Rezko was saving him $300,000 on the purchase of his home?'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2008/jun/17/republican-national-committee-republican/no-proof-rezko-saved-obama-money-on-home/"
+                },
+                "2": {
+                    "_id": "32457",
+                    "combined_score": 0.771441875621,
+                    "_score": 18.858791,
+                    "cosine": 1.587884784704,
+                    "vclaim": "A photograph shows a futuristic new Audi truck.",
+                    "link": "https://www.snopes.com/fact-check/audi-truck-concept-photo/"
+                },
+                "3": {
+                    "_id": "23701",
+                    "combined_score": 0.768377467142,
+                    "_score": 20.374523,
+                    "cosine": 1.560904587528,
+                    "vclaim": "HUD Secretary Ben Carson bought a $31,000 dining set and billed taxpayers for it.",
+                    "link": "https://www.snopes.com/fact-check/did-ben-carson-purchase-a-31000-dining-set-and-charge-it-to-hud/"
+                },
+                "4": {
+                    "_id": "14356",
+                    "combined_score": 0.75828543608,
+                    "_score": 16.230679,
+                    "cosine": 1.623481252567,
+                    "vclaim": "Barack Obama promises higher taxes on 'the sale of your home.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2008/aug/08/john-mccain/only-the-wealthy-make-big-profits-/"
+                },
+                "5": {
+                    "_id": "17544",
+                    "combined_score": 0.757224560418,
+                    "_score": 15.876606,
+                    "cosine": 1.628707915483,
+                    "vclaim": "'There was virtually no new business investment' after the 2017 tax law. 'The bulk was used to buy back their own stock.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/feb/04/joe-biden/did-tax-bill-lead-virtually-no-new-business-invest/"
+                }
+            }
+        },
+        {
+            "sentence": "But to buy groceries, this lottery winner is still using his Bridge Card, Michigan's version of food stamps.",
+            "retrieved": {
+                "1": {
+                    "_id": "10956",
+                    "combined_score": 0.841683653515,
+                    "_score": 22.065895,
+                    "cosine": 1.599349686031,
+                    "vclaim": "You can buy lobster with food stamps.",
+                    "link": "http://www.politifact.com/georgia/statements/2014/mar/21/greg-morris/food-stamp-lobster-claim-true-extent-unclear/"
+                },
+                "2": {
+                    "_id": "15584",
+                    "combined_score": 0.841419311012,
+                    "_score": 16.080164,
+                    "cosine": 1.713206282816,
+                    "vclaim": "A Wisconsin bill to limit use of food stamps for junk food would also 'prevent -- or limit --  the extent to which' food stamps could be used for organic foods.",
+                    "link": "http://www.politifact.com/wisconsin/statements/2013/may/10/fred-clark/wisconsin-bill-limit-junk-food-also-would-restrict/"
+                },
+                "3": {
+                    "_id": "5028",
+                    "combined_score": 0.830404131457,
+                    "_score": 16.117626,
+                    "cosine": 1.704294071024,
+                    "vclaim": "Millionaires are eligible for food stamps, but 'Donald Trump came along and decided to put a stop to it.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2019/oct/11/glenn-grothman/wisconsin-lawmakers-claim-millionaires-are-eligibl/"
+                },
+                "4": {
+                    "_id": "10692",
+                    "combined_score": 0.825583167756,
+                    "_score": 15.252944,
+                    "cosine": 1.717181740676,
+                    "vclaim": "'More than 43 percent of all food stamps are given to illegals.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2012/jun/19/facebook-posts/facebook-post-says-more-43-percent-all-food-stamps/"
+                },
+                "5": {
+                    "_id": "13160",
+                    "combined_score": 0.804347405097,
+                    "_score": 15.002369,
+                    "cosine": 1.70615084566,
+                    "vclaim": "'When is a farm bill not a farm bill? When 90 percent of it is for food stamps.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2013/nov/06/brad-blakeman/brad-blakeman-says-90-farm-bill-goes-food-stamps/"
+                }
+            }
+        },
+        {
+            "sentence": "How can a man who won millions in the lottery still use food stamps?",
+            "retrieved": {
+                "1": {
+                    "_id": "5028",
+                    "combined_score": 0.88251767203,
+                    "_score": 19.486584,
+                    "cosine": 1.763048184374,
+                    "vclaim": "Millionaires are eligible for food stamps, but 'Donald Trump came along and decided to put a stop to it.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2019/oct/11/glenn-grothman/wisconsin-lawmakers-claim-millionaires-are-eligibl/"
+                },
+                "2": {
+                    "_id": "5837",
+                    "combined_score": 0.841458177262,
+                    "_score": 21.046091,
+                    "cosine": 1.700872668114,
+                    "vclaim": "People can use food stamps 'for anything,' including 'to go to Hawaii,' and even millionaires can qualify.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2011/dec/01/newt-gingrich/Gingrich-says-use-food-stamps-Hawaii/"
+                },
+                "3": {
+                    "_id": "1782",
+                    "combined_score": 0.735331166817,
+                    "_score": 13.721628,
+                    "cosine": 1.721239585419,
+                    "vclaim": "Trump Says 3.5 Million People Have Been Lifted Off Food Stamps",
+                    "link": "https://checkyourfact.com/2018/08/02/fact-check-trump-food-stamps/"
+                },
+                "4": {
+                    "_id": "15910",
+                    "combined_score": 0.711571564368,
+                    "_score": 12.788018,
+                    "cosine": 1.714538483065,
+                    "vclaim": "Says taking millionaires off food stamps and unemployment would save $20 million.",
+                    "link": "http://www.politifact.com/texas/statements/2012/jan/06/kay-bailey-hutchison/hutchison-says-getting-millionaires-food-stamps-un/"
+                },
+                "5": {
+                    "_id": "10692",
+                    "combined_score": 0.693015250961,
+                    "_score": 12.788018,
+                    "cosine": 1.697677814502,
+                    "vclaim": "'More than 43 percent of all food stamps are given to illegals.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2012/jun/19/facebook-posts/facebook-post-says-more-43-percent-all-food-stamps/"
+                }
+            }
+        },
+        {
+            "sentence": "His lawyer says it is perfectly legal.",
+            "retrieved": {
+                "1": {
+                    "_id": "6290",
+                    "combined_score": 0.79327590859,
+                    "_score": 9.933346,
+                    "cosine": 1.543130472515,
+                    "vclaim": "Says a federal judge 'sanctions Tennessee ‘birther’ lawyer … for bringing a frivolous lawsuit.'",
+                    "link": "http://www.politifact.com/tennessee/statements/2012/sep/02/tennessee-democratic-party/birthers-sanctioned-federal-judge-frivolous-lawsui/"
+                },
+                "2": {
+                    "_id": "7698",
+                    "combined_score": 0.777774739797,
+                    "_score": 19.470428,
+                    "cosine": 1.386442943997,
+                    "vclaim": "'Public display of a long rifle is perfectly legal in Texas.'",
+                    "link": "http://www.politifact.com/texas/statements/2014/jun/05/mike-hashimoto/texas-law-effectively-permits-long-rifles-be-toted/"
+                },
+                "3": {
+                    "_id": "16877",
+                    "combined_score": 0.751254577617,
+                    "_score": 8.775299,
+                    "cosine": 1.531200651392,
+                    "vclaim": "Obama used to be a lawyer for ACORN.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/sep/17/karl-rove/rove-claims-obama-used-to-be-lawyer-for-acorn/"
+                },
+                "4": {
+                    "_id": "24333",
+                    "combined_score": 0.74675533541,
+                    "_score": 8.672745,
+                    "cosine": 1.529595668165,
+                    "vclaim": "Retired federal judge delivers lecture about his experience setting up a new legal system in Iraq.",
+                    "link": "https://www.snopes.com/fact-check/don-walter-letter/"
+                },
+                "5": {
+                    "_id": "5203",
+                    "combined_score": 0.736149146663,
+                    "_score": 17.598835,
+                    "cosine": 1.385697475006,
+                    "vclaim": "A New York law makes it 'now perfectly legal to murder' a baby a minute before it would be born.",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/feb/01/viral-image/no-new-york-abortion-law-doesnt-let-mothers-abort-/"
+                }
+            }
+        },
+        {
+            "sentence": "\"He's not trying to cheat the state,\" said Fick's attorney, John Wilson.",
+            "retrieved": {
+                "1": {
+                    "_id": "25911",
+                    "combined_score": 0.873368489195,
+                    "_score": 12.177177,
+                    "cosine": 1.658916383082,
+                    "vclaim": "Arizona State Senate candidate Bobby Wilson fatally shot his mother in 1963.",
+                    "link": "https://www.snopes.com/fact-check/bobby-wilson-shooting/"
+                },
+                "2": {
+                    "_id": "4828",
+                    "combined_score": 0.844190978869,
+                    "_score": 13.404472,
+                    "cosine": 1.602983468793,
+                    "vclaim": "Says the secret John Doe criminal investigation of his campaign has been 'resolved' and two judges have said it is 'over.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2014/jun/20/scott-walker/scott-walker-says-probe-his-campaign-finances-reso/"
+                },
+                "3": {
+                    "_id": "30158",
+                    "combined_score": 0.817977172563,
+                    "_score": 10.968054,
+                    "cosine": 1.660575521329,
+                    "vclaim": "President Obama filed federal charges against Darren Wilson moments after a grand jury’s decision not to indict him was announced.",
+                    "link": "https://www.snopes.com/fact-check/jurys-doubt/"
+                },
+                "4": {
+                    "_id": "19718",
+                    "combined_score": 0.798708248228,
+                    "_score": 13.854706,
+                    "cosine": 1.560372071766,
+                    "vclaim": "Said he is the only Democratic candidate for state attorney general who has 'represented the entire state of Georgia.'",
+                    "link": "http://www.politifact.com/georgia/statements/2010/jul/06/rob-teilhet/did-lawmaker-cobb-represent-entire-state/"
+                },
+                "5": {
+                    "_id": "7738",
+                    "combined_score": 0.764444486711,
+                    "_score": 13.021568,
+                    "cosine": 1.563994721974,
+                    "vclaim": "Six convictions are connected to an allegation by prosecutors 'that Gov. Scott Walker is at the center of a criminal scheme.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2014/oct/23/mary-burke/mary-burke-ad-leaves-impression-scott-walker-cente/"
+                }
+            }
+        },
+        {
+            "sentence": "\"Based on his income, he's eligible.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "8175",
+                    "combined_score": 0.839641867494,
+                    "_score": 10.029692,
+                    "cosine": 1.666695811516,
+                    "vclaim": "Every illegal immigrant 'can be eligible for up to $36,000 to $38,000 in earned income tax credits without paying a dime in.'",
+                    "link": "http://www.politifact.com/virginia/statements/2015/mar/09/john-fredericks/john-fredericks-says-every-illegal-immigrant-can-b/"
+                },
+                "2": {
+                    "_id": "15689",
+                    "combined_score": 0.797999018787,
+                    "_score": 11.131709,
+                    "cosine": 1.59101341199,
+                    "vclaim": "'Jim Renacci cheated on his income taxes' and is a 'deadbeat citizen.'",
+                    "link": "http://www.politifact.com/ohio/statements/2010/aug/27/afscme/afscme-ad-calls-ohio-congressional-candidate-jim-r/"
+                },
+                "3": {
+                    "_id": "8237",
+                    "combined_score": 0.765780155393,
+                    "_score": 8.066117,
+                    "cosine": 1.675724948299,
+                    "vclaim": "On an income cap for recipients of the popular HOPE scholarship",
+                    "link": "http://www.politifact.com/georgia/statements/2014/oct/28/jason-carter/Carter/"
+                },
+                "4": {
+                    "_id": "18451",
+                    "combined_score": 0.76068767243,
+                    "_score": 7.990616,
+                    "cosine": 1.674158006185,
+                    "vclaim": "'On the personal tax side, middle-income people are getting cuts and rich people are getting very little cuts or, in certain cases, increases' under the Republican tax bills.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2017/nov/20/steve-mnuchin/steve-mnuchin-uses-partial-data-say-gop-tax-bill-t/"
+                },
+                "5": {
+                    "_id": "20714",
+                    "combined_score": 0.756586525256,
+                    "_score": 12.943815,
+                    "cosine": 1.489562902768,
+                    "vclaim": "Says President Barack Obama 'gives students the right to repay (federal) loans as a clear, fixed, low percentage of their income for up to 20 years.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2012/sep/07/bill-clinton/bill-clinton-says-president-let-students-pay-clear/"
+                }
+            }
+        },
+        {
+            "sentence": "In fact, Fick said he contacted Michigan's Department of Human Services after his lottery win to ask if he could still use his Bridge Card.",
+            "retrieved": {
+                "1": {
+                    "_id": "25727",
+                    "combined_score": 0.811758590548,
+                    "_score": 17.992804,
+                    "cosine": 1.630540866695,
+                    "vclaim": "A Kentucky business owner found out he had been paying the electric bills of an Ohio River bridge, in addition to his own, for five months.",
+                    "link": "https://www.snopes.com/fact-check/pay-bridge-electrical-bill/"
+                },
+                "2": {
+                    "_id": "25343",
+                    "combined_score": 0.797727485893,
+                    "_score": 23.984749,
+                    "cosine": 1.552778951197,
+                    "vclaim": "A lottery winner was run over by a truck just hours after his win.",
+                    "link": "https://www.snopes.com/fact-check/lottery-death/"
+                },
+                "3": {
+                    "_id": "27437",
+                    "combined_score": 0.781128397679,
+                    "_score": 23.543724,
+                    "cosine": 1.548641844677,
+                    "vclaim": "A lottery winner was arrested after he spent $200,000 to dump manure on his ex-boss's lawn.",
+                    "link": "https://www.snopes.com/fact-check/lottery-winner-arrested-dumping-200000-manure-lawn-former-boss/"
+                },
+                "4": {
+                    "_id": "33584",
+                    "combined_score": 0.746300568479,
+                    "_score": 15.311012,
+                    "cosine": 1.625224985043,
+                    "vclaim": "A prisoner of war who played an imaginary round of golf in his mind each day of his captivity found upon his release that he’d markedly improved his game.",
+                    "link": "https://www.snopes.com/fact-check/legend-in-his-own-mind/"
+                },
+                "5": {
+                    "_id": "25168",
+                    "combined_score": 0.704696276913,
+                    "_score": 17.230373,
+                    "cosine": 1.579562316134,
+                    "vclaim": "A policeman promised a waitress half the winnings from his lottery ticket. All the numbers came up, and he kept his word by sharing the jackpot with her.",
+                    "link": "https://www.snopes.com/fact-check/it-could-happen-to-you/"
+                }
+            }
+        },
+        {
+            "sentence": "\"They said I could go ahead and keep the Bridge Card if I wanted to,\" said Fick.",
+            "retrieved": {
+                "1": {
+                    "_id": "9351",
+                    "combined_score": 0.800941617547,
+                    "_score": 18.438148,
+                    "cosine": 1.639622883273,
+                    "vclaim": "'What we said was, you can keep (your plan) if it hasn’t changed since the law passed.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2013/nov/06/barack-obama/barack-obama-says-what-hed-said-was-you-could-keep/"
+                },
+                "2": {
+                    "_id": "24864",
+                    "combined_score": 0.770310923078,
+                    "_score": 16.91867,
+                    "cosine": 1.637438717731,
+                    "vclaim": "Bridge reconstruction contracts in the U.S., including repairs on the I-635 in Texas, are going to Chinese firms.",
+                    "link": "https://www.snopes.com/fact-check/bridges-over-troubled-waters/"
+                },
+                "3": {
+                    "_id": "8609",
+                    "combined_score": 0.750810877945,
+                    "_score": 16.284363,
+                    "cosine": 1.63295031413,
+                    "vclaim": "'I was one of about a dozen (senators) who voted against the Bridge to Nowhere.'",
+                    "link": "http://www.politifact.com/virginia/statements/2011/dec/27/george-allen/george-allen-claims-he-was-one-dozen-senators-vote/"
+                },
+                "4": {
+                    "_id": "6212",
+                    "combined_score": 0.714323291653,
+                    "_score": 26.690964,
+                    "cosine": 1.516703097127,
+                    "vclaim": "'I wanted to keep it private, because I don't think it's anybody's business if I want to send money to the vets.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/may/31/donald-trump/donald-trump-says-he-wanted-keep-veterans-fundrais/"
+                },
+                "5": {
+                    "_id": "19172",
+                    "combined_score": 0.69022650412,
+                    "_score": 17.154013,
+                    "cosine": 1.592582765435,
+                    "vclaim": "'I told the Congress 'thanks, but no thanks,' on that Bridge to Nowhere.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2008/sep/03/sarah-palin/she-killed-it-but-it-was-nearly-dead/"
+                }
+            }
+        },
+        {
+            "sentence": "So, he did.",
+            "retrieved": {
+                "1": {
+                    "_id": "4169",
+                    "combined_score": 0.766393046396,
+                    "_score": 7.293017,
+                    "cosine": 1.264087325817,
+                    "vclaim": "‘In Another Life, He Could Be My Son’ – Did Queen Elizabeth Call Trump ‘An Amazing Person’?",
+                    "link": "https://checkyourfact.com/2019/06/07/fact-check-queen-elizabeth-trump-amazing-person-genuine-good-heart-son/"
+                },
+                "2": {
+                    "_id": "26424",
+                    "combined_score": 0.759606814204,
+                    "_score": 6.7301326,
+                    "cosine": 1.271428933903,
+                    "vclaim": "A list tallies some of the good deeds accomplished by  Donald Trump.",
+                    "link": "https://www.snopes.com/fact-check/so-you-think-you-know-donald-trump/"
+                },
+                "3": {
+                    "_id": "10629",
+                    "combined_score": 0.759121386152,
+                    "_score": 8.81311,
+                    "cosine": 1.232366259619,
+                    "vclaim": "'Daniel Webster said he's out. Now he says he's in.'",
+                    "link": "http://www.politifact.com/florida/statements/2010/apr/27/alan-grayson/alan-grayson-daniel-webster/"
+                },
+                "4": {
+                    "_id": "29178",
+                    "combined_score": 0.757424143156,
+                    "_score": 9.419717,
+                    "cosine": 1.220267412391,
+                    "vclaim": "false",
+                    "link": "https://www.snopes.com/fact-check/puff-did-he/"
+                },
+                "5": {
+                    "_id": "27066",
+                    "combined_score": 0.757424143156,
+                    "_score": 9.419717,
+                    "cosine": 1.220267412391,
+                    "vclaim": "false",
+                    "link": "https://www.snopes.com/fact-check/puff-did-he/"
+                }
+            }
+        },
+        {
+            "sentence": "\"He specifically called the Department of Human Services and said, 'Can I still use the Bridge Card?'",
+            "retrieved": {
+                "1": {
+                    "_id": "8486",
+                    "combined_score": 0.823744341438,
+                    "_score": 16.675335,
+                    "cosine": 1.663078359893,
+                    "vclaim": "Says the state's Medicaid waiver proposal 'has languished in a file cabinet at the Centers for Medicare and Medicaid Services for more than two years.'",
+                    "link": "http://www.politifact.com/texas/statements/2011/jan/06/rick-perry/gov-rick-perry-says-state-medicaid-proposal-has-la/"
+                },
+                "2": {
+                    "_id": "29850",
+                    "combined_score": 0.821126452162,
+                    "_score": 18.01971,
+                    "cosine": 1.638392325023,
+                    "vclaim": "The U.S. government has announced plans to track homeless persons by implanting them with RFID chips.",
+                    "link": "https://www.snopes.com/fact-check/homeless-in-the-range/"
+                },
+                "3": {
+                    "_id": "25254",
+                    "combined_score": 0.799257789272,
+                    "_score": 17.91162,
+                    "cosine": 1.625111862431,
+                    "vclaim": "The Department of Health and Human Services has scheduled web site maintenance for Healthcare.gov on most Sundays during Obamacare open enrollment.",
+                    "link": "https://www.snopes.com/fact-check/healthcare-gov-maintenance/"
+                },
+                "4": {
+                    "_id": "9690",
+                    "combined_score": 0.732540767046,
+                    "_score": 14.814705,
+                    "cosine": 1.63168200134,
+                    "vclaim": "Shows in a television ad that police took evidence from Solantic, Rick Scott's new health care company, after allegations emerged that the company was engaging in fraud.",
+                    "link": "http://www.politifact.com/florida/statements/2010/oct/12/florida-democratic-party/problems-rick-scotts-new-health-care-business-sola/"
+                },
+                "5": {
+                    "_id": "14445",
+                    "combined_score": 0.720709381844,
+                    "_score": 18.409143,
+                    "cosine": 1.562338503942,
+                    "vclaim": "'Ultimately, after an exhaustive investigation,' the National Transportation Safety Board concluded that a Minneapolis bridge collapsed in 2007 'because of an original design flaw dating back to the 1960s.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2011/mar/30/tim-pawlenty/tim-pawlenty-writes-ntsb-ruled-minneapolis-bridge-/"
+                }
+            }
+        },
+        {
+            "sentence": "and they said, 'Yes,' because he is eligible,\" said attorney Wilson.",
+            "retrieved": {
+                "1": {
+                    "_id": "9920",
+                    "combined_score": 0.822411307266,
+                    "_score": 16.360308,
+                    "cosine": 1.607113312256,
+                    "vclaim": "Says 'Harry Reid, when asked about the Republican field, said the Republican he likes the best is Donald Trump, and he said, because I can work with him. He'll cut deals.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/mar/02/ted-cruz/ted-cruz-wrongly-says-senate-democratic-leader-har/"
+                },
+                "2": {
+                    "_id": "20790",
+                    "combined_score": 0.739764097011,
+                    "_score": 14.745069,
+                    "cosine": 1.580274102964,
+                    "vclaim": "Travis County residents 'trusted me to take on Tom DeLay — and we won.'",
+                    "link": "http://www.politifact.com/texas/statements/2016/feb/17/gary-cobb/gary-cobb-won-guilty-jury-verdicts-against-tom-del/"
+                },
+                "3": {
+                    "_id": "5652",
+                    "combined_score": 0.658131516136,
+                    "_score": 12.483976,
+                    "cosine": 1.559922379643,
+                    "vclaim": "Says he can’t release his internal affairs record because there are Attorney General guidelines in place protecting it.",
+                    "link": "http://www.politifact.com/new-jersey/statements/2011/jun/30/samuel-demaio/acting-newark-police-director-samuel-demaio-says-h/"
+                },
+                "4": {
+                    "_id": "21968",
+                    "combined_score": 0.628839784224,
+                    "_score": 12.772291,
+                    "cosine": 1.542447245881,
+                    "vclaim": "Vice President Mike Pence said that 'only guilty people need to hire a criminal defense attorney.'",
+                    "link": "https://www.snopes.com/fact-check/mike-pence-say-only-guilty-people-hire-criminal-defense-attorneys/"
+                },
+                "5": {
+                    "_id": "12960",
+                    "combined_score": 0.61896192189,
+                    "_score": 19.569408,
+                    "cosine": 1.4745760389,
+                    "vclaim": "Obama says McCain went to Bermuda and 'pledged to protect tax breaks for American corporations that hide their profits offshore.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2008/sep/24/barack-obama/yes-mccain-said-he-would-oppose-some-changes/"
+                }
+            }
+        },
+        {
+            "sentence": "\"He's done everything right in the eyes of the law.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "10517",
+                    "combined_score": 0.782798213964,
+                    "_score": 13.110666,
+                    "cosine": 1.608193218976,
+                    "vclaim": "'I've done more impeachments than anybody else in the history of the country.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2011/dec/19/jim-sensenbrenner/gop-wisconsin-rep-jim-sensenbrenner-says-hes-done-/"
+                },
+                "2": {
+                    "_id": "10007",
+                    "combined_score": 0.648209026292,
+                    "_score": 14.890298,
+                    "cosine": 1.499653993406,
+                    "vclaim": "'I'm proud to have had a 100 percent pro-life voting record.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2007/nov/27/fred-thompson/hes-right-on/"
+                },
+                "3": {
+                    "_id": "1556",
+                    "combined_score": 0.624067162189,
+                    "_score": 14.289055,
+                    "cosine": 1.49502151569,
+                    "vclaim": "As a juror, you have the right to refuse to enforce any bad law in the case brought before you.",
+                    "link": "https://www.truthorfiction.com/do-you-have-the-right-as-a-juror-to-refuse-to-enforce-bad-law/"
+                },
+                "4": {
+                    "_id": "19055",
+                    "combined_score": 0.597178120853,
+                    "_score": 13.0935135,
+                    "cosine": 1.498338422533,
+                    "vclaim": "Asked what his administration would be doing about 'the gun problem,' said, 'We have done much more than most administrations. … We’ve done, actually, a lot.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2019/aug/08/donald-trump/donald-trump-says-hes-done-more-other-presidents-s/"
+                },
+                "5": {
+                    "_id": "15646",
+                    "combined_score": 0.580882476766,
+                    "_score": 15.830326,
+                    "cosine": 1.444556067969,
+                    "vclaim": "'Harry Reid says he does more for Nevada. He's done more for unemployment. We were at 4.4 percent. Now we're at 14 percent. He's done more for the foreclosure rate. We have the highest foreclosure rate in the nation. He's done more for bankruptcy. We have the highest bankruptcy rate in the nation.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2010/aug/05/sharron-angle/sharron-angle-blames-harry-reid-nevada-economic-wo/"
+                }
+            }
+        },
+        {
+            "sentence": "Michigan uses federal guidelines that base eligibility for food stamps solely on income.",
+            "retrieved": {
+                "1": {
+                    "_id": "15584",
+                    "combined_score": 0.881118565416,
+                    "_score": 16.091578,
+                    "cosine": 1.733720388613,
+                    "vclaim": "A Wisconsin bill to limit use of food stamps for junk food would also 'prevent -- or limit --  the extent to which' food stamps could be used for organic foods.",
+                    "link": "http://www.politifact.com/wisconsin/statements/2013/may/10/fred-clark/wisconsin-bill-limit-junk-food-also-would-restrict/"
+                },
+                "2": {
+                    "_id": "13160",
+                    "combined_score": 0.867154140896,
+                    "_score": 14.74469,
+                    "cosine": 1.758731438987,
+                    "vclaim": "'When is a farm bill not a farm bill? When 90 percent of it is for food stamps.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2013/nov/06/brad-blakeman/brad-blakeman-says-90-farm-bill-goes-food-stamps/"
+                },
+                "3": {
+                    "_id": "20561",
+                    "combined_score": 0.86492723959,
+                    "_score": 16.670982,
+                    "cosine": 1.705274694021,
+                    "vclaim": "'The U.S. Postal Service doesn’t run on your tax dollars. It’s funded solely by stamps and postage.'",
+                    "link": "http://www.politifact.com/georgia/statements/2013/jul/24/american-postal-workers-union/postal-service-claim-not-fully-target/"
+                },
+                "4": {
+                    "_id": "5582",
+                    "combined_score": 0.835675251151,
+                    "_score": 15.963808,
+                    "cosine": 1.700941992813,
+                    "vclaim": "'For every one job created under the Obama administration, 75 people went on food stamps.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2014/may/28/facebook-posts/social-media-meme-says-75-have-joined-food-stamp-r/"
+                },
+                "5": {
+                    "_id": "4716",
+                    "combined_score": 0.821618839563,
+                    "_score": 15.406437,
+                    "cosine": 1.704696983254,
+                    "vclaim": "Says 57 percent of federal spending goes to the military and just 1 percent goes to food and agriculture, including food stamps.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2015/aug/17/facebook-posts/pie-chart-federal-spending-circulating-internet-mi/"
+                }
+            }
+        },
+        {
+            "sentence": "Fick's attorney said his client is unemployed and lives on Social Security disability benefits, so his income qualifies him for the Bridge Card.",
+            "retrieved": {
+                "1": {
+                    "_id": "6791",
+                    "combined_score": 0.815252818959,
+                    "_score": 22.336142,
+                    "cosine": 1.682105732444,
+                    "vclaim": "'The Social Security disability fund is going belly up in 2016.'",
+                    "link": "http://www.politifact.com/ohio/statements/2013/apr/15/rob-portman/sen-rob-portman-says-social-security-disability-fu/"
+                },
+                "2": {
+                    "_id": "32790",
+                    "combined_score": 0.79960824183,
+                    "_score": 17.436882,
+                    "cosine": 1.734965658593,
+                    "vclaim": "Social Security retirement disbursements have recently been reclassified as 'federal benefit payments.'",
+                    "link": "https://www.snopes.com/fact-check/federal-benefit-payments/"
+                },
+                "3": {
+                    "_id": "13225",
+                    "combined_score": 0.77942462005,
+                    "_score": 24.474216,
+                    "cosine": 1.626992698008,
+                    "vclaim": "The Democrats' health care bill 'gives a new Health Choices Commissioner the right to look at an individual's tax return to determine what medical benefits or subsidies that person qualifies for.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/oct/29/concerned-women-america/conservative-group-says-health-care-reform-bill-al/"
+                },
+                "4": {
+                    "_id": "18126",
+                    "combined_score": 0.771376457403,
+                    "_score": 19.609089,
+                    "cosine": 1.685109192975,
+                    "vclaim": "Says Ohio U.S. Rep. Troy Balderson backs a 'massive tax giveaway' for corporations 'by slashing Medicare and Social Security.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2018/sep/26/danny-oconnor/danny-oconnors-ad-ohio-really-slashes/"
+                },
+                "5": {
+                    "_id": "6543",
+                    "combined_score": 0.770510805687,
+                    "_score": 22.664461,
+                    "cosine": 1.644163822367,
+                    "vclaim": "On protecting Social Security benefits and changing the retirement age.",
+                    "link": "http://www.politifact.com/ohio/statements/2010/oct/04/bob-gibbs/gibbs-website-public-statements-vary-social-securi/"
+                }
+            }
+        },
+        {
+            "sentence": "The $850,000 lump sum lottery payment is considered an asset -- not income.",
+            "retrieved": {
+                "1": {
+                    "_id": "27696",
+                    "combined_score": 0.864148577175,
+                    "_score": 18.660368,
+                    "cosine": 1.580655542647,
+                    "vclaim": "Payment of U.S. federal income taxes is voluntary.",
+                    "link": "https://www.snopes.com/fact-check/is-income-tax-voluntary/"
+                },
+                "2": {
+                    "_id": "32190",
+                    "combined_score": 0.839133084598,
+                    "_score": 12.468117,
+                    "cosine": 1.684890696329,
+                    "vclaim": "A $1.5 billion powerball lottery drawing scheduled for 13 January 2016 has been cancelled.",
+                    "link": "https://www.snopes.com/fact-check/powerball-lottery-not-cancelled/"
+                },
+                "3": {
+                    "_id": "13022",
+                    "combined_score": 0.793022405513,
+                    "_score": 11.538296,
+                    "cosine": 1.667711361588,
+                    "vclaim": "The Georgia Lottery paid out $2.3 billion in prizes during the last fiscal year.",
+                    "link": "http://www.politifact.com/georgia/statements/2013/may/14/georgia-lottery/numbers-back-lottery-payouts-mega-millions-powerba/"
+                },
+                "4": {
+                    "_id": "6233",
+                    "combined_score": 0.764724137288,
+                    "_score": 10.023375,
+                    "cosine": 1.676020690564,
+                    "vclaim": "'I didn’t try to push' a bill to reduce lottery scholarship proceeds for students.",
+                    "link": "http://www.politifact.com/tennessee/statements/2012/aug/12/dolores-gresham/education-chair-gresham-said-she-didnt-push-bill-s/"
+                },
+                "5": {
+                    "_id": "6843",
+                    "combined_score": 0.762608318186,
+                    "_score": 9.443315,
+                    "cosine": 1.685961289349,
+                    "vclaim": "'The Georgia Lottery Corp. has only once in the past 16 years paid out the agreed upon 35 percent of proceeds to the account which funds the HOPE scholarship.'",
+                    "link": "http://www.politifact.com/georgia/statements/2011/apr/27/allie-mccullen/luck-runs-out-student-lottery-claim/"
+                }
+            }
+        },
+        {
+            "sentence": "So, under state policy, Fick can legally get food stamps -- even if he has hundreds of thousands of dollars in the bank.",
+            "retrieved": {
+                "1": {
+                    "_id": "9965",
+                    "combined_score": 0.903417781535,
+                    "_score": 31.799223,
+                    "cosine": 1.746666033197,
+                    "vclaim": "'Some of these members of the House of Representatives get hundreds of thousands of dollars in farm subsidies' but want to cut food stamps.",
+                    "link": "http://www.politifact.com/ohio/statements/2013/jun/18/sherrod-brown/sen-sherrod-brown-says-lawmakers-who-take-farm-sub/"
+                },
+                "2": {
+                    "_id": "5837",
+                    "combined_score": 0.786976990303,
+                    "_score": 21.007692,
+                    "cosine": 1.781440850873,
+                    "vclaim": "People can use food stamps 'for anything,' including 'to go to Hawaii,' and even millionaires can qualify.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2011/dec/01/newt-gingrich/Gingrich-says-use-food-stamps-Hawaii/"
+                },
+                "3": {
+                    "_id": "13160",
+                    "combined_score": 0.754232677222,
+                    "_score": 15.344505,
+                    "cosine": 1.821733808111,
+                    "vclaim": "'When is a farm bill not a farm bill? When 90 percent of it is for food stamps.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2013/nov/06/brad-blakeman/brad-blakeman-says-90-farm-bill-goes-food-stamps/"
+                },
+                "4": {
+                    "_id": "10692",
+                    "combined_score": 0.722642366193,
+                    "_score": 15.168377,
+                    "cosine": 1.799225133199,
+                    "vclaim": "'More than 43 percent of all food stamps are given to illegals.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2012/jun/19/facebook-posts/facebook-post-says-more-43-percent-all-food-stamps/"
+                },
+                "5": {
+                    "_id": "16634",
+                    "combined_score": 0.718453326746,
+                    "_score": 16.967205,
+                    "cosine": 1.775086869157,
+                    "vclaim": "'19% of WVians rely on SNAP,' or food stamps.",
+                    "link": "http://www.politifact.com/west-virginia/statements/2019/may/10/joe-manchin/are-19-west-virginians-food-stamps/"
+                }
+            }
+        },
+        {
+            "sentence": "\"This angers me.",
+            "retrieved": {
+                "1": {
+                    "_id": "23451",
+                    "combined_score": 0.791898302819,
+                    "_score": 9.962095,
+                    "cosine": 1.285036000335,
+                    "vclaim": "Gay Canadian filmmaker Chris Ball was severely beaten and bloodied by emboldened Donald Trump supporters shortly after the 2016 election.",
+                    "link": "https://www.snopes.com/fact-check/trump-supporters-beat-gay-man-in-california/"
+                },
+                "2": {
+                    "_id": "19230",
+                    "combined_score": 0.770340720172,
+                    "_score": 6.7736874,
+                    "cosine": 1.327022748157,
+                    "vclaim": "'The president came in and campaigned against me 12 times.'",
+                    "link": "http://www.politifact.com/ohio/statements/2011/jun/17/john-kasich/gov-john-kasich-still-claiming-obama-made-dozen-ca/"
+                },
+                "3": {
+                    "_id": "4468",
+                    "combined_score": 0.76455823037,
+                    "_score": 13.436014,
+                    "cosine": 1.215134648598,
+                    "vclaim": "Says the tax bill 'is going to cost me a fortune, this thing -- believe me. Believe me, this is not good for me.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2017/nov/30/donald-trump/will-gop-tax-bill-cost-donald-trump-fortune-no/"
+                },
+                "4": {
+                    "_id": "1010",
+                    "combined_score": 0.690194655809,
+                    "_score": 6.231074,
+                    "cosine": 1.297824157452,
+                    "vclaim": "Did Trump Say, ‘Being An Atheist Gives Me An Edge In Every Deal’?",
+                    "link": "https://checkyourfact.com/2019/06/07/fact-check-trump-atheist-edge-deal/"
+                },
+                "5": {
+                    "_id": "5522",
+                    "combined_score": 0.670667488062,
+                    "_score": 8.255258,
+                    "cosine": 1.255384799051,
+                    "vclaim": "Says Donald Trump 'is going to go out and carpet bomb' the Middle East.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/aug/02/joe-biden/joe-biden-wrong-say-donald-trump-has-called-carpet/"
+                }
+            }
+        },
+        {
+            "sentence": "It really makes me angry,\" said Rep Charles Brunner, who represents Fick's hometown of Auburn in Michigan's 96th District.",
+            "retrieved": {
+                "1": {
+                    "_id": "27529",
+                    "combined_score": 0.873014747942,
+                    "_score": 15.796386,
+                    "cosine": 1.53753749248,
+                    "vclaim": "An Alabama state senator published an open letter saying that the state of Georgia shouldn't have been allowed to compete in the Olympics.",
+                    "link": "https://www.snopes.com/fact-check/alabama-legislator-angry-that-state-of-georgia-allowed-in-olympics/"
+                },
+                "2": {
+                    "_id": "17188",
+                    "combined_score": 0.86458147226,
+                    "_score": 13.36803,
+                    "cosine": 1.591843245466,
+                    "vclaim": "U.S. Rep. Jim Marshall (D-Ga.) refuses to return $37,000 in 'dirty' campaign contributions from U.S. Rep. Charles Rangel (D-N.Y.)",
+                    "link": "http://www.politifact.com/georgia/statements/2010/aug/23/national-republican-congressional-committee/marshall/"
+                },
+                "3": {
+                    "_id": "18944",
+                    "combined_score": 0.817527354189,
+                    "_score": 15.719045,
+                    "cosine": 1.505474146747,
+                    "vclaim": "Jim Dunnam 'has not lived in the district he represents for years now.'",
+                    "link": "http://www.politifact.com/texas/statements/2010/sep/06/republican-party-texas/republican-party-texas-says-democratic-house-leade/"
+                },
+                "4": {
+                    "_id": "1705",
+                    "combined_score": 0.810482066402,
+                    "_score": 12.190799,
+                    "cosine": 1.587563968248,
+                    "vclaim": "Around '$15 billion' has been stolen from Rep. Elijah Cummings' congressional district in Maryland.",
+                    "link": "https://www.truthorfiction.com/trump-elijah-cummings-16-billion-dollars/"
+                },
+                "5": {
+                    "_id": "29702",
+                    "combined_score": 0.767280646463,
+                    "_score": 10.198684,
+                    "cosine": 1.609909344895,
+                    "vclaim": "Meryl Streep was fired by director Ron Howard from a from a 'Happy Days' reboot project for lying about Donald Trump mocking a disabled reporter.",
+                    "link": "https://www.snopes.com/fact-check/meryl-streep-fired/"
+                }
+            }
+        },
+        {
+            "sentence": "He is one of a number of lawmakers in a state battered by high unemployment and a whopping budget deficit now fuming over Michigan's lottery loophole.",
+            "retrieved": {
+                "1": {
+                    "_id": "8396",
+                    "combined_score": 0.817099563337,
+                    "_score": 21.693459,
+                    "cosine": 1.75486548679,
+                    "vclaim": "Wisconsin Gov. Scott Walker’s estimate of a $3.6 billion state budget deficit is 'manufactured' and a 'bogus figure.'",
+                    "link": "http://www.politifact.com/wisconsin/statements/2011/feb/25/mark-pocan/wisconsin-state-rep-mark-pocan-says-gov-scott-walk/"
+                },
+                "2": {
+                    "_id": "9795",
+                    "combined_score": 0.675151305599,
+                    "_score": 19.84357,
+                    "cosine": 1.665660503026,
+                    "vclaim": "Says he faced 'a record budget deficit' in Virginia in 2014.",
+                    "link": "http://www.politifact.com/virginia/statements/2015/dec/21/terry-mcauliffe/mcauliffes-misspoken-claim-about-facing-record-def/"
+                },
+                "3": {
+                    "_id": "15997",
+                    "combined_score": 0.664651144709,
+                    "_score": 18.86811,
+                    "cosine": 1.675037980355,
+                    "vclaim": "'For six years, I served our community as a conservative state legislator. In every one of those years, I helped balance the state's budget.'",
+                    "link": "http://www.politifact.com/georgia/statements/2010/jun/22/clay-cox/congressional-candidate-clay-cox-says-he-helped-ba/"
+                },
+                "4": {
+                    "_id": "4027",
+                    "combined_score": 0.648617532562,
+                    "_score": 27.581167,
+                    "cosine": 1.49499333345,
+                    "vclaim": "People protesting at an ICE facility were struck and injured by a truck driven by a corrections officer.",
+                    "link": "https://www.truthorfiction.com/were-protesters-of-american-immigration-policies-hit-by-a-truck-and-injured-in-rhode-island/"
+                },
+                "5": {
+                    "_id": "9705",
+                    "combined_score": 0.644579563204,
+                    "_score": 19.829498,
+                    "cosine": 1.639126285967,
+                    "vclaim": "The balanced-budget amendment once came within one vote of passing Congress but was defeated because of the no vote from a top Senate Republican, and Rick Santorum says he 'stood up and called for him to resign his chairmanship.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2011/dec/02/rick-santorum/Rick-Santorum-says-he-called-for-resignation/"
+                }
+            }
+        },
+        {
+            "sentence": "\"The thing that really bothers me is [that] in our state we have so many people out of work ... so many people in need of assistance, and for a lottery winner to get food stamps\" is unfair, Brunner said.",
+            "retrieved": {
+                "1": {
+                    "_id": "4088",
+                    "combined_score": 0.820992298572,
+                    "_score": 30.479624,
+                    "cosine": 1.718316794809,
+                    "vclaim": "According to a meme, 91 percent of refugees receive food stamps, 73 percent receive 'Medicard,' and 63 percent receive 'cash welfare.'",
+                    "link": "https://www.truthorfiction.com/do-high-percentages-of-refugees-receive-food-stamps-medicard-and-cash-welfare/"
+                },
+                "2": {
+                    "_id": "13283",
+                    "combined_score": 0.795316371856,
+                    "_score": 31.856892,
+                    "cosine": 1.681907677424,
+                    "vclaim": "'One of the reasons that Social Security is in so much trouble is that the only funding stream comes from people who get a wage. The people who get wages is declining dramatically.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2015/aug/12/mike-huckabee/mike-huckabee-says-social-security-imperiled-drama/"
+                },
+                "3": {
+                    "_id": "21931",
+                    "combined_score": 0.785952297772,
+                    "_score": 30.276993,
+                    "cosine": 1.695247028401,
+                    "vclaim": "The Department of Agriculture rejected a request by Puerto Rico that Nutrition Assistance Program rules be waived so that food stamps recipients could use EBT cards to purchase hot food.",
+                    "link": "https://www.snopes.com/fact-check/puerto-rico-food-stamps/"
+                },
+                "4": {
+                    "_id": "838",
+                    "combined_score": 0.774714652129,
+                    "_score": 38.334713,
+                    "cosine": 1.584011175838,
+                    "vclaim": "A viral image shows Tennessee residents queueing in cold temperatures for free medical care in February 2019.",
+                    "link": "https://www.truthorfiction.com/is-this-a-2019-photograph-of-tennessee-residents-queueing-in-the-cold-for-medical-assistance/"
+                },
+                "5": {
+                    "_id": "16402",
+                    "combined_score": 0.768916739873,
+                    "_score": 25.097065,
+                    "cosine": 1.74898970148,
+                    "vclaim": "State lawmakers are spending taxpayer money for parking that billionaire Arthur Blank could build while paying some state employees so little they are on food stamps.",
+                    "link": "http://www.politifact.com/georgia/statements/2015/mar/23/tyrone-brooks/brooks-lacks-data-back-food-stamp-claim/"
+                }
+            }
+        },
+        {
+            "sentence": "\"If it's a glitch in the law, we've got to fix it now.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "27435",
+                    "combined_score": 0.765199506386,
+                    "_score": 11.571073,
+                    "cosine": 1.62795464302,
+                    "vclaim": "The bill presented by a famed fix-it man detailed the difference between value of work done and value of the knowledge behind it.",
+                    "link": "https://www.snopes.com/fact-check/know-where-man/"
+                },
+                "2": {
+                    "_id": "2975",
+                    "combined_score": 0.762543777811,
+                    "_score": 18.448471,
+                    "cosine": 1.493930084232,
+                    "vclaim": "Is it correct to describe a strike as 'illegal'? Not in South African law | Africa Check",
+                    "link": "https://africacheck.org/reports/is-it-correct-to-describe-a-strike-as-illegal-not-in-south-african-law/"
+                },
+                "3": {
+                    "_id": "9351",
+                    "combined_score": 0.75976830713,
+                    "_score": 11.330851,
+                    "cosine": 1.62905625485,
+                    "vclaim": "'What we said was, you can keep (your plan) if it hasn’t changed since the law passed.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2013/nov/06/barack-obama/barack-obama-says-what-hed-said-was-you-could-keep/"
+                },
+                "4": {
+                    "_id": "872",
+                    "combined_score": 0.675120632317,
+                    "_score": 17.221605,
+                    "cosine": 1.460877985714,
+                    "vclaim": "Rep. Alexandria Ocasio-Cortez said that if owning guns were a right, it would be in the Constitution.",
+                    "link": "https://www.truthorfiction.com/did-rep-alexandria-ocasio-cortez-say-if-owning-guns-was-a-right-it-would-be-in-the-constitution/"
+                },
+                "5": {
+                    "_id": "24785",
+                    "combined_score": 0.663693687281,
+                    "_score": 17.737879,
+                    "cosine": 1.443541056271,
+                    "vclaim": "Letter suggests fixing the U.S. economy by giving workers over age 50 $1 million each.",
+                    "link": "https://www.snopes.com/fact-check/how-to-fix-the-economy/"
+                }
+            }
+        },
+        {
+            "sentence": "Today, Brunner introduced legislation in the Michigan House of Representatives calling for the state to factor in the assets of food stamp applicants, not just their income.",
+            "retrieved": {
+                "1": {
+                    "_id": "9965",
+                    "combined_score": 0.756959811672,
+                    "_score": 21.064037,
+                    "cosine": 1.776120806318,
+                    "vclaim": "'Some of these members of the House of Representatives get hundreds of thousands of dollars in farm subsidies' but want to cut food stamps.",
+                    "link": "http://www.politifact.com/ohio/statements/2013/jun/18/sherrod-brown/sen-sherrod-brown-says-lawmakers-who-take-farm-sub/"
+                },
+                "2": {
+                    "_id": "19886",
+                    "combined_score": 0.720302209503,
+                    "_score": 23.010796,
+                    "cosine": 1.703024616196,
+                    "vclaim": "Says that Secretary of State Jon Husted and former secretary Jennifer Brunner both have supported a provision in Senate Bill 47 that would limit the days organizers have to collect signatures for initiative and referendum petitions.",
+                    "link": "http://www.politifact.com/ohio/statements/2013/apr/01/bill-seitz/says-secretary-state-jon-husted-and-former-secreta/"
+                },
+                "3": {
+                    "_id": "24121",
+                    "combined_score": 0.712076810645,
+                    "_score": 21.57363,
+                    "cosine": 1.727454860946,
+                    "vclaim": "In June 2018, the House of Representatives passed a bill that would deny all veterans access to food stamps.",
+                    "link": "https://www.snopes.com/fact-check/veterans-food-stamps/"
+                },
+                "4": {
+                    "_id": "3307",
+                    "combined_score": 0.702197203246,
+                    "_score": 25.154854,
+                    "cosine": 1.641156175003,
+                    "vclaim": "“You will also recall that Census 2011 outlined the successes in extending basic services. The report said the number of households with access to electricity is now at 12.1 million, which translates to 85%. Nine out of 10 households have access to water.”",
+                    "link": "https://africacheck.org/reports/the-state-of-the-nation-address-fact-checked/"
+                },
+                "5": {
+                    "_id": "3923",
+                    "combined_score": 0.702153812096,
+                    "_score": 30.399128,
+                    "cosine": 1.526853602316,
+                    "vclaim": "“The debt that is guaranteed by the state in Eskom is R350 billion. In SANRAL, it’s R38.9 billion. In South African Airways, it’s R19.1 billion. In Denel, it’s R1.8 billion. In the Road Accident Fund, it’s R8.5 billion.”",
+                    "link": "https://africacheck.org/reports/verifying-key-claims-in-the-2018-state-of-the-nation-debate/"
+                }
+            }
+        },
+        {
+            "sentence": "Lawmakers are now scrambling to close that loophole.",
+            "retrieved": {
+                "1": {
+                    "_id": "4719",
+                    "combined_score": 0.924805469613,
+                    "_score": 17.951628,
+                    "cosine": 1.586351573472,
+                    "vclaim": "'Republicans in Congress refuse to list a single tax loophole they are willing to close.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2012/apr/05/barack-obama/obama-says-republicans-congress-wont-name-one-tax/"
+                },
+                "2": {
+                    "_id": "25728",
+                    "combined_score": 0.829184682358,
+                    "_score": 11.418734,
+                    "cosine": 1.631333423479,
+                    "vclaim": "Lawmakers are creating harsher criminal penalties for protesters",
+                    "link": "https://www.snopes.com/fact-check/lawmakers-criminalize-peaceful-protest/"
+                },
+                "3": {
+                    "_id": "20300",
+                    "combined_score": 0.80485820948,
+                    "_score": 14.248099,
+                    "cosine": 1.57252628411,
+                    "vclaim": "'Georgia lawmakers are now considering passing the most extreme gun bill in America.'",
+                    "link": "http://www.politifact.com/georgia/statements/2014/mar/05/americans-responsible-solutions/gun-bill-claim-under-fire/"
+                },
+                "4": {
+                    "_id": "16781",
+                    "combined_score": 0.750402206269,
+                    "_score": 8.473319,
+                    "cosine": 1.630275299169,
+                    "vclaim": "'Under the ruling of the Supreme Court, any lobbyist could go into any legislator and say, if you don't vote our way on this bill, we're going to run a million-dollar campaign against you in your district.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2010/mar/17/david-axelrod/axelrod-says-supreme-court-ruling-enables-lobbyist/"
+                },
+                "5": {
+                    "_id": "14376",
+                    "combined_score": 0.730331882246,
+                    "_score": 13.282321,
+                    "cosine": 1.54305016067,
+                    "vclaim": "Since the salary for state lawmakers was raised to $79,500, 'that purchasing power has now been reduced to $53,000.'",
+                    "link": "http://www.politifact.com/new-york/statements/2016/nov/18/carl-heastie/salary-worth-less-today-state-lawmakers-when-first/"
+                }
+            }
+        },
+        {
+            "sentence": "\"We are actively seeking a change to the food assistance policy to see that only those who are truly [in] need qualify,\" said Gisgie Gendreau, a spokeswoman for Michigan's Department of Human Services.",
+            "retrieved": {
+                "1": {
+                    "_id": "27230",
+                    "combined_score": 0.832978041497,
+                    "_score": 25.208677,
+                    "cosine": 1.67282196779,
+                    "vclaim": "The state of Wisconsin banned all FoodShare/EBT programs through 2019 due to budgetary concerns.",
+                    "link": "https://www.snopes.com/fact-check/wi-to-eliminate-food-assistance/"
+                },
+                "2": {
+                    "_id": "17052",
+                    "combined_score": 0.815835459938,
+                    "_score": 21.735615,
+                    "cosine": 1.715377897007,
+                    "vclaim": "'60 percent of people on food assistance are working.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2013/dec/11/barbara-lee/barbara-lee-says-60-percent-people-food-assistance/"
+                },
+                "3": {
+                    "_id": "21931",
+                    "combined_score": 0.790385012659,
+                    "_score": 20.956247,
+                    "cosine": 1.710047733376,
+                    "vclaim": "The Department of Agriculture rejected a request by Puerto Rico that Nutrition Assistance Program rules be waived so that food stamps recipients could use EBT cards to purchase hot food.",
+                    "link": "https://www.snopes.com/fact-check/puerto-rico-food-stamps/"
+                },
+                "4": {
+                    "_id": "10110",
+                    "combined_score": 0.77306076468,
+                    "_score": 29.83938,
+                    "cosine": 1.559069290832,
+                    "vclaim": "Says the federal government restricts 'how much salt we can put on our food.'",
+                    "link": "http://www.politifact.com/texas/statements/2010/nov/06/rick-perry/gov-rick-perry-says-federal-government-regulates-h/"
+                },
+                "5": {
+                    "_id": "8914",
+                    "combined_score": 0.75507060305,
+                    "_score": 20.096788,
+                    "cosine": 1.699177232474,
+                    "vclaim": "Says U.S. Rep. Ron DeSantis 'voted in favor of food stamps for illegal immigrants.'",
+                    "link": "http://www.politifact.com/punditfact/statements/2018/mar/29/uncle-sams-misguided-children/misleading-attack-ron-desantis-about-farm-bill-foo/"
+                }
+            }
+        },
+        {
+            "sentence": "Fick's attorney said his client will stop using his Bridge Card if Michigan changes its policy, and doesn't feel bad about using the taxpayer funded program because Fick just paid more than $1 million of his lottery winnings in state taxes.",
+            "retrieved": {
+                "1": {
+                    "_id": "17995",
+                    "combined_score": 0.812339307689,
+                    "_score": 27.77063,
+                    "cosine": 1.578524114091,
+                    "vclaim": "'Newgard owed more than $13,000 for unpaid taxes on his $1 million Milwaukie apartment complex.'",
+                    "link": "http://www.politifact.com/oregon/statements/2012/oct/11/future-pac-oregon-house-democrats/did-steve-newgard-owe-13000-back-taxes-1-million-p/"
+                },
+                "2": {
+                    "_id": "15074",
+                    "combined_score": 0.809992879793,
+                    "_score": 24.203821,
+                    "cosine": 1.639520251256,
+                    "vclaim": "In addition to his compensation as a judge, 'Roy Moore and his wife (paid themselves) over $1 million from a charity they ran.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2017/sep/05/senate-leadership-fund/did-roy-moore-take-1-million-charity-he-ran/"
+                },
+                "3": {
+                    "_id": "14895",
+                    "combined_score": 0.80505656842,
+                    "_score": 28.207745,
+                    "cosine": 1.565687718329,
+                    "vclaim": "'Gonzales’ losing campaign against me last spring was funded with more than $1 million from supporters and allies of Governor Bruce Rauner.'",
+                    "link": "http://www.politifact.com/illinois/statements/2016/aug/18/michael-madigan/madigan-claim-gonzales-campaign-fund-mostly-false/"
+                },
+                "4": {
+                    "_id": "17743",
+                    "combined_score": 0.803146434356,
+                    "_score": 21.96723,
+                    "cosine": 1.673961637648,
+                    "vclaim": "'The Public Employee Retirement System is making more millionaires than the Oregon state lottery.'",
+                    "link": "http://www.politifact.com/oregon/statements/2011/jun/16/ted-ferrioli/oregon-pers-making-more-millionaires-oregon-lotter/"
+                },
+                "5": {
+                    "_id": "8734",
+                    "combined_score": 0.782317781339,
+                    "_score": 23.288647,
+                    "cosine": 1.635997570978,
+                    "vclaim": "Says Gov. Rick Scott is 'spending a quarter of a million of our tax dollars to robocall people.'",
+                    "link": "http://www.politifact.com/florida/statements/2011/aug/22/florida-voter/caller-accuses-gov-rick-scott-using-tax-dollars-hi/"
+                }
+            }
+        },
+        {
+            "sentence": "\"He feels like he's paid into the system,\" Wilson said.",
+            "retrieved": {
+                "1": {
+                    "_id": "27818",
+                    "combined_score": 0.877609025937,
+                    "_score": 16.661472,
+                    "cosine": 1.60926505984,
+                    "vclaim": "ABC paid Darren Wilson $500,000 for his interview with George Stephanopoulos.",
+                    "link": "https://www.snopes.com/fact-check/bidding-bounty/"
+                },
+                "2": {
+                    "_id": "14661",
+                    "combined_score": 0.780142853192,
+                    "_score": 16.946518,
+                    "cosine": 1.524246544119,
+                    "vclaim": "'We lowered the business tax from 4 percent down to 1 percent.'",
+                    "link": "http://www.politifact.com/texas/statements/2010/jan/22/rick-perry/perry-says-he-cut-business-tax/"
+                },
+                "3": {
+                    "_id": "16415",
+                    "combined_score": 0.767446886513,
+                    "_score": 13.2670555,
+                    "cosine": 1.598862407101,
+                    "vclaim": "Says cuts to Medicare affect people who have already 'paid in. We paid for it.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2014/sep/09/national-republican-senatorial-committee/how-much-have-medicare-beneficiaries-paid-system/"
+                },
+                "4": {
+                    "_id": "13653",
+                    "combined_score": 0.75,
+                    "_score": 9.03054,
+                    "cosine": 1.682497962467,
+                    "vclaim": "Dave Brat said 'the best way to fix Social Security would be to give seniors back what they paid in and no more.'",
+                    "link": "http://www.politifact.com/virginia/statements/2014/nov/02/jack-trammell/trammell-brat-says-seniors-should-get-back-what-on/"
+                },
+                "5": {
+                    "_id": "16072",
+                    "combined_score": 0.724305345091,
+                    "_score": 14.863447,
+                    "cosine": 1.52733290957,
+                    "vclaim": "'(Chris Christie) has not paid one dollar of state money into our pension system, and then states that the system is broke.'",
+                    "link": "http://www.politifact.com/new-jersey/statements/2011/dec/02/loretta-weinberg/loretta-weinberg-criticizes-chris-christie-for-not/"
+                }
+            }
+        },
+        {
+            "sentence": "Even though his client won more money than many people earn in a lifetime, Wilson said Fick is not living like a millionaire.",
+            "retrieved": {
+                "1": {
+                    "_id": "27426",
+                    "combined_score": 0.935832852396,
+                    "_score": 23.352558,
+                    "cosine": 1.605518728433,
+                    "vclaim": "Corona beer founder Antonino Fernandez made everyone in his village a millionaire after his death.",
+                    "link": "https://www.snopes.com/fact-check/corona-founder-made-every-person-in-his-village-a-millionaire/"
+                },
+                "2": {
+                    "_id": "20222",
+                    "combined_score": 0.83335662603,
+                    "_score": 21.617628,
+                    "cosine": 1.563765053518,
+                    "vclaim": "'If people work and make more money, they lose more in benefits than they would earn in salary.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2015/jan/14/marco-rubio/new-book-marco-rubio-says-lose-more-benefits-they-/"
+                },
+                "3": {
+                    "_id": "14141",
+                    "combined_score": 0.810228075287,
+                    "_score": 16.253437,
+                    "cosine": 1.653277824376,
+                    "vclaim": "Says Donald Trump 'cashed in' on Sept. 11,  'collecting $150,000 in federal funds intended to help small businesses recover — even though days after the attack Trump said his properties were not affected.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2016/jul/27/joseph-crowley/did-donald-trump-cash-federal-funds-days-after-911/"
+                },
+                "4": {
+                    "_id": "21322",
+                    "combined_score": 0.802892380672,
+                    "_score": 19.139374,
+                    "cosine": 1.590398665158,
+                    "vclaim": "A contestant on 'Who Wants to Be a Millionaire' needed audience assistance in defining 'horsepower,' as opposed to 'llamathrust' and 'zebraforce.'",
+                    "link": "https://www.snopes.com/fact-check/millionaire-horsepower-llamathrust/"
+                },
+                "5": {
+                    "_id": "2678",
+                    "combined_score": 0.777781915818,
+                    "_score": 18.245275,
+                    "cosine": 1.589498344002,
+                    "vclaim": "'If you worked every single day, making $5000/day, from the time Columbus sailed to America, to the time you are reading this tweet, you would still not be a billionaire, and you would still have less money than Jeff Bezos makes in a week.'",
+                    "link": "https://www.truthorfiction.com/if-you-made-5000-a-day-starting-in-1492-would-you-still-have-less-money-than-jeff-bezos/"
+                }
+            }
+        },
+        {
+            "sentence": "\"He lives a simple life,\" Wilson said.",
+            "retrieved": {
+                "1": {
+                    "_id": "29730",
+                    "combined_score": 0.790703683824,
+                    "_score": 9.67959,
+                    "cosine": 1.633990594187,
+                    "vclaim": "Darren Wilson was shot by a group of white men outside a 7-Eleven.",
+                    "link": "https://www.snopes.com/fact-check/darren-wilson-shot/"
+                },
+                "2": {
+                    "_id": "25911",
+                    "combined_score": 0.77646139613,
+                    "_score": 9.67959,
+                    "cosine": 1.62365445684,
+                    "vclaim": "Arizona State Senate candidate Bobby Wilson fatally shot his mother in 1963.",
+                    "link": "https://www.snopes.com/fact-check/bobby-wilson-shooting/"
+                },
+                "3": {
+                    "_id": "22726",
+                    "combined_score": 0.719787742901,
+                    "_score": 10.145105,
+                    "cosine": 1.57279413467,
+                    "vclaim": "17-year-old Haley Wilson is missing from her Amarillo, Texas, home.",
+                    "link": "https://www.snopes.com/fact-check/haley-wilson/"
+                },
+                "4": {
+                    "_id": "27818",
+                    "combined_score": 0.659666234884,
+                    "_score": 9.645664,
+                    "cosine": 1.539601156397,
+                    "vclaim": "ABC paid Darren Wilson $500,000 for his interview with George Stephanopoulos.",
+                    "link": "https://www.snopes.com/fact-check/bidding-bounty/"
+                },
+                "5": {
+                    "_id": "9833",
+                    "combined_score": 0.613234514581,
+                    "_score": 10.21145,
+                    "cosine": 1.494077899901,
+                    "vclaim": "Says a man in Ferguson, Mo., was photographed holding a sign that said, 'No mother should have to fear for her son's life every time he robs a store.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2014/dec/04/chain-email/viral-photo-ferguson-protester-doesnt-withstand-cl/"
+                }
+            }
+        },
+        {
+            "sentence": "\"He doesn't even have the Internet.\"",
+            "retrieved": {
+                "1": {
+                    "_id": "13771",
+                    "combined_score": 0.844344032816,
+                    "_score": 10.578274,
+                    "cosine": 1.733141900744,
+                    "vclaim": "'He admits he still doesn't know how to use a computer, can't send an e-mail.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2008/sep/12/barack-obama/mccain-is-not-computer-savvy/"
+                },
+                "2": {
+                    "_id": "21569",
+                    "combined_score": 0.770332424716,
+                    "_score": 10.261166,
+                    "cosine": 1.679979393201,
+                    "vclaim": "Donald Trump stated he would contact Bill Gates to shut down or ban the internet.",
+                    "link": "https://www.snopes.com/fact-check/trump-wants-shut-internet/"
+                },
+                "3": {
+                    "_id": "2550",
+                    "combined_score": 0.721939634046,
+                    "_score": 8.785614,
+                    "cosine": 1.683389061923,
+                    "vclaim": "Obama Administration Plans to Seize Control of the Internet and Install a\r\nKill Switch",
+                    "link": "https://www.truthorfiction.com/obama-internet-kill-switch/"
+                },
+                "4": {
+                    "_id": "11708",
+                    "combined_score": 0.718231611632,
+                    "_score": 10.042247,
+                    "cosine": 1.642425660332,
+                    "vclaim": "'Less than half of the poorest American households have a home Internet subscription.'",
+                    "link": "http://www.politifact.com/texas/statements/2015/aug/20/julian-castro/julian-castro-says-less-half-lowest-income-america/"
+                },
+                "5": {
+                    "_id": "21786",
+                    "combined_score": 0.698784172804,
+                    "_score": 8.448496,
+                    "cosine": 1.673916949941,
+                    "vclaim": "A bogus “Internet Security Pack” message which claims to include security patches for Microsoft Outlook and Internet Explorer harbors a malevolent worm.",
+                    "link": "https://www.snopes.com/fact-check/internet-security-pack/"
+                }
+            }
+        }
+    ]
+}

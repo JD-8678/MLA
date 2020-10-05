@@ -33,7 +33,7 @@ def get_score(CLIENT, INDEX_NAME, sentence):
         }
     }
     try:
-        response = CLIENT.search(index=INDEX_NAME, body=query, size=10000)
+        response = CLIENT.search(index=INDEX_NAME, body=query, size=150)
     except:
         lib.logger.error(f"Error in elastic scoring for {sentence}")
         raise

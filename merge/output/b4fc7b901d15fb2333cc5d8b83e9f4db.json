@@ -1,0 +1,135 @@
+{
+    "mode": "url",
+    "url": "https://www.bbc.com/news/world-africa-54416424",
+    "index_name": "vclaims",
+    "fulltext": "The dam will produce electricity within the next 12 months, the Reuters news agency quotes President Sahle-Work Zewde as saying. There are already 4.9 billion cubic metres in the reservoir sitting behind the dam - this means that the water level has reached the height of the first two turbines.",
+    "overall": {
+        "1": {
+            "sentence": "The dam will produce electricity within the next 12 months, the Reuters news agency quotes President Sahle-Work Zewde as saying.",
+            "vclaim": "Is nuclear energy really the 'cheapest source of electricity'? | Africa Check",
+            "combined_score": 0.893613384624,
+            "sum_combined_score": 0.893613384624,
+            "link": "https://africacheck.org/reports/is-nuclear-energy-really-the-cheapest-source-of-electricity/"
+        },
+        "2": {
+            "sentence": "The dam will produce electricity within the next 12 months, the Reuters news agency quotes President Sahle-Work Zewde as saying.",
+            "vclaim": "Quotes Thomas Homer-Dixon as saying a windmill will 'never generate as much energy as was invested building it.'",
+            "combined_score": 0.875574763856,
+            "sum_combined_score": 0.875574763856,
+            "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/apr/12/facebook-posts/no-professor-didnt-say-windmills-will-never-genera/"
+        },
+        "3": {
+            "sentence": "The dam will produce electricity within the next 12 months, the Reuters news agency quotes President Sahle-Work Zewde as saying.",
+            "vclaim": "Photograph shows the chief of Brazil’s Kayapó tribe weeping over the approval of a hydroelectric dam project that will destroy tribal forest areas",
+            "combined_score": 0.813198388028,
+            "sum_combined_score": 0.813198388028,
+            "link": "https://www.snopes.com/fact-check/chief-complaint/"
+        },
+        "4": {
+            "sentence": "There are already 4.9 billion cubic metres in the reservoir sitting behind the dam - this means that the water level has reached the height of the first two turbines.",
+            "vclaim": "“You will also recall that Census 2011 outlined the successes in extending basic services. The report said the number of households with access to electricity is now at 12.1 million, which translates to 85%. Nine out of 10 households have access to water.”",
+            "combined_score": 0.809361209375,
+            "sum_combined_score": 0.809361209375,
+            "link": "https://africacheck.org/reports/the-state-of-the-nation-address-fact-checked/"
+        },
+        "5": {
+            "sentence": "The dam will produce electricity within the next 12 months, the Reuters news agency quotes President Sahle-Work Zewde as saying.",
+            "vclaim": "Are electricity tariffs in Nigeria really the lowest in Africa? | Africa Check",
+            "combined_score": 0.792731518813,
+            "sum_combined_score": 0.792731518813,
+            "link": "https://africacheck.org/reports/are-electricity-tariffs-in-nigeria-really-the-lowest-in-africa/"
+        }
+    },
+    "split": [
+        {
+            "sentence": "The dam will produce electricity within the next 12 months, the Reuters news agency quotes President Sahle-Work Zewde as saying.",
+            "retrieved": {
+                "1": {
+                    "_id": "2833",
+                    "combined_score": 0.893613384624,
+                    "_score": 17.402237,
+                    "cosine": 1.633953029337,
+                    "vclaim": "Is nuclear energy really the 'cheapest source of electricity'? | Africa Check",
+                    "link": "https://africacheck.org/reports/is-nuclear-energy-really-the-cheapest-source-of-electricity/"
+                },
+                "2": {
+                    "_id": "7716",
+                    "combined_score": 0.875574763856,
+                    "_score": 18.8406,
+                    "cosine": 1.577813354335,
+                    "vclaim": "Quotes Thomas Homer-Dixon as saying a windmill will 'never generate as much energy as was invested building it.'",
+                    "link": "http://www.politifact.com/facebook-fact-checks/statements/2019/apr/12/facebook-posts/no-professor-didnt-say-windmills-will-never-genera/"
+                },
+                "3": {
+                    "_id": "22250",
+                    "combined_score": 0.813198388028,
+                    "_score": 15.781818,
+                    "cosine": 1.620422811397,
+                    "vclaim": "Photograph shows the chief of Brazil’s Kayapó tribe weeping over the approval of a hydroelectric dam project that will destroy tribal forest areas",
+                    "link": "https://www.snopes.com/fact-check/chief-complaint/"
+                },
+                "4": {
+                    "_id": "3239",
+                    "combined_score": 0.792731518813,
+                    "_score": 16.85945,
+                    "cosine": 1.573064003928,
+                    "vclaim": "Are electricity tariffs in Nigeria really the lowest in Africa? | Africa Check",
+                    "link": "https://africacheck.org/reports/are-electricity-tariffs-in-nigeria-really-the-lowest-in-africa/"
+                },
+                "5": {
+                    "_id": "20881",
+                    "combined_score": 0.772261801915,
+                    "_score": 20.153357,
+                    "cosine": 1.460384540333,
+                    "vclaim": "The Reuters news agency has proscribed the use of the word ‘terrorists’ to describe those who pulled off the September 11 terrorist attacks on America.",
+                    "link": "https://www.snopes.com/fact-check/reuters-or-wrong/"
+                }
+            }
+        },
+        {
+            "sentence": "There are already 4.9 billion cubic metres in the reservoir sitting behind the dam - this means that the water level has reached the height of the first two turbines.",
+            "retrieved": {
+                "1": {
+                    "_id": "3307",
+                    "combined_score": 0.809361209375,
+                    "_score": 26.23875,
+                    "cosine": 1.548371547912,
+                    "vclaim": "“You will also recall that Census 2011 outlined the successes in extending basic services. The report said the number of households with access to electricity is now at 12.1 million, which translates to 85%. Nine out of 10 households have access to water.”",
+                    "link": "https://africacheck.org/reports/the-state-of-the-nation-address-fact-checked/"
+                },
+                "2": {
+                    "_id": "146",
+                    "combined_score": 0.789903922167,
+                    "_score": 32.772236,
+                    "cosine": 1.454608699592,
+                    "vclaim": "Stephen Harper: “For the first time in history, this country actually has GHG emissions that have been falling.” - FactsCanada",
+                    "link": "http://factscan.ca/stephen-harper-for-the-first-time-in-history-this-country-actually-has-ghg-emissions-that-have-been-falling/"
+                },
+                "3": {
+                    "_id": "3982",
+                    "combined_score": 0.71184914071,
+                    "_score": 36.216766,
+                    "cosine": 1.361118611889,
+                    "vclaim": "'The Only Existing Footage Of 1st Plane Hitting WTC' YouTube video shows the only existing footage of Flight 11 striking the north tower of the World Trade Center on September 11 2001.",
+                    "link": "https://www.truthorfiction.com/is-this-the-only-existing-footage-of-the-first-plane-hitting-the-world-trade-center/"
+                },
+                "4": {
+                    "_id": "227",
+                    "combined_score": 0.696673595092,
+                    "_score": 25.190876,
+                    "cosine": 1.488152471336,
+                    "vclaim": "Rep. Alexandria Ocasio-Cortez said technology didn't allow for walls to be built across mountains.",
+                    "link": "https://www.truthorfiction.com/did-rep-alexandria-ocasio-cortez-say-all-the-technology-in-the-world-wont-let-us-build-a-wall-in-the-mountains/"
+                },
+                "5": {
+                    "_id": "1269",
+                    "combined_score": 0.68938623093,
+                    "_score": 26.156403,
+                    "cosine": 1.471429005652,
+                    "vclaim": "Federal government thank wildfires for clearing path for Trans Mountain pipeline",
+                    "link": "https://factcheck.afp.com//no-canadian-government-did-not-celebrate-wildfires-clearing-path-trans-mountain-pipeline"
+                }
+            }
+        }
+    ]
+}

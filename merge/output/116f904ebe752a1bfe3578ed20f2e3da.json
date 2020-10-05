@@ -1,0 +1,405 @@
+{
+    "mode": "url",
+    "url": "https://www.nytimes.com/2020/10/03/us/sean-conley-trump-doctor.html",
+    "index_name": "vclaims",
+    "fulltext": "As President Trump remains hospitalized at Walter Reed National Military Medical Center after testing positive for the coronavirus, one doctor is at the center of his treatment: Sean P. Conley, the White House physician. Stepping out of the hospital with a team of doctors behind him on Saturday, Dr. Conley gave an optimistic update on Mr. Trumps condition at a news conference. He said the president was \"doing very well\" and in \"exceptionally good spirits\" after spending Friday night at the hospital. The news conference put a national spotlight on Dr. Conley, who offered a distinctly different outlook from what Mark Meadows, the White House chief of staff, told reporters later. Heres what we know about Dr. Conley. He became the presidents physician two years ago Dr. Conley took on the role of White House physician in 2018 after Dr. Ronny L. Jackson was nominated to be secretary of the Department of Veterans Affairs. Dr. Jackson had to withdraw his name from consideration for that post amid accusations of inappropriate workplace behavior and was subsequently promoted by Mr. Trump to the position of assistant to the president and chief White House medical adviser. He is now running for a House seat in Texas.",
+    "overall": {
+        "1": {
+            "sentence": "Dr. Jackson had to withdraw his name from consideration for that post amid accusations of inappropriate workplace behavior and was subsequently promoted by Mr. Trump to the position of assistant to the president and chief White House medical adviser.",
+            "vclaim": "President Trump needs Senate confirmation in order for Steve Bannon to sit on the National Security Council.",
+            "combined_score": 0.97279386625,
+            "sum_combined_score": 1.819568378663,
+            "link": "https://www.snopes.com/fact-check/steve-bannon-need-senate-confirmation-hearing-sit-nsc/"
+        },
+        "2": {
+            "sentence": "As President Trump remains hospitalized at Walter Reed National Military Medical Center after testing positive for the coronavirus, one doctor is at the center of his treatment: Sean P. Conley, the White House physician.",
+            "vclaim": "President Trump's visit to Walter Reed Hospital in December 2018 was ignored by the media.",
+            "combined_score": 0.890061450001,
+            "sum_combined_score": 1.703043235725,
+            "link": "https://www.snopes.com/fact-check/president-trump-walter-reed-media/"
+        },
+        "3": {
+            "sentence": "The news conference put a national spotlight on Dr. Conley, who offered a distinctly different outlook from what Mark Meadows, the White House chief of staff, told reporters later.",
+            "vclaim": "White House Chief of Staff Reince Priebus sent an e-mail to White House staff directing them to address Ivanka Trump and Jared Kushner as 'secretary.'",
+            "combined_score": 0.887125814159,
+            "sum_combined_score": 1.69922238155,
+            "link": "https://www.snopes.com/fact-check/reince-priebus-secretary/"
+        },
+        "4": {
+            "sentence": "He is now running for a House seat in Texas.",
+            "vclaim": "On resigning her Texas House seat.",
+            "combined_score": 0.962239877005,
+            "sum_combined_score": 0.962239877005,
+            "link": "http://www.politifact.com/texas/statements/2017/jan/10/dawnna-dukes/full-flop-dawnna-dukes-sworn-after-vowing-resign-h/"
+        },
+        "5": {
+            "sentence": "Stepping out of the hospital with a team of doctors behind him on Saturday, Dr. Conley gave an optimistic update on Mr. Trumps condition at a news conference.",
+            "vclaim": "'Barron Trump Rushed To The Hospital, Hospital Releases Statement On His Condition'",
+            "combined_score": 0.885413785193,
+            "sum_combined_score": 0.885413785193,
+            "link": "http://www.politifact.com/punditfact/statements/2017/aug/10/blog-posting/its-fake-news-barron-trump-was-hospitalized-pneumo/"
+        }
+    },
+    "split": [
+        {
+            "sentence": "As President Trump remains hospitalized at Walter Reed National Military Medical Center after testing positive for the coronavirus, one doctor is at the center of his treatment: Sean P. Conley, the White House physician.",
+            "retrieved": {
+                "1": {
+                    "_id": "30513",
+                    "combined_score": 0.890061450001,
+                    "_score": 33.337322,
+                    "cosine": 1.859472960373,
+                    "vclaim": "President Trump's visit to Walter Reed Hospital in December 2018 was ignored by the media.",
+                    "link": "https://www.snopes.com/fact-check/president-trump-walter-reed-media/"
+                },
+                "2": {
+                    "_id": "28534",
+                    "combined_score": 0.884236800837,
+                    "_score": 38.16144,
+                    "cosine": 1.803648653928,
+                    "vclaim": "The 'Wall Street Journal' (or another large news outlet) has published documents leaked from Walter Reed Medical Center which show President Donald Trump's 'true' weight and prove a conspiracy to mislead the public.",
+                    "link": "https://www.snopes.com/fact-check/trump-weight-girther-leaked-documents/"
+                },
+                "3": {
+                    "_id": "25018",
+                    "combined_score": 0.871776022987,
+                    "_score": 43.80476,
+                    "cosine": 1.732764320942,
+                    "vclaim": "President Bush prayed with an injured Special Forces soldier at Walter Reed Medical Center.",
+                    "link": "https://www.snopes.com/fact-check/special-forces/"
+                },
+                "4": {
+                    "_id": "26185",
+                    "combined_score": 0.84739854947,
+                    "_score": 40.745495,
+                    "cosine": 1.740426397163,
+                    "vclaim": "Walter Reed Hospital will accept Christmas cards addressed to 'A Recovering American Soldier.'",
+                    "link": "https://www.snopes.com/fact-check/cards-for-recovering-soldiers/"
+                },
+                "5": {
+                    "_id": "22345",
+                    "combined_score": 0.777339638511,
+                    "_score": 35.276154,
+                    "cosine": 1.727960559458,
+                    "vclaim": "An Army chaplain wrote an e-mail decrying the government’s handling of the Walter Reed Medical Center scandal.",
+                    "link": "https://www.snopes.com/fact-check/cant-be-quiet-any-longer/"
+                }
+            }
+        },
+        {
+            "sentence": "Stepping out of the hospital with a team of doctors behind him on Saturday, Dr. Conley gave an optimistic update on Mr. Trumps condition at a news conference.",
+            "retrieved": {
+                "1": {
+                    "_id": "9553",
+                    "combined_score": 0.885413785193,
+                    "_score": 21.873926,
+                    "cosine": 1.768069371597,
+                    "vclaim": "'Barron Trump Rushed To The Hospital, Hospital Releases Statement On His Condition'",
+                    "link": "http://www.politifact.com/punditfact/statements/2017/aug/10/blog-posting/its-fake-news-barron-trump-was-hospitalized-pneumo/"
+                },
+                "2": {
+                    "_id": "1897",
+                    "combined_score": 0.642673187925,
+                    "_score": 25.145575,
+                    "cosine": 1.49211658541,
+                    "vclaim": "A barber mistakenly shaved a play button into a client's hair because he was shown a paused video as an example.",
+                    "link": "https://www.truthorfiction.com/did-a-barber-mistakenly-shave-a-play-button-on-a-clients-head-because-of-a-paused-video/"
+                },
+                "3": {
+                    "_id": "15538",
+                    "combined_score": 0.630807834463,
+                    "_score": 19.512758,
+                    "cosine": 1.603806547426,
+                    "vclaim": "Says former North Carolina elections board chairman 'tried to drag a cancer-stricken woman out of her hospital bed to testify at her son’s hearing on the first day of early voting over a bogus complaint that the board hadn’t even fully investigated.'",
+                    "link": "http://www.politifact.com/north-carolina/statements/2019/jan/08/phil-berger/no-election-board-leader-didnt-try-drag-woman-out-/"
+                },
+                "4": {
+                    "_id": "344",
+                    "combined_score": 0.618560035337,
+                    "_score": 26.357603,
+                    "cosine": 1.445535826082,
+                    "vclaim": "Someone at a fundraiser for Illinois state Sen. Martin Sandoval acted out a mock assassination of President Donald Trump",
+                    "link": "https://www.truthorfiction.com/did-someone-act-out-a-mock-assassination-of-trump-at-a-democratic-fundraiser/"
+                },
+                "5": {
+                    "_id": "2173",
+                    "combined_score": 0.597759055492,
+                    "_score": 22.405645,
+                    "cosine": 1.513347412994,
+                    "vclaim": "In April 2019, televangelist Pat Robertson claimed he had a vision of the second coming of Jesus, wearing camo and carrying an AK-47.",
+                    "link": "https://www.truthorfiction.com/did-pat-robertson-claim-he-had-a-vision-of-jesus-with-an-ak-47-in-camo-signaling-the-second-coming/"
+                }
+            }
+        },
+        {
+            "sentence": "He said the president was \"doing very well\" and in \"exceptionally good spirits\" after spending Friday night at the hospital.",
+            "retrieved": {
+                "1": {
+                    "_id": "22810",
+                    "combined_score": 0.83117857263,
+                    "_score": 16.348366,
+                    "cosine": 1.674143372914,
+                    "vclaim": "Account describes President Obama’s meeting with wounded soldiers at the National Naval Hospital.",
+                    "link": "https://www.snopes.com/fact-check/national-naval-hospital/"
+                },
+                "2": {
+                    "_id": "30513",
+                    "combined_score": 0.812981785724,
+                    "_score": 15.417099,
+                    "cosine": 1.679776722812,
+                    "vclaim": "President Trump's visit to Walter Reed Hospital in December 2018 was ignored by the media.",
+                    "link": "https://www.snopes.com/fact-check/president-trump-walter-reed-media/"
+                },
+                "3": {
+                    "_id": "25900",
+                    "combined_score": 0.803512080033,
+                    "_score": 22.428646,
+                    "cosine": 1.513147267275,
+                    "vclaim": "Wounded veterans paraded through halls of the Pentagon every Friday morning.",
+                    "link": "https://www.snopes.com/fact-check/friday-mornings-at-the-pentagon/"
+                },
+                "4": {
+                    "_id": "12671",
+                    "combined_score": 0.797076426617,
+                    "_score": 21.54942,
+                    "cosine": 1.527577369769,
+                    "vclaim": "'Things like … having Friday classes have been shown to be very effective on college campuses' in reducing drinking.",
+                    "link": "http://www.politifact.com/oregon/statements/2013/sep/13/university-oregon/have-friday-classes-been-shown-extremely-effective/"
+                },
+                "5": {
+                    "_id": "31982",
+                    "combined_score": 0.723565692048,
+                    "_score": 18.23127,
+                    "cosine": 1.54029279451,
+                    "vclaim": "President Donald Trump was 'feared dead' after a small fire broke out at his New York City building.",
+                    "link": "https://www.snopes.com/fact-check/was-president-trump-feared-dead-after-a-fire-at-trump-tower/"
+                }
+            }
+        },
+        {
+            "sentence": "The news conference put a national spotlight on Dr. Conley, who offered a distinctly different outlook from what Mark Meadows, the White House chief of staff, told reporters later.",
+            "retrieved": {
+                "1": {
+                    "_id": "25082",
+                    "combined_score": 0.887125814159,
+                    "_score": 23.334126,
+                    "cosine": 1.715664653096,
+                    "vclaim": "White House Chief of Staff Reince Priebus sent an e-mail to White House staff directing them to address Ivanka Trump and Jared Kushner as 'secretary.'",
+                    "link": "https://www.snopes.com/fact-check/reince-priebus-secretary/"
+                },
+                "2": {
+                    "_id": "25452",
+                    "combined_score": 0.874098620024,
+                    "_score": 26.60326,
+                    "cosine": 1.655559940518,
+                    "vclaim": "The Obama administration blocked or banned Fox News reporters from White House press conferences.",
+                    "link": "https://www.snopes.com/fact-check/obama-block-fox-news-reporters/"
+                },
+                "3": {
+                    "_id": "26383",
+                    "combined_score": 0.846774512413,
+                    "_score": 20.799677,
+                    "cosine": 1.725449152905,
+                    "vclaim": "President Trump needs Senate confirmation in order for Steve Bannon to sit on the National Security Council.",
+                    "link": "https://www.snopes.com/fact-check/steve-bannon-need-senate-confirmation-hearing-sit-nsc/"
+                },
+                "4": {
+                    "_id": "27301",
+                    "combined_score": 0.757202560963,
+                    "_score": 18.292713,
+                    "cosine": 1.698893234676,
+                    "vclaim": "Trump's press secretary Sarah Sanders offered Roseanne Barr a White House position.",
+                    "link": "https://www.snopes.com/fact-check/sarah-sanders-roseanne-barr-job/"
+                },
+                "5": {
+                    "_id": "31764",
+                    "combined_score": 0.748476057998,
+                    "_score": 19.97681,
+                    "cosine": 1.666459562217,
+                    "vclaim": "The intern who took away Jim Acosta's microphone at a White House Press Conference was actually Deputy Press Secretary Lindsay Walters.",
+                    "link": "https://www.snopes.com/fact-check/cnn-microphone-intern/"
+                }
+            }
+        },
+        {
+            "sentence": "Heres what we know about Dr. Conley.",
+            "retrieved": {
+                "1": {
+                    "_id": "10450",
+                    "combined_score": 0.757457567636,
+                    "_score": 9.25197,
+                    "cosine": 1.591500018044,
+                    "vclaim": "Says he didn't call Dr. George Tiller a baby killer, as liberal groups charge, but was merely reporting what 'some prolifers branded him.'",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/jun/05/bill-oreilly/bill-oreilly-called-george-tiller-baby-killer/"
+                },
+                "2": {
+                    "_id": "8283",
+                    "combined_score": 0.749993715395,
+                    "_score": 9.376442,
+                    "cosine": 1.584751053766,
+                    "vclaim": "Ed Schultz said Alan Grayson is 'what it's all about.'",
+                    "link": "http://www.politifact.com/florida/statements/2010/sep/16/alan-grayson/was-msnbcs-ed-schultz-talking-about-alan-grayson-g/"
+                },
+                "3": {
+                    "_id": "251",
+                    "combined_score": 0.681305076676,
+                    "_score": 9.104064,
+                    "cosine": 1.544314191496,
+                    "vclaim": "Dr. Ben Carson Considering White House Run",
+                    "link": "https://www.truthorfiction.com/dr-ben-carson-2016/"
+                },
+                "4": {
+                    "_id": "26509",
+                    "combined_score": 0.672657560936,
+                    "_score": 12.683914,
+                    "cosine": 1.48397981003,
+                    "vclaim": "Dr. Tony Kern, a former USAF Lieutenant Colonel, authored a letter about what America can expect in a war against terrorists.",
+                    "link": "https://www.snopes.com/fact-check/colonel-of-truth/"
+                },
+                "5": {
+                    "_id": "22332",
+                    "combined_score": 0.639578850014,
+                    "_score": 10.725432,
+                    "cosine": 1.492437638367,
+                    "vclaim": "Dr. Arieh Eldad wrote about a burn center patient turned suicide bomber.",
+                    "link": "https://www.snopes.com/fact-check/repaid-kindness/"
+                }
+            }
+        },
+        {
+            "sentence": "He became the presidents physician two years ago Dr. Conley took on the role of White House physician in 2018 after Dr. Ronny L. Jackson was nominated to be secretary of the Department of Veterans Affairs.",
+            "retrieved": {
+                "1": {
+                    "_id": "31427",
+                    "combined_score": 0.771745769181,
+                    "_score": 25.207354,
+                    "cosine": 1.685106319183,
+                    "vclaim": "The appointment of Dr. Jerome Adams as Surgeon General was ignored by the press because he's African-American.",
+                    "link": "https://www.snopes.com/fact-check/adams-surgeon-general-ignored/"
+                },
+                "2": {
+                    "_id": "21989",
+                    "combined_score": 0.713775552555,
+                    "_score": 31.811964,
+                    "cosine": 1.555966615196,
+                    "vclaim": "In May 2018 President Trump donated one-fourth of his $400,000-per-year salary to the Department of Veterans Affairs.",
+                    "link": "https://www.snopes.com/fact-check/trump-donate-salary-va/"
+                },
+                "3": {
+                    "_id": "2582",
+                    "combined_score": 0.633474150776,
+                    "_score": 24.518991,
+                    "cosine": 1.592362014845,
+                    "vclaim": "Stephen Harper: “Since coming to office ... this government has enhanced veterans' services and programs to the tune of some $5 billion.” - FactsCanada",
+                    "link": "http://factscan.ca/stephen-harper-since-coming-to-office-this-government-has-enhanced-veterans-services-and-programs-to-the-tune-of-some-5-billion/"
+                },
+                "4": {
+                    "_id": "26707",
+                    "combined_score": 0.627979716466,
+                    "_score": 24.609314,
+                    "cosine": 1.587135875413,
+                    "vclaim": "Dispatch from a physician describes conditions in New Orleans in the days immediately following Hurricane Katrina.",
+                    "link": "https://www.snopes.com/fact-check/dispatch-from-a-physician/"
+                },
+                "5": {
+                    "_id": "32642",
+                    "combined_score": 0.618347666176,
+                    "_score": 38.036373,
+                    "cosine": 1.404239095714,
+                    "vclaim": "Dr. Seuss once wrote a children’s book since banned due to its references to suicide and violence.",
+                    "link": "https://www.snopes.com/fact-check/the-banned-book-of-dr-seuss/"
+                }
+            }
+        },
+        {
+            "sentence": "Dr. Jackson had to withdraw his name from consideration for that post amid accusations of inappropriate workplace behavior and was subsequently promoted by Mr. Trump to the position of assistant to the president and chief White House medical adviser.",
+            "retrieved": {
+                "1": {
+                    "_id": "26383",
+                    "combined_score": 0.97279386625,
+                    "_score": 30.576244,
+                    "cosine": 1.605767851284,
+                    "vclaim": "President Trump needs Senate confirmation in order for Steve Bannon to sit on the National Security Council.",
+                    "link": "https://www.snopes.com/fact-check/steve-bannon-need-senate-confirmation-hearing-sit-nsc/"
+                },
+                "2": {
+                    "_id": "31549",
+                    "combined_score": 0.832285063971,
+                    "_score": 28.418833,
+                    "cosine": 1.555522551543,
+                    "vclaim": "A Republican Senate candidate called on Melania Trump to 'sterilize' the White House after the 'animals' leave.",
+                    "link": "https://www.snopes.com/fact-check/republican-senate-candidate-tells-melania-trump-to-sterilize-the-white-house/"
+                },
+                "3": {
+                    "_id": "25082",
+                    "combined_score": 0.812096567391,
+                    "_score": 25.846458,
+                    "cosine": 1.57968441287,
+                    "vclaim": "White House Chief of Staff Reince Priebus sent an e-mail to White House staff directing them to address Ivanka Trump and Jared Kushner as 'secretary.'",
+                    "link": "https://www.snopes.com/fact-check/reince-priebus-secretary/"
+                },
+                "4": {
+                    "_id": "30704",
+                    "combined_score": 0.801147442809,
+                    "_score": 29.120342,
+                    "cosine": 1.528025851582,
+                    "vclaim": "President Trump inherited a White House infested with cockroaches due to the careless behavior of his predecessor, Barack Obama.",
+                    "link": "https://www.snopes.com/fact-check/obama-left-trump-a-white-house-full-of-roaches/"
+                },
+                "5": {
+                    "_id": "9028",
+                    "combined_score": 0.717224296709,
+                    "_score": 23.176346,
+                    "cosine": 1.562589559113,
+                    "vclaim": "White House Political Director Patrick Gaspard once served as the 'right-hand man' for Bertha Lewis, who heads up ACORN.",
+                    "link": "http://www.politifact.com/truth-o-meter/statements/2009/sep/30/steve-doocy/beck-and-others-repeat-claim-white-house-political/"
+                }
+            }
+        },
+        {
+            "sentence": "He is now running for a House seat in Texas.",
+            "retrieved": {
+                "1": {
+                    "_id": "9084",
+                    "combined_score": 0.962239877005,
+                    "_score": 19.709564,
+                    "cosine": 1.72212344359,
+                    "vclaim": "On resigning her Texas House seat.",
+                    "link": "http://www.politifact.com/texas/statements/2017/jan/10/dawnna-dukes/full-flop-dawnna-dukes-sworn-after-vowing-resign-h/"
+                },
+                "2": {
+                    "_id": "5192",
+                    "combined_score": 0.790889299563,
+                    "_score": 11.961977,
+                    "cosine": 1.756457681316,
+                    "vclaim": "On choosing a Texas House speaker",
+                    "link": "http://www.politifact.com/texas/statements/2011/jan/08/warren-chisum/texas-rep-warren-chisum-two-minds-role-gop-caucus-/"
+                },
+                "3": {
+                    "_id": "13107",
+                    "combined_score": 0.73336313758,
+                    "_score": 10.716118,
+                    "cosine": 1.734726168641,
+                    "vclaim": "'War for the soul of the TxDems: 57% of Dem incumbents for Tx House LOST their primary.'",
+                    "link": "http://www.politifact.com/texas/statements/2010/mar/25/republican-party-texas/texas-gop-says-57-percent-texas-house-democrats-tu/"
+                },
+                "4": {
+                    "_id": "5261",
+                    "combined_score": 0.710713780808,
+                    "_score": 11.224885,
+                    "cosine": 1.701645750631,
+                    "vclaim": "Texas is 'the state that has now gone the longest without electing a Democrat statewide.'",
+                    "link": "http://www.politifact.com/texas/statements/2012/sep/26/joaquin-castro/joaquin-castro-says-texas-has-gone-longest-all-sta/"
+                },
+                "5": {
+                    "_id": "10840",
+                    "combined_score": 0.686720642641,
+                    "_score": 12.947199,
+                    "cosine": 1.637561020369,
+                    "vclaim": "Says a Republican U.S. House member from Texas, Rob McCaskill, tweeted that he 'can’t wait for the next 9/11.'",
+                    "link": "http://www.politifact.com/texas/statements/2017/feb/15/liberal-blogger/fake-news-texas-congressman-pecos-wishes-another-9/"
+                }
+            }
+        }
+    ]
+}
