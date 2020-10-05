@@ -48,6 +48,7 @@ def get_score(CLIENT, INDEX_NAME, sentence):
         raise
 
     results = response['hits']['hits']
+    size = len(results)
 
     max_score = max([x['_score'] for x in results])
     min_score = min([x['_score'] for x in results])
@@ -67,7 +68,7 @@ def get_score(CLIENT, INDEX_NAME, sentence):
 
     df = pd.DataFrame(results)
     df.sort_values(by=['combined_score'], inplace=True, ascending=False)
-    df['id'] = np.arange(1, 151, 1)
+    df['id'] = np.arange(1, size+1, 1)
     df = df.set_index('id')
     return df
 
@@ -103,19 +104,20 @@ def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PAT
     reverse = {}
     for x in format_scores_sentences:
         for y in range(5):
-            # print(x['retrieved'][y+1]['vclaim'])
             if not x['retrieved'][y+1]['vclaim'] in reverse:
-                reverse[x['retrieved'][y+1]['vclaim']] = [1, x['retrieved'][y+1]['combined_score'],x['retrieved'][y+1]['combined_score'],x['sentence']]
+                reverse[x['retrieved'][y+1]['vclaim']] = [1, x['retrieved'][y+1]['combined_score'],x['retrieved'][y+1]['combined_score'],x['sentence'],x['retrieved'][y+1]['link']]
             else:
                 i = reverse[x['retrieved'][y+1]['vclaim']][0] + 1
                 score = reverse[x['retrieved'][y+1]['vclaim']][1] + x['retrieved'][y+1]['combined_score']
                 if reverse[x['retrieved'][y+1]['vclaim']][2] < x['retrieved'][y+1]['combined_score']:
                     highest = x['retrieved'][y+1]['combined_score']
                     sentence = x['sentence']
+                    link = x['retrieved'][y+1]['link']
                 else:
                     highest = reverse[x['retrieved'][y+1]['vclaim']][2]
                     sentence =  reverse[x['retrieved'][y+1]['vclaim']][3]
-                reverse[x['retrieved'][y+1]['vclaim']] = [i, score, highest, sentence]
+                    link = reverse[x['retrieved'][y+1]['vclaim']][4]
+                reverse[x['retrieved'][y+1]['vclaim']] = [i, score, highest, sentence, link]
         
     overall_vclaims = sorted(reverse.items(), key= lambda item: item[1], reverse=True)[:5]
 
@@ -126,6 +128,7 @@ def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PAT
         temp['vclaim'] = overall_vclaims[i][0]
         temp['combined_score'] = overall_vclaims[i][1][2]
         temp['sum_combined_score'] =  overall_vclaims[i][1][1]
+        temp['link'] =  overall_vclaims[i][1][4]
         overall_dict[i+1] = temp
 
     dict['overall'] = overall_dict
@@ -139,11 +142,11 @@ def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PAT
     with open(file, 'a', encoding='utf-8') as file_output:
         json.dump(dict, file_output, ensure_ascii=False, indent=4)
     file_output.close()
-    return json.dumps(dict)
+    return dict
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output_path", "-p", "-output", "-out", "-result", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output'),
+    parser.add_argument("--output_path", "-p", "-output", "-out", "-result", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'output'),
                         help="Path to output file.  default: ./output")
     parser.add_argument("--input", "-i", '-url', '-URL', '-u', required=True,
                         help="URL to a news article")
@@ -154,26 +157,35 @@ def parse_args():
     return parser.parse_args()
 
 #for library use
-def run(input, client="127.0.0.1:9200",output_path="./output", index_name="vclaims", ):
-    CLIENT = create_connection(client)
-    OUTPUT_PATH = output_path
+def run(input, client="127.0.0.1:9200",output_path="../output", index_name="vclaims", ):
+    CLIENT = lib.create_connection(client)
+OUTPUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'output')
     INDEX_NAME = index_name
     INPUT = str(input)
 
-    try:
-        website = trafilatura.fetch_url(INPUT)
-        fulltext = trafilatura.extract(website)
-    except:
-        website = NewsPlease.from_url(INPUT)
-        fulltext = website.maintext
+# try:
+    #     website = trafilatura.fetch_url(INPUT)
+    #     fulltext = trafilatura.extract(website)
+    # except:
+    #     website = NewsPlease.from_url(INPUT)
+    #     fulltext = website.maintext
 
-    sentences = list(fulltext.split("\n"))
+    
+    website = newspaper(INPUT)
+    fulltext = website.article
+    try:
+        sentences = tokenize.sent_tokenize(fulltext)
+    except:
+        nltk_download('punkt')
+        sentences = tokenize.sent_tokenize(fulltext)
+
     scores_sentences = get_scores(CLIENT, INDEX_NAME, sentences)
     format_scores_sentences = format_scores(sentences, scores_sentences)
+    save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PATH)
     return save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PATH)
 
 def main(args):
-    CLIENT = create_connection(args.connection)
+    CLIENT = lib.create_connection(args.connection)
     OUTPUT_PATH = args.output_path
     INDEX_NAME = args.index_name
     INPUT = str(args.input)

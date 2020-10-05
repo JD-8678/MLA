@@ -14,15 +14,6 @@ from bin import lib
 #    sentence_embeddings = model.encode(sentence)
 #    return sentence_embeddings
 
-def create_connection(conn_string):
-    lib.logger.debug("Starting ElasticSearch client")
-    try:
-        es = Elasticsearch([conn_string], sniff_on_start=True, timeout=60)
-    except:
-        raise ConnectionError(f"Couldn't connect to Elastic Search instance at: {conn_string} \
-                                Check if you've started it or if it listens on the port listed above.")
-    lib.logger.debug("Elasticsearch connected")
-    return es
 
 def clear_index(CLIENT, INDEX_NAME):
     cleared = True
@@ -95,7 +86,7 @@ def parse_args():
     return parser.parse_args()
 
 def main(args):
-    CLIENT = create_connection(args.connection)
+    CLIENT = lib.create_connection(args.connection)
     VCLAIMS = pd.read_csv(args.vclaims, sep='\t', index_col=0)
     INDEX_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin', 'data','index.json')
     INDEX_NAME = args.index_name

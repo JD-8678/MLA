@@ -1,6 +1,7 @@
 import argparse,os
 
 import bin
+from bin import lib
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -19,7 +20,10 @@ def parse_args():
 if __name__ == '__main__':
     args = parse_args()
     print(args.output_path)
+    lib.check_model()
+    if check_index(args.connection, args.index_name) =) False:
+        return Exception('Index not found.')
     if args.mode == 'url':
         bin.run_url.main(args)
     else: 
-        bin.run_file.main(args)
+        Exception('EHH')
