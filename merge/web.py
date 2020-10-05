@@ -23,59 +23,50 @@ def home():
 def howto():
   return flask.render_template("howto.html")
 
-@app.route('/vclaims', methods=['POST','GET'])
+@app.route('/vclaims', methods=['GET'])
 def vclaims():
-    input = flask.request.args['input']
-    mode = flask.request.args['mode']
-    # file = 'output\\' + hashlib.md5(url.encode()).hexdigest() + '.json'
-    if mode == 'url':
-        print('url')
-        res = bin.run_url.run(input)
-    
-    if mode == 'path':
-        print('path')
+    if flask.request.method == 'GET': 
+        print("test")
+        res = {}
+        try:
+            input = flask.request.args['input']
+            mode = flask.request.args['mode']
+        except:
+            return flask.redirect(flask.url_for("home"))
 
-    if mode == 'string':
-        print('string')
+        # file = 'output\\' + hashlib.md5(url.encode()).hexdigest() + '.json'
+        #if mode == 'url':
+        #    print('url')
+        #    res = bin.run_url.run(input)
+        
+        #if mode == 'path':
+        #    print('path')
 
-    # file = 'output\\' + hashlib.md5(url.encode()).hexdigest() + '.json'
-    return flask.render_template('/vclaims.html', result=res) 
-     
-    #except:
-    #    return flask.redirect(flask.url_for('title'))
+        #if mode == 'string':
+        #    print('string')
 
-    #if flask.request.method == 'POST':
-    #    task_content = flask.request.form['content']
-    #    print("post" + str(task_content))
-    #
-    #    if task_content == None:
-    #        return flask.redirect(flask.url_for('title'))
-    #
-    #    res = bin.run_url.run(task_content)
-    #
-    #    return flask.render_template('/main.html', result=res)
-    #elif flask.request.method == 'GET':
-    
-
-    ############# newst
-    # if flask.request.method == 'GET': 
-    #     if os.path.exists(file):
-    #         with open(file, 'r', encoding='utf-8') as myfile:
-    #             print("file open")
-    #             data = myfile.read()
-    #             res = json.loads(data)
-    #             myfile.close()  
-    #     else:
-    #         if flask.request.form.getlist('mode') == "url":
-    #             data = bin.run_url.run(url)
-    #             res = json.loads(data)
-    #             print("test")
-    #         else:
-    #             data = bin.run_file.run(url)
-    #             res = json.loads(data)
-    #             print("run_String")
-    #     return flask.render_template('/main.html', result=res)
-
+        json_file = 'output\\' + hashlib.md5(input.encode()).hexdigest() + '.json'
+        file = os.path.join(os.path.dirname(os.path.abspath(__file__)), json_file)
+        try:
+            if os.path.exists(file):
+                with open(file, 'r', encoding='utf-8') as myfile:
+                    #print("file open")
+                    data = myfile.read()
+                    res = json.loads(data)
+                    myfile.close()  
+            else:
+                if mode == "url":
+                    data = bin.run_url.run(input)
+                    res = json.loads(data)
+                    #print("run_url")
+                else:
+                    data = bin.run_file.run(input)
+                    res = json.loads(data)
+                    #print("run_String")
+            
+            return flask.render_template('/vclaims.html', result=res) 
+        except:
+            return flask.redirect(flask.url_for("howto"))
 
 if __name__ == "__main__":
         app.run(debug=True)
