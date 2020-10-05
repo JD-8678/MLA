@@ -2,14 +2,27 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
+  <title>Claim matcher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
     {% block head %}{% endblock %}
  </head>
  <body>
+  <header>
+    <div class="container">
+        <h1 class="logo">Claim matcher</h1>
+        <strong>
+            <nav>
+                <ul class="menu">
+                    <li><a href="{{ url_for('home') }}">Home</a> </li>
+                    <li><a href="{{ url_for('howto') }}">How to use</a> </li>
+                    <li><a href="https://github.com/JD-8678/MLA">Github</a> </li>
+                </ul>
+            </nav>
+        </strong>
+    </div>
+</header>
      {% block body %}{% endblock %}
  </body>
- <script>
-   {% block script %}{% endblock %}
- </script>
 </html>
