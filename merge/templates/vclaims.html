@@ -14,8 +14,8 @@
         {background-color: LightGoldenRodYellow;
     }
     th:not(:last-child), td:not(:last-child) { border-right: 2px solid #000; }
-    .notfirst:hover {
-    background-color: red;
+    /* .notfirst:hover {
+    background-color: red; */
 }
 
     </style>
@@ -26,7 +26,7 @@
 <div class="content">
     <div class="column left" style="background: lightgrey; width: 69%; float:left">
         <div>
-            <h1 style="float: left; padding-left: 15px; display: inline-block;";>Maintext</h1>
+            <h1 style="padding-left: 15px; display: inline-block;";>Maintext</h1>
             <button onclick=reset() style="float: right; background-color: white; position: relative; top: 10px; right: 10px;">default</button>
         </div>
         {% for i in range(result['split']| length) %}
@@ -42,9 +42,9 @@
             </tr>
             {% for i in range(1,6) %}
             <tr class = "notfirst">
-                <td><a href="{{ result['overall'][i]['link'] }}" >{{ result['overall'][i]['vclaim'] }}</a></td>
-                <td><a>{{ result['overall'][i]['sum_combined_score'] }}<br>
-                    {{ result['overall'][i]['combined_score'] }} </a></td>
+                <td><a href="{{ result['overall'][i]['link'] }}" > {{ result['overall'][i]['vclaim'] }}</a></td>
+                <td><a style="font-weight: bold;"> {{ result['overall'][i]['sum_combined_score'] }}</a><br>
+                    <a>{{ result['overall'][i]['combined_score'] }} </a></td>
             </tr>
             {% endfor %}
         </table>
@@ -54,11 +54,11 @@
 <script>
     var result = {{result|tojson}};
     var last = null;
-    var default = True;
+    var bool_default = null;
     var maintext = document.getElementsByClassName("btn");
     var count = maintext.length;
     function myFunction(elem) {
-        default = Flase;
+        bool_default = false;
         for(var j = 0; j < count; j++){
             maintext[j].style.color = "black";
             maintext[j].style.fontSize = "100%";
@@ -71,7 +71,7 @@
         table = document.getElementById("table")
         for(i=1;i<6;i++){
             table.rows[i].cells[0].innerHTML = "<a href=" + result['split'][elem.id]['retrieved'][i]['link'] + ">" + result['split'][elem.id]['retrieved'][i]['vclaim'] +"</a>";
-            table.rows[i].cells[1].innerHTML = result['split'][elem.id]['retrieved'][i]['combined_score']
+            table.rows[i].cells[1].innerHTML = "<a style=\"font-weight: bold;\">" + result['split'][elem.id]['retrieved'][i]['combined_score'] + "</a>"
         }
     }
     function reset(){
@@ -82,12 +82,12 @@
         }
         for(i=1;i<6;i++){
             table.rows[i].cells[0].innerHTML = "<a href=" + result['overall'][i]['link'] + ">" + result['overall'][i]['vclaim'] + "</a>"
-            table.rows[i].cells[1].innerHTML = "<a>" + result['overall'][i]['sum_combined_score'] + "<br>" + result['overall'][i]['combined_score'] + "</a>";
+            table.rows[i].cells[1].innerHTML = "<a style=\"font-weight: bold;\">" + result['overall'][i]['sum_combined_score'] + "<\a><br><a>" + result['overall'][i]['combined_score'] + "</a>";
         }
         default_bold();
     }
     function default_bold(){
-        default = True;
+        bool_default = true;
         for(i=1;i<6;i++){
             elem = result['overall'][i]['sentence'];
             for(var j = 0; j < count; j++){
@@ -99,6 +99,16 @@
                 }
             }
         }
+    // onmouseover=highlight()
+    // function highlight(t){
+    //     if (bool_default === true){
+    //         for(var j = 0; j < count; j++){
+    //             maintext[j].style.color = "black";
+    //             maintext[j].style.fontSize = "100%";
+    //             maintext[j].style.fontWeight = "normal";
+    //         }
+    //     }
+    // }
     window.onload = default_bold();
 </script>
 {% endblock %}

@@ -15,8 +15,6 @@ def home():
     if flask.request.method == 'POST':
         task_input = flask.request.form['input']
         task_mode = flask.request.form['mode']
-        print(task_input)
-        print(task_mode)
         return flask.redirect(flask.url_for('vclaims', input=task_input, mode=task_mode))
     else:
         return flask.render_template('/home.html')
@@ -27,7 +25,7 @@ def howto():
 
 @app.route('/vclaims', methods=['POST','GET'])
 def vclaims():
-        input = flask.request.args['input']
+    input = flask.request.args['input']
     mode = flask.request.args['mode']
     # file = 'output\\' + hashlib.md5(url.encode()).hexdigest() + '.json'
     if mode == 'url':

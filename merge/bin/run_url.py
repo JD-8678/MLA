@@ -159,7 +159,7 @@ def parse_args():
 #for library use
 def run(input, client="127.0.0.1:9200",output_path="../output", index_name="vclaims", ):
     CLIENT = lib.create_connection(client)
-OUTPUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'output')
+    OUTPUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'output')
     INDEX_NAME = index_name
     INPUT = str(input)
 
