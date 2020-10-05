@@ -1,5 +1,5 @@
 import argparse
-import json
+import json,hashlib
 import os
 import numpy as np
 import pandas as pd
@@ -94,13 +94,46 @@ def save_result(fulltext, INDEX_NAME, format_scores_sentences, OUTPUT_PATH):
     dict['fulltext'] = fulltext
     dict['split'] = format_scores_sentences
 
+    reverse = {}
+    for x in format_scores_sentences:
+        for y in range(5):
+            # print(x['retrieved'][y+1]['vclaim'])
+            if not x['retrieved'][y+1]['vclaim'] in reverse:
+                reverse[x['retrieved'][y+1]['vclaim']] = [1, x['retrieved'][y+1]['combined_score'],x['retrieved'][y+1]['combined_score'],x['sentence']]
+            else:
+                i = reverse[x['retrieved'][y+1]['vclaim']][0] + 1
+                score = reverse[x['retrieved'][y+1]['vclaim']][1] + x['retrieved'][y+1]['combined_score']
+                if reverse[x['retrieved'][y+1]['vclaim']][2] < x['retrieved'][y+1]['combined_score']:
+                    highest = x['retrieved'][y+1]['combined_score']
+                    sentence = x['sentence']
+                else:
+                    highest = reverse[x['retrieved'][y+1]['vclaim']][2]
+                    sentence =  reverse[x['retrieved'][y+1]['vclaim']][3]
+                reverse[x['retrieved'][y+1]['vclaim']] = [i, score, highest, sentence]
+        
+    overall_vclaims = sorted(reverse.items(), key= lambda item: item[1], reverse=True)[:5]
+
+    overall_dict = {}
+    for i in range(5):
+        temp = {}
+        temp['sentence'] = overall_vclaims[i][1][3]
+        temp['vclaim'] = overall_vclaims[i][0]
+        temp['combined_score'] = overall_vclaims[i][1][2]
+        temp['sum_combined_score'] =  overall_vclaims[i][1][1]
+        overall_dict[i+1] = temp
+
+    dict['overall'] = overall_dict
+    dict['split'] = format_scores_sentences
+
+    file = OUTPUT_PATH + '\\' + hashlib.md5(fulltext.encode()).hexdigest() + '.json'
     if not os.path.exists(OUTPUT_PATH):
         os.makedirs(OUTPUT_PATH)
 
-    open(OUTPUT_PATH + '/result.json', 'w').close()
-    with open(OUTPUT_PATH + '/result.json', 'a', encoding='utf-8') as file_output:
+    open(file, 'w').close()
+    with open(file, 'a', encoding='utf-8') as file_output:
         json.dump(dict, file_output, ensure_ascii=False, indent=4)
     json.dumps(dict)
+    return json.dumps(dict)
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -113,6 +146,20 @@ def parse_args():
     parser.add_argument("--index_name", "-id", "-name", default="vclaims",
                         help="Elasticsearch index name to assign.")
     return parser.parse_args()
+
+#for library
+def run(input, client="127.0.0.1:9200",output_path="./output", index_name="vclaims", ):
+    CLIENT = create_connection(client)
+    OUTPUT_PATH = output_path
+    INDEX_NAME = index_name
+    INPUT = str(input)
+
+    fulltext = INPUT
+
+    sentences = list(fulltext.split("\n"))
+    scores_sentences = get_scores(CLIENT, INDEX_NAME, sentences)
+    format_scores_sentences = format_scores(sentences, scores_sentences)
+    return save_result(fulltext, INDEX_NAME, format_scores_sentences, OUTPUT_PATH)
 
 def main(args):
     CLIENT = create_connection(args.connection)
