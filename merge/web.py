@@ -106,8 +106,8 @@ def vclaims():
             output = flask.request.args['output']
         except:
             return flask.redirect(flask.url_for("home"))
-        json_file = output + '\\' + hashlib.md5(input.encode()).hexdigest() + '.json'
-        output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), json_file)
+        # json_file = output + '\\' + hashlib.md5(input.encode()).hexdigest() + '.json'
+        output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), output)
         try:
             # if os.path.exists(file):
             #     with open(file, 'r', encoding='utf-8') as myfile:
@@ -117,12 +117,12 @@ def vclaims():
             #         myfile.close()  
             # else:
             if mode == "url":
-                data = bin.run_url.run(input=input, client=client, output_path = output_path, index_name=index)
+                data = bin.run_url.run(input=input, client=client, output_path=output_path, index_name=index)
                 res = json.loads(data)
                 return flask.render_template('/vclaims.html', result=res)
             else:
                 if mode == "text" or mode == "file":
-                    data = bin.run_text.run(input=input, client=client, output_path = output_path, index_name=index)
+                    data = bin.run_text.run(input=input, client=client, output_path=output_path, index_name=index)
                     res = json.loads(data)
                     return flask.render_template('/vclaims.html', result=res) 
         except:

@@ -198,7 +198,7 @@ def save_result(fulltext, INDEX_NAME, INPUT, format_scores_sentences, OUTPUT_PAT
 
     file = OUTPUT_PATH + '\\' + hashlib.md5(INPUT.encode()).hexdigest() + '.json'
     
-    logger.debug(f'output_path: {file}')
+    logger.debug(f' output_path: {file}\n')
 
     if not os.path.exists(OUTPUT_PATH):
         os.makedirs(OUTPUT_PATH)

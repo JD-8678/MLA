@@ -13,4 +13,5 @@ news_please
 elasticsearch
 googledrivedownloader
 tqdm
+tarantula
 
