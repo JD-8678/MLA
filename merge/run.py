@@ -9,21 +9,30 @@ def parse_args():
                         help="Path to output file.  default: ./output")
     parser.add_argument("--input", "-i", required=True,
                         help="URL to a news article")
-    parser.add_argument("--mode", "-m", default="url", choices=["url","string"], type=str.lower,
-                        help="choice between url or string mode")
+    parser.add_argument("--mode", "-m", choices=["url","text","file"], type=str.lower, required=True,
+                        help="choice between url, file and text mode")
     parser.add_argument("--connection", "-c", "-es", "-conn", default="127.0.0.1:9200",
                         help="HTTP/S URL to a instance of ElasticSearch")
-    parser.add_argument("--index_name", "-id", "-name", default="vclaims",
+    parser.add_argument("--index_name", "-id", "-name","-index", default="vclaims",
                         help="Elasticsearch index name to assign.")
     return parser.parse_args()
 
+
+def main(args):
+    INPUT = args.input
+    CLIENT = args.connection
+    OUTPUT_PATH = args.output_path
+    INDEX_NAME = args.index_name
+        
+    if args.mode == 'url':
+        bin.run_url.run(input=INPUT, client=CLIENT, output_path=OUTPUT_PATH, index_name=INDEX_NAME)
+    if args.mode == 'text':
+        bin.run_text.run(input=INPUT, client=CLIENT, output_path=OUTPUT_PATH, index_name=INDEX_NAME)
+    if args.mode == 'file':
+        bin.run_file.run(input=INPUT, client=CLIENT, output_path=OUTPUT_PATH, index_name=INDEX_NAME)
+        
+
+
 if __name__ == '__main__':
     args = parse_args()
-    print(args.output_path)
-    lib.check_model()
-    if check_index(args.connection, args.index_name) =) False:
-        return Exception('Index not found.')
-    if args.mode == 'url':
-        bin.run_url.main(args)
-    else: 
-        Exception('EHH')
+    main(args)

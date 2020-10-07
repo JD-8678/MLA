@@ -24,7 +24,6 @@ def clear_index(CLIENT, INDEX_NAME):
     return cleared
 
 def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
-
     vclaims_count = VCLAIMS.shape[0]
     clear_index(CLIENT, INDEX_NAME)
     
@@ -50,31 +49,6 @@ def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
     for entry in tqdm(helpers.parallel_bulk(client=CLIENT, actions=actions), total=vclaims_count):
         pass
 
-#not tested
-# def build_index_Linux(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
-#     vclaims_count = VCLAIMS.shape[0]
-#     clear_index(CLIENT, INDEX_NAME)
-    
-#     with open(INDEX_FILE) as index_file:
-#         source = index_file.read()
-#         CLIENT.indices.create(index=INDEX_NAME, body=source)
-
-#     lib.logger.info(f"Builing index of {vclaims_count} vclaims with fieldnames: {fieldnames}")
-#     actions = []
-#     for i, vclaim in tqdm(VCLAIMS.iterrows(), total=vclaims_count):
-#         if not CLIENT.exists(index=INDEX_NAME, id=i):
-#             body = vclaim.loc[fieldnames].replace(np.nan, "").to_dict()
-#             body["vector"] = embedd(vclaim["vclaim"])
-#             actions.append(
-#                 {
-#                     '_op_type': 'create',
-#                     '_index': INDEX_NAME,
-#                     '_id': i + 1,
-#                     '_source': body
-#                 })
-#     lib.logger.info('Wait...')
-#     deque(helpers.parallel_bulk(client=CLIENT, actions=actions), maxlen=0)
-
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--vclaims", "-v", "-source", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin' ,'data','vclaims.tsv'),
@@ -86,6 +60,7 @@ def parse_args():
     return parser.parse_args()
 
 def main(args):
+    lib.check_model(download=True)
     CLIENT = lib.create_connection(args.connection)
     VCLAIMS = pd.read_csv(args.vclaims, sep='\t', index_col=0)
     INDEX_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin', 'data','index.json')
@@ -101,14 +76,6 @@ def main(args):
             'date',
             'vector']
     build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS)
-    # try:
-    #     build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS)
-    # except:
-    #     try:
-    #         build_index_Linux(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS)
-    #     except:
-    #         lib.logger.error(r"Something went wrong will building_index!")
-    
     
 
 if __name__=='__main__':

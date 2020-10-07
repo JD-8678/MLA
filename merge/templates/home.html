@@ -1,21 +1,30 @@
 {% extends 'base.html'%}
 
 {% block head %}
+<style>
+    body{
+        margin: 15px
+    }
+</style>
 {% endblock %}
 
 {% block body %}
 
-
 <div class="content">
     <h1>Input and Method</h1>
     <form action="/home" method="POST">
+        <input style="vertical-align: top;" type="text" name="index" id="index" value="vclaims">
+        <label style="vertical-align: top; font-weight: bold;" for="index", id="label_index">index_name</label>
+        <input style="vertical-align: top;" type="submit" name="submit" value="status" id="status"><br>
+        <input style="vertical-align: top;" type="text" name="elastic" id="elastic" value="127.0.0.1:9200"> <label style="vertical-align: top; font-weight: bold;" for="elastic" id="label_elastic">elasticsearch instance</label><br>
         <textarea rows="15" cols="50" type="text" name="input" id="input"></textarea>
-        <input style="vertical-align: top;" type="submit" value="submit">
-        <input style="vertical-align: top;"type="button" name="clear" value="clear" onclick="eraseText();">
+        <input style="vertical-align: top;" type="submit" name="submit" value="submit" id="submit">
+        <input style="vertical-align: top;" type="button" name="clear" value="clear" onclick="eraseText();">
         <input style="vertical-align: top;" type="radio" name="mode" id="url" value="url" checked=true> <label style="vertical-align: top;" for="url">url</label>
-        <input style="vertical-align: top;" type="radio" name="mode" id="tetx" value="text"> <label style="vertical-align: top;" for="text">text</label>
+        <input style="vertical-align: top;" type="radio" name="mode" id="text" value="text"> <label style="vertical-align: top;" for="text">text</label>
         <input style="vertical-align: top;" type="radio" name="mode" id="file" value="file"> <label style="vertical-align: top;" for="file">file</label>
         <input style="display: none;" type="file" id="my_file">
+        <input style="display: none;" type="text" name="output" id="output" value="output">
     </form>
 </div>
 <script>
@@ -38,7 +47,5 @@ document.getElementById('file').onclick = function() {
     function eraseText() {
         document.getElementById("input").value = "";
 }
-
-    
-    </script>
+</script>
 {% endblock %}

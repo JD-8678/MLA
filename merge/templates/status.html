@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<h1>Status</h1>
+<form action="/status" method="POST">
+    <label>index_name: </label>
+    <label style="font-weight: bold;">{{  result['input_index'] }}</label>
+    <input style="font-weight: bold;" type="hidden" name="index_bool" id="index" readonly value="{{  result['index'] }}"></input>
+    <input style="font-weight: bold;" type="hidden" name="index" id="index" readonly value="{{  result['input_index'] }}"></input>
+    <label>{{  result['index']  }}</label>
+    <input type="submit" name="dl" id="dl_create" value="create">
+    <input type="submit" name="dl" id="dl_create" value="clear"><br>
+    <label>elasticsearch instance: </label>
+    <label style="font-weight: bold;" name="s_elastic" id="s_elastic" readonly value="{{  result['input_elastic'] }}">{{  result['input_elastic'] }}</label>
+    <input style="font-weight: bold;" type="hidden" name="elastic" id="elastic" readonly value="{{  result['input_elastic'] }}"></input>
+    <label>{{  result['client']  }}</label><br>
+    <label style="font-weight: bold;">distilbert_model</label>
+    <label>{{  result['model']  }}</label>
+    <input type="submit" name="dl" id="dl_model" value="download">
+</from>
+{% endblock %}
