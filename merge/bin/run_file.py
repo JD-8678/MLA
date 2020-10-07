@@ -19,12 +19,12 @@ def run(input, client, output_path, index_name):
 
     with open(INPUT, 'r', encoding="utf-8") as file:
         fulltext = file.read().replace('\n', ' ').replace("”", '"').replace("’", "'")
-    
+   
     try:
-        sentences = tokenize.sent_tokenize(fulltext.strip())
-    except:
         nltk_download('punkt')
-        sentences = tokenize.sent_tokenize(fulltext.strip())
+    except:
+        pass
+    sentences = tokenize.sent_tokenize(fulltext.strip())
 
     scores_sentences = lib.get_scores(CLIENT, INDEX_NAME, sentences)
     format_scores_sentences = lib.format_scores(sentences, scores_sentences)
