@@ -9,7 +9,7 @@ sentence_transformers
 colorlog
 scipy
 numpy
-news_please=
+news_please
 elasticsearch
 googledrivedownloader
 tqdm
