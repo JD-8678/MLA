@@ -14,7 +14,6 @@ from nltk import tokenize
 from nltk import download as nltk_download
 import numpy as np
 import pandas as pd
-import trafilatura
 from elasticsearch import Elasticsearch
 from newsplease import NewsPlease
 from scipy import spatial
