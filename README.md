@@ -12,7 +12,7 @@ The relevant claims are retrieved by a custom [Sentence-Bert](https://github.com
 4. ```python -m nltk.downloader 'punkt' ```
 5. ```python merge/download_model.py ```
 6. ```python merge/elastic_search_create.py ```
-   - Can be run with parameters for elasticsearch instance, index name and input file cvontaining relevant claims (for reference see merge/bin/data/vclaims.tsv).
+   - Can be run with parameters for elasticsearch instance ```--connection <elasticsearch>```, index name ```--index_name <string>``` and input file ```--index_name <string>``` cvontaining relevant claims (for reference see merge/bin/data/vclaims.tsv).
 
 ## Usage:
 The application uses the maintext of news articles (parsed by [news-fetch](https://santhoshse7en.github.io/news-fetch/)) or plaintex either as .txt file or direct input, as input.
@@ -23,7 +23,8 @@ The application uses the maintext of news articles (parsed by [news-fetch](https
 
 ### Terminal
 1. run [elasticsearch](https://www.elastic.co/downloads/elasticsearch)
-2. ```python merge/run.py -m <url, file, text> -i <input>```
+2. ```python merge/run.py --mode <url, file, text> --input <input>```
+   - other parameters are ```--index_name <string>```, ```--connection <elasticsearch>```, ```--output_path <path>```
 3. Output is saved in megre/output as json .file containing the retrieved claims.
  
 
