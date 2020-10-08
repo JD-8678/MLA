@@ -5,8 +5,38 @@
 
 {% block body %}
 
-
-<h1></h1>
-<p>some bs</p>
+<div>
+    <h1>How to use</h1>
+    <ul>
+        <li>Make sure you followed the installation instructions in the Github  </li>
+        <li>By default the index_name and the elasticsearch instance correspond as in the installation</li>
+        <li>Choose one of the 3 available modes on the right side: url,text, file</li>
+        <li>Fill the textfield with the corresponding information: url >> link; text or file >> plaintext</li>
+        <li>Press 'submit'</li>
+    </ul>
+    <h1>In case of errors</h1>
+    <ul>
+        <li>Press 'status'</li>
+        <li>Ensure elasticsearch instance you tried to use was found.</li>
+        <ul>
+            <li>If False: ensure elasticsearch is running in the background. </li><br>
+        </ul>
+        <li>Ensure index_name you tried to use was found.</li>
+        <ul>
+            <li>If False: if the elasticsearch index was found you can recreate the index </li>
+            <li>If True but the search is not working: Press 'clear' and afterwards recreate the index. May take several minutes (page refreshes on finish)</li><br>
+        </ul>
+        <li>Ensure model for ranking was found.</li>
+        <ul>
+            <li>If False: Press 'download'. May take some minutes depending on download speed (page refreshes on finish)</li>
+        </ul>
+    </ul>
+    <h1>Miscellaneous</h1>
+    <ul>
+        <li>We recommand using file or text mode over url, to obtain better text bodies.</li>
+        <li>Url mode can possibly be broken given different structures of the source websites (e.g. nytimes.com).</li>
+        <li>In url mode don't add anything behind the url in the textarea (don't hit Enter on keyboard).</li>
+    </ul>
+</div>
 
 {% endblock %}
