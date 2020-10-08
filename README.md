@@ -11,8 +11,8 @@ The relevant claims are retrieved by a custom [Sentence-Bert](https://github.com
 3. ```pip install -r requirements.txt```
 4. ```python -m nltk.downloader 'punkt' ```
 5. ```python merge/download_model.py ```
-6. ```python merge/elastic_search_create.py ```.<br/>
-Can be run with parameters for elasticsearch instance, index name and input file cvontaining relevant claims (for reference see merge/bin/data/vclaims.tsv).
+6. ```python merge/elastic_search_create.py ```
+   - Can be run with parameters for elasticsearch instance, index name and input file cvontaining relevant claims (for reference see merge/bin/data/vclaims.tsv).
 
 ## Usage:
 The application uses the maintext of news articles (parsed by [news-fetch](https://santhoshse7en.github.io/news-fetch/)) or plaintex either as .txt file or direct input, as input.
