@@ -51,7 +51,7 @@ def build_index(CLIENT, VCLAIMS, INDEX_FILE, INDEX_NAME, KEYS):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--vclaims", "-v", "-source", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin' ,'data','vclaims.tsv'),
+    parser.add_argument("--source", "-v", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin' ,'data','vclaims.tsv'),
                         help="Path to file containing vclaims (cLaimsKG format).")
     parser.add_argument("--connection", "-c", "-es", "-conn", default="127.0.0.1:9200",
                         help="HTTP/S URL to a instance of ElasticSearch")
@@ -62,7 +62,7 @@ def parse_args():
 def main(args):
     lib.check_model(download=True)
     CLIENT = lib.create_connection(args.connection)
-    VCLAIMS = pd.read_csv(args.vclaims, sep='\t', index_col=0)
+    VCLAIMS = pd.read_csv(args.source, sep='\t', index_col=0)
     INDEX_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),'bin', 'data','index.json')
     INDEX_NAME = args.index_name
     KEYS = ['title',
