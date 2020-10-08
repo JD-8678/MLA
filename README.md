@@ -7,7 +7,7 @@ The relevant claims are retrieved by a custom [Sentence-Bert](https://github.com
 ## Installation and Requirements:
 1. Download and run an instance of [elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 2. Clone and navigate into the repository.
-    2.1. Create a virtual environment.
+2.1. Create a virtual environment.
 3. ```pip install -r requirements.txt```
 4. ```python -m nltk.downloader 'punkt' ```
 5. ```python merge/download_model.py ```
